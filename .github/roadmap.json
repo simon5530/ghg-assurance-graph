@@ -1,0 +1,890 @@
+{
+  "schema_version": 1,
+  "status": "Local manifest reviewed; GitHub provisioning blocked; Gate A HOLD",
+  "implementation_gate": "No implementation before recorded Phase 0 GO and explicit phase authorization.",
+  "milestones": [
+    {
+      "title": "M0 Research Gate",
+      "depends_on": [],
+      "acceptance_criteria": "Evidence-backed research decision and reviewed scaffold; no domain implementation.",
+      "optional": false,
+      "description": "M0 Research Gate: Evidence-backed research decision and reviewed scaffold; no domain implementation.",
+      "github_number": null
+    },
+    {
+      "title": "M1 Domain Model",
+      "depends_on": [
+        "M0 Research Gate"
+      ],
+      "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "optional": false,
+      "description": "M1 Domain Model: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "github_number": null
+    },
+    {
+      "title": "M2 Benchmark",
+      "depends_on": [
+        "M1 Domain Model"
+      ],
+      "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "optional": false,
+      "description": "M2 Benchmark: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "github_number": null
+    },
+    {
+      "title": "M3 Provenance Graph",
+      "depends_on": [
+        "M2 Benchmark"
+      ],
+      "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "optional": false,
+      "description": "M3 Provenance Graph: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "github_number": null
+    },
+    {
+      "title": "M4 Assurance Rules",
+      "depends_on": [
+        "M3 Provenance Graph"
+      ],
+      "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "optional": false,
+      "description": "M4 Assurance Rules: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "github_number": null
+    },
+    {
+      "title": "M5 CarbonDiff",
+      "depends_on": [
+        "M4 Assurance Rules"
+      ],
+      "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "optional": false,
+      "description": "M5 CarbonDiff: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "github_number": null
+    },
+    {
+      "title": "M6 Reproducibility",
+      "depends_on": [
+        "M5 CarbonDiff"
+      ],
+      "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "optional": false,
+      "description": "M6 Reproducibility: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "github_number": null
+    },
+    {
+      "title": "M7 Integrations",
+      "depends_on": [
+        "M3 Provenance Graph",
+        "M6 Reproducibility"
+      ],
+      "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "optional": false,
+      "description": "M7 Integrations: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "github_number": null
+    },
+    {
+      "title": "M8 Agent / Jev Experimental",
+      "depends_on": [
+        "M6 Reproducibility",
+        "M7 Integrations"
+      ],
+      "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "optional": true,
+      "description": "M8 Agent / Jev Experimental: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "github_number": null
+    },
+    {
+      "title": "M9 v1.0",
+      "depends_on": [
+        "M6 Reproducibility"
+      ],
+      "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "optional": false,
+      "description": "M9 v1.0: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "github_number": null
+    },
+    {
+      "title": "M10 SoftwareX Submission",
+      "depends_on": [
+        "M9 v1.0"
+      ],
+      "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "optional": false,
+      "description": "M10 SoftwareX Submission: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
+      "github_number": null
+    }
+  ],
+  "labels": [
+    "type:research",
+    "type:feature",
+    "type:test",
+    "type:docs",
+    "type:paper",
+    "type:benchmark",
+    "type:ontology",
+    "type:validation",
+    "type:integration",
+    "type:experiment",
+    "priority:p0",
+    "priority:p1",
+    "priority:p2",
+    "publication:softwarex",
+    "publication:joss-readiness",
+    "publication:methods",
+    "good-first-issue",
+    "needs-domain-review"
+  ],
+  "issues": [
+    {
+      "id": 1,
+      "title": "Research gap: compare existing auditable GHG accounting tools",
+      "milestone": "M0 Research Gate",
+      "depends_on": [],
+      "acceptance_criteria": [
+        "Compare primary-source tools and standards; record gaps, overlap, and GO/HOLD/PIVOT evidence without unsupported novelty claims.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "drafted; review/gate pending",
+      "labels": [
+        "type:research",
+        "priority:p0"
+      ],
+      "scope": "Compare primary-source tools and standards; record gaps, overlap, and GO/HOLD/PIVOT evidence without unsupported novelty claims.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "docs/GATE_A.md",
+        "docs/RELATED_WORK.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 2,
+      "title": "Define v0.1 research questions and non-goals",
+      "milestone": "M0 Research Gate",
+      "depends_on": [
+        1
+      ],
+      "acceptance_criteria": [
+        "Record bounded RQs, non-goals, hypotheses, evaluation oracles, and explicit gate approval.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "drafted; review/gate pending",
+      "labels": [
+        "type:research",
+        "priority:p0"
+      ],
+      "scope": "Record bounded RQs, non-goals, hypotheses, evaluation oracles, and explicit gate approval.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "docs/GATE_A.md",
+        "docs/RELATED_WORK.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 3,
+      "title": "ADR: choose RDFLib + PROV-O",
+      "milestone": "M0 Research Gate",
+      "depends_on": [
+        1,
+        2
+      ],
+      "acceptance_criteria": [
+        "Compare RDFLib/PROV-O with alternatives; document reuse, licensing, limitations, and reviewed ADR.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "drafted; review/gate pending",
+      "labels": [
+        "type:research",
+        "priority:p0"
+      ],
+      "scope": "Compare RDFLib/PROV-O with alternatives; document reuse, licensing, limitations, and reviewed ADR.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "docs/GATE_A.md",
+        "docs/RELATED_WORK.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 4,
+      "title": "ADR: choose SHACL/pySHACL for assurance constraints",
+      "milestone": "M0 Research Gate",
+      "depends_on": [
+        1,
+        2
+      ],
+      "acceptance_criteria": [
+        "Compare SHACL/pySHACL with alternatives; specify missing-evidence semantics and reviewed ADR.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "drafted; review/gate pending",
+      "labels": [
+        "type:research",
+        "priority:p0"
+      ],
+      "scope": "Compare SHACL/pySHACL with alternatives; specify missing-evidence semantics and reviewed ADR.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "docs/GATE_A.md",
+        "docs/RELATED_WORK.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 5,
+      "title": "Define canonical GHG domain model v0.1",
+      "milestone": "M1 Domain Model",
+      "depends_on": [
+        2,
+        3,
+        4
+      ],
+      "acceptance_criteria": [
+        "Publish versioned canonical entities, units, boundaries, periods, and positive/negative fixtures.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Publish versioned canonical entities, units, boundaries, periods, and positive/negative fixtures.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 6,
+      "title": "Define stable identifiers and version semantics",
+      "milestone": "M1 Domain Model",
+      "depends_on": [
+        5
+      ],
+      "acceptance_criteria": [
+        "Define record/version/content identity, correction semantics, and collision/migration tests.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Define record/version/content identity, correction semantics, and collision/migration tests.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 7,
+      "title": "Build ACME Electronics synthetic benchmark generator",
+      "milestone": "M2 Benchmark",
+      "depends_on": [
+        5,
+        6
+      ],
+      "acceptance_criteria": [
+        "Generate deterministic synthetic ACME data from recorded seed/version with independent expected results.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1",
+        "type:benchmark"
+      ],
+      "scope": "Generate deterministic synthetic ACME data from recorded seed/version with independent expected results.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 8,
+      "title": "Create seeded validation defect catalog",
+      "milestone": "M2 Benchmark",
+      "depends_on": [
+        7
+      ],
+      "acceptance_criteria": [
+        "Catalog seeded defects with class labels, expected outcomes, and leakage-aware evaluation split.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1",
+        "type:benchmark"
+      ],
+      "scope": "Catalog seeded defects with class labels, expected outcomes, and leakage-aware evaluation split.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 9,
+      "title": "Implement RDF provenance graph builder",
+      "milestone": "M3 Provenance Graph",
+      "depends_on": [
+        3,
+        5,
+        6
+      ],
+      "acceptance_criteria": [
+        "Build deterministic graph from canonical fixtures with provenance completeness tests.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Build deterministic graph from canonical fixtures with provenance completeness tests.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 10,
+      "title": "Implement explain-result SPARQL query",
+      "milestone": "M3 Provenance Graph",
+      "depends_on": [
+        9
+      ],
+      "acceptance_criteria": [
+        "Return source-to-result evidence chains; test missing, cyclic, and ambiguous lineage.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Return source-to-result evidence chains; test missing, cyclic, and ambiguous lineage.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 11,
+      "title": "Implement initial SHACL shapes",
+      "milestone": "M4 Assurance Rules",
+      "depends_on": [
+        4,
+        8,
+        9
+      ],
+      "acceptance_criteria": [
+        "Validate independently specified clean/defective cases and document constraint coverage.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1",
+        "type:validation"
+      ],
+      "scope": "Validate independently specified clean/defective cases and document constraint coverage.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 12,
+      "title": "Create validation precision/recall benchmark",
+      "milestone": "M4 Assurance Rules",
+      "depends_on": [
+        8,
+        11
+      ],
+      "acceptance_criteria": [
+        "Report class-wise TP/FP/FN, precision/recall denominators, unsupported cases, and reproducible commands.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1",
+        "type:test"
+      ],
+      "scope": "Report class-wise TP/FP/FN, precision/recall denominators, unsupported cases, and reproducible commands.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 13,
+      "title": "Define CarbonDiff change taxonomy",
+      "milestone": "M5 CarbonDiff",
+      "depends_on": [
+        5,
+        6
+      ],
+      "acceptance_criteria": [
+        "Define change classes, overlap precedence, residuals, and domain-reviewed examples.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Define change classes, overlap precedence, residuals, and domain-reviewed examples.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 14,
+      "title": "Implement record matching across inventory versions",
+      "milestone": "M5 CarbonDiff",
+      "depends_on": [
+        6,
+        13
+      ],
+      "acceptance_criteria": [
+        "Match stable records deterministically; expose duplicates, ambiguity, additions, and removals.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Match stable records deterministically; expose duplicates, ambiguity, additions, and removals.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 15,
+      "title": "Implement numeric change attribution",
+      "milestone": "M5 CarbonDiff",
+      "depends_on": [
+        13,
+        14
+      ],
+      "acceptance_criteria": [
+        "Specify attribution convention, cross-terms, decimal precision, units, and independently checked examples.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Specify attribution convention, cross-terms, decimal precision, units, and independently checked examples.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 16,
+      "title": "Implement change reconciliation tests",
+      "milestone": "M5 CarbonDiff",
+      "depends_on": [
+        15
+      ],
+      "acceptance_criteria": [
+        "Assert delta reconciliation with declared tolerances and zero/negative/missing/reordered boundary cases.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1",
+        "type:test"
+      ],
+      "scope": "Assert delta reconciliation with declared tolerances and zero/negative/missing/reordered boundary cases.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 17,
+      "title": "Add RO-Crate evidence package export",
+      "milestone": "M6 Reproducibility",
+      "depends_on": [
+        9,
+        11,
+        16
+      ],
+      "acceptance_criteria": [
+        "Export versioned evidence package with metadata, licenses, digests, and independent replay validation.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Export versioned evidence package with metadata, licenses, digests, and independent replay validation.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 18,
+      "title": "Add Obsidian vault exporter",
+      "milestone": "M7 Integrations",
+      "depends_on": [
+        9
+      ],
+      "acceptance_criteria": [
+        "Export linked reviewable notes without changing graph authority or leaking private metadata.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1",
+        "type:integration"
+      ],
+      "scope": "Export linked reviewable notes without changing graph authority or leaking private metadata.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 19,
+      "title": "Define generic external-engine adapter interface",
+      "milestone": "M7 Integrations",
+      "depends_on": [
+        5
+      ],
+      "acceptance_criteria": [
+        "Define engine-neutral inputs/outputs, provenance, failure behavior, and contract tests.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1",
+        "type:integration"
+      ],
+      "scope": "Define engine-neutral inputs/outputs, provenance, failure behavior, and contract tests.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 20,
+      "title": "Evaluate PACT PCF mapping",
+      "milestone": "M7 Integrations",
+      "depends_on": [
+        19
+      ],
+      "acceptance_criteria": [
+        "Document PCF versus organizational scope mismatch, mapping loss, licenses, and proceed/defer decision.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1",
+        "type:integration"
+      ],
+      "scope": "Document PCF versus organizational scope mismatch, mapping loss, licenses, and proceed/defer decision.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 21,
+      "title": "Evaluate openLCA adapter",
+      "milestone": "M7 Integrations",
+      "depends_on": [
+        19
+      ],
+      "acceptance_criteria": [
+        "Assess openLCA interoperability, licenses, boundaries, and adapter feasibility without assuming support.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1",
+        "type:integration"
+      ],
+      "scope": "Assess openLCA interoperability, licenses, boundaries, and adapter feasibility without assuming support.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 22,
+      "title": "Build publication reproducibility workflow",
+      "milestone": "M6 Reproducibility",
+      "depends_on": [
+        12,
+        16,
+        17
+      ],
+      "acceptance_criteria": [
+        "Provide pinned environment, one documented reproduction workflow, artifact digests, and failure checks.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Provide pinned environment, one documented reproduction workflow, artifact digests, and failure checks.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 23,
+      "title": "Create SoftwareX paper scaffold",
+      "milestone": "M0 Research Gate",
+      "depends_on": [
+        2
+      ],
+      "acceptance_criteria": [
+        "Create truthful paper structure, figure plan, metadata, bibliography placeholders, and empty results ledger.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "local scaffold drafted; remote issue unprovisioned",
+      "labels": [
+        "type:research",
+        "priority:p0"
+      ],
+      "scope": "Create truthful paper structure, figure plan, metadata, bibliography placeholders, and empty results ledger.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 24,
+      "title": "Create JOSS readiness dashboard/checklist",
+      "milestone": "M0 Research Gate",
+      "depends_on": [
+        1
+      ],
+      "acceptance_criteria": [
+        "Track current official eligibility/policies and prior-publication conflicts without promising acceptance.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "local scaffold drafted; remote issue unprovisioned",
+      "labels": [
+        "type:research",
+        "priority:p0"
+      ],
+      "scope": "Track current official eligibility/policies and prior-publication conflicts without promising acceptance.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 25,
+      "title": "Run fresh-machine reproduction test",
+      "milestone": "M6 Reproducibility",
+      "depends_on": [
+        22
+      ],
+      "acceptance_criteria": [
+        "Have an independent clean environment reproduce scientific artifacts; record environment and discrepancies.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Have an independent clean environment reproduce scientific artifacts; record environment and discrepancies.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 26,
+      "title": "Prepare v1.0 release + Zenodo archive",
+      "milestone": "M9 v1.0",
+      "depends_on": [
+        25
+      ],
+      "acceptance_criteria": [
+        "Approve release criteria, scan tree/history, verify archive metadata and actual persistent identifier.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Approve release criteria, scan tree/history, verify archive metadata and actual persistent identifier.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 27,
+      "title": "SoftwareX submission readiness audit",
+      "milestone": "M10 SoftwareX Submission",
+      "depends_on": [
+        23,
+        26
+      ],
+      "acceptance_criteria": [
+        "Check current official submission requirements, evidence, licenses, authorship, disclosures, and reproducibility.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Check current official submission requirements, evidence, licenses, authorship, disclosures, and reproducibility.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 28,
+      "title": "Optional: agent tool interface",
+      "milestone": "M8 Agent / Jev Experimental",
+      "depends_on": [
+        19,
+        25
+      ],
+      "acceptance_criteria": [
+        "Expose bounded read-only deterministic tools with authorization, schema, failure, and privacy tests.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Expose bounded read-only deterministic tools with authorization, schema, failure, and privacy tests.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 29,
+      "title": "Optional: Jev decision-provider experiment",
+      "milestone": "M8 Agent / Jev Experimental",
+      "depends_on": [
+        28
+      ],
+      "acceptance_criteria": [
+        "Run opt-in Jev experiment against deterministic baseline with abstention, privacy, cost, and no authority escalation.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Run opt-in Jev experiment against deterministic baseline with abstention, privacy, cost, and no authority escalation.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    },
+    {
+      "id": 30,
+      "title": "Methods paper: CarbonDiff research extension",
+      "milestone": "M10 SoftwareX Submission",
+      "depends_on": [
+        16,
+        27
+      ],
+      "acceptance_criteria": [
+        "Establish distinct methodological contribution with baselines, invariants, sensitivity, and prior-publication disclosure.",
+        "Record verification evidence and limitations; use synthetic, license-reviewed data only."
+      ],
+      "status": "planned",
+      "labels": [
+        "type:feature",
+        "priority:p1"
+      ],
+      "scope": "Establish distinct methodological contribution with baselines, invariants, sensitivity, and prior-publication disclosure.",
+      "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
+      "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
+      "evidence_paths": [
+        "paper/softwarex/RESULTS_LEDGER.md"
+      ],
+      "github_number": null
+    }
+  ]
+}

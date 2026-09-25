@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this research scaffold only for material actually used."
+title: "GHG Assurance Graph"
+type: software
+authors:
+  - name: "GHG Assurance Graph contributors"
+version: 0.0.1
+license: MIT
+abstract: "Phase 0 research scaffold for organizational GHG evidence provenance and deterministic inventory change explanations. No domain implementation is available."
