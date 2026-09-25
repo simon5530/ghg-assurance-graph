@@ -19,3 +19,9 @@ Status: Phase 0 planning; domain features are not implemented.
 - Human verification: pending; no human validation or scholarly authorship asserted.
 - Tests: recorded in publication audit; no domain experiments.
 - Design decision owner: human maintainer; HOLD prevents implementation.
+
+## 2026-09-26 — authorized publication
+- Tool/model: OpenClaw, openai/gpt-6-astra.
+- Scope: publication audit, GitHub repository/roadmap/security setup and status corrections.
+- Verification: exact remote file hashes, anonymous read, hosted docs CI, local checks and secret scans; see publication audit.
+- Human authorized publication; this does not claim human domain review or scholarly authorship. Gate A remains HOLD.

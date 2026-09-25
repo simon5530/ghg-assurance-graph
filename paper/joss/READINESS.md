@@ -18,5 +18,5 @@ current policy confirmation. A readiness checklist is not an eligibility judgmen
 - [ ] Paper 750–1750 words; state of field and build-versus-contribute justification
 - [ ] Human review of all AI-assisted outputs; complete AI disclosure
 
-Public-since date: not verified. No releases or external adoption claimed.
+Public-since date: 2026-09-25 UTC (2026-09-26 Asia/Taipei), verified by anonymous repository access. This does not establish six months of active development. No releases or external adoption claimed.
 AI must not draft conversational author responses to editors/reviewers except translation.

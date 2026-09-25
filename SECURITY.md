@@ -5,10 +5,10 @@ Only the current main-branch scaffold is maintained. No credentials, corporate
 inventories, personal data, live exports, or private infrastructure identifiers
 belong in this repository. Future parsers and adapters must treat inputs as untrusted.
 
-Do not file secrets or exploit details in public issues. After repository publication,
-use GitHub private vulnerability reporting if it is enabled. Until verified, no
-private reporting channel is asserted; withhold sensitive details and request one
-using a non-sensitive issue. Never submit confidential evidence to the project.
+Do not file secrets or exploit details in public issues. Use [GitHub private
+vulnerability reporting](https://github.com/simon5530/ghg-assurance-graph/security/advisories/new),
+verified enabled on 2026-09-26 (Asia/Taipei). Never submit confidential inventory
+evidence to the project; include only a minimal synthetic security reproduction.
 
 Before publication, review every file and reachable commit for semantic privacy,
 scan tree and full Git history with Gitleaks, review licenses and metadata, and run

@@ -15,11 +15,11 @@ roadmap, and a standard-library documentation checker with its CI workflow.
 Not implemented: canonical domain schema, RDF graph builder, SHACL shapes,
 CarbonDiff, RO-Crate export, benchmark generator, adapters, or agent tools.
 No domain tests, measured benchmark results, release archive, DOI, or journal
-acceptance are claimed. CI configuration is present; a hosted CI run is not yet evidence.
+acceptance are claimed. Hosted documentation CI has passed; see the publication audit.
 
 **Research gate: HOLD.** [Decision and conditions](docs/GATE_A.md).
 [Related-work evidence](docs/RELATED_WORK.md) supports only a narrow gap hypothesis.
-Publication and GitHub provisioning remain blocked/unverified; see the
+The public repository, 11 milestones, 18 roadmap labels and 30 issues are verified; see the
 [acceptance record](docs/PHASE0_ACCEPTANCE.md) and [audit](docs/PUBLICATION_AUDIT.md).
 Even a positive gate requires an explicit decision before implementation begins.
 

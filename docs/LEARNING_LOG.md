@@ -18,3 +18,13 @@ issue/milestone counts before reporting public completion. Safe recovery: comple
 local review, preserve HOLD and report authentication/transport blockers. Completion
 proof requires matching reviewed SHA/file set plus anonymous visibility and counts.
 A README badge is not publication evidence; use publisher/DOI records.
+
+## 2026-09-26 — Verify writes with independent readback
+A completed API mutation is not its acceptance oracle. Read back exact titles, IDs,
+labels, milestone assignments and issue contracts; compare remote blob hashes with
+the reviewed tree and verify anonymous access and the CI head SHA. Nullable API
+fields need value checks: an issue with `pull_request: null` is not a pull request.
+An initial count assertion used field presence and excluded valid issues; read-only
+inspection identified this, and reconciliation completed without duplicate writes.
+Optional security flags returned successful mutation responses but remained disabled
+on readback; retain that limitation instead of declaring every control enabled.
