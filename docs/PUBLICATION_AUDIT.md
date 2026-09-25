@@ -23,4 +23,6 @@ Tools: Python 3.9.6, Apple Git 2.54.0, Gitleaks 8.30.1.
 - `git diff --check`: no errors; staged check repeated at commit.
 - Before the initial commit, `git log --all` returned no commits: history was empty, not a scanner pass. Reachable-history scanner evidence is recorded after the first commit.
 
+Reviewed content commit: `2db01bed925889d2d805596bf2196e50a6652c51`, 49 tracked files, author and committer `simon5530@users.noreply.github.com`. After this first commit, `gitleaks git --redact --no-banner --log-opts=--all .` scanned one commit and found no leaks. Final precommit tree scan found no leaks in about 122 KB. A `git clone --no-local` into an isolated temporary directory reproduced both documentation commands at that exact commit: checker PASS and six tests OK. Working tree was clean. This audit addendum is a separate evidence-only commit; final SHA is reported outside its own content to avoid a self-referential hash.
+
 No server/authorization/persistence path exists, so service unauthorized/restart tests are not applicable. Same-machine isolated-clone documentation reproduction is distinct from a fresh-machine scientific reproduction.
