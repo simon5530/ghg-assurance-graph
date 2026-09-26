@@ -62,3 +62,13 @@ units, negatives and roundtrips. [Ten cases](../examples/README.md) cover all 17
 ChangeEvent and ValidationFinding are supplied records, not inferred findings or
 CarbonDiff. No arithmetic is executed by domain models. Domain/practitioner review,
 consolidation/allocation policy, biogenic accounting and attribution remain open.
+
+## Phase 2 scope note
+The existing schema is unchanged. ACME carries detailed synthetic assumptions in
+embedded EvidenceArtifact citation JSON and raw input rows; it uses only the
+precharacterized-CO2e subset. Factor period means declared applicability, not a
+universal rule that publication/reference year must equal inventory year. The
+ACME same-year rule is narrower fixture policy. Gas-resolved, ISO-category and
+market-instrument models remain unimplemented rather than populated with guessed
+normative fields. Snapshot-scoped canonical IDs are distinct from cross-period
+benchmark row keys; no general graph or revision matcher was added.

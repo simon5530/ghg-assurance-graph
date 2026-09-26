@@ -87,3 +87,39 @@ Residual limitations: source authenticity, persistence/tamper resistance, practi
 review, comparator execution, standards compliance, later schema migrations, external
 link exhaustiveness, current SoftwareX policy/full paper access, and research novelty.
 No service authentication/restart path exists. Scanner/audit passes are not guarantees.
+
+## Phase 2 publication gate — 2026-09-26
+
+Scope baseline 3a5c540: only bounded ACME benchmark and supporting docs/tests/CI.
+84 publication-scope UTF-8 text files at review; no binary, source PDFs, licensed
+ISO material, private attachment, production dataset, or personal operational data.
+Original synthetic rows, factor values and ground truth are MIT; no new dependency
+or borrowed implementation. Existing dependency license review remains applicable.
+No paper/joss restoration; SoftwareX and methods retained. Owner publication
+authorization is distinct from unchanged research Gate A HOLD.
+
+Observed: Python 3.12.14, uv 0.12.19, pytest 9.1.1, Ruff 0.16.9, pip-audit 2.10.1,
+Gitleaks 8.30.1. 86 tests, seven docs tests, 43 Markdown relative-link checks,
+Ruff lint/format, wheel/sdist build and byte-identical regenerated fixture hashes
+passed. Isolated clean publication copy with a new locked environment reproduced
+tests/docs/generation; same machine, not independent fresh-machine reproduction.
+
+Dependency audit: no known vulnerabilities; unpublished project itself skipped by
+PyPI auditor (not represented as audited). Gitleaks clean publication tree ~765KB
+and all five reachable precommit commits ~263KB: no leaks. Final staged tree and
+postcommit reachable history are scanned again before push. Separate semantic
+privacy review covered filenames, diff and generated synthetic evidence; no real
+identifiers/endpoints or home paths intended for publication. Public repository
+handle/noreply metadata and official reference URLs are intentional.
+
+Verified before publication: PUBLIC, main, MIT; secret scanning/push protection
+enabled. Other GitHub control readbacks are reported externally. Commit identity
+uses GitHub noreply. Remote SHA/complete blob paths and hosted CI must be checked
+after push; issue #7/#8 only may close when their exact criteria are fulfilled.
+
+Limits: ISO metadata retrieved via official-domain search, direct ISO/OBP fetch
+403; no workaround. Full licensed ISO clauses require practitioner review. GHG
+PDF sections inspected through PDF tooling, no redistributed source text. No
+complete inventory, assurance, legal compliance, secret holdout, or general
+detector/CarbonDiff claim. Scope2 MB is unavailable, not zero. No auth/service
+restart path exists. Scanner passes do not guarantee absence of semantic risk.

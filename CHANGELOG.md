@@ -19,3 +19,9 @@
 - Typed records, IDs/versions, Pint units, RDF/PROV serialization and ten cases.
 - Contract tests, locked packaging, CI and reference synthesis.
 - No Phase 2 benchmark, assurance engine or research novelty claim.
+
+## Phase 2 benchmark — 2026-09-26
+- Added three deterministic ACME snapshots, independent amount/change truth,
+  ten isolated nonconforming fixtures and fail-closed fixture preflight.
+- Added authoritative standards-alignment evidence and explicit ISO/completeness limits.
+- No SHACL, general provenance graph builder, CarbonDiff or AI product implementation.

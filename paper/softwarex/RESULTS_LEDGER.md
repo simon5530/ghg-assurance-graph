@@ -32,3 +32,27 @@ results belong in the publication audit, not in a scientific performance table.
   establish accounting validity, novelty, practitioner need or standard compliance.
 - Reproduction: isolated same-machine clean-copy install recorded in audit; human
   review pending. SoftwareX submission policy and research HOLD remain unresolved.
+
+## 2026-09-26 — Phase 2 ACME benchmark v0.1
+
+Question: can standards-bounded synthetic inventory changes and defects be reproduced
+without an AI or circular numerical oracle? Software 0.1.0a1; benchmark 0.1;
+canonical schema 0.1.0 unchanged; baseline commit 3a5c540. Final reviewed SHA is
+reported by the publication completion record, not self-referentially here.
+
+Method: `uv run python -m ghg_assurance_graph.benchmark --seed 20250926`;
+`uv run pytest -q`; docs checker and seven checker tests; Ruff lint/format; uv build.
+Three snapshots, 158 canonical records and 15 results each; ten separate raw defect
+fixtures. Six development/four publicly visible holdout labels. 86 tests passed
+(44 existing, 42 benchmark), seven docs tests passed. JSON roundtrips, duplicate
+generation byte/hash equivalence, independent Fraction and literal numerical oracle,
+per-source and per-scope reconciliation passed. Partial totals 3820/3850/4060 kgCO2e;
+same-year +30, next-year +210; explicit activity-first components, zero residual
+under the authored scenario. Ten existing upstream RDFLib warnings not suppressed.
+
+An isolated publication-file copy/new locked virtualenv reproduced 86 tests and
+both docs commands on the same machine. Wheel/sdist built. No fresh-machine claim.
+No SHACL detector, inferred change taxonomy, performance/precision/recall/F1,
+production compliance or research novelty is measured. Figure candidate: future
+scenario/evidence table, not yet a quantitative assurance evaluation figure.
+ISO full-clause review remains unverified; see standards alignment. Gate A HOLD.

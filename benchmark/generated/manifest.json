@@ -1,0 +1,22 @@
+{
+  "benchmark": "0.1",
+  "seed": 20250926,
+  "sha256": {
+    "2025-v1/inputs.json": "795d4730cc9fef31d4ce52cdd04344879d93da18cf81afc3f9aabdfbfc8195d7",
+    "2025-v1/package.json": "3156d1dcbc6881dfc74da36dd5910d28d634f71ba839fc2feeeb99406bbf45e4",
+    "2025-v2/inputs.json": "4177f62c5deec55a3f04ef623fc2195d0cd4799c299cc71f485982195c0229cd",
+    "2025-v2/package.json": "afa76b0873d5e466a7fdb86f3f4f291678f9cdc3ed2867dc1be4ff2e9e6001a5",
+    "2026-v1/inputs.json": "2e11d5854ce90b0ff57827f0f6f293a027e5d383fdf7c07e86661d19a54c93df",
+    "2026-v1/package.json": "af1fefebec1a5159445d2a1d9b9461e49583751e30b6fc910dd793545660885d",
+    "defects/double-gwp.json": "9bfdc926839d2db97674a506c6fcb09259e54525595d310f26099feb327b0d9c",
+    "defects/duplicate-activity.json": "292bb56e755523f2ec3f638414992c0bebda48f6c28a0faef96df1d502c0bfbe",
+    "defects/manual-override.json": "557a0b8f20a96adf32c5013e3cc7ffc230be167290fe03f713192c336bd9ec58",
+    "defects/missing-contract.json": "2007f6c10ebfd936def69ebeb84253fcfb6115ac9fd6552ce006a292e95f5677",
+    "defects/missing-factor-source.json": "780e3b94f016f192a84534f74fd747d2bdb1c7bf56b12fa5f93868e7f9bd43ae",
+    "defects/offset-netting.json": "5c7c72766019f2a57c82c7ff39d0ce3e3a9ff608fa0956bd10aad92d7af88752",
+    "defects/unit-error.json": "1044c63dd7aa0d0c9adc5e015b37aab267c212fc72a6636c75c07fe02427f777",
+    "defects/unknown-unit.json": "206ffe44992265f5e76c0002b01eaf6918a9e2726b2861307c647b9a7b8c77e9",
+    "defects/unsupported-pcf.json": "cec322ce0a01d2970546d911877791582873ba069e9d56784f59551de5a79d4a",
+    "defects/wrong-factor-year.json": "c276afff2e7bf30405d7254620de66e4edd14b6229224878883385ca824d31e8"
+  }
+}

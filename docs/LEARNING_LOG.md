@@ -47,3 +47,14 @@ build artifacts and retain a negative test proving real project links still fail
 Cross-record checks now validate all edges before multi-hop dereference; reversing
 record order and introducing a dangling facility confirms a validation error rather
 than a KeyError. These are scope/isolation lessons, not research results.
+
+## Phase 2 — Oracle verification is also necessary
+Initial manually added subtotals were transcribed incorrectly while every line
+answer was correct. Independent sum and cross-period reconciliation tests failed.
+Re-summing the unchanged literal lines gave 3820, 3850, 4060 and deltas 30/210;
+only the erroneous subtotal annotations were corrected. Never weaken a failing
+constraint or regenerate expected answers from production output to obtain green.
+Also: a valid partial fixture is not a standards-compliant complete inventory.
+Runnable example: `uv run pytest tests/test_benchmark.py -q`. Explain why LB/MB
+are alternatives, why organic growth differs from acquisition, and why a factor
+change cannot alone establish real-world abatement.

@@ -1,0 +1,69 @@
+{
+  "convention": "Hand-authored controlled scenarios, activity first at old factor, factor second at new activity. No causal inference. New source boundary expansion is organic, NOT acquisition.",
+  "changes": [
+    {
+      "before": "2025-v1",
+      "after": "2025-v2",
+      "entity": "fleet",
+      "cause": "CORRECTION",
+      "kg_co2e": 20
+    },
+    {
+      "before": "2025-v1",
+      "after": "2025-v2",
+      "entity": "travel",
+      "cause": "MISSING_DATA_RESOLVED",
+      "kg_co2e": 10
+    },
+    {
+      "before": "2025-v2",
+      "after": "2026-v1",
+      "entity": "electricity",
+      "cause": "ACTIVITY_CHANGE",
+      "kg_co2e": -100
+    },
+    {
+      "before": "2025-v2",
+      "after": "2026-v1",
+      "entity": "electricity",
+      "cause": "EMISSION_FACTOR_CHANGE",
+      "kg_co2e": 80
+    },
+    {
+      "before": "2025-v2",
+      "after": "2026-v1",
+      "entity": "materials",
+      "cause": "SUPPLIER_MIX_CHANGE",
+      "kg_co2e": -100
+    },
+    {
+      "before": "2025-v2",
+      "after": "2026-v1",
+      "entity": "method-transition",
+      "cause": "METHOD_CHANGE",
+      "kg_co2e": -50
+    },
+    {
+      "before": "2025-v2",
+      "after": "2026-v1",
+      "entity": "refrigerant",
+      "cause": "GWP_CHANGE",
+      "kg_co2e": 400
+    },
+    {
+      "before": "2025-v2",
+      "after": "2026-v1",
+      "entity": "new-line",
+      "cause": "BOUNDARY_CHANGE",
+      "kg_co2e": 30
+    },
+    {
+      "before": "2025-v2",
+      "after": "2026-v1",
+      "entity": "allocation",
+      "cause": "ALLOCATION_CHANGE",
+      "kg_co2e": -50
+    }
+  ],
+  "residual_kg_co2e": 0
+}

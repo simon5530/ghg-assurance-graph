@@ -33,3 +33,13 @@ authorized scope; no independent human/domain review is claimed. Automated test
 and publication evidence is recorded in the results ledger and audit. AI-authored
 implementation and tests require independent review; tests prove encoded contracts
 only. Gate A remains HOLD.
+
+## 2026-09-26 — Phase 2
+Tool/model: OpenClaw, openai/gpt-6-astra; PDF inspection used google/gemini-pro-latest
+and openai/gpt-6-astra. Task: official standards research, ACME generator, tests,
+assumption/alignment documentation and publication checks. Files: benchmark/,
+benchmark module/tests, standards/phase/publication docs and tests workflow.
+Human verification: owner authorized bounded phase; practitioner/ISO licensed
+review and independent parent verification are not inferred from automated tests.
+Design decision owner: human domain lead retains responsibility. No AI is needed
+to generate or test the benchmark.

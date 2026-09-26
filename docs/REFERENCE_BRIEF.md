@@ -34,3 +34,12 @@ practitioner need, complete comparative reproduction, simultaneous-driver attrib
 conventions, boundary comparability, final SoftwareX policy access and publishability.
 Next research decision remains a concrete practitioner-reviewed case against composed
 existing tools, not more broad “first” claims. Phase 1 validates representation only.
+
+## Accounting references inspected for Phase 2 — 2026-09-26
+[Standards alignment](STANDARDS_ALIGNMENT.md) records official Corporate Standard
+(2004), Scope2 Guidance (2015), Scope3 Standard (2011), Technical Calculation
+Guidance (2013), source sections inspected, and ISO14064-1:2018 metadata.
+The July 2026 joint revision plan is not a final replacement standard. ISO full
+clause review remains blocked pending licensed access/practitioner review. These
+accounting standards do not establish legal compliance, assurance certification,
+or compliance with disclosure and target-setting programs.

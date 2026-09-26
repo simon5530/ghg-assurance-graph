@@ -1,0 +1,95 @@
+{
+  "disclosure": "Public holdout labels are explicit, not secret. A future evaluator must withhold this directory AND generator mutations from detector input. No precision/recall measured in Phase 2.",
+  "findings": [
+    {
+      "case_id": "unit-error",
+      "entity": "materials",
+      "rule": "reported amount mismatch",
+      "split": "development",
+      "severity": "error",
+      "expected": "reject",
+      "base": "2025-v1"
+    },
+    {
+      "case_id": "missing-factor-source",
+      "entity": "natural-gas",
+      "rule": "factor provenance",
+      "split": "development",
+      "severity": "error",
+      "expected": "reject",
+      "base": "2025-v1"
+    },
+    {
+      "case_id": "wrong-factor-year",
+      "entity": "electricity",
+      "rule": "factor applicability",
+      "split": "development",
+      "severity": "error",
+      "expected": "reject",
+      "base": "2025-v1"
+    },
+    {
+      "case_id": "unsupported-pcf",
+      "entity": "supplier-pcf",
+      "rule": "unsupported PCF boundary",
+      "split": "development",
+      "severity": "error",
+      "expected": "reject",
+      "base": "2025-v1"
+    },
+    {
+      "case_id": "manual-override",
+      "entity": "fleet",
+      "rule": "manual override not reviewed",
+      "split": "development",
+      "severity": "error",
+      "expected": "reject",
+      "base": "2025-v1"
+    },
+    {
+      "case_id": "duplicate-activity",
+      "entity": "electricity",
+      "rule": "duplicate activity",
+      "split": "development",
+      "severity": "error",
+      "expected": "reject",
+      "base": "2025-v1"
+    },
+    {
+      "case_id": "double-gwp",
+      "entity": "refrigerant",
+      "rule": "no double GWP",
+      "split": "holdout",
+      "severity": "error",
+      "expected": "reject",
+      "base": "2025-v1"
+    },
+    {
+      "case_id": "missing-contract",
+      "entity": "electricity",
+      "rule": "market-based evidence unavailable",
+      "split": "holdout",
+      "severity": "error",
+      "expected": "reject",
+      "base": "2025-v1"
+    },
+    {
+      "case_id": "unknown-unit",
+      "entity": "diesel",
+      "rule": "unsupported unit conversion",
+      "split": "holdout",
+      "severity": "error",
+      "expected": "reject",
+      "base": "2025-v1"
+    },
+    {
+      "case_id": "offset-netting",
+      "entity": "waste",
+      "rule": "separate biogenic/removal/offset",
+      "split": "holdout",
+      "severity": "error",
+      "expected": "reject",
+      "base": "2025-v1"
+    }
+  ]
+}

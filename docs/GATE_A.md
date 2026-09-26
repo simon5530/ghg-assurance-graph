@@ -22,3 +22,8 @@ Publication infrastructure is a separate gate: local documentation may be prepar
 The owner separately authorized experimental Phase 1 implementation only. See
 [contract](PHASE1_CONTRACT.md). The original research HOLD and its unresolved
 conditions remain; this is not practitioner review, novelty evidence or a GO.
+
+## Bounded Phase 2 owner exception — 2026-09-26
+Owner separately authorized the synthetic benchmark only; see [contract](PHASE2_CONTRACT.md).
+Research HOLD remains unchanged. Gate B still requires independent domain review;
+no automatic authorization for Phase 3 or stronger standards/novelty claims.
