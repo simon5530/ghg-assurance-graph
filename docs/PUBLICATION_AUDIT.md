@@ -40,3 +40,10 @@ Verified enabled: secret scanning, push protection, dependency vulnerability ale
 The subsequent evidence-only commit records verified roadmap IDs and corrected status documentation; its final SHA and hosted CI outcome are reported in the publication completion record rather than self-referentially embedded here. Research Gate A remains **HOLD**. Public infrastructure does not establish domain correctness, novelty, human review, research use, journal eligibility or Phase 1 authorization. External-link, SoftwareX policy and citation-schema limitations above remain open.
 
 Roadmap readback verified 11 exact milestones, 30 exact issues with matching milestone assignments, labels and acceptance contracts, and all 18 requested labels. GitHub retains 10 default labels, so total label count is 28. All roadmap issues remain open; none is represented as implemented or approved. Remote IDs are recorded in the manifest.
+
+
+## Publication scope correction — 2026-09-26
+
+Owner authorized public visibility with only `paper/joss` removed from the current branch. Methods and SoftwareX files are retained unchanged. No history rewrite is requested or performed; prior JOSS versions remain in Git history. README navigation, the required-file checker and the active route description are synchronized. Historical JOSS research references are retained as evidence, not a live route.
+
+Documentation checker passes (38 Markdown files), all six checker tests pass, and `git diff --check` passes. Gitleaks 8.30.1 found no secrets in the tree or all three existing reachable commits. Tracked artifacts are text; targeted private-path/email review found only intentional GitHub noreply attribution. Methods/SoftwareX have no diff against previous HEAD. Remote has only main, no releases or uploaded Actions artifacts. License, dependency scope and previously documented scientific/external-link limitations are unchanged. Visibility restoration and final remote SHA are checked after this audit commit.

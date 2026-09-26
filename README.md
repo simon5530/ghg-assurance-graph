@@ -44,7 +44,7 @@ there is no domain software to package yet. Do not install an empty package.
 - [Reproducibility](docs/REPRODUCIBILITY.md) and [publication strategy](docs/PUBLICATION_STRATEGY.md)
 - [AI boundary](docs/AI_BOUNDARY.md) and [AI usage log](docs/AI_USAGE_LOG.md)
 - [Roadmap manifest](.github/roadmap.json)
-- [SoftwareX outline](paper/softwarex/OUTLINE.md), [JOSS readiness](paper/joss/READINESS.md)
+- [SoftwareX outline](paper/softwarex/OUTLINE.md), [Future methods paper](paper/methods/FUTURE_PAPER.md)
 - [Contribution guide](CONTRIBUTING.md), [governance](GOVERNANCE.md), [security](SECURITY.md)
 - [Changelog](CHANGELOG.md), [citation metadata](CITATION.cff), [MIT license](LICENSE)
 

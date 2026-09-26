@@ -31,9 +31,6 @@ REQUIRED += ["docs/" + name + ".md" for name in (
 REQUIRED += ["paper/softwarex/" + name for name in (
     "OUTLINE.md METADATA.md FIGURE_PLAN.md RESULTS_LEDGER.md REFERENCES.bib"
 ).split()]
-REQUIRED += ["paper/joss/" + name for name in (
-    "READINESS.md PAPER_TEMPLATE.md REFERENCES.bib"
-).split()]
 REQUIRED += [name + "/README.md" for name in ("src", "tests", "benchmark", "examples")]
 
 

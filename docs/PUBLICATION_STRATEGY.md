@@ -1,6 +1,6 @@
 # Publication strategy and policy evidence
 
-Reviewed 2026-09-25. **Not submission-ready.** SoftwareX remains the intended primary route; JOSS is a fallback/engineering checklist, not a second publication of substantially the same software. No submission, spend, or journal acceptance is authorized or claimed.
+Route updated 2026-09-26; policy evidence reviewed 2026-09-25. **Not submission-ready.** SoftwareX remains the intended primary route, with a distinct future methods paper. The JOSS scaffold was removed by owner decision; the JOSS policy notes below are historical reference, not an active submission route. No submission, spend, or journal acceptance is authorized or claimed.
 
 ## JOSS — official policy read
 Sources: [submission rules](https://joss.readthedocs.io/en/latest/submitting.html), [paper format](https://joss.readthedocs.io/en/latest/paper.html), accessed 2026-09-25 (HTTP 200; undated living pages).
@@ -17,4 +17,4 @@ The [yProv4DV precedent](SOFTWAREX_PRECEDENTS.md) confirms a published provenanc
 ## Route decision
 Do not submit simultaneously or reuse the same software contribution as a second software paper. If SoftwareX publishes it, JOSS is disallowed by project policy unless its editors explicitly confirm a genuinely distinct later contribution. A future methods paper needs new research questions, method/evaluation and results with overlap disclosed.
 
-Before either route: actual feature-complete software, independent reproduction, benchmark evidence, current related work, actual research use, human-approved authorship/affiliations, licensed artifacts, reviewed release/archive and current official policy check. Maintain the results ledger during development; never invent DOI, users, results or approvals.
+Before any submission: actual feature-complete software, independent reproduction, benchmark evidence, current related work, actual research use, human-approved authorship/affiliations, licensed artifacts, reviewed release/archive and current official policy check. Maintain the results ledger during development; never invent DOI, users, results or approvals.
