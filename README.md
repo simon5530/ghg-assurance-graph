@@ -1,6 +1,6 @@
 # GHG Assurance Graph
 
-**v0.0.1 — Research prototype / pre-alpha. Phase 0 documentation scaffold only.**
+**v0.1.0a1 — Research prototype / pre-alpha. Experimental Phase 1 model.**
 
 A proposed research toolkit for organizational greenhouse-gas evidence provenance,
 inspectable assurance constraints, deterministic inventory change explanations, and
@@ -9,31 +9,35 @@ not an assurance opinion, certification, or regulatory compliance service.
 
 ## Current status
 
-Implemented: project documentation, paper planning templates, a machine-readable
-roadmap, and a standard-library documentation checker with its CI workflow.
+Implemented: 17 typed canonical records, version/reference integrity, bounded Pint
+units, first RDF/PROV mapping, JSON/JSON-LD/Turtle serialization, ten hand-authored
+examples, schema/domain tests, locked packaging and CI.
 
-Not implemented: canonical domain schema, RDF graph builder, SHACL shapes,
-CarbonDiff, RO-Crate export, benchmark generator, adapters, or agent tools.
-No domain tests, measured benchmark results, release archive, DOI, or journal
-acceptance are claimed. Hosted documentation CI has passed; see the publication audit.
+Not implemented: full provenance query workflow, SHACL assurance, CarbonDiff,
+RO-Crate, generated benchmark, adapters or AI. No practitioner validation, measured
+benchmark evaluation, release archive, DOI or journal acceptance is claimed.
 
 **Research gate: HOLD.** [Decision and conditions](docs/GATE_A.md).
 [Related-work evidence](docs/RELATED_WORK.md) supports only a narrow gap hypothesis.
 The public repository, 11 milestones, 18 roadmap labels and 30 issues are verified; see the
 [acceptance record](docs/PHASE0_ACCEPTANCE.md) and [audit](docs/PUBLICATION_AUDIT.md).
-Even a positive gate requires an explicit decision before implementation begins.
+The owner authorized a [bounded Phase 1 exception](docs/PHASE1_CONTRACT.md) on
+2026-09-26. This does not change HOLD to GO or authorize Phase 2.
 
-## Check the scaffold
+## Reproduce Phase 1
 
-Requires Python 3.9+; no third-party dependencies:
+Python 3.12.14 and uv; no API key or cloud model:
 
 ```sh
-python3 scripts/check_docs.py
-python3 scripts/test_check_docs.py
+uv sync --locked
+uv run pytest -q
+uv run python examples/hand_authored.py
+uv run python scripts/check_docs.py
+uv run python scripts/test_check_docs.py
 ```
 
-Packaging, Python dependency choices and a lockfile are deferred to Phase 1 because
-there is no domain software to package yet. Do not install an empty package.
+See [ten examples](examples/README.md), [reference brief](docs/REFERENCE_BRIEF.md),
+[dependency licenses](docs/DEPENDENCIES.md) and [reproducibility](docs/REPRODUCIBILITY.md).
 
 ## Start here
 

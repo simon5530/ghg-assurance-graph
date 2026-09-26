@@ -1,5 +1,5 @@
 # Tests
 
-Reserved for domain unit, property, and integration tests. Not implemented in Phase 0.
-Do not interpret this directory as software, a benchmark, or measured results.
-Only synthetic, license-reviewed material may be added after the research gate.
+[test_contract.py](test_contract.py) independently checks Phase 1 schemas, identifiers,
+units, references and serialization. Run `uv run pytest -q`. These are representation
+tests, not a benchmark, practitioner review or accounting assurance evaluation.

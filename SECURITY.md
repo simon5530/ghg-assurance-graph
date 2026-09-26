@@ -1,7 +1,7 @@
 # Security policy
 
-This documentation-only pre-alpha provides no production security guarantee.
-Only the current main-branch scaffold is maintained. No credentials, corporate
+This experimental Phase 1 pre-alpha provides no production security guarantee.
+Only the current main-branch prototype is maintained. No credentials, corporate
 inventories, personal data, live exports, or private infrastructure identifiers
 belong in this repository. Future parsers and adapters must treat inputs as untrusted.
 

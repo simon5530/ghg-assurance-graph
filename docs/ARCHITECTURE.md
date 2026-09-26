@@ -19,3 +19,11 @@ Failure: reject malformed inputs; report incomplete/ambiguous evidence; never in
 Prefer established RDF, SHACL, PROV-O and RO-Crate infrastructure; library and
 version choices await the research gate. One deterministic pipeline is the default;
 agents are an optional later interface, not the core architecture.
+
+## Implemented Phase 1 slice — 2026-09-26
+Explicit local JSON/authored records → Pydantic package validation → Pint dimensional
+checks → RDFLib export. Storage is caller-owned local files; no service, database,
+authentication or agent. Inputs remain supplied claims. Validation failure raises
+Pydantic errors before serialization. Source modules: models.py, units.py and
+serialization.py. Everything after basic serialization in the proposed workflow
+above remains future work under research HOLD. [Contract](PHASE1_CONTRACT.md).

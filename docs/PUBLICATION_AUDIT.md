@@ -47,3 +47,43 @@ Roadmap readback verified 11 exact milestones, 30 exact issues with matching mil
 Owner authorized public visibility with only `paper/joss` removed from the current branch. Methods and SoftwareX files are retained unchanged. No history rewrite is requested or performed; prior JOSS versions remain in Git history. README navigation, the required-file checker and the active route description are synchronized. Historical JOSS research references are retained as evidence, not a live route.
 
 Documentation checker passes (38 Markdown files), all six checker tests pass, and `git diff --check` passes. Gitleaks 8.30.1 found no secrets in the tree or all three existing reachable commits. Tracked artifacts are text; targeted private-path/email review found only intentional GitHub noreply attribution. Methods/SoftwareX have no diff against previous HEAD. Remote has only main, no releases or uploaded Actions artifacts. License, dependency scope and previously documented scientific/external-link limitations are unchanged. Visibility restoration and final remote SHA are checked after this audit commit.
+
+## Phase 1 publication gate — 2026-09-26
+
+Scope: changes on baseline 8955ede9c1184327716e3c69e33e644635615097. Owner authorized
+Phase 1 experimental implementation and publication; Gate A research HOLD unchanged.
+Only this repository is published. JOSS scaffold remains removed; methods/SoftwareX
+retained. No raw specification, private memory, credentials or real inventory data.
+
+Observed locally: Python 3.12.14, uv 0.12.19, Ruff 0.16.9, pytest 9.1.1, Gitleaks
+8.30.1, pip-audit 2.10.1. Locked runtime: Pydantic 2.13.5, Pint 0.26.1, RDFLib 7.6.0.
+44 domain tests pass, seven documentation-oracle tests pass, documentation links
+pass, Ruff lint/format pass, wheel and sdist build. Ten JSON-LD roundtrip tests emit
+an upstream RDFLib ConjunctiveGraph deprecation warning; no warnings suppressed.
+Ten hand-authored cases export 30 local artifacts. No benchmark metrics inferred.
+
+An isolated clean publication-scope copy with a new virtual environment reproduced
+locked installation, 44 tests, all exports and documentation checks. Same machine,
+not an independent fresh-machine scientific replication. Runtime and full locked
+development requirements independently audited: no known vulnerabilities found.
+License metadata reviewed; ambiguous Pint/flexcache BSD license files inspected
+and contain three clauses. No competitor source or third-party data bundled.
+
+Gitleaks tree scan used a clean copy of all tracked plus intended nonignored files
+(60 text files at that checkpoint), excluding unpublishable local environments,
+caches and generated build/export artifacts by Git scope. No leaks found. Reachable
+history scan used `gitleaks git --redact --no-banner --log-opts=--all .`: four
+baseline commits, no leaks. Final staged tree and postcommit history are rescanned
+before push. Filenames/text and diffs reviewed separately for privacy; public
+repository identifiers and third-party citations are intentional. No bundled binary.
+
+Existing PUBLIC main/MIT target verified before changes. Commit identities use
+GitHub noreply metadata. Remote SHA, hosted tests and issue #5/#6 completion are
+verified after push and reported externally (avoids self-referential commit hash).
+Remaining issues are not bulk-closed; Phase 3 graph builder is not completed by
+Phase 1 serialization. No tag, release, DOI or publication eligibility claimed.
+
+Residual limitations: source authenticity, persistence/tamper resistance, practitioner
+review, comparator execution, standards compliance, later schema migrations, external
+link exhaustiveness, current SoftwareX policy/full paper access, and research novelty.
+No service authentication/restart path exists. Scanner/audit passes are not guarantees.

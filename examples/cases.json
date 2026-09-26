@@ -1,0 +1,118 @@
+[
+  {
+    "name": "electricity-location",
+    "description": "Location-based purchased electricity, synthetic factor; not a real grid factor.",
+    "scope": 2,
+    "scope2_basis": "location-based",
+    "amount": 100,
+    "unit": "kWh",
+    "factor": 0.5,
+    "result": 50,
+    "method": "activity-based",
+    "origin": "primary"
+  },
+  {
+    "name": "electricity-market",
+    "description": "Market-based purchased electricity; no contractual-quality assurance inferred.",
+    "scope": 2,
+    "scope2_basis": "market-based",
+    "amount": 100,
+    "unit": "kWh",
+    "factor": 0.2,
+    "result": 20,
+    "method": "activity-based",
+    "origin": "secondary"
+  },
+  {
+    "name": "natural-gas",
+    "description": "Stationary combustion gas volume; no density or calorific conversion inferred.",
+    "scope": 1,
+    "amount": 10,
+    "unit": "meter ** 3",
+    "factor": 2,
+    "result": 20,
+    "method": "activity-based",
+    "origin": "primary"
+  },
+  {
+    "name": "diesel-generator",
+    "description": "Generator diesel volume; synthetic CO2e factor already characterized.",
+    "scope": 1,
+    "amount": 10,
+    "unit": "liter",
+    "factor": 3,
+    "result": 30,
+    "method": "activity-based",
+    "origin": "primary"
+  },
+  {
+    "name": "fleet-fuel",
+    "description": "Fleet fuel volume with estimated observation and low data quality.",
+    "scope": 1,
+    "amount": 20,
+    "unit": "liter",
+    "factor": 2.5,
+    "result": 50,
+    "method": "activity-based",
+    "origin": "estimated"
+  },
+  {
+    "name": "refrigerant",
+    "description": "Refrigerant mass and synthetic characterization factor; not an IPCC GWP value.",
+    "scope": 1,
+    "amount": 1,
+    "unit": "kg",
+    "factor": 100,
+    "result": 100,
+    "method": "activity-based",
+    "origin": "estimated"
+  },
+  {
+    "name": "purchased-material",
+    "description": "Purchased material mass, Scope 3 category 1.",
+    "scope": 3,
+    "category": 1,
+    "amount": 100,
+    "unit": "kg",
+    "factor": 2,
+    "result": 200,
+    "method": "activity-based",
+    "origin": "secondary"
+  },
+  {
+    "name": "capital-spend",
+    "description": "Capital goods spend, Scope 3 category 2; currency/year is explicit synthetic USD.",
+    "scope": 3,
+    "category": 2,
+    "amount": 100,
+    "unit": "USD",
+    "factor": 0.1,
+    "result": 10,
+    "method": "spend-based",
+    "origin": "secondary"
+  },
+  {
+    "name": "upstream-transport",
+    "description": "Upstream transport in tonne-km, Scope 3 category 4.",
+    "scope": 3,
+    "category": 4,
+    "amount": 100,
+    "unit": "tonne * km",
+    "factor": 0.05,
+    "result": 5,
+    "method": "activity-based",
+    "origin": "estimated"
+  },
+  {
+    "name": "supplier-pcf",
+    "description": "Supplier-specific PCF per kg; boundary statement is deliberately synthetic, not PACT conformance.",
+    "scope": 3,
+    "category": 1,
+    "amount": 50,
+    "unit": "kg",
+    "factor": 4,
+    "result": 200,
+    "method": "supplier-pcf",
+    "origin": "supplier-specific"
+  }
+]

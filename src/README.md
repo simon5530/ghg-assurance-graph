@@ -1,5 +1,4 @@
-# Src
+# Source
 
-Reserved for domain implementation. Not implemented in Phase 0.
-Do not interpret this directory as software, a benchmark, or measured results.
-Only synthetic, license-reviewed material may be added after the research gate.
+Phase 1 canonical models, bounded Pint units and RDF serialization live in
+[ghg_assurance_graph](ghg_assurance_graph). No calculator or assurance engine.

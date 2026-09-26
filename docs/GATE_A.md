@@ -17,3 +17,8 @@ The complete owner specification was recovered and read. Section 11 permits proc
 4. Resolve material prior-art leads and obtain an explicit recorded GO or PIVOT. Prefer an upstream contribution/overlay if reuse covers the need.
 
 Publication infrastructure is a separate gate: local documentation may be prepared while research is HOLD, but public visibility, remote issue creation and submission readiness cannot be inferred from local files. See [acceptance](PHASE0_ACCEPTANCE.md) and [audit](PUBLICATION_AUDIT.md).
+
+## Bounded owner exception — 2026-09-26
+The owner separately authorized experimental Phase 1 implementation only. See
+[contract](PHASE1_CONTRACT.md). The original research HOLD and its unresolved
+conditions remain; this is not practitioner review, novelty evidence or a GO.

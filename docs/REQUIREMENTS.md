@@ -23,3 +23,8 @@ ambiguous matches, conflicting units, boundaries, periods, or factor versions.
 
 Privacy, provenance, determinism, license compatibility, and repeatability are
 cross-cutting acceptance criteria. Later issues must define executable oracles.
+
+## Phase 1 exception — 2026-09-26
+The historical no-implementation restriction above is superseded only for the
+[bounded Phase 1 contract](PHASE1_CONTRACT.md). Gate A remains HOLD; later phases
+require a separate decision. [Model](DOMAIN_MODEL.md) describes implemented scope.

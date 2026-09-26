@@ -25,3 +25,11 @@ Status: Phase 0 planning; domain features are not implemented.
 - Scope: publication audit, GitHub repository/roadmap/security setup and status corrections.
 - Verification: exact remote file hashes, anonymous read, hosted docs CI, local checks and secret scans; see publication audit.
 - Human authorized publication; this does not claim human domain review or scholarly authorship. Gate A remains HOLD.
+
+## 2026-09-26 — bounded Phase 1
+Tool: OpenClaw, openai/gpt-6-astra. Task: contract, models, examples, tests and docs.
+Affected: src, tests, examples, packaging, CI and Phase 1 documentation. Owner
+authorized scope; no independent human/domain review is claimed. Automated test
+and publication evidence is recorded in the results ledger and audit. AI-authored
+implementation and tests require independent review; tests prove encoded contracts
+only. Gate A remains HOLD.

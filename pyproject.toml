@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ghg-assurance-graph"
+version = "0.1.0a1"
+description = "Experimental typed GHG evidence records, not an assurance engine"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+dependencies = ["pydantic>=2.11,<3", "pint>=0.24,<1", "rdflib>=7.1,<8"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "jsonschema>=4.23,<5", "ruff>=0.11,<1", "pip-audit>=2.9,<3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

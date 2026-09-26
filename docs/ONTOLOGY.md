@@ -1,17 +1,33 @@
-# Ontology
+# Experimental ontology namespace 0.1
 
-Status: Phase 0 planning; domain features are not implemented.
+Namespace: `https://simon5530.github.io/ghg-assurance-graph/ns/0.1/`.
+This is an identifier namespace controlled through this repository, not a claim of
+an available dereferenceable ontology service or W3C endorsement. Breaking semantic
+changes mint a new version namespace; no equivalence with PECO is asserted yet.
+[Serializer](../src/ghg_assurance_graph/serialization.py) is the first graph mapping.
 
-## Proposed reuse
-Use RDF for interoperable graph representation, PROV-O for entities/activities/agents,
-and SHACL for explicit graph constraints. Reuse existing vocabularies after a
-licensing and semantic-fit review; do not mint a competing ontology unnecessarily.
+- Organization → prov:Agent (includes organizational reviewer identities).
+- CalculationRun and ReviewDecision → prov:Activity.
+- All other domain records → prov:Entity, including the supplied ChangeEvent record
+  describing a change rather than asserting an executed causal activity.
+- EmissionResult.calculation → prov:wasGeneratedBy.
+- Record.supersedes → prov:wasRevisionOf.
+- ReviewDecision.reviewer → prov:wasAssociatedWith.
+- Evidence links → prov:wasDerivedFrom.
+- CalculationRun inputs activity/factor/method/GWP/boundary → prov:used, in addition
+  to role-specific domain properties preserving which input served which role.
 
-Candidate mappings: evidence and inventory versions → prov:Entity;
-calculation/import/review → prov:Activity; accountable organizations/reviewers →
-prov:Agent. These are proposals, not approved ontology axioms.
+Other fields use the namespace and exact model field name: organization, facility,
+period, boundary, source, inventory, quality, review, target, before/after and scalar
+metadata. This avoids claiming a domain relation is equivalent to a PROV relation
+when semantics differ. Numeric quantities use blank nodes with value/unit properties;
+record revisions are URIs. Schema version is emitted on each record. Literal dates
+and timestamps currently preserve ISO lexical strings, not inferred XSD temporal
+semantics. Unit literals preserve the bounded Pint vocabulary, not QUDT alignment.
 
-Define namespace governance, vocabulary versions, identifier policy, units, temporal
-semantics, validation profiles, and migrations before publishing any ontology.
-RDFLib and pySHACL are candidate implementations, not installed dependencies.
-PROV-O provenance is not itself proof that evidence is true.
+JSON domain roundtrip is supported. JSON-LD/Turtle semantic graph roundtrip is tested
+by RDF graph isomorphism, not byte equality or domain import. No remote JSON-LD
+context is fetched. Arbitrary untrusted RDF import, SHACL, RDFS/OWL inference,
+query library and comprehensive provenance builder are later phases. Serialization
+is the minimum first RDF graph required by Phase 1, not completion of Phase 3.
+PROV-O relationships neither authenticate evidence nor prove its truth.

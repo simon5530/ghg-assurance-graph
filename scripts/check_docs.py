@@ -89,7 +89,8 @@ def check(root):
                 visit(node)
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append("Invalid roadmap: " + str(exc))
-    markdown = [p for p in root.rglob("*.md") if ".git" not in p.relative_to(root).parts]
+    excluded = {".git", ".venv", ".pytest_cache", ".ruff_cache", "__pycache__", "artifacts", "dist", "build"}
+    markdown = [p for p in root.rglob("*.md") if not excluded.intersection(p.relative_to(root).parts)]
     for path in markdown:
         text = path.read_text(encoding="utf-8")
         for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", text):
