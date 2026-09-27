@@ -1,0 +1,55 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ghg: <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/> .
+@prefix s: <urn:ghgag:shapes/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+s:ActivityRecord-source a sh:PropertyShape ; sh:path ghg:source ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:EmissionSource ; sh:message "ActivityRecord.source requires exactly one EmissionSource IRI" .
+s:ActivityRecord-inventory a sh:PropertyShape ; sh:path ghg:inventory ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:InventoryVersion ; sh:message "ActivityRecord.inventory requires exactly one InventoryVersion IRI" .
+s:ActivityRecord-wasDerivedFrom a sh:PropertyShape ; sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:EvidenceArtifact ; sh:message "ActivityRecord.prov:wasDerivedFrom requires exactly one EvidenceArtifact IRI" .
+s:ActivityRecord-quality a sh:PropertyShape ; sh:path ghg:quality ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:DataQualityAssessment ; sh:message "ActivityRecord.quality requires exactly one DataQualityAssessment IRI" .
+s:ActivityRecord a sh:NodeShape ; sh:targetClass ghg:ActivityRecord ; sh:property s:ActivityRecord-source, s:ActivityRecord-inventory, s:ActivityRecord-wasDerivedFrom, s:ActivityRecord-quality .
+
+s:EmissionFactor-wasDerivedFrom a sh:PropertyShape ; sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:EvidenceArtifact ; sh:message "EmissionFactor.prov:wasDerivedFrom requires exactly one EvidenceArtifact IRI" .
+s:EmissionFactor-period a sh:PropertyShape ; sh:path ghg:period ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:ReportingPeriod ; sh:message "EmissionFactor.period requires exactly one ReportingPeriod IRI" .
+s:EmissionFactor-gwp a sh:PropertyShape ; sh:path ghg:gwp ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:GWPSet ; sh:message "EmissionFactor.gwp requires exactly one GWPSet IRI" .
+s:EmissionFactor-boundary a sh:PropertyShape ; sh:path ghg:boundary ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:BoundaryDefinition ; sh:message "EmissionFactor.boundary requires exactly one BoundaryDefinition IRI" .
+s:EmissionFactor-method a sh:PropertyShape ; sh:path ghg:method ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:CalculationMethod ; sh:message "EmissionFactor.method requires exactly one CalculationMethod IRI" .
+s:EmissionFactor a sh:NodeShape ; sh:targetClass ghg:EmissionFactor ; sh:property s:EmissionFactor-wasDerivedFrom, s:EmissionFactor-period, s:EmissionFactor-gwp, s:EmissionFactor-boundary, s:EmissionFactor-method .
+
+s:CalculationRun-activity a sh:PropertyShape ; sh:path ghg:activity ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:ActivityRecord ; sh:message "CalculationRun.activity requires exactly one ActivityRecord IRI" .
+s:CalculationRun-factor a sh:PropertyShape ; sh:path ghg:factor ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:EmissionFactor ; sh:message "CalculationRun.factor requires exactly one EmissionFactor IRI" .
+s:CalculationRun-method a sh:PropertyShape ; sh:path ghg:method ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:CalculationMethod ; sh:message "CalculationRun.method requires exactly one CalculationMethod IRI" .
+s:CalculationRun-gwp a sh:PropertyShape ; sh:path ghg:gwp ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:GWPSet ; sh:message "CalculationRun.gwp requires exactly one GWPSet IRI" .
+s:CalculationRun-boundary a sh:PropertyShape ; sh:path ghg:boundary ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:BoundaryDefinition ; sh:message "CalculationRun.boundary requires exactly one BoundaryDefinition IRI" .
+s:CalculationRun-inventory a sh:PropertyShape ; sh:path ghg:inventory ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:InventoryVersion ; sh:message "CalculationRun.inventory requires exactly one InventoryVersion IRI" .
+s:CalculationRun a sh:NodeShape ; sh:targetClass ghg:CalculationRun ; sh:property s:CalculationRun-activity, s:CalculationRun-factor, s:CalculationRun-method, s:CalculationRun-gwp, s:CalculationRun-boundary, s:CalculationRun-inventory .
+
+s:EmissionResult-wasGeneratedBy a sh:PropertyShape ; sh:path prov:wasGeneratedBy ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:CalculationRun ; sh:message "EmissionResult.prov:wasGeneratedBy requires exactly one CalculationRun IRI" .
+s:EmissionResult-inventory a sh:PropertyShape ; sh:path ghg:inventory ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:InventoryVersion ; sh:message "EmissionResult.inventory requires exactly one InventoryVersion IRI" .
+s:EmissionResult-review a sh:PropertyShape ; sh:path ghg:review ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:ReviewDecision ; sh:message "EmissionResult.review requires exactly one ReviewDecision IRI" .
+s:EmissionResult a sh:NodeShape ; sh:targetClass ghg:EmissionResult ; sh:property s:EmissionResult-wasGeneratedBy, s:EmissionResult-inventory, s:EmissionResult-review .
+
+s:InventoryVersion-organization a sh:PropertyShape ; sh:path ghg:organization ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:Organization ; sh:message "InventoryVersion.organization requires exactly one Organization IRI" .
+s:InventoryVersion-period a sh:PropertyShape ; sh:path ghg:period ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:ReportingPeriod ; sh:message "InventoryVersion.period requires exactly one ReportingPeriod IRI" .
+s:InventoryVersion-boundary a sh:PropertyShape ; sh:path ghg:boundary ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:BoundaryDefinition ; sh:message "InventoryVersion.boundary requires exactly one BoundaryDefinition IRI" .
+s:InventoryVersion a sh:NodeShape ; sh:targetClass ghg:InventoryVersion ; sh:property s:InventoryVersion-organization, s:InventoryVersion-period, s:InventoryVersion-boundary .
+
+s:Facility-organization a sh:PropertyShape ; sh:path ghg:organization ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:Organization ; sh:message "Facility.organization requires exactly one Organization IRI" .
+s:Facility a sh:NodeShape ; sh:targetClass ghg:Facility ; sh:property s:Facility-organization .
+
+s:EmissionSource-facility a sh:PropertyShape ; sh:path ghg:facility ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:Facility ; sh:message "EmissionSource.facility requires exactly one Facility IRI" .
+s:EmissionSource a sh:NodeShape ; sh:targetClass ghg:EmissionSource ; sh:property s:EmissionSource-facility .
+
+s:GWPSet-wasDerivedFrom a sh:PropertyShape ; sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:EvidenceArtifact ; sh:message "GWPSet.prov:wasDerivedFrom requires exactly one EvidenceArtifact IRI" .
+s:GWPSet a sh:NodeShape ; sh:targetClass ghg:GWPSet ; sh:property s:GWPSet-wasDerivedFrom .
+
+s:CalculationMethod-wasDerivedFrom a sh:PropertyShape ; sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:EvidenceArtifact ; sh:message "CalculationMethod.prov:wasDerivedFrom requires exactly one EvidenceArtifact IRI" .
+s:CalculationMethod a sh:NodeShape ; sh:targetClass ghg:CalculationMethod ; sh:property s:CalculationMethod-wasDerivedFrom .
+
+s:ReviewDecision-wasAssociatedWith a sh:PropertyShape ; sh:path prov:wasAssociatedWith ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:Organization ; sh:message "ReviewDecision.prov:wasAssociatedWith requires exactly one Organization IRI" .
+s:ReviewDecision-target a sh:PropertyShape ; sh:path ghg:target ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class ghg:EmissionResult ; sh:message "ReviewDecision.target requires exactly one EmissionResult IRI" .
+s:ReviewDecision a sh:NodeShape ; sh:targetClass ghg:ReviewDecision ; sh:property s:ReviewDecision-wasAssociatedWith, s:ReviewDecision-target .
+
+s:EvidenceArtifact a sh:NodeShape ; sh:targetClass ghg:EvidenceArtifact ; sh:property s:evidence-citation, s:evidence-license .
+s:evidence-citation a sh:PropertyShape ; sh:path ghg:citation ; sh:minCount 1 ; sh:maxCount 1 ; sh:minLength 1 ; sh:message "Evidence citation required" .
+s:evidence-license a sh:PropertyShape ; sh:path ghg:license ; sh:minCount 1 ; sh:maxCount 1 ; sh:minLength 1 ; sh:message "Evidence license required" .
