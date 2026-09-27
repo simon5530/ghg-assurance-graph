@@ -68,3 +68,26 @@ Interpretation: stored-assertion traceability only, not source authenticity, ful
 inventory coverage, assurance evaluation or certification. ISO review UNVERIFIED;
 Gate A HOLD. Parent/practitioner review pending. Potential lineage figure, no
 comparative performance claim.
+
+## 2026-09-28 — deterministic continuation, 0.2.0a1
+
+Question: can selected synthetic provenance checks, attribution and portable
+exports be executed without an AI authority? Baseline schema/benchmark 0.1 retained.
+
+Method: `uv run ghgag benchmark run`; `uv run pytest -q`; separate literal/Fraction
+truth for arithmetic and annotations declared separately from numeric answers.
+
+Observed: 297 tests pass; 10 seeded defects TP=10, FP=0, FN=0, precision/recall/F1=1;
+development 6/6 and publicly visible holdout 4/4. Three clean snapshots have zero
+findings. Annotation-assisted CarbonDiff matches 9/9 expected component labels and
+amounts, MAE=0, residual=0, total deltas +30 and +210 kgCO2e. Seven semantic labels
+are caller assertions, not model predictions. Unassisted next-year residual +300,
+absolute UNKNOWN exposure 500; no silent causal claims. CLI end-to-end crate/vault
+workflow passes. Eleven RDFLib deprecation warnings remain.
+
+Interpretation: encoded public synthetic contracts work; not blind accuracy,
+standards conformity, causal identification or empirical assurance performance.
+Independent practitioner/fresh-machine/archive gates remain open.
+
+Figure candidates: constraint coverage, assisted versus unassisted decomposition,
+portable evidence structure. Source data/standards are not embedded in figures.

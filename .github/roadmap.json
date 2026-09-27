@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "status": "GitHub roadmap provisioned and verified; Gate A HOLD",
-  "implementation_gate": "No implementation before recorded Phase 0 GO and explicit phase authorization.",
+  "status": "Engineering continuation authorized; see docs/ROADMAP_ACCEPTANCE.md and literal issue acceptance.",
+  "implementation_gate": "Owner authorized engineering through remaining phases on 2026-09-28; research Gate A HOLD unchanged; external publication/review gates remain.",
   "milestones": [
     {
       "title": "M0 Research Gate",
@@ -154,7 +154,8 @@
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
         "docs/GATE_A.md",
-        "docs/RELATED_WORK.md"
+        "docs/RELATED_WORK.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 1
     },
@@ -179,7 +180,8 @@
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
         "docs/GATE_A.md",
-        "docs/RELATED_WORK.md"
+        "docs/RELATED_WORK.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 2
     },
@@ -205,7 +207,8 @@
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
         "docs/GATE_A.md",
-        "docs/RELATED_WORK.md"
+        "docs/RELATED_WORK.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 3
     },
@@ -231,7 +234,8 @@
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
         "docs/GATE_A.md",
-        "docs/RELATED_WORK.md"
+        "docs/RELATED_WORK.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 4
     },
@@ -248,7 +252,7 @@
         "Publish versioned canonical entities, units, boundaries, periods, and positive/negative fixtures.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -257,7 +261,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 5
     },
@@ -272,7 +277,7 @@
         "Define record/version/content identity, correction semantics, and collision/migration tests.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -281,7 +286,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 6
     },
@@ -297,7 +303,7 @@
         "Generate deterministic synthetic ACME data from recorded seed/version with independent expected results.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -307,7 +313,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 7
     },
@@ -322,7 +329,7 @@
         "Catalog seeded defects with class labels, expected outcomes, and leakage-aware evaluation split.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "public seeded catalog implemented; blind evaluation not established",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -332,7 +339,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 8
     },
@@ -349,7 +357,7 @@
         "Build deterministic graph from canonical fixtures with provenance completeness tests.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -358,7 +366,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 9
     },
@@ -373,7 +382,7 @@
         "Return source-to-result evidence chains; test missing, cyclic, and ambiguous lineage.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -382,7 +391,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 10
     },
@@ -399,7 +409,7 @@
         "Validate independently specified clean/defective cases and document constraint coverage.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -409,7 +419,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 11
     },
@@ -425,7 +436,7 @@
         "Report class-wise TP/FP/FN, precision/recall denominators, unsupported cases, and reproducible commands.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -435,7 +446,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 12
     },
@@ -451,7 +463,7 @@
         "Define change classes, overlap precedence, residuals, and domain-reviewed examples.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "taxonomy implemented and tested; required independent domain review pending",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -460,7 +472,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 13
     },
@@ -476,7 +489,7 @@
         "Match stable records deterministically; expose duplicates, ambiguity, additions, and removals.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -485,7 +498,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 14
     },
@@ -501,7 +515,7 @@
         "Specify attribution convention, cross-terms, decimal precision, units, and independently checked examples.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -510,7 +524,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 15
     },
@@ -525,7 +540,7 @@
         "Assert delta reconciliation with declared tolerances and zero/negative/missing/reordered boundary cases.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -535,7 +550,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 16
     },
@@ -552,7 +568,7 @@
         "Export versioned evidence package with metadata, licenses, digests, and independent replay validation.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -561,7 +577,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 17
     },
@@ -576,7 +593,7 @@
         "Export linked reviewable notes without changing graph authority or leaking private metadata.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -586,7 +603,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 18
     },
@@ -601,7 +619,7 @@
         "Define engine-neutral inputs/outputs, provenance, failure behavior, and contract tests.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -611,7 +629,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 19
     },
@@ -626,7 +645,7 @@
         "Document PCF versus organizational scope mismatch, mapping loss, licenses, and proceed/defer decision.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "optional deferred; not implemented",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -636,7 +655,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 20
     },
@@ -651,7 +671,7 @@
         "Assess openLCA interoperability, licenses, boundaries, and adapter feasibility without assuming support.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "optional deferred; not implemented",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -661,7 +681,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 21
     },
@@ -678,7 +699,7 @@
         "Provide pinned environment, one documented reproduction workflow, artifact digests, and failure checks.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -687,7 +708,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 22
     },
@@ -702,7 +724,7 @@
         "Create truthful paper structure, figure plan, metadata, bibliography placeholders, and empty results ledger.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "local scaffold drafted; remote issue provisioned; review pending",
+      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
       "labels": [
         "type:research",
         "priority:p0"
@@ -711,7 +733,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 23
     },
@@ -726,7 +749,7 @@
         "Track current official eligibility/policies and prior-publication conflicts without promising acceptance.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "local scaffold drafted; remote issue provisioned; review pending",
+      "status": "superseded by owner SoftwareX + methods route; remote close-as-not-planned pending TLS recovery",
       "labels": [
         "type:research",
         "priority:p0"
@@ -735,7 +758,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 24
     },
@@ -750,7 +774,7 @@
         "Have an independent clean environment reproduce scientific artifacts; record environment and discrepancies.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "open: external research/reproduction/publication acceptance not met",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -759,7 +783,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 25
     },
@@ -774,7 +799,7 @@
         "Approve release criteria, scan tree/history, verify archive metadata and actual persistent identifier.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "open: external research/reproduction/publication acceptance not met",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -783,7 +808,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 26
     },
@@ -799,7 +825,7 @@
         "Check current official submission requirements, evidence, licenses, authorship, disclosures, and reproducibility.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "open: external research/reproduction/publication acceptance not met",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -808,7 +834,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 27
     },
@@ -824,7 +851,7 @@
         "Expose bounded read-only deterministic tools with authorization, schema, failure, and privacy tests.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "partial: bounded graph retrieval implemented; broader natural-language/tool evaluation deferred",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -833,7 +860,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 28
     },
@@ -848,7 +876,7 @@
         "Run opt-in Jev experiment against deterministic baseline with abstention, privacy, cost, and no authority escalation.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "optional deferred; not implemented",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -857,7 +885,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 29
     },
@@ -873,7 +902,7 @@
         "Establish distinct methodological contribution with baselines, invariants, sensitivity, and prior-publication disclosure.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "planned",
+      "status": "open: external research/reproduction/publication acceptance not met",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -882,7 +911,8 @@
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
-        "paper/softwarex/RESULTS_LEDGER.md"
+        "paper/softwarex/RESULTS_LEDGER.md",
+        "docs/ROADMAP_ACCEPTANCE.md"
       ],
       "github_number": 30
     }

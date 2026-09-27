@@ -1,4 +1,4 @@
-# Phase 1 reproducibility
+# Reproducibility
 
 Python 3.12.14 is pinned in .python-version; uv.lock pins transitive dependencies.
 Install uv through its documented trusted distribution, then from the repository:
@@ -22,7 +22,8 @@ See [publication audit](PUBLICATION_AUDIT.md) for observed versions/results and 
 JSON Schema is generated from EvidencePackage.model_json_schema(). Read JSON through
 EvidencePackage.model_validate_json or serialization.from_json. to_rdf supports only
 turtle and json-ld. RDF roundtrip means graph isomorphism, not arbitrary domain import.
-No general assurance evaluation, SHACL or CarbonDiff results are reproduced.
+Selected SHACL/domain metrics and bounded CarbonDiff are now reproduced by the
+[complete README workflow](../README.md); no general assurance claim.
 
 ## Phase 2 ACME reproduction
 Run `uv run python -m ghg_assurance_graph.benchmark --seed 20250926`, then
@@ -35,3 +36,22 @@ against a separate Fraction oracle and literal expected values.
 ## Phase 3
 See [graph commands, input/output contract and query semantics](GRAPH.md). The
 console script and packaged .rq resources must also work from an installed wheel.
+
+## Contract continuity and offline artifacts
+Application 0.2.0a1 retains canonical schema/ontology and benchmark 0.1 unchanged.
+The Phase 1–3 baseline remains in Git commit dc315cf; all original fixtures and
+expected truth are unchanged. No migration is required for those inputs. New
+external-result/1 and ghgag-evidence-1 formats have independent closed contracts.
+Old output claims remain dated; newly generated evidence records the new software.
+
+Build: `uv build` creates wheel from sdist. Export hashed runtime requirements with
+`uv export --locked --no-dev --no-emit-project --format requirements-txt`.
+Install into a new environment with `uv pip sync --require-hashes`; after obtaining
+artifacts, repeat with `--offline` and install the wheel `--offline --no-deps`.
+The cache must contain every pinned artifact: network-free execution does not mean
+a first install can obtain missing packages without a network.
+
+The CLI preserves historical graph error text, never logs supplied paths, and
+requires new export/package directories plus explicit creation/data metadata.
+Packages retain inert citations, not the referenced source documents. The verifier
+checks its own bounded profile offline; external authenticity is not established.

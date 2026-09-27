@@ -27,3 +27,9 @@ conditions remain; this is not practitioner review, novelty evidence or a GO.
 Owner separately authorized the synthetic benchmark only; see [contract](PHASE2_CONTRACT.md).
 Research HOLD remains unchanged. Gate B still requires independent domain review;
 no automatic authorization for Phase 3 or stronger standards/novelty claims.
+
+## Remaining-phase authorization — 2026-09-28
+Owner explicitly authorized engineering through all remaining original phases.
+This supersedes historical phase-only restrictions, not Gate A research HOLD.
+The [acceptance matrix](ROADMAP_ACCEPTANCE.md) preserves external, practitioner,
+fresh-machine and publication gates. No novelty or conformity approval is implied.

@@ -27,3 +27,15 @@ runtime requirements. Build uses hatchling 1.27.0; CI installs uv 0.12.19. Pytho
 3.12.14. Runtime and complete development requirements exported separately from the lockfile
 and audited with pip-audit 2.10.1: no known vulnerabilities found on 2026-09-26. This is a database snapshot,
 not a security guarantee. No paid or cloud execution dependency.
+
+## 0.2.0a1 additions — 2026-09-28
+Installed distribution metadata and locked artifacts reviewed. pySHACL 0.31.0 and
+RO-Crate 0.15.1 are Apache-2.0; owlrl 7.6.2 W3C-20150513; html5rdf 1.2.1 MIT;
+prettytable 3.18.0 BSD-3-Clause; wcwidth 0.9.1 MIT; arcp 0.2.1 Apache-2.0;
+click 8.5.0 BSD-3-Clause; Jinja2 3.1.6 BSD; MarkupSafe 3.0.3 BSD-3-Clause;
+python-dateutil 2.9.0.post0 dual Apache/BSD; requests 2.34.2 Apache-2.0;
+certifi 2026.7.22 MPL-2.0; charset-normalizer 3.5.1 MIT; idna 3.20 BSD-3-Clause;
+urllib3 2.8.0 MIT; packaging 26.3 Apache-2.0 OR BSD-2-Clause; six 1.17.0 MIT.
+All exact transitive versions/hashes remain in uv.lock. Dependencies are not vendored;
+redistributors must retain upstream notices, including MPL obligations where relevant.
+Core operations do not invoke these libraries' network capabilities.

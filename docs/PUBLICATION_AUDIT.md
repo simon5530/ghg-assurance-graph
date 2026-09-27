@@ -170,3 +170,41 @@ Limits: ISO 14064-1 clause review UNVERIFIED/deferred; source/review authenticit
 complete inventory coverage, research novelty, practitioner review, exhaustive
 external links and independent parent review remain unverified. No release/DOI,
 certification, security guarantee or Phase 4 completion claimed.
+
+## 2026-09-28 — 0.2.0a1 deterministic continuation audit
+
+Scope: original selected validation, ACME CarbonDiff, evidence/vault exports, generic
+adapter/tools, CLI and aligned documentation; baseline dc315cf. No ISO source,
+extracted text, image, private path or license metadata is included. ISO assessment
+is original paraphrase and clause references with access/coverage limits.
+
+Verification: 297 tests passed (11 upstream RDFLib deprecation warnings); Ruff lint
+and format pass; 52 Markdown files pass relative-link check; 7 docs-check tests.
+Wheel built from sdist and installed in an isolated Python 3.12.14 environment.
+Hashed runtime requirements were obtained then installed with offline mode; an
+initial missing-cache failure was correctly reported, not counted as a pass.
+Installed wheel ran packaged shapes/queries, two identical benchmark generations,
+two byte-identical crates, verification and vault export with socket connections
+blocked, outside the repository. This is same-machine isolation, not independent
+fresh-machine/practitioner reproduction.
+
+pip-audit: no known vulnerabilities in the locked runtime set or installed
+development environment; local project is not on PyPI and is not remotely audited.
+Dependency metadata/licenses recorded in DEPENDENCIES.md. No vendored libraries.
+
+Gitleaks 8.30.1 scanned tree and all seven previously reachable commits; history
+clean. A tree finding was reviewed as prose about repeated JSON member names, not
+a credential; wording clarified, no scanner rule disabled. Separate semantic
+scan of 154 historical blobs and current intended files found no private paths,
+source metadata, key material, NUL/binary artifacts or standards PDFs. Public
+repository identity and attribution references are intentional. Final postcommit
+history/tree scans and remote SHA verification are recorded in the handoff.
+
+Authenticated issue access still fails normal TLS verification. No issue closure,
+repository-description update, release, DOI or submission is claimed. Git push
+uses the existing configured route only; no trust or credential changes.
+
+Operational lesson: preserve historical CLI error contracts while adding commands;
+a passing new pipeline alone missed four existing string-contract assertions.
+Restoring backward-compatible graph errors and rerunning the full suite resolved
+the regression without weakening tests.

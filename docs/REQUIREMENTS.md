@@ -1,30 +1,26 @@
-# Requirements
+# Requirements and authority
 
-Status: Phase 0 planning; domain features are not implemented.
+Owner authorization on 2026-09-28 extends engineering through all remaining
+original phases. Research Gate A remains HOLD. The
+[original-plan acceptance matrix](ROADMAP_ACCEPTANCE.md) records mandatory versus
+optional work and nonwaivable stop gates. Historical contracts retain earlier
+promises; their phase-only restrictions do not override the new authorization.
 
-## Phase 0 acceptance contract
-- Public-ready English scaffold, truthful metadata, MIT licensing, and no real data.
-- Exact initial milestone/issue manifest with acceptance criteria and dependencies.
-- Local documentation check and an equivalent CI command; no fake test results.
-- Related-work, novelty, and journal-policy evidence reviewed before a gate decision.
-- No implementation of Phase 1 or later in this scaffold.
-
-## Research gate (HOLD)
-Require primary-source comparisons, an explicit unmet workflow, bounded research
-questions, reusable-infrastructure choices, feasible evaluation, publication-route
-review, and a recorded GO/HOLD/PIVOT with limitations. See [Gate A](GATE_A.md) and [exact-spec acceptance](PHASE0_ACCEPTANCE.md).
-The joined workflow remains an unvalidated gap hypothesis; no Phase 1 implementation.
-
-## Planned software requirements
+## Required invariants
 Stable versioned identifiers; evidence-linked deterministic results; machine-readable
-validation reports; delta reconciliation; portable packages; synthetic benchmark
-ground truth; documented failure behavior. No silent coercion of missing evidence,
-ambiguous matches, conflicting units, boundaries, periods, or factor versions.
+findings; nonadditive Scope 2 alternatives; exact decimal change reconciliation
+with residuals; portable evidence; separate synthetic ground truth. Unknown units,
+missing evidence, ambiguous matches and conflicting periods/boundaries fail closed.
+No cloud credentials or AI authority in the core.
 
-Privacy, provenance, determinism, license compatibility, and repeatability are
-cross-cutting acceptance criteria. Later issues must define executable oracles.
+Schema and benchmark contracts remain versioned 0.1; no silent migration. Public
+artifacts contain original code/docs and synthetic fixtures, never licensed
+standards or private source metadata. Tests prove encoded contracts, not source
+truth, assurance opinion, certification or full standards conformity.
 
-## Phase 1 exception — 2026-09-26
-The historical no-implementation restriction above is superseded only for the
-[bounded Phase 1 contract](PHASE1_CONTRACT.md). Gate A remains HOLD; later phases
-require a separate decision. [Model](DOMAIN_MODEL.md) describes implemented scope.
+## Research and publication
+See [Gate A](GATE_A.md), [standards scope](STANDARDS_ALIGNMENT.md) and
+[publication strategy](PUBLICATION_STRATEGY.md). Independent practitioner review,
+fresh-machine reproduction, archive/DOI and submission gates remain explicit until
+separately evidenced. SoftwareX plus a distinct methods paper is the selected route;
+no recreated JOSS scaffold or journal acceptance claim.

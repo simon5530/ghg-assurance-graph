@@ -1,4 +1,6 @@
 # Source
 
-Phase 1 canonical models, bounded Pint units and RDF serialization live in
-[ghg_assurance_graph](ghg_assurance_graph). No calculator or assurance engine.
+[ghg_assurance_graph](ghg_assurance_graph) contains typed records, bounded units,
+RDF/PROV queries, selected SHACL/domain validation, ACME CarbonDiff, portable
+packages, graph exports, generic adapters and a deterministic CLI. No production
+factor database, hosted AI or assurance opinion. See [architecture](../docs/ARCHITECTURE.md).

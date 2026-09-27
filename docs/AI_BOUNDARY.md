@@ -1,6 +1,6 @@
 # Ai Boundary
 
-Status: Phase 0 planning; domain features are not implemented.
+Status: deterministic core and bounded read-only graph tools implemented; no AI provider.
 
 ## Authority boundary
 Deterministic code, explicit constraints, and reviewed source evidence must determine
@@ -10,7 +10,7 @@ invent evidence, or issue an assurance opinion.
 
 Optional agent/Jev work belongs to M8 after the core is evaluated. Any experiment
 needs consent and privacy controls, a baseline, cost reporting, and abstention paths.
-No AI provider is called by this scaffold. Human contributors remain responsible
+No AI provider is called by this software. Human contributors remain responsible
 for citations, licenses, domain review, and final paper authorship.
 
 Record substantive AI assistance in [AI_USAGE_LOG.md](AI_USAGE_LOG.md).

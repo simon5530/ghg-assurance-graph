@@ -1,5 +1,8 @@
 # Tests
 
-[test_contract.py](test_contract.py) independently checks Phase 1 schemas, identifiers,
-units, references and serialization. Run `uv run pytest -q`. These are representation
-tests, not a benchmark, practitioner review or accounting assurance evaluation.
+Run `uv run pytest -q`. Tests cover schemas, units,
+reference/version integrity, graph queries, independent Fraction/Decimal oracles,
+SHACL and seeded defects, attribution/residuals, tamper-resistant package checking,
+export links, external adapters, bounded tools and the complete CLI pipeline.
+Tests prove encoded synthetic contracts, not practitioner assurance or full ISO
+conformity. See [evaluation limits](../docs/VALIDATION.md).

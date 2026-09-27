@@ -29,3 +29,12 @@
 ## 2026-09-27 — Experimental Phase 3
 Collision-checked canonical graph union, deterministic quantity nodes, correct
 review usage edges, five bound SPARQL queries and local ghgag graph CLI. No Phase 4.
+
+## 0.2.0a1 — 2026-09-28 (experimental continuation)
+- Selected SHACL/domain validation with measured public synthetic defect metrics.
+- Bounded Decimal CarbonDiff, explicit semantic declarations and UNKNOWN residuals.
+- Offline RO-Crate verification, graph-derived Obsidian export, generic JSON/CSV
+  external-result mapping and bounded graph tools; integrated deterministic CLI.
+- Private ISO Part 1 clause review recorded only as original paraphrases and refs.
+- Original phase matrix and metadata reconciled; Gate A and external v1.0 gates
+  remain open. Schema/benchmark 0.1 unchanged; no silent data migration.

@@ -22,3 +22,6 @@ jobs:
       - run: uv run python examples/hand_authored.py
       - run: uv run python scripts/check_docs.py
       - run: uv run python scripts/test_check_docs.py
+      - run: uv run ghgag benchmark run > benchmark-evaluation.json
+      - run: uv build
+      - run: uv run pip-audit --progress-spinner off

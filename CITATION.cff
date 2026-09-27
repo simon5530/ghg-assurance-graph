@@ -1,9 +1,10 @@
 cff-version: 1.2.0
-message: "Please cite this research scaffold only for material actually used."
+message: "Cite the exact experimental version used; no archived release DOI is assigned."
 title: "GHG Assurance Graph"
 type: software
 authors:
   - name: "GHG Assurance Graph contributors"
-version: 0.0.1
+version: 0.2.0a1
 license: MIT
-abstract: "Phase 0 research scaffold for organizational GHG evidence provenance and deterministic inventory change explanations. No domain implementation is available."
+abstract: "Offline experimental organizational GHG provenance, selected validation, deterministic change attribution and portable evidence exports."
+repository-code: "https://github.com/simon5530/ghg-assurance-graph"

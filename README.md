@@ -1,63 +1,74 @@
 # GHG Assurance Graph
 
-**v0.1.0a1 — Research prototype / pre-alpha. Experimental Phase 1–3 model, benchmark and provenance queries.**
+**v0.2.0a1 — research prototype, not an assurance opinion or certification.**
 
-A proposed research toolkit for organizational greenhouse-gas evidence provenance,
-inspectable assurance constraints, deterministic inventory change explanations, and
-reproducible evidence packages. This is **not another emissions calculator** and is
-not an assurance opinion, certification, or regulatory compliance service.
+An offline Python toolkit that turns declared organizational greenhouse-gas
+evidence into a queryable RDF/PROV graph, checks selected evidence constraints,
+compares synthetic inventory versions and exports portable evidence. It is not a
+production factor database, complete inventory calculator or compliance service.
 
-## Current status
+## Implemented and bounded
 
-Implemented: 17 typed canonical records, version/reference integrity, bounded Pint
-units, first RDF/PROV mapping, JSON/JSON-LD/Turtle serialization, ten hand-authored
-examples, schema/domain tests, locked packaging and CI. Phase 2 adds the
-[ACME synthetic benchmark](benchmark/README.md), three snapshots, independent
-amount/change truth and ten isolated defects. [Standards limits](docs/STANDARDS_ALIGNMENT.md).
+- 17 canonical record types, explicit units/versions and five safe graph queries.
+- [ACME benchmark](benchmark/README.md): three snapshots, independent numeric truth
+  and ten defective fixtures; all factors are invented and nonproduction.
+- [SHACL and domain validation](docs/VALIDATION.md): packaged pySHACL shapes plus
+  independent raw-row rules; ten true positives, zero false positives/negatives on
+  the public synthetic fixture set—not a blind generalization result.
+- [CarbonDiff](docs/CARBONDIFF.md): exact Decimal reconciliation, stable-ID matching,
+  explicit semantic declarations and visible UNKNOWN residuals. Seven supplied
+  semantic labels plus two mechanical components match nine expected components;
+  this is not autonomous causal inference.
+- [RO-Crate packages](docs/EVIDENCE.md), [Obsidian notes](docs/OBSIDIAN.md),
+  [generic external JSON/CSV adapter](docs/ADAPTERS.md) and
+  [bounded read-only tools](docs/TOOLS.md).
 
-Phase 3 adds a collision-checked graph builder, five safe SPARQL templates and
-local CLI: [graph guide](docs/GRAPH.md).
+**Research Gate A remains HOLD.** Owner authorization extends engineering through
+the remaining phases, not research novelty, practitioner approval or publication
+readiness. [Exact phase matrix](docs/ROADMAP_ACCEPTANCE.md). Phase 11/v1.0 is not
+complete: independent fresh-machine/practitioner review, archive/DOI, official
+SoftwareX template and human publication approvals remain external gates.
+PACT/openLCA/Brightway integrations and Jev are not implemented or required.
 
-Not implemented: SHACL assurance, CarbonDiff,
-RO-Crate, adapters or AI. No practitioner validation, measured
-benchmark evaluation, release archive, DOI or journal acceptance is claimed.
+[ISO review](docs/STANDARDS_ALIGNMENT.md) inspected English ISO 14064-1:2018
+privately, including normative Annexes D/E. Only paraphrases and references are
+published. Gas-resolved reporting, completeness/significance, uncertainty and
+organizational controls remain gaps; no full conformity claim.
 
-**Research gate: HOLD.** [Decision and conditions](docs/GATE_A.md).
-[Related-work evidence](docs/RELATED_WORK.md) supports only a narrow gap hypothesis.
-The public repository, 11 milestones, 18 roadmap labels and 30 issues are verified; see the
-[acceptance record](docs/PHASE0_ACCEPTANCE.md) and [audit](docs/PUBLICATION_AUDIT.md).
-The owner authorized a [bounded Phase 1 exception](docs/PHASE1_CONTRACT.md) on
-2026-09-26 and separately authorized [bounded Phase 2](docs/PHASE2_CONTRACT.md).
-The owner separately authorized [bounded Phase 3](docs/PHASE3_CONTRACT.md) on
-2026-09-27 with ISO clause review deferred. Research HOLD is unchanged; Phase 4
-and later phases are not authorized by this implementation.
+## Reproduce locally
 
-## Reproduce Phase 1
-
-Python 3.12.14 and uv; no API key or cloud model:
+Python 3.12.14 and uv; no API key or cloud model.
 
 ```sh
 uv sync --locked
+uv run ghgag benchmark run
+uv run ghgag graph build benchmark/generated/2026-v1
+uv run ghgag validate benchmark/generated/2026-v1
+uv run ghgag diff benchmark/generated/2025-v2 benchmark/generated/2026-v1
+uv run ghgag package create benchmark/generated/2026-v1 --out artifacts/acme-crate --created-at 2026-09-28T00:00:00Z --data-version acme-0.1-2026-v1
+uv run ghgag package verify artifacts/acme-crate
+uv run ghgag export obsidian artifacts/acme-vault --input benchmark/generated/2026-v1
 uv run pytest -q
-uv run python examples/hand_authored.py
-uv run python scripts/check_docs.py
-uv run python scripts/test_check_docs.py
 ```
 
-See [ten examples](examples/README.md), [reference brief](docs/REFERENCE_BRIEF.md),
-[dependency licenses](docs/DEPENDENCIES.md) and [reproducibility](docs/REPRODUCIBILITY.md).
+Output directories must be new. The example timestamp is a declared reproducibility
+input, not a claim about when a user runs it. Default diff leaves unsupported
+semantic changes UNKNOWN: +210 kgCO2e delta, +300 signed residual, 500 absolute
+unknown exposure for 2025-v2→2026-v1. Location/market-based totals are never added.
+Validation exit codes: 0 clean selected checks, 1 findings, 2 invalid request.
 
-## Start here
+## Documentation and publication
 
-- [Problem and research questions](docs/PROBLEM.md)
-- [Requirements and phase gate](docs/REQUIREMENTS.md)
-- [Architecture](docs/ARCHITECTURE.md) and [domain model](docs/DOMAIN_MODEL.md)
-- [Ontology](docs/ONTOLOGY.md), [CarbonDiff](docs/CARBONDIFF.md), [validation](docs/VALIDATION.md)
-- [Reproducibility](docs/REPRODUCIBILITY.md) and [publication strategy](docs/PUBLICATION_STRATEGY.md)
-- [AI boundary](docs/AI_BOUNDARY.md) and [AI usage log](docs/AI_USAGE_LOG.md)
-- [Roadmap manifest](.github/roadmap.json)
-- [SoftwareX outline](paper/softwarex/OUTLINE.md), [Future methods paper](paper/methods/FUTURE_PAPER.md)
-- [Contribution guide](CONTRIBUTING.md), [governance](GOVERNANCE.md), [security](SECURITY.md)
-- [Changelog](CHANGELOG.md), [citation metadata](CITATION.cff), [MIT license](LICENSE)
+- [Architecture](docs/ARCHITECTURE.md), [requirements](docs/REQUIREMENTS.md),
+  [domain model](docs/DOMAIN_MODEL.md), [ontology](docs/ONTOLOGY.md)
+- [Reproducibility](docs/REPRODUCIBILITY.md), [dependencies](docs/DEPENDENCIES.md),
+  [security](SECURITY.md), [audit](docs/PUBLICATION_AUDIT.md)
+- [Related work](docs/RELATED_WORK.md), [research decision](docs/GATE_A.md),
+  [publication strategy](docs/PUBLICATION_STRATEGY.md), [roadmap](.github/roadmap.json)
+- [SoftwareX draft](paper/softwarex/OUTLINE.md),
+  [results ledger](paper/softwarex/RESULTS_LEDGER.md),
+  [distinct methods research](paper/methods/FUTURE_PAPER.md)
+- [AI disclosure](docs/AI_USAGE_LOG.md), [contributing](CONTRIBUTING.md),
+  [changelog](CHANGELOG.md), [citation](CITATION.cff), [MIT license](LICENSE)
 
-Use synthetic data only in public examples. Research outputs require domain review.
+No journal submission, DOI, independent assurance or empirical adoption is claimed.

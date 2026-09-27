@@ -50,3 +50,13 @@ tests and documentation. Owner authorized experimental Phase 3 with ISO review
 deferred. Automated verification is recorded in the publication audit; independent
 parent review and practitioner/human verification remain pending, not inferred
 from passing tests. No AI dependency in the runtime.
+
+## 2026-09-28 — deterministic continuation
+Tool/model: OpenClaw with openai/gpt-6-astra. AI drafted validation, CarbonDiff,
+evidence/export, generic adapter/tools, CLI and tests/docs; parallel bounded
+workers were synthesized by the coordinating agent. Local ISO inspection was used
+only for paraphrased coverage assessment, never redistributed source material.
+Human verification: not independently completed; domain/publication review pending.
+Tests: 297 passing integration/unit/adversarial tests, 7 documentation-check tests,
+Ruff and doc links; literal/Fraction oracles independent of production arithmetic.
+Design owner: human project owner; AI does not assume authorship or assurance.
