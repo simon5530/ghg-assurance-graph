@@ -1,0 +1,213 @@
+{
+  "schema_version": "external-result/1",
+  "origin": "externally-calculated",
+  "provenance": [
+    {
+      "logical_id": "urn:ghgag:electricity-location-org",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-org:v1",
+      "label": "org",
+      "supersedes": null,
+      "kind": "Organization"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-reviewer",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-reviewer:v1",
+      "label": "reviewer",
+      "supersedes": null,
+      "kind": "Organization"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-site",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-site:v1",
+      "label": "site",
+      "supersedes": null,
+      "kind": "Facility",
+      "organization": "urn:ghgag:electricity-location-org:v1",
+      "geography": "synthetic-region"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-period",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-period:v1",
+      "label": "period",
+      "supersedes": null,
+      "kind": "ReportingPeriod",
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-boundary",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-boundary:v1",
+      "label": "boundary",
+      "supersedes": null,
+      "kind": "BoundaryDefinition",
+      "organization": "urn:ghgag:electricity-location-org:v1",
+      "consolidation": "unknown",
+      "description": "Synthetic example boundary; not approved"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-inventory",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-inventory:v1",
+      "label": "inventory",
+      "supersedes": null,
+      "kind": "InventoryVersion",
+      "organization": "urn:ghgag:electricity-location-org:v1",
+      "period": "urn:ghgag:electricity-location-period:v1",
+      "boundary": "urn:ghgag:electricity-location-boundary:v1",
+      "status": "draft"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-source",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-source:v1",
+      "label": "source",
+      "supersedes": null,
+      "kind": "EmissionSource",
+      "facility": "urn:ghgag:electricity-location-site:v1",
+      "scope": 2,
+      "category": null,
+      "scope2_basis": "location-based"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-evidence",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-evidence:v1",
+      "label": "evidence",
+      "supersedes": null,
+      "kind": "EvidenceArtifact",
+      "citation": "Synthetic external export authored for adapter tests; declared 50 kg_CO2e from 100 kWh and 0.5 kg_CO2e/kWh. Not a real grid factor or verified calculation.",
+      "license": "MIT",
+      "sha256": null,
+      "synthetic": true
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-quality",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-quality:v1",
+      "label": "quality",
+      "supersedes": null,
+      "kind": "DataQualityAssessment",
+      "rating": "unknown",
+      "rationale": "Hand-authored illustrative values",
+      "uncertainty": "Not quantified"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-activity",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-activity:v1",
+      "label": "activity",
+      "supersedes": null,
+      "kind": "ActivityRecord",
+      "source": "urn:ghgag:electricity-location-source:v1",
+      "inventory": "urn:ghgag:electricity-location-inventory:v1",
+      "quantity": {
+        "value": 100,
+        "unit": "kWh"
+      },
+      "evidence": "urn:ghgag:electricity-location-evidence:v1",
+      "quality": "urn:ghgag:electricity-location-quality:v1",
+      "data_origin": "primary"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-gwp",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-gwp:v1",
+      "label": "gwp",
+      "supersedes": null,
+      "kind": "GWPSet",
+      "basis": "Synthetic illustrative CO2e basis, not IPCC",
+      "horizon_years": 100,
+      "evidence": "urn:ghgag:electricity-location-evidence:v1"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-method",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-method:v1",
+      "label": "method",
+      "supersedes": null,
+      "kind": "CalculationMethod",
+      "method_type": "external-result",
+      "description": "Externally calculated synthetic electricity total, supplied by fixture author; adapter performs no calculation.",
+      "allocation": "No allocation in this synthetic single-source case",
+      "evidence": "urn:ghgag:electricity-location-evidence:v1"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-factor",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-factor:v1",
+      "label": "factor",
+      "supersedes": null,
+      "kind": "EmissionFactor",
+      "value": 0.5,
+      "numerator": "kg_CO2e",
+      "denominator": "kWh",
+      "evidence": "urn:ghgag:electricity-location-evidence:v1",
+      "period": "urn:ghgag:electricity-location-period:v1",
+      "geography": "synthetic-region",
+      "gwp": "urn:ghgag:electricity-location-gwp:v1",
+      "boundary": "urn:ghgag:electricity-location-boundary:v1",
+      "method": "urn:ghgag:electricity-location-method:v1"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-review",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-review:v1",
+      "label": "review",
+      "supersedes": null,
+      "kind": "ReviewDecision",
+      "target": "urn:ghgag:electricity-location-result:v1",
+      "reviewer": "urn:ghgag:electricity-location-reviewer:v1",
+      "status": "unreviewed",
+      "timestamp": "2026-09-26T00:00:00Z",
+      "rationale": "No practitioner assurance performed"
+    },
+    {
+      "logical_id": "urn:ghgag:electricity-location-finding",
+      "version": 1,
+      "id": "urn:ghgag:electricity-location-finding:v1",
+      "label": "finding",
+      "supersedes": null,
+      "kind": "ValidationFinding",
+      "target": "urn:ghgag:electricity-location-result:v1",
+      "severity": "info",
+      "rule": "illustration-only",
+      "message": "Authored finding, not an executed assurance rule"
+    }
+  ],
+  "calculation": {
+    "logical_id": "urn:ghgag:electricity-location-run",
+    "version": 1,
+    "id": "urn:ghgag:electricity-location-run:v1",
+    "label": "run",
+    "supersedes": null,
+    "kind": "CalculationRun",
+    "activity": "urn:ghgag:electricity-location-activity:v1",
+    "factor": "urn:ghgag:electricity-location-factor:v1",
+    "method": "urn:ghgag:electricity-location-method:v1",
+    "gwp": "urn:ghgag:electricity-location-gwp:v1",
+    "boundary": "urn:ghgag:electricity-location-boundary:v1",
+    "inventory": "urn:ghgag:electricity-location-inventory:v1",
+    "performed_at": "2026-09-26T00:00:00Z",
+    "software": "synthetic-external-export/1"
+  },
+  "result": {
+    "logical_id": "urn:ghgag:electricity-location-result",
+    "version": 1,
+    "id": "urn:ghgag:electricity-location-result:v1",
+    "label": "result",
+    "supersedes": null,
+    "kind": "EmissionResult",
+    "calculation": "urn:ghgag:electricity-location-run:v1",
+    "inventory": "urn:ghgag:electricity-location-inventory:v1",
+    "quantity": {
+      "value": 50,
+      "unit": "kg_CO2e"
+    },
+    "review": "urn:ghgag:electricity-location-review:v1"
+  }
+}
