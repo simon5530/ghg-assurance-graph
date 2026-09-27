@@ -11,6 +11,9 @@ requires-python = ">=3.12,<3.13"
 license = "MIT"
 dependencies = ["pydantic>=2.11,<3", "pint>=0.24,<1", "rdflib>=7.1,<8"]
 
+[project.scripts]
+ghgag = "ghg_assurance_graph.cli:main"
+
 [dependency-groups]
 dev = ["pytest>=8,<10", "jsonschema>=4.23,<5", "ruff>=0.11,<1", "pip-audit>=2.9,<3"]
 

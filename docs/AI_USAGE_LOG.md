@@ -43,3 +43,10 @@ Human verification: owner authorized bounded phase; practitioner/ISO licensed
 review and independent parent verification are not inferred from automated tests.
 Design decision owner: human domain lead retains responsibility. No AI is needed
 to generate or test the benchmark.
+
+## 2026-09-27 — Phase 3
+OpenClaw / openai/gpt-6-astra assisted the contract, graph/CLI/query implementation,
+tests and documentation. Owner authorized experimental Phase 3 with ISO review
+deferred. Automated verification is recorded in the publication audit; independent
+parent review and practitioner/human verification remain pending, not inferred
+from passing tests. No AI dependency in the runtime.

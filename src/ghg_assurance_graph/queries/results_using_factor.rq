@@ -1,0 +1,6 @@
+PREFIX ghg: <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT DISTINCT ?result WHERE {
+ ?result a ghg:EmissionResult; prov:wasGeneratedBy ?calculation.
+ ?calculation ghg:factor ?target; prov:used ?target.
+}

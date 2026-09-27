@@ -1,6 +1,6 @@
 # Architecture
 
-Status: Phase 0 planning; domain features are not implemented.
+Status: experimental Phase 1–3 implemented; later workflow remains planned.
 
 ## Proposed workflow (not implemented)
 Trigger: explicit local import of a versioned synthetic inventory.
@@ -16,8 +16,8 @@ Storage: versioned local artifacts and portable graph files; no service yet.
 Logging: planned structured run metadata without secrets or source data leakage.
 Failure: reject malformed inputs; report incomplete/ambiguous evidence; never invent it.
 
-Prefer established RDF, SHACL, PROV-O and RO-Crate infrastructure; library and
-version choices await the research gate. One deterministic pipeline is the default;
+Prefer established RDF, SHACL, PROV-O and RO-Crate infrastructure. Implemented
+library versions are locked; research Gate A remains HOLD. One deterministic pipeline is the default;
 agents are an optional later interface, not the core architecture.
 
 ## Implemented Phase 1 slice — 2026-09-26
@@ -25,5 +25,10 @@ Explicit local JSON/authored records → Pydantic package validation → Pint di
 checks → RDFLib export. Storage is caller-owned local files; no service, database,
 authentication or agent. Inputs remain supplied claims. Validation failure raises
 Pydantic errors before serialization. Source modules: models.py, units.py and
-serialization.py. Everything after basic serialization in the proposed workflow
-above remains future work under research HOLD. [Contract](PHASE1_CONTRACT.md).
+serialization.py. At that checkpoint, downstream steps remained future work.
+[Contract](PHASE1_CONTRACT.md). Phase 3 extension is described below.
+
+## Implemented Phase 3 slice — 2026-09-27
+Validated local packages → collision-checked union → existing RDFLib serializer →
+allowlisted bound SPARQL SELECT → sorted JSON/Turtle stdout. No network, database,
+RDF import, remote context, AI or SHACL. See [graph guide](GRAPH.md).

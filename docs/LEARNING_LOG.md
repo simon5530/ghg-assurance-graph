@@ -58,3 +58,21 @@ Also: a valid partial fixture is not a standards-compliant complete inventory.
 Runnable example: `uv run pytest tests/test_benchmark.py -q`. Explain why LB/MB
 are alternatives, why organic growth differs from acquisition, and why a factor
 change cannot alone establish real-world abatement.
+
+## Phase 3 — identity, joins and provenance (2026-09-27)
+A revision URI is an identity contract, not a merge hint: unequal content at one
+URI must fail before union. A repeated row label across inventories is not a
+revision edge. Reuse RDFLib/PROV-O instead of a parallel graph stack.
+
+Observed failure → redundant type and generic-used joins expanded intermediate
+SPARQL matches despite a small result set. Discriminating check → inspect RDFLib
+algebra and compare a role-specific query on the same canonical graph. Recovery →
+query role-specific edges, leave reference/type/PROV integrity to independently
+asserted canonical tests, and bind target directly. Proof → all 45 exact answer
+sets and subprocess timeouts pass. This is a query design lesson, not a speed
+benchmark or permission to skip validation. [Runnable example](GRAPH.md).
+
+Explain why a review uses a result rather than generates it; why a graph claim is
+not source truth; and why an allowlisted template is safer than regex filtering
+arbitrary SPARQL. Interrupted source writes are inspected and syntax-tested before
+resuming; saved files are not evidence of a completed implementation.

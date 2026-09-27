@@ -1,5 +1,7 @@
 """JSON domain roundtrip and RDF export; never fetch external contexts."""
 
+from hashlib import sha256
+
 from rdflib import RDF, BNode, Graph, Literal, Namespace, URIRef
 from rdflib.namespace import PROV
 
@@ -45,7 +47,7 @@ def to_graph(package: EvidencePackage) -> Graph:
             if field in REFERENCES:
                 obj = URIRef(value)
             elif isinstance(value, dict):
-                obj = BNode()
+                obj = BNode(sha256(f"{record.id}/{field}".encode()).hexdigest())
                 for key, nested in value.items():
                     graph.add((obj, GHG[key], Literal(nested)))
             else:
@@ -59,6 +61,8 @@ def to_graph(package: EvidencePackage) -> Graph:
                 "boundary",
             ):
                 graph.add((subject, PROV.used, obj))
+        if record.kind == "ReviewDecision":
+            graph.add((subject, PROV.used, URIRef(record.target)))
         graph.add((subject, GHG.schemaVersion, Literal(package.schema_version)))
     return graph
 

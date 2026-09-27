@@ -1,0 +1,22 @@
+PREFIX ghg: <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT DISTINCT (?target AS ?result) ?calculation ?activity ?source ?evidence ?factor ?factorVersion
+ ?factorEvidence ?method ?methodVersion ?methodEvidence ?gwp ?gwpEvidence ?boundary
+ ?inventory ?inventoryVersion ?period ?review ?reviewer ?status ?value ?unit
+WHERE {
+ ?target prov:wasGeneratedBy ?calculation;
+   ghg:inventory ?inventory; ghg:review ?review; ghg:quantity ?quantity.
+ ?quantity ghg:value ?value; ghg:unit ?unit.
+ ?calculation ghg:activity ?activity; ghg:factor ?factor;
+   ghg:method ?method; ghg:gwp ?gwp; ghg:boundary ?boundary; ghg:inventory ?inventory.
+ ?activity ghg:source ?source; prov:wasDerivedFrom ?evidence;
+   ghg:inventory ?inventory.
+ ?factor ghg:version ?factorVersion;
+   prov:wasDerivedFrom ?factorEvidence.
+ ?method ghg:version ?methodVersion;
+   prov:wasDerivedFrom ?methodEvidence.
+ ?gwp prov:wasDerivedFrom ?gwpEvidence.
+ ?inventory ghg:version ?inventoryVersion; ghg:period ?period.
+ ?review ghg:target ?target;
+   prov:wasAssociatedWith ?reviewer; ghg:status ?status.
+}

@@ -25,3 +25,7 @@
   ten isolated nonconforming fixtures and fail-closed fixture preflight.
 - Added authoritative standards-alignment evidence and explicit ISO/completeness limits.
 - No SHACL, general provenance graph builder, CarbonDiff or AI product implementation.
+
+## 2026-09-27 — Experimental Phase 3
+Collision-checked canonical graph union, deterministic quantity nodes, correct
+review usage edges, five bound SPARQL queries and local ghgag graph CLI. No Phase 4.

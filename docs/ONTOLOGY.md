@@ -13,6 +13,7 @@ changes mint a new version namespace; no equivalence with PECO is asserted yet.
 - EmissionResult.calculation → prov:wasGeneratedBy.
 - Record.supersedes → prov:wasRevisionOf.
 - ReviewDecision.reviewer → prov:wasAssociatedWith.
+- ReviewDecision.target additionally → prov:used (review did not generate result).
 - Evidence links → prov:wasDerivedFrom.
 - CalculationRun inputs activity/factor/method/GWP/boundary → prov:used, in addition
   to role-specific domain properties preserving which input served which role.
@@ -27,7 +28,7 @@ semantics. Unit literals preserve the bounded Pint vocabulary, not QUDT alignmen
 
 JSON domain roundtrip is supported. JSON-LD/Turtle semantic graph roundtrip is tested
 by RDF graph isomorphism, not byte equality or domain import. No remote JSON-LD
-context is fetched. Arbitrary untrusted RDF import, SHACL, RDFS/OWL inference,
-query library and comprehensive provenance builder are later phases. Serialization
-is the minimum first RDF graph required by Phase 1, not completion of Phase 3.
+context is fetched. Arbitrary untrusted RDF import, SHACL, RDFS/OWL inference
+and general RDF assurance validation remain later work. Phase 3 extends this
+serializer with a [collision-checked builder and five queries](GRAPH.md).
 PROV-O relationships neither authenticate evidence nor prove its truth.

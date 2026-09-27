@@ -1,6 +1,6 @@
 # GHG Assurance Graph
 
-**v0.1.0a1 — Research prototype / pre-alpha. Experimental Phase 1 model + Phase 2 benchmark.**
+**v0.1.0a1 — Research prototype / pre-alpha. Experimental Phase 1–3 model, benchmark and provenance queries.**
 
 A proposed research toolkit for organizational greenhouse-gas evidence provenance,
 inspectable assurance constraints, deterministic inventory change explanations, and
@@ -15,7 +15,10 @@ examples, schema/domain tests, locked packaging and CI. Phase 2 adds the
 [ACME synthetic benchmark](benchmark/README.md), three snapshots, independent
 amount/change truth and ten isolated defects. [Standards limits](docs/STANDARDS_ALIGNMENT.md).
 
-Not implemented: full provenance query workflow, SHACL assurance, CarbonDiff,
+Phase 3 adds a collision-checked graph builder, five safe SPARQL templates and
+local CLI: [graph guide](docs/GRAPH.md).
+
+Not implemented: SHACL assurance, CarbonDiff,
 RO-Crate, adapters or AI. No practitioner validation, measured
 benchmark evaluation, release archive, DOI or journal acceptance is claimed.
 
@@ -25,7 +28,9 @@ The public repository, 11 milestones, 18 roadmap labels and 30 issues are verifi
 [acceptance record](docs/PHASE0_ACCEPTANCE.md) and [audit](docs/PUBLICATION_AUDIT.md).
 The owner authorized a [bounded Phase 1 exception](docs/PHASE1_CONTRACT.md) on
 2026-09-26 and separately authorized [bounded Phase 2](docs/PHASE2_CONTRACT.md).
-Neither changes research HOLD to GO or authorizes Phase 3.
+The owner separately authorized [bounded Phase 3](docs/PHASE3_CONTRACT.md) on
+2026-09-27 with ISO clause review deferred. Research HOLD is unchanged; Phase 4
+and later phases are not authorized by this implementation.
 
 ## Reproduce Phase 1
 

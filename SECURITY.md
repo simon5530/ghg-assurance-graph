@@ -18,3 +18,9 @@ proof. Remote protection settings and anonymous access need separate verificatio
 The system is intended to assist evidence review, not to certify inventories,
 replace competent assurance professionals, or issue legal/compliance determinations.
 AI-generated explanations must never become the authority for calculations or rules.
+
+## Phase 3 query boundary
+Only packaged SELECT templates and validated URN bindings are accepted; no raw
+SPARQL, SERVICE, UPDATE, RDF import, remote contexts or evidence URL fetching.
+Explicit local input files remain operator-controlled, not a filesystem sandbox.
+Errors omit input paths/content. Review and provenance assertions are not signatures.

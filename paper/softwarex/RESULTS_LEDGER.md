@@ -56,3 +56,15 @@ No SHACL detector, inferred change taxonomy, performance/precision/recall/F1,
 production compliance or research novelty is measured. Figure candidate: future
 scenario/evidence table, not yet a quantitative assurance evaluation figure.
 ISO full-clause review remains unverified; see standards alignment. Gate A HOLD.
+
+## 2026-09-27 — Phase 3 provenance
+Question: can each clean synthetic result resolve its asserted lineage?
+Method: tests/test_graph.py independently checks 45 result chains across three
+snapshots, five query answer sets, explicit revisions, collisions and failure paths.
+Observed: 45/45 traceable required chains; no inferred cross-snapshot revisions.
+Version: software 0.1.0a1, benchmark 0.1, ontology 0.1; exact published commit is
+reported after publication. Reproduce with [graph guide](../../docs/GRAPH.md).
+Interpretation: stored-assertion traceability only, not source authenticity, full
+inventory coverage, assurance evaluation or certification. ISO review UNVERIFIED;
+Gate A HOLD. Parent/practitioner review pending. Potential lineage figure, no
+comparative performance claim.

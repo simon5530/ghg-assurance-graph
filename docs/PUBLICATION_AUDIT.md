@@ -123,3 +123,50 @@ PDF sections inspected through PDF tooling, no redistributed source text. No
 complete inventory, assurance, legal compliance, secret holdout, or general
 detector/CarbonDiff claim. Scope2 MB is unavailable, not zero. No auth/service
 restart path exists. Scanner passes do not guarantee absence of semantic risk.
+
+## Phase 3 publication gate — 2026-09-27
+
+Scope baseline 587590e: experimental provenance graph only, owner-authorized with
+ISO clause review deferred. No standards source, licensed excerpts, private paths,
+production data or new dependencies. Gate A HOLD unchanged; methods/SoftwareX
+retained, no JOSS scaffold. 94 publication-scope UTF-8 text files reviewed.
+
+Observed: Python 3.12.14, uv 0.12.19, pytest 9.1.1, Ruff 0.16.9, pip-audit 2.10.1,
+Gitleaks 8.30.1. Full regression: 161 tests pass (86 prior + 75 Phase 3); seven
+documentation oracle tests and relative links in 45 Markdown files pass. Ruff
+lint/format, wheel/sdist build, unchanged benchmark regeneration pass. Ten existing
+RDFLib JSON-LD deprecation warnings remain, not suppressed.
+
+All 45 synthetic results resolve required assertion lineage; explicit revision
+chains, cross-snapshot isolation, identical deduplication/conflict rejection,
+missing/wrong references, cycles, ambiguous identities, unsafe identifiers and
+query names, deterministic CLI output and redacted errors tested. No SHACL or
+general assurance detector added. Direct evidence support is not transitive truth.
+
+Isolated publication copy with a new locked environment reproduced all 161 tests,
+docs, generation, build and CLI. Separately installed wheel includes five query
+resources and returns byte-identical explanation; wheel proof repeated with the
+exact lock-exported runtime versions. Same machine, not independent replication.
+Runtime and installed development dependency audits: no known vulnerabilities;
+unpublished project itself is not covered by PyPI advisory lookup. No dependency
+version/lock change; existing license review applies, RDFLib BSD-3-Clause, Pydantic
+MIT and Pint BSD metadata rechecked.
+
+Publication tree scanner: approximately 797 KB, no leaks. All six reachable
+precommit commits: approximately 781 KB, no leaks. Final staged tree and postcommit
+history are rescanned before push. Separate semantic review covered filenames,
+diff, text and synthetic fixtures; no private operational context or binary
+artifacts intended for publication. Build/cache/local reports remain ignored.
+
+PUBLIC/main/MIT verified anonymously; Git transport reads the intended remote.
+Authenticated GitHub CLI currently fails certificate verification; no trust
+changes, TLS bypass, credentials extraction or alternative authenticated route
+used. Issue #9/#10 acceptance read anonymously; no new issues created. Issue
+closure/security-control authenticated readback may require parent follow-up if
+the CLI blocker persists. Remote SHA/blob hashes and hosted CI are verified after
+push and reported outside this self-referential audit. Noreply commit identity.
+
+Limits: ISO 14064-1 clause review UNVERIFIED/deferred; source/review authenticity,
+complete inventory coverage, research novelty, practitioner review, exhaustive
+external links and independent parent review remain unverified. No release/DOI,
+certification, security guarantee or Phase 4 completion claimed.
