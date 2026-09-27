@@ -3,7 +3,7 @@
 Experimental, offline, selected-source validation. **Gate A remains HOLD.**
 
 Dependency: pyshacl==0.31.0 (also initially tested with 0.30.1). Dependency
-metadata and lock integration are owned by the parent integration task. Turtle resource lives at
+metadata and lock are committed. Turtle resource lives at
 src/ghg_assurance_graph/shapes/core.ttl and is loaded with importlib.resources.
 
 ## API (ghg_assurance_graph.validation)
@@ -43,11 +43,14 @@ performance or independent blind evaluation. See PHASE4_CONTRACT.md for limits.
 
 The detector does not import the benchmark generator or read truth. The tests
 load committed raw fixtures and give only rows to the detector. Truth is loaded
-separately by the evaluator. Exact Decimal comparisons have no undocumented
-rounding tolerance; supported conversions are tonne/kg and kWh/MJ plus identity.
+separately by the evaluator. Decimal strings are converted to exact rational arithmetic, independent of the
+ambient Decimal context, with no undocumented rounding tolerance; supported conversions are tonne/kg and kWh/MJ plus identity.
 Allocation applies exactly once. Unknown conversions and invalid quantities do
 not produce a guessed corrected result. Canonical quantities remain float-based
-under the existing model; raw domain arithmetic uses source decimal strings.
+under the existing model; raw domain arithmetic uses source decimal strings (at most 60 digits and exponent
+magnitude 60). Raw-graph checks also require factor version/units and review
+status/timestamp presence and lexical form; calendar validity remains a canonical
+model check.
 
 ## Security and assurance boundary
 

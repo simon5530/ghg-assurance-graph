@@ -79,12 +79,16 @@ through OCR and is not used as an implementation oracle. OCR can introduce
 character and layout errors; this is a source-based engineering assessment, not
 an authenticated transcription or an exhaustive professional interpretation.
 
-The implementation inspected is the existing canonical model, fixed ACME benchmark
+The baseline standards review inspected the canonical model, fixed ACME benchmark
 and lineage/query layer: [models](../src/ghg_assurance_graph/models.py),
 [benchmark code](../src/ghg_assurance_graph/benchmark.py),
 [scenario assumptions](../benchmark/README.md), and
-[graph layer](../src/ghg_assurance_graph/graph.py). Concurrent/new development is
-not credited as implemented standards coverage in this review.
+[graph layer](../src/ghg_assurance_graph/graph.py). The subsequent engineering review
+also credits selected [SHACL/raw validation](../src/ghg_assurance_graph/validation.py),
+[CarbonDiff](../src/ghg_assurance_graph/diff.py) and
+[portable evidence](../src/ghg_assurance_graph/evidence.py), with executable tests
+in test_validation.py, test_diff.py and test_evidence.py. These extend checks,
+reconciliation and integrity portability, not the normative scope of conformity.
 
 | Inspected ISO reference | Relevant implementation / executable evidence | Coverage and residual gap |
 |---|---|---|
@@ -95,8 +99,12 @@ not credited as implemented standards coverage in this review.
 | §§5.2.2,6.3,9.3.1 | GWPSet records basis/horizon; explicit CO2e units; double-characterization and unverified gas factors fail in benchmark tests | ISO expects direct results distinguished by gas/group and appropriate GWP use, with a 100-year reporting basis; §6.3 recognizes GWP may already be embedded in factors. This model only carries precharacterized totals and invented A/B bases. It cannot produce the required gas-resolved inventory or substantiate an IPCC basis; conversion of kg to tonnes alone does not close this gap |
 | §§5.2.4,6.3; normative Annex D | test_no_gas_or_market_or_netting_fallback rejects unsupported biogenic/removal streams; scenario explicitly contains none | Refusal is an honest scope boundary, not implementation of biogenic accounting. Separate anthropogenic biogenic CO2 treatment does not exclude biogenic CH4/N2O from relevant anthropogenic emissions. Natural biogenic treatment and removal quantification are unimplemented |
 | §6.3; normative Annex E §§E.1–E.3; §9.3.3 | Purchased electricity has a declared location-based result; absent contractual evidence causes market-based rejection; test_no_empty_or_dual_sum. No export scenario | Annex E requires location-based imported-consumption accounting; market-based information is an additional option subject to instrument conditions, not a blanket ISO dual-reporting requirement. Synthetic grid factors do not prove grid representativeness. Annex E prefers reporting-year grid data if available, otherwise recent data. Lifecycle/loss components need separate disclosure. Exported generation is not a deduction from direct emissions; no such export control is implemented here |
-| §§6.4.1–6.4.2; §9.3.1 | 2025 base year, explicit +30 restatement, change categories and non-comparability warning. test_crossperiod_reconciliation and test_activity_first_convention | Reconciles fixture deltas; not a general review/recalculation procedure. The 0.5% threshold and activity-first decomposition are project policy. Substantial methodology/factor/error/structural changes require review; ordinary production changes are not a base-year recalculation basis. Later GWP/method/allocation changes are not harmonized |
-| §§8.1–8.2; Annex C §§C.3,C.4.6 | Immutable revision identities, content digests, resolvable typed references and result lineage. test_immutable_and_digest; test_revision_chain_and_missing_predecessor; test_all_45_lineages_and_queries | Useful information-management components, not an organizational control system. No demonstrated responsibilities/training, calibration, internal audit, archive/retention procedure or evidence authenticity. A checksum is not a signature or independent validation |
+| §§6.4.1–6.4.2; §9.3.1 | 2025 base year, explicit +30 restatement, change categories and non-comparability warning. test_crossperiod_reconciliation and test_activity_first_convention | CarbonDiff now checks stable identities, classification, bounded exact arithmetic,
+unsupported semantic changes and independent reconciliation (test_diff.py).
+Reconciles fixture deltas; not a general review/recalculation procedure. The 0.5% threshold and activity-first decomposition are project policy. Substantial methodology/factor/error/structural changes require review; ordinary production changes are not a base-year recalculation basis. Later GWP/method/allocation changes are not harmonized |
+| §§8.1–8.2; Annex C §§C.3,C.4.6 | Immutable revision identities, content digests, resolvable typed references and result lineage. test_immutable_and_digest; test_revision_chain_and_missing_predecessor; test_all_45_lineages_and_queries | RO-Crate exports additionally verify a closed file set, canonical payloads, hashes
+and typed provenance (test_evidence.py). Useful information-management components,
+not an organizational control system. No demonstrated responsibilities/training, calibration, internal audit, archive/retention procedure or evidence authenticity. A checksum is not a signature or independent validation |
 | §8.3; §9.3.1; Annex C §C.7 | DataQualityAssessment has rating/rationale/uncertainty text; fixture explicitly discloses unquantified uncertainty | No category-level uncertainty assessment or justified qualitative substitute. A text field saying “unknown” or “not statistically quantified” does not satisfy the assessment obligation. Exact test arithmetic is not measurement certainty |
 | §§7.1–7.3,9.3.3 | No reduction/target claim; offset-netting fixture rejects. Changes reconcile without being described as uniquely causal reductions | No mitigation initiative, project-credit or target reporting implementation. Carbon credits are not inventory deductions; rejection of all removal arithmetic is only this benchmark's limitation, not a claim that ISO universally prohibits emission/removal aggregation |
 | §§9.1–9.3,10; informative Annex F | Organization/period/boundary/method/result/review records and an explanation query provide some report ingredients. Graph tests verify links | Not a complete ISO report, dissemination/report-planning process or verification engagement. Simulated accepted review is not independent assurance. ISO 14064-3, ISO 14065, ISO 14066 and ISO 14067 were not inspected in this review; Part 1 is not a substitute for them |
@@ -180,3 +188,16 @@ inspection resolves the former text-access blocker, not the implementation gaps.
 Qualified practitioner review, complete source/significance screening, gas-resolved
 reporting, applicable contractual evidence, category-level uncertainty assessment
 and human assurance remain necessary before any stronger conformity claim.
+
+### Current engineering coverage addendum
+
+The earlier 161-test result is a dated baseline, not the current total. Selected
+SHACL checks now include reference cardinality/type and factor unit/version and
+review status/timestamp presence. Raw-row checks independently reject ten seeded
+defects and additional malformed inputs; exact rational checks avoid ambient
+Decimal rounding. They do not inspect original invoices or license authenticity.
+CarbonDiff semantic causes are caller declarations, not independently inferred
+causes. Evidence packages prove internal consistency, not authenticity. No gas-
+resolved reporting, uncertainty assessment, completeness/significance procedure,
+ISO six-category report or organizational assurance controls have been added.
+Private licensed sources and extracts remain outside the repository.

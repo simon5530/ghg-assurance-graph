@@ -848,15 +848,15 @@
         25
       ],
       "acceptance_criteria": [
-        "Expose bounded read-only deterministic tools with authorization, schema, failure, and privacy tests.",
+        "Expose bounded deterministic evidence actions with schema/failure/privacy tests; package creation requires explicit trusted-host write consent.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "partial: bounded graph retrieval implemented; broader natural-language/tool evaluation deferred",
+      "status": "implemented locally: seven deterministic actions and evidence-linked question set; no AI experiment; remote reconciliation blocked",
       "labels": [
         "type:feature",
         "priority:p1"
       ],
-      "scope": "Expose bounded read-only deterministic tools with authorization, schema, failure, and privacy tests.",
+      "scope": "Expose bounded deterministic evidence actions with schema/failure/privacy tests; package creation requires explicit trusted-host write consent.",
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [

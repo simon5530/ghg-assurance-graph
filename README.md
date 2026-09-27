@@ -26,8 +26,9 @@ production factor database, complete inventory calculator or compliance service.
 **Research Gate A remains HOLD.** Owner authorization extends engineering through
 the remaining phases, not research novelty, practitioner approval or publication
 readiness. [Exact phase matrix](docs/ROADMAP_ACCEPTANCE.md). Phase 11/v1.0 is not
-complete: independent fresh-machine/practitioner review, archive/DOI, official
-SoftwareX template and human publication approvals remain external gates.
+complete: fresh-machine reproduction and archival evidence remain outstanding.
+Practitioner review remains a research limitation; the official SoftwareX template
+and human journal approvals are submission gates, not alpha-release permissions.
 PACT/openLCA/Brightway integrations and Jev are not implemented or required.
 
 [ISO review](docs/STANDARDS_ALIGNMENT.md) inspected English ISO 14064-1:2018

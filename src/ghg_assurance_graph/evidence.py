@@ -3,8 +3,9 @@
 Integrity is not authenticity: retain the returned manifest digest independently.
 """
 
-import json
+import os
 import re
+import stat
 from datetime import datetime
 from hashlib import sha256
 from importlib.metadata import version
@@ -12,6 +13,7 @@ from pathlib import Path
 
 from rocrate.rocrate import ROCrate
 
+from .adapters import _json
 from .exporters import canonical_json, export_graph
 from .models import EvidencePackage
 from .serialization import GHG
@@ -24,6 +26,47 @@ CONTEXT = {
 }
 PAYLOADS = {"package.json", "graph.ttl", "graph.jsonld", "schema.json", "ontology.json"}
 FILES = PAYLOADS | {"ro-crate-metadata.json", "manifest.json"}
+MAX_FILE_BYTES = 16_000_000
+MAX_PACKAGE_BYTES = 48_000_000
+
+
+def _read_payloads(root):
+    # Anchor every lookup to opened directories, including ancestors. O_NOFOLLOW
+    # closes the check/open symlink race; O_NONBLOCK prevents FIFO replacement hangs.
+    absolute = Path(os.path.abspath(root))
+    fd = os.open(absolute.anchor, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
+    try:
+        for part in absolute.parts[1:]:
+            child = os.open(part, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=fd)
+            os.close(fd)
+            fd = child
+        with os.scandir(fd) as entries:
+            names = set()
+            for entry in entries:
+                if entry.name not in FILES:
+                    raise ValueError("unexpected package entry")
+                names.add(entry.name)
+        if names != FILES:
+            raise ValueError("missing package entry")
+        raw = {}
+        total = 0
+        for name in sorted(FILES):
+            child = os.open(name, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK, dir_fd=fd)
+            with os.fdopen(child, "rb") as stream:
+                info = os.fstat(stream.fileno())
+                if not stat.S_ISREG(info.st_mode):
+                    raise ValueError("nonregular package entry")
+                limit = min(MAX_FILE_BYTES, MAX_PACKAGE_BYTES - total)
+                if info.st_size > limit:
+                    raise ValueError("evidence package size limit exceeded")
+                data = stream.read(limit + 1)
+                if len(data) > limit:
+                    raise ValueError("evidence package size limit exceeded")
+                total += len(data)
+                raw[name] = data
+        return raw
+    finally:
+        os.close(fd)
 
 
 def _digest(data: bytes) -> str:
@@ -131,19 +174,7 @@ def create_package(
 
 
 def _load(data):
-    def unique(pairs):
-        value = {}
-        for key, item in pairs:
-            if key in value:
-                raise ValueError("duplicate JSON key")
-            value[key] = item
-        return value
-
-    return json.loads(
-        data,
-        object_pairs_hook=unique,
-        parse_constant=lambda _: (_ for _ in ()).throw(ValueError("nonfinite JSON")),
-    )
+    return _json(data)
 
 
 def _no_context(value):
@@ -167,12 +198,7 @@ def verify_package(directory: str | Path, *, expected_manifest_sha256: str | Non
     try:
         if any(p.is_symlink() for p in (root, *root.parents)) or not root.is_dir():
             raise ValueError("not a regular package directory")
-        entries = list(root.iterdir())
-        if {p.name for p in entries} != FILES or any(
-            p.is_symlink() or not p.is_file() for p in entries
-        ):
-            raise ValueError("unexpected, missing or nonregular package entry")
-        raw = {p.name: p.read_bytes() for p in entries}
+        raw = _read_payloads(root)
         manifest_digest = _digest(raw["manifest.json"])
         if expected_manifest_sha256 is not None and manifest_digest != expected_manifest_sha256:
             raise ValueError("manifest digest mismatch")
@@ -188,7 +214,11 @@ def verify_package(directory: str | Path, *, expected_manifest_sha256: str | Non
             "identities",
             "files",
         }
-        if set(manifest) != expected_keys or manifest["format"] != "ghgag-evidence-1":
+        if (
+            not isinstance(manifest, dict)
+            or set(manifest) != expected_keys
+            or manifest["format"] != "ghgag-evidence-1"
+        ):
             raise ValueError("unsupported manifest")
         _validate_provenance(manifest["created_at"], manifest["command"])
         if not isinstance(manifest["data_version"], str) or not manifest["data_version"].strip():
@@ -232,5 +262,5 @@ def verify_package(directory: str | Path, *, expected_manifest_sha256: str | Non
             "record_count": len(package.records),
             "manifest": manifest,
         }
-    except (OSError, TypeError, KeyError, AttributeError, json.JSONDecodeError) as exc:
+    except (OSError, TypeError, KeyError, AttributeError, RecursionError, UnicodeError) as exc:
         raise ValueError("invalid evidence package") from exc

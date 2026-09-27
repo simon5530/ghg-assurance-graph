@@ -11,3 +11,8 @@
 - Authors, affiliations, funding, competing interests: human confirmation pending.
 - Official template and current mandatory submission fields: verification pending.
 - Claims: public synthetic evaluation only; no novelty, certification or adoption claim.
+
+Template access check (2026-09-28): the official [Guide for Authors](https://www.sciencedirect.com/journal/softwarex/publish/guide-for-authors)
+returned HTTP 403. Current official template contents were not retrieved or
+verified; no locally invented template is presented as official. The Markdown
+article remains a content draft, not a submission-ready document.

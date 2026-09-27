@@ -208,3 +208,25 @@ Operational lesson: preserve historical CLI error contracts while adding command
 a passing new pipeline alone missed four existing string-contract assertions.
 Restoring backward-compatible graph errors and rerunning the full suite resolved
 the regression without weakening tests.
+
+## 2026-09-28 — independent review after 0.2.0a1
+
+Source inspection found substantive gaps despite the 297-test baseline: ambient
+Decimal context affected validation, snapshot inputs bypassed scope/type checks,
+raw RDF lacked selected factor/review literal shapes, and package/adapter parsing
+needed bounded reads and normalized malformed-input errors. Repairs have independent
+adversarial tests, not merely new expected outputs for the same ten seeds.
+The full run observed 355 passing tests and 11 upstream deprecation warnings.
+Build from sdist succeeded. Four CLI actions (validate, diff, package create/verify)
+passed with socket connections blocked; initial harness assumptions about main's
+return value and required data-version were corrected, not counted as passes.
+The original reproducible SVG has a byte-equality test. No dependency change.
+Gitleaks scanned all ten reachable commits and the complete intended publication
+tree (~1.01 MB), finding no secrets. Semantic diff/path review found no private
+ISO source, extracts, local user paths, credentials or copyrighted standards text.
+Current normal gh API issue access still fails TLS certificate verification; no
+bypass or trust change. SoftwareX official guide retrieval returned HTTP 403;
+its current template is explicitly unverified, not fabricated. Alpha publishing
+is authorized; research/domain gates and archival/submission gates remain distinct.
+Final commit/push and hosted-CI readback are reported separately to avoid a
+self-referential commit hash. Published 0.2.0a1 is not retroactively changed.

@@ -41,3 +41,8 @@ rows = query_graph(build_graph([package]), "explain_result",
 ```
 
 Run `.venv/bin/python -m pytest -q tests/test_adapters.py`. Tests cover JSON/CSV agreement, lineage, unchanged external values, missing provenance, unsupported units/boundaries, unknown fields, duplicate keys and schema closure.
+
+Malformed CSV parser errors are normalized to ValueError. JSON rejects nonfinite
+numbers (including exponent overflow), duplicate keys and nesting beyond 64 levels;
+input remains bounded to 2 MB. These bounds are not a general-purpose process
+sandbox or a vendor-format conformance claim.

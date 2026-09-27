@@ -148,3 +148,29 @@ def test_schema_closed():
     schema = ExternalResult.model_json_schema()
     assert schema["additionalProperties"] is False
     assert {"provenance", "origin", "calculation", "result"} <= set(schema["required"])
+
+
+@pytest.mark.parametrize(
+    "text", ["[" * 2000 + "0" + "]" * 2000, '{"x":NaN}', '{"x":Infinity}', '{"x":1e999}', "\ud800"]
+)
+def test_hostile_json_is_value_error(text):
+    with pytest.raises(ValueError):
+        import_external_json(text)
+
+
+def test_csv_parser_errors_are_value_errors():
+    for row in ['"unterminated', "x" * 140_000]:
+        with pytest.raises(ValueError):
+            import_external_csv(",".join(CSV_COLUMNS) + "\n" + row)
+
+
+@pytest.mark.parametrize("ref", ["../../secret", "file:///etc/passwd", "https://evil.invalid/x"])
+def test_foreign_references_never_resolved(document, ref, monkeypatch):
+    import socket
+
+    monkeypatch.setattr(socket.socket, "connect", lambda *a: pytest.fail("network access"))
+    document["calculation"]["factor"] = ref
+    with pytest.raises(ValueError):
+        import_external_json(json.dumps(document))
+    with pytest.raises(ValueError):
+        import_external_csv(csv_text(document))

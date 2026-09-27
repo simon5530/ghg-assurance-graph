@@ -58,8 +58,11 @@ literals and are not dereferenced. Tests block socket connections.
 
 This is a strict application profile, not a verifier for arbitrary third-party
 RO-Crates. Verification may reject crates made with incompatible future schemas or
-serialization dependencies. It assumes a quiescent local directory, not an attacker
-racing filesystem changes. No archive extraction is implemented. Creation refuses
+serialization dependencies. Verification opens POSIX directory descriptors with
+no-follow flags, bounds individual files to 16 MB and total reads to 48 MB, and
+rejects nonregular files and excessive JSON nesting. It requires POSIX support;
+Windows portability has not been demonstrated. Creation still assumes a trusted,
+quiescent destination directory. No archive extraction is implemented. Creation refuses
 overwrite, but an interrupted write may leave a partial directory that verification
 rejects; remove it deliberately before retrying.
 

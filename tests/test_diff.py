@@ -172,7 +172,7 @@ def test_empty_and_raw_gas_reject():
         snapshot("2025-v1", [])
     data = rows("2025-v1")
     data[4]["factor_basis"] = "kg-HFC"
-    with pytest.raises(ValueError, match="GWP"):
+    with pytest.raises(ValueError, match="factor basis"):
         snapshot("2025-v1", data)
 
 
@@ -226,3 +226,21 @@ def test_unit_conversion_once():
     result = compare(snapshot("2025-v1", [a]), snapshot("2025-v2", [b]))
     assert result.delta == 400
     assert result.components[0].kg_co2e == 400
+
+
+@pytest.mark.parametrize(
+    "field,value", [("scope", 0), ("scope", True), ("category", 99), ("apply_gwp", 0)]
+)
+def test_snapshot_rejects_unseen_invalid_classification(field, value):
+    data = rows("2025-v1")
+    data[0][field] = value
+    with pytest.raises(ValueError):
+        snapshot("2025-v1", data)
+
+
+@pytest.mark.parametrize("field", ["activity", "factor", "scope", "method", "review"])
+def test_snapshot_missing_fields_have_public_validation_error(field):
+    data = rows("2025-v1")
+    del data[0][field]
+    with pytest.raises(ValueError):
+        snapshot("2025-v1", data)

@@ -149,3 +149,61 @@ def test_provenance_and_no_overwrite(crate, package, tmp_path):
         verify_package(link)
     with pytest.raises(ValueError):
         create_package(package, link / "child", created_at="2026-01-01T00:00:00Z", command=["t"])
+
+
+@pytest.mark.parametrize(
+    "data", [b"\xff", b"[" * 2000 + b"0" + b"]" * 2000, b'{"x":1e999}', b"null", b"42"]
+)
+def test_malformed_manifest_is_value_error(crate, data):
+    (crate / "manifest.json").write_bytes(data)
+    with pytest.raises(ValueError):
+        verify_package(crate)
+
+
+def test_resource_limits(crate, monkeypatch):
+    from ghg_assurance_graph import evidence
+
+    monkeypatch.setattr(evidence, "MAX_FILE_BYTES", 100)
+    with pytest.raises(ValueError, match="size limit"):
+        verify_package(crate)
+    monkeypatch.setattr(evidence, "MAX_FILE_BYTES", 16_000_000)
+    monkeypatch.setattr(evidence, "MAX_PACKAGE_BYTES", 100)
+    with pytest.raises(ValueError, match="size limit"):
+        verify_package(crate)
+
+
+@pytest.mark.parametrize("replacement", ["symlink", "fifo"])
+def test_replacement_at_open_fails_closed(crate, tmp_path, monkeypatch, replacement):
+    import os
+
+    from ghg_assurance_graph import evidence
+
+    original = os.open
+    target = crate / "graph.ttl"
+    outside = tmp_path / "outside"
+    outside.write_bytes(target.read_bytes())
+
+    def swapped(path, flags, *args, **kwargs):
+        if path == "graph.ttl":
+            target.unlink()
+            if replacement == "symlink":
+                target.symlink_to(outside)
+            else:
+                os.mkfifo(target)
+        return original(path, flags, *args, **kwargs)
+
+    monkeypatch.setattr(evidence.os, "open", swapped)
+    with pytest.raises(ValueError):
+        verify_package(crate)
+
+
+@pytest.mark.parametrize("ref", ["../../private", "file:///etc/passwd", "https://evil.invalid/x"])
+def test_foreign_rocrate_entity_rehashed(crate, monkeypatch, ref):
+    monkeypatch.setattr(socket.socket, "connect", lambda *a: pytest.fail("network access"))
+    path = crate / "ro-crate-metadata.json"
+    metadata = json.loads(path.read_text())
+    metadata["@graph"].append({"@id": ref, "@type": "File"})
+    path.write_text(canonical_json(metadata))
+    rehash(crate, path.name)
+    with pytest.raises(ValueError, match="inconsistent"):
+        verify_package(crate)

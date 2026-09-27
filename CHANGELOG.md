@@ -38,3 +38,12 @@ review usage edges, five bound SPARQL queries and local ghgag graph CLI. No Phas
 - Private ISO Part 1 clause review recorded only as original paraphrases and refs.
 - Original phase matrix and metadata reconciled; Gate A and external v1.0 gates
   remain open. Schema/benchmark 0.1 unchanged; no silent data migration.
+
+## Unreleased — independent completion review
+
+- Complete seven deterministic evidence actions and explicit host-consented export.
+- Fix context-sensitive validation arithmetic and incomplete CarbonDiff input checks.
+- Check raw RDF factor/review fields; harden package reads and malformed adapters.
+- Add independent adversarial tests and a reproducible evaluation SVG.
+- Reconcile standards coverage and original final gates without conformity claims.
+- The published 0.2.0a1 artifact is unchanged; these are subsequent source changes.

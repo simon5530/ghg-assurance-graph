@@ -7,6 +7,7 @@ from collections import Counter
 from collections.abc import Iterable, Mapping
 from dataclasses import asdict, dataclass
 from decimal import Decimal, InvalidOperation
+from fractions import Fraction
 from hashlib import sha256
 from importlib.resources import files
 
@@ -78,16 +79,18 @@ def _decimal(value):
     number = Decimal(str(value))
     if not number.is_finite() or number < 0:
         raise ValueError("not finite/nonnegative")
+    if len(number.as_tuple().digits) > 60 or abs(number.as_tuple().exponent) > 60:
+        raise ValueError("decimal exceeds bounded precision contract")
     return number
 
 
 # Explicit benchmark policy, not real emission factors or normative standard clauses.
 _UNITS = {"kWh", "MJ", "kg", "tonne", "liter", "meter ** 3", "km", "tonne * km", "USD"}
 _SCALES = {
-    ("tonne", "kg"): Decimal(1000),
-    ("kg", "tonne"): Decimal("0.001"),
-    ("kWh", "MJ"): Decimal("3.6"),
-    ("MJ", "kWh"): Decimal(1) / Decimal("3.6"),
+    ("tonne", "kg"): Fraction(1000),
+    ("kg", "tonne"): Fraction(1, 1000),
+    ("kWh", "MJ"): Fraction(18, 5),
+    ("MJ", "kWh"): Fraction(5, 18),
 }
 
 
@@ -129,7 +132,9 @@ def validate_rows(rows: Iterable[Mapping]) -> tuple[Finding, ...]:
             or row.get("factor_year") != row.get("year")
             or row.get("facility") not in ("hq", "tw-plant", "vn-plant")
             or row.get("geography")
-            != {"hq": "TW", "tw-plant": "TW", "vn-plant": "VN"}.get(row.get("facility"))
+            != {"hq": "TW", "tw-plant": "TW", "vn-plant": "VN"}.get(
+                row.get("facility") if isinstance(row.get("facility"), str) else None
+            )
         ):
             add(target, "factor applicability")
         if row.get("review") != "synthetic-accepted":
@@ -177,7 +182,7 @@ def validate_rows(rows: Iterable[Mapping]) -> tuple[Finding, ...]:
             unit, denominator = row.get("unit"), row.get("factor_unit")
             if unit not in _UNITS or denominator not in _UNITS:
                 raise ValueError
-            scale = Decimal(1) if unit == denominator else _SCALES[(unit, denominator)]
+            scale = Fraction(1) if unit == denominator else _SCALES[(unit, denominator)]
         except (KeyError, ValueError, TypeError):
             add(target, "unsupported unit conversion")
             scale = None
@@ -196,7 +201,9 @@ def validate_rows(rows: Iterable[Mapping]) -> tuple[Finding, ...]:
             method == "none" and share != 1
         ):
             add(target, "allocation method")
-        if scale is not None and activity * scale * factor * share != reported:
+        if scale is not None and (
+            Fraction(activity) * scale * Fraction(factor) * Fraction(share) != Fraction(reported)
+        ):
             add(target, "reported amount mismatch")
     return tuple(sorted(findings))
 

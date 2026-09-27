@@ -7,6 +7,7 @@ from enum import StrEnum
 from types import MappingProxyType
 
 from .benchmark import preflight
+from .validation import validate_rows
 
 
 class Cause(StrEnum):
@@ -70,8 +71,13 @@ class Snapshot:
             if row.get("evidence") != f"{self.namespace}/{self.version}/{identity}":
                 raise ValueError("wrong snapshot evidence binding")
             for name in NUMBERS:
+                if name not in row:
+                    raise ValueError(f"missing required numeric field: {name}")
                 row[name] = str(_number(row[name]))
             copied.append(row)
+        findings = validate_rows(copied)
+        if findings:
+            raise ValueError("; ".join(f.rule for f in findings))
         with localcontext() as ctx:
             ctx.prec = 1000
             preflight(copied)

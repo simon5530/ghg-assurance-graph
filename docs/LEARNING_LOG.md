@@ -76,3 +76,13 @@ Explain why a review uses a result rather than generates it; why a graph claim i
 not source truth; and why an allowlisted template is safer than regex filtering
 arbitrary SPARQL. Interrupted source writes are inspected and syntax-tested before
 resuming; saved files are not evidence of a completed implementation.
+
+## Independent-oracle lesson: arithmetic context and malformed inputs
+A clean ten-case score missed ambient Decimal rounding in validation and missing
+classification checks in snapshots. The cheapest discriminating test is a literal
+3.6 MJ / 3.6 kWh conversion under precision=2 plus missing/invalid metadata, not
+another run of the seed catalog. Exact Fraction arithmetic over bounded decimal
+inputs and complete preflight findings fix the cause. Adversarial tests, original
+fixtures and a full-suite run prove the encoded recovery; they do not prove
+standards conformity. SHACL also needs direct raw-graph mutation tests: canonical
+model validation can otherwise mask absent shape constraints.

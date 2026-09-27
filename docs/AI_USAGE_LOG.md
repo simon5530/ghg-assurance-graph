@@ -60,3 +60,13 @@ Human verification: not independently completed; domain/publication review pendi
 Tests: 297 passing integration/unit/adversarial tests, 7 documentation-check tests,
 Ruff and doc links; literal/Fraction oracles independent of production arithmetic.
 Design owner: human project owner; AI does not assume authorship or assurance.
+
+## 2026-09-28 — independent completion review and repairs
+Tool/model: OpenClaw, openai/gpt-6-astra.
+Task: source-level review beyond seeded tests; deterministic tool completion, exact
+arithmetic/SHACL checks, bounded package/adapter handling, adversarial tests,
+original generated figure and current-scope documentation.
+Human verification: no new practitioner or human domain sign-off asserted.
+Design owner: repository owner; research Gate A HOLD preserved.
+Tests and operational evidence: see latest RESULTS_LEDGER and PUBLICATION_AUDIT.
+No private ISO source/extract, hosted model experiment or paid service used.

@@ -159,3 +159,55 @@ def test_stable_row_findings_and_serialization():
     finding = validate_rows(rows)[0]
     assert finding.to_dict()["id"] == finding.id
     assert finding.id.startswith("urn:ghgag:finding-")
+
+
+def test_exact_conversion_independent_of_decimal_context():
+    from decimal import localcontext
+
+    row = load("generated/2025-v1/inputs.json")[0]
+    row.update(unit="MJ", factor_unit="kWh", activity="3.6", factor="1", reported_kg_co2e="1")
+    with localcontext() as ctx:
+        ctx.prec = 2
+        assert validate_rows([row]) == ()
+        row.update(
+            unit="kWh", activity="0.123456789123456789", reported_kg_co2e="0.123456789123456789"
+        )
+        assert validate_rows([row]) == ()
+        row["reported_kg_co2e"] = "0.12"
+        assert "reported amount mismatch" in {f.rule for f in validate_rows([row])}
+
+
+@pytest.mark.parametrize("value", [None, [], {}, True, "1e999999", "9" * 61])
+def test_unseen_malformed_numeric_inputs(value):
+    row = load("generated/2025-v1/inputs.json")[0]
+    row["factor"] = value
+    assert "invalid amount or allocation" in {f.rule for f in validate_rows([row])}
+
+
+@pytest.mark.parametrize("value", [None, [], {}, True])
+def test_arbitrary_malformed_metadata_is_a_finding(value):
+    row = load("generated/2025-v1/inputs.json")[0]
+    for field in ("facility", "unit", "scope", "factor_year", "method", "id"):
+        changed = dict(row, **{field: value})
+        assert validate_rows([changed])
+
+
+@pytest.mark.parametrize(
+    "kind,field",
+    [
+        ("factor", "version"),
+        ("factor", "numerator"),
+        ("factor", "denominator"),
+        ("review", "status"),
+        ("review", "timestamp"),
+    ],
+)
+def test_raw_graph_required_literals_not_only_model_validation(kind, field):
+    from ghg_assurance_graph.serialization import GHG
+
+    package = EvidencePackage.model_validate(load("generated/2025-v1/package.json"))
+    graph = to_graph(package)
+    node = URIRef(f"urn:ghgag:acme-2025-v1-electricity-{kind}:v1")
+    assert graph.value(node, GHG[field]) is not None
+    graph.remove((node, GHG[field], None))
+    assert any(f.target == str(node) for f in validate_graph(graph))
