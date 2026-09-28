@@ -273,3 +273,11 @@ Git transport and anonymous repository read succeed. GitHub Release object/asset
 issue closure, description/security-control updates remain API-blocked; a pushed tag
 is not those operations. No journal/DOI action attempted. Gate A HOLD and standards/
 comparability limitations remain. Parent independent review remains required.
+
+
+## 2026-09-28 — API recovery and draft prerelease
+Earlier API-blocked observations are historical. Authenticated access recovered
+following owner-approved narrow trust repair. A draft alpha exists but zero assets
+are uploaded: the separate uploads endpoint fails TLS verification. No broader
+trust or bypass. Description and issues #9/#10/#24 were reconciled within their
+exact scope; remaining research/archive gates stand. See [release evidence](RELEASE_PUBLICATION_0.3.0a1.md).

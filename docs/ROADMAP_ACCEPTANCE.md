@@ -58,17 +58,15 @@ export consent and evidence-linked questions. No natural-language router or AI
 grounding study is claimed; those optional experiments are not prerequisites for
 the deterministic facade. Remaining Phase 11 gates are not waived.
 
-## GitHub reconciliation blocker
-On 2026-09-28 authenticated `gh api` issue listing failed certificate verification.
-No TLS bypass, credential extraction, trust changes or alternative authenticated
-HTTP route was attempted. No issue mutation or repository-description edit is claimed.
-The manifest records local evidence, not remote issue closure. After normal access
-recovers, read current issues before updating; do not recreate the original 30.
-Close #9/#10 only against graph evidence, then individually assess #11/#12/#14–#19/#22;
-#13 still requires domain-reviewed examples. #24 should close as superseded/not planned,
-not completed. #25–#27/#30 remain open; #20/#21/#29 are optional deferred; #28 deterministic scope implemented.
-Desired repository description: Offline experimental GHG provenance, selected checks,
-change attribution and portable evidence; not certification.
+## GitHub reconciliation status
+Authenticated API access recovered on 2026-09-28 following an owner-approved
+narrow trust repair. All 30 existing issues were read before mutation. Repository
+description now reflects experimental scope. Graph issues #9/#10 were closed
+against 75 passing graph tests; #24 was closed as superseded/not planned.
+Other issue acceptance reconciliation remains pending, not blanket completion.
+#13 needs domain-reviewed examples; #25–#27/#30 remain open; #20/#21/#29 deferred.
+The alpha release is only a draft: its separate upload endpoint fails TLS
+verification. See [publication evidence](RELEASE_PUBLICATION_0.3.0a1.md).
 
 ## Exact original final-gate interpretation
 
@@ -80,6 +78,6 @@ is a fresh runner but does not constitute practitioner review or research impact
 The original Phase 11 list does not require independent practitioner approval;
 that remains the project's research/domain evidence limitation under Gates A/B,
 not an invented requirement for publishing a clearly qualified alpha release.
-The owner has authorized reasonable GitHub release publication. Remaining GitHub
-API certificate failures are technical blockers, not missing release permission.
+The owner has authorized reasonable GitHub release publication. Remaining asset-upload
+certificate failures are technical blockers, not missing release permission.
 Journal submission, DOI account operations and paid services remain separate.

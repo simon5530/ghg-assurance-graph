@@ -28,8 +28,8 @@ statements remain attributed claims. Full reporting coverage, gas detail, contro
 uncertainty, practitioner review and research Gate A remain unresolved.
 
 ## Publication state
-Normal authenticated GitHub API access failed TLS certificate verification during
-preflight. No TLS bypass, credential extraction or trust changes were attempted.
-A Git tag is distinct from a GitHub Release object or uploaded release assets.
-The final handoff/audit records observed tag, push, archive and CI status; this
-release-note file by itself does not assert that any remote release exists.
+Authenticated API access recovered after an owner-approved narrow local trust
+repair. Release ID 397894394 is a draft prerelease with zero assets, not a public
+release. Asset upload to the separate uploads endpoint still fails TLS verification.
+No broader trust or bypass was attempted; the existing tag was not moved.
+See [release evidence](RELEASE_PUBLICATION_0.3.0a1.md).
