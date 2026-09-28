@@ -28,8 +28,9 @@ statements remain attributed claims. Full reporting coverage, gas detail, contro
 uncertainty, practitioner review and research Gate A remain unresolved.
 
 ## Publication state
-Authenticated API access recovered after an owner-approved narrow local trust
-repair. Release ID 397894394 is a draft prerelease with zero assets, not a public
-release. Asset upload to the separate uploads endpoint still fails TLS verification.
-No broader trust or bypass was attempted; the existing tag was not moved.
+Published qualified prerelease: [v0.3.0a1](https://github.com/simon5530/ghg-assurance-graph/releases/tag/v0.3.0a1).
+Release ID 397894394 has four assets; all remote names, sizes and SHA256 digests
+matched the reviewed manifest before publication. Normal GitHub CLI uploads
+succeeded after owner-approved narrowly scoped trust synchronization, without
+broader trust or TLS/proxy bypass. The existing code tag was not moved.
 See [release evidence](RELEASE_PUBLICATION_0.3.0a1.md).

@@ -275,9 +275,12 @@ is not those operations. No journal/DOI action attempted. Gate A HOLD and standa
 comparability limitations remain. Parent independent review remains required.
 
 
-## 2026-09-28 — API recovery and draft prerelease
-Earlier API-blocked observations are historical. Authenticated access recovered
-following owner-approved narrow trust repair. A draft alpha exists but zero assets
-are uploaded: the separate uploads endpoint fails TLS verification. No broader
-trust or bypass. Description and issues #9/#10/#24 were reconciled within their
-exact scope; remaining research/archive gates stand. See [release evidence](RELEASE_PUBLICATION_0.3.0a1.md).
+## 2026-09-28 — API recovery and verified public prerelease
+Earlier API/upload-blocked observations are historical. Normal authenticated CLI
+access and uploads recovered after owner-approved narrowly scoped trust
+synchronization. Four assets were uploaded and independently read back with exact
+name, byte-size and SHA256 equality before publishing the existing draft as a
+prerelease. Anonymous release-page retrieval returned HTTP 200. No broader trust,
+TLS/proxy bypass, credential extraction or tag movement was used. Description and
+issues #9/#10/#24 were reconciled within their exact scope; remaining research and
+archive gates stand. See [release evidence](RELEASE_PUBLICATION_0.3.0a1.md).
