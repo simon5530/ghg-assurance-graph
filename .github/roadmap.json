@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "Engineering continuation authorized; see docs/ROADMAP_ACCEPTANCE.md and literal issue acceptance.",
-  "implementation_gate": "Owner authorized engineering through remaining phases on 2026-09-28; research Gate A HOLD unchanged; external publication/review gates remain.",
+  "implementation_gate": "Original Gate A scoped GO on 2026-09-28; qualified research scope, no assurance or submission approval.",
   "milestones": [
     {
       "title": "M0 Research Gate",
@@ -9,7 +9,11 @@
       "acceptance_criteria": "Evidence-backed research decision and reviewed scaffold; no domain implementation.",
       "optional": false,
       "description": "M0 Research Gate: Evidence-backed research decision and reviewed scaffold; no domain implementation.",
-      "github_number": 1
+      "github_number": 1,
+      "github_state": "open",
+      "github_open_issues": 5,
+      "github_closed_issues": 1,
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "title": "M1 Domain Model",
@@ -19,7 +23,11 @@
       "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
       "optional": false,
       "description": "M1 Domain Model: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
-      "github_number": 2
+      "github_number": 2,
+      "github_state": "open",
+      "github_open_issues": 0,
+      "github_closed_issues": 2,
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "title": "M2 Benchmark",
@@ -29,7 +37,11 @@
       "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
       "optional": false,
       "description": "M2 Benchmark: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
-      "github_number": 3
+      "github_number": 3,
+      "github_state": "open",
+      "github_open_issues": 0,
+      "github_closed_issues": 2,
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "title": "M3 Provenance Graph",
@@ -39,7 +51,11 @@
       "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
       "optional": false,
       "description": "M3 Provenance Graph: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
-      "github_number": 4
+      "github_number": 4,
+      "github_state": "open",
+      "github_open_issues": 0,
+      "github_closed_issues": 2,
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "title": "M4 Assurance Rules",
@@ -49,7 +65,11 @@
       "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
       "optional": false,
       "description": "M4 Assurance Rules: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
-      "github_number": 5
+      "github_number": 5,
+      "github_state": "open",
+      "github_open_issues": 2,
+      "github_closed_issues": 0,
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "title": "M5 CarbonDiff",
@@ -59,7 +79,11 @@
       "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
       "optional": false,
       "description": "M5 CarbonDiff: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
-      "github_number": 6
+      "github_number": 6,
+      "github_state": "open",
+      "github_open_issues": 4,
+      "github_closed_issues": 0,
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "title": "M6 Reproducibility",
@@ -69,7 +93,11 @@
       "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
       "optional": false,
       "description": "M6 Reproducibility: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
-      "github_number": 7
+      "github_number": 7,
+      "github_state": "open",
+      "github_open_issues": 3,
+      "github_closed_issues": 0,
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "title": "M7 Integrations",
@@ -80,7 +108,11 @@
       "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
       "optional": false,
       "description": "M7 Integrations: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
-      "github_number": 8
+      "github_number": 8,
+      "github_state": "open",
+      "github_open_issues": 4,
+      "github_closed_issues": 0,
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "title": "M8 Agent / Jev Experimental",
@@ -91,7 +123,11 @@
       "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
       "optional": true,
       "description": "M8 Agent / Jev Experimental: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
-      "github_number": 9
+      "github_number": 9,
+      "github_state": "open",
+      "github_open_issues": 2,
+      "github_closed_issues": 0,
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "title": "M9 v1.0",
@@ -101,7 +137,11 @@
       "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
       "optional": false,
       "description": "M9 v1.0: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
-      "github_number": 10
+      "github_number": 10,
+      "github_state": "open",
+      "github_open_issues": 1,
+      "github_closed_issues": 0,
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "title": "M10 SoftwareX Submission",
@@ -111,7 +151,11 @@
       "acceptance_criteria": "All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
       "optional": false,
       "description": "M10 SoftwareX Submission: All assigned issue acceptance criteria verified with versioned evidence; review prior phase dependencies.",
-      "github_number": 11
+      "github_number": 11,
+      "github_state": "open",
+      "github_open_issues": 2,
+      "github_closed_issues": 0,
+      "github_state_checked_at": "2026-09-28"
     }
   ],
   "labels": [
@@ -144,7 +188,7 @@
         "Compare primary-source tools and standards; record gaps, overlap, and GO/HOLD/PIVOT evidence without unsupported novelty claims.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "drafted; review/gate pending",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:research",
         "priority:p0"
@@ -157,7 +201,9 @@
         "docs/RELATED_WORK.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 1
+      "github_number": 1,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 2,
@@ -170,7 +216,7 @@
         "Record bounded RQs, non-goals, hypotheses, evaluation oracles, and explicit gate approval.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "drafted; review/gate pending",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:research",
         "priority:p0"
@@ -183,7 +229,9 @@
         "docs/RELATED_WORK.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 2
+      "github_number": 2,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 3,
@@ -197,7 +245,7 @@
         "Compare RDFLib/PROV-O with alternatives; document reuse, licensing, limitations, and reviewed ADR.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "drafted; review/gate pending",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:research",
         "priority:p0"
@@ -210,7 +258,9 @@
         "docs/RELATED_WORK.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 3
+      "github_number": 3,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 4,
@@ -224,7 +274,7 @@
         "Compare SHACL/pySHACL with alternatives; specify missing-evidence semantics and reviewed ADR.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "drafted; review/gate pending",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:research",
         "priority:p0"
@@ -237,7 +287,9 @@
         "docs/RELATED_WORK.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 4
+      "github_number": 4,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 5,
@@ -252,7 +304,7 @@
         "Publish versioned canonical entities, units, boundaries, periods, and positive/negative fixtures.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "closed remotely; verified implementation",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -264,7 +316,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 5
+      "github_number": 5,
+      "github_state": "closed",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 6,
@@ -277,7 +331,7 @@
         "Define record/version/content identity, correction semantics, and collision/migration tests.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "closed remotely; verified implementation",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -289,7 +343,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 6
+      "github_number": 6,
+      "github_state": "closed",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 7,
@@ -303,7 +359,7 @@
         "Generate deterministic synthetic ACME data from recorded seed/version with independent expected results.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "closed remotely; verified implementation",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -316,7 +372,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 7
+      "github_number": 7,
+      "github_state": "closed",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 8,
@@ -329,7 +387,7 @@
         "Catalog seeded defects with class labels, expected outcomes, and leakage-aware evaluation split.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "public seeded catalog implemented; blind evaluation not established",
+      "status": "closed remotely; verified implementation",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -342,7 +400,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 8
+      "github_number": 8,
+      "github_state": "closed",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 9,
@@ -357,7 +417,7 @@
         "Build deterministic graph from canonical fixtures with provenance completeness tests.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "closed remotely; verified implementation",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -369,7 +429,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 9
+      "github_number": 9,
+      "github_state": "closed",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 10,
@@ -382,7 +444,7 @@
         "Return source-to-result evidence chains; test missing, cyclic, and ambiguous lineage.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "closed remotely; verified implementation",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -394,7 +456,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 10
+      "github_number": 10,
+      "github_state": "closed",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 11,
@@ -409,7 +473,7 @@
         "Validate independently specified clean/defective cases and document constraint coverage.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -422,7 +486,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 11
+      "github_number": 11,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 12,
@@ -436,7 +502,7 @@
         "Report class-wise TP/FP/FN, precision/recall denominators, unsupported cases, and reproducible commands.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -449,7 +515,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 12
+      "github_number": 12,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 13,
@@ -475,7 +543,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 13
+      "github_number": 13,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 14,
@@ -489,7 +559,7 @@
         "Match stable records deterministically; expose duplicates, ambiguity, additions, and removals.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -501,7 +571,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 14
+      "github_number": 14,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 15,
@@ -515,7 +587,7 @@
         "Specify attribution convention, cross-terms, decimal precision, units, and independently checked examples.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -527,7 +599,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 15
+      "github_number": 15,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 16,
@@ -540,7 +614,7 @@
         "Assert delta reconciliation with declared tolerances and zero/negative/missing/reordered boundary cases.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -553,7 +627,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 16
+      "github_number": 16,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 17,
@@ -568,7 +644,7 @@
         "Export versioned evidence package with metadata, licenses, digests, and independent replay validation.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -580,7 +656,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 17
+      "github_number": 17,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 18,
@@ -593,7 +671,7 @@
         "Export linked reviewable notes without changing graph authority or leaking private metadata.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -606,7 +684,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 18
+      "github_number": 18,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 19,
@@ -619,7 +699,7 @@
         "Define engine-neutral inputs/outputs, provenance, failure behavior, and contract tests.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -632,7 +712,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 19
+      "github_number": 19,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 20,
@@ -645,7 +727,7 @@
         "Document PCF versus organizational scope mismatch, mapping loss, licenses, and proceed/defer decision.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "optional deferred; not implemented",
+      "status": "feasibility assessed; vendor implementation deferred; see docs/ADAPTER_FEASIBILITY.md",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -656,9 +738,12 @@
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
         "paper/softwarex/RESULTS_LEDGER.md",
-        "docs/ROADMAP_ACCEPTANCE.md"
+        "docs/ROADMAP_ACCEPTANCE.md",
+        "docs/ADAPTER_FEASIBILITY.md"
       ],
-      "github_number": 20
+      "github_number": 20,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 21,
@@ -671,7 +756,7 @@
         "Assess openLCA interoperability, licenses, boundaries, and adapter feasibility without assuming support.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "optional deferred; not implemented",
+      "status": "feasibility assessed; vendor implementation deferred; see docs/ADAPTER_FEASIBILITY.md",
       "labels": [
         "type:feature",
         "priority:p1",
@@ -682,9 +767,12 @@
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
         "paper/softwarex/RESULTS_LEDGER.md",
-        "docs/ROADMAP_ACCEPTANCE.md"
+        "docs/ROADMAP_ACCEPTANCE.md",
+        "docs/ADAPTER_FEASIBILITY.md"
       ],
-      "github_number": 21
+      "github_number": 21,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 22,
@@ -699,7 +787,7 @@
         "Provide pinned environment, one documented reproduction workflow, artifact digests, and failure checks.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -711,7 +799,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 22
+      "github_number": 22,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 23,
@@ -724,7 +814,7 @@
         "Create truthful paper structure, figure plan, metadata, bibliography placeholders, and empty results ledger.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally; verification in 0.2.0a1; remote reconciliation blocked by verified TLS error",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:research",
         "priority:p0"
@@ -736,7 +826,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 23
+      "github_number": 23,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 24,
@@ -749,7 +841,7 @@
         "Track current official eligibility/policies and prior-publication conflicts without promising acceptance.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "superseded by owner SoftwareX + methods route; remote close-as-not-planned pending TLS recovery",
+      "status": "closed remotely as superseded/not planned",
       "labels": [
         "type:research",
         "priority:p0"
@@ -761,7 +853,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 24
+      "github_number": 24,
+      "github_state": "closed",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 25,
@@ -774,7 +868,7 @@
         "Have an independent clean environment reproduce scientific artifacts; record environment and discrepancies.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "open: external research/reproduction/publication acceptance not met",
+      "status": "fresh-host released source and wheel CI passed run 36382755169; artifact download verification pending normal gh transport",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -784,9 +878,12 @@
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
         "paper/softwarex/RESULTS_LEDGER.md",
-        "docs/ROADMAP_ACCEPTANCE.md"
+        "docs/ROADMAP_ACCEPTANCE.md",
+        "docs/FRESH_RELEASE_REPRODUCTION.md"
       ],
-      "github_number": 25
+      "github_number": 25,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 26,
@@ -799,7 +896,7 @@
         "Approve release criteria, scan tree/history, verify archive metadata and actual persistent identifier.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "open: external research/reproduction/publication acceptance not met",
+      "status": "qualified alpha and persistent SWH source archive verified; stable v1.0 freeze not claimed",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -809,9 +906,12 @@
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
         "paper/softwarex/RESULTS_LEDGER.md",
-        "docs/ROADMAP_ACCEPTANCE.md"
+        "docs/ROADMAP_ACCEPTANCE.md",
+        "docs/ARCHIVE_STATUS.md"
       ],
-      "github_number": 26
+      "github_number": 26,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 27,
@@ -825,7 +925,7 @@
         "Check current official submission requirements, evidence, licenses, authorship, disclosures, and reproducibility.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "open: external research/reproduction/publication acceptance not met",
+      "status": "initial manuscript and official guide assessment prepared; human declarations and submission template pending",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -837,7 +937,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 27
+      "github_number": 27,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 28,
@@ -851,7 +953,7 @@
         "Expose bounded deterministic evidence actions with schema/failure/privacy tests; package creation requires explicit trusted-host write consent.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "implemented locally: seven deterministic actions and evidence-linked question set; no AI experiment; remote reconciliation blocked",
+      "status": "criteria evidence available; remote reconciliation pending authenticated API transport",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -863,7 +965,9 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 28
+      "github_number": 28,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 29,
@@ -876,7 +980,7 @@
         "Run opt-in Jev experiment against deterministic baseline with abstention, privacy, cost, and no authority escalation.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "optional deferred; not implemented",
+      "status": "optional excluded per original Phase 10; baseline evaluated, no model experiment",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -886,9 +990,12 @@
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [
         "paper/softwarex/RESULTS_LEDGER.md",
-        "docs/ROADMAP_ACCEPTANCE.md"
+        "docs/ROADMAP_ACCEPTANCE.md",
+        "docs/OPTIONAL_AI_DECISION.md"
       ],
-      "github_number": 29
+      "github_number": 29,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     },
     {
       "id": 30,
@@ -902,7 +1009,7 @@
         "Establish distinct methodological contribution with baselines, invariants, sensitivity, and prior-publication disclosure.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
-      "status": "open: external research/reproduction/publication acceptance not met",
+      "status": "distinct future methods research; not completed",
       "labels": [
         "type:feature",
         "priority:p1"
@@ -914,8 +1021,10 @@
         "paper/softwarex/RESULTS_LEDGER.md",
         "docs/ROADMAP_ACCEPTANCE.md"
       ],
-      "github_number": 30
+      "github_number": 30,
+      "github_state": "open",
+      "github_state_checked_at": "2026-09-28"
     }
   ],
-  "release_candidate": "0.3.0a1 qualified alpha; GitHub Release API blocked by normal TLS verification; no remote issue reconciliation claimed"
+  "release_candidate": "0.3.0a1 public qualified alpha, four verified assets; source archived with Software Heritage; released source/wheel fresh-host CI passed."
 }

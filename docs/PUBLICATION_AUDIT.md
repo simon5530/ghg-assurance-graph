@@ -284,3 +284,10 @@ prerelease. Anonymous release-page retrieval returned HTTP 200. No broader trust
 TLS/proxy bypass, credential extraction or tag movement was used. Description and
 issues #9/#10/#24 were reconciled within their exact scope; remaining research and
 archive gates stand. See [release evidence](RELEASE_PUBLICATION_0.3.0a1.md).
+
+## Original-criteria and manuscript checkpoint — 2026-09-28
+Full original specification re-read; fresh-host released-source/wheel workflow committed at 82a7ea2. Hosted runs 36382755131 (tests/build/dependency audit), 36382755158 (docs), and 36382755169 (independently fetched released assets) all completed successfully. Local 448 tests, seven docs oracles, lint/format and source/wheel build passed. Local pip-audit could not finish because the existing proxy closed a PyPI connection; hosted audit passed instead. No TLS/proxy bypass or credential extraction. Normal Git push works; local gh API still fails certificate trust. Public API readback confirms actual CI and issue state; it does not authorize an alternate authenticated mutation route.
+
+Software Heritage request 2510390 succeeded with a full visit and snapshot/release objects resolved to the exact released code; see ARCHIVE_STATUS.md. Source preservation does not imply DOI or binary retention. Initial complete manuscript is original text with original SVG figures and generated reading PDF, not licensed standards/report/template redistribution. Human authorship/declarations remain unconfirmed. Preserve historical audits above as dated evidence, not current-state assertions.
+
+Final original manuscript PDF was regenerated from the committed Markdown renderer: native PDFKit extracted 24,222 characters across nine pages, including new fresh-host run identifier and final reference; targeted private-path checks clear. It is the sole deliberately included original PDF, not a third-party source/standard/template. The publication scope checker flags PDFs/binaries for manual review by design; this reviewed generated reading artifact is an explicit exception, not a weakening of the checker.

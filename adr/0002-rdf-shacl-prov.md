@@ -1,15 +1,13 @@
 # ADR 0002: RDF, SHACL, and PROV-O
 
-Status: proposed; implementation and final library selection deferred.
+Status: accepted for bounded implementation, reviewed against executed code and tests 2026-09-28. Human/domain endorsement is not implied.
 
-Context: evidence relationships and inspectable constraints need portable semantics.
-Decision proposed: RDF/PROV-O representation with SHACL validation; evaluate RDFLib
-and pySHACL before committing to versions or dependencies.
+Context: evidence relationships and inspectable constraints need portable semantics. Decision: reuse RDFLib/PROV-O representation with pySHACL Core rather than invent provenance syntax or a validation engine. Locked versions and licenses are in docs/DEPENDENCIES.md; MIT original code does not relicense dependencies.
 
-Alternatives: relational tables with foreign keys; JSON Schema plus explicit lineage;
-property graphs. Compare usability, interoperability, constraint expressiveness,
-performance, and reproducibility on the same synthetic cases.
+Alternatives: relational foreign keys provide efficient local integrity but do not by themselves supply interoperable PROV identities and graph exports; JSON Schema checks closed records but not the complete graph relationship contract; property graphs add runtime/storage dependencies and need their own exchange mapping. For current small offline fixtures, RDFLib + packaged queries avoids a graph server. No benchmark establishes performance superiority over these alternatives.
 
-Consequences: graph complexity and ontology governance are real costs. SHACL
-conformance is not financial or GHG assurance. Record missing-evidence semantics
-and validation profiles. No RDF or SHACL artifact exists in Phase 0.
+Implementation evidence: tests/test_graph.py checks identity collisions, reference integrity and five queries; tests/test_validation.py executes real packaged SHACL shapes against clean and defective fixtures. Closed Pydantic validation complements, rather than replaces, graph checks. No remote contexts, SERVICE queries, JavaScript, inferred standards opinion or automatic evidence download.
+
+Missingness: calculated-profile missing required provenance fails closed. Public totals use reported-disclosure/1, never fabricated calculation closure; unavailable checks remain not_assessable. SHACL conformance only means selected encoded constraints hold, not source truth, full accounting conformity or assurance.
+
+Consequences: ontology governance and graph complexity are real costs. Scope remains bounded in-memory snapshots; broader scale, alternative query engines and PECO/ECFO alignment require evaluation. Production guarantees, authenticated review and universal ontology interoperability are not established.

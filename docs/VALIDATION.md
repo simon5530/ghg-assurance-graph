@@ -1,6 +1,6 @@
 # Validation API and reproducibility
 
-Experimental, offline, selected-source validation. **Gate A remains HOLD.**
+Experimental, offline, selected-source validation. **Gate A is scoped GO; no conformity claim.**
 
 Dependency: pyshacl==0.31.0 (also initially tested with 0.30.1). Dependency
 metadata and lock are committed. Turtle resource lives at

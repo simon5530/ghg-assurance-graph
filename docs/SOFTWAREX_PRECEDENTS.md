@@ -16,3 +16,11 @@ The inspected preprint illustrates architecture, start/log/end directives, a Pyt
 A narrow workflow gap and low-friction integration can motivate a software contribution without inventing a new provenance standard. Show one complete reproducible case with concrete artifacts and limitations, not a decorative graph. Reuse PROV/RO-Crate; do not claim their combination is new. For GHG assurance this precedent does not replace seeded-defect precision/recall, multi-driver attribution reconciliation, or domain review. It is not a corporate GHG assurance engine and does not establish that our remaining gap is publishable.
 
 Other search leads (not primary-reviewed precedents): yProv4ML and SAMbA-RaP; see [search log](NOVELTY_SEARCH.md). No fabricated DOI or evaluation is assigned to them.
+
+## Primary refresh — 2026-09-28
+
+Crossref publisher-deposited record re-read: published title, SoftwareX volume 35, article 102821 and DOI above confirmed; print issue date September 2026, Crossref creation 2026-06-19. These metadata dates are not substituted for a read of the final full paper. GitHub API returned [HEAD 45f4e002d68044de2626dade2501f6eb8626c741](https://github.com/HPCI-Lab/yProv4DV/commit/45f4e002d68044de2626dade2501f6eb8626c741), commit date 2026-08-17, unarchived, **GPL-3.0**. Cite the workflow precedent; do not copy GPL code into MIT output without respecting its license. No external adoption or final-paper quantitative evaluation was verified.
+
+The predecessor yProv4ML DOI 10.1016/j.softx.2025.102298 appears in the publisher-deposited reference list; it remains a discovery lead, not a full-text-reviewed evaluation precedent. The current review remains deliberately narrow rather than assigning invented results to more papers.
+
+For [Gate A](GATE_A.md), yProv4DV confirms PROV + RO-Crate integration is established prior art. It does not establish the corporate inventory/version-attribution workflow. Domain review is an openly missing validation activity, **not an invented mandatory SoftwareX/Phase 11 acceptance requirement**. No precedent promises this project's acceptance or waives original release/reproduction gates.

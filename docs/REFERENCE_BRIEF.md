@@ -3,7 +3,7 @@
 Prepared 2026-09-26 from the dated Phase 0 primary-source inspection, not a new
 exhaustive literature review. Precise pinned source links and evidence distinctions
 are in [RELATED_WORK](RELATED_WORK.md); search limitations in [NOVELTY_SEARCH](NOVELTY_SEARCH.md).
-[Gate A remains HOLD](GATE_A.md); Phase 1 is only a bounded engineering experiment.
+[Gate A is scoped GO](GATE_A.md); implemented capabilities remain bounded research software.
 
 | Reference | What matters here | Reuse / distinction and uncertainty |
 |---|---|---|

@@ -1,5 +1,6 @@
 # Phase 4 validation acceptance contract
 
+Current status note (2026-09-28): this is a historical phase contract. Its dated authorization/HOLD restrictions are superseded by [current Gate A](GATE_A.md) and [original-phase acceptance](ROADMAP_ACCEPTANCE.md); technical invariants remain unless explicitly superseded.
 Status: engineering implementation; **Gate A remains HOLD**. Owner authorization
 permits engineering, not standards-conformity claims. Licensed ISO clause review
 and practitioner review are separate, unresolved gates; no ISO clauses are invented here.

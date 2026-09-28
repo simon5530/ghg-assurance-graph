@@ -1,35 +1,36 @@
-# Gate A — HOLD
+# Gate A — scoped GO
 
-Decision date: 2026-09-25. Phase 0 only; Phase 1 is not authorized by this result.
+Decision date: 2026-09-28. Supersedes the 2026-09-25 HOLD after rereading the full original owner plan and focused primary-source comparison. This is a bounded research-gap decision, not independent human review, standards conformity or submission approval.
 
-## Original contract
-The complete owner specification was recovered and read. Section 11 permits proceeding only if no existing open-source tool already provides organizational GHG inventory + semantic provenance graph + executable assurance rules + version-aware change attribution + reproducible evidence export. Section 23 requires a defensible gap. A bounded search cannot prove universal absence.
+## Original contract and correction
+
+Original sections 11/23 permit proceeding if a defensible gap remains for the combination:
+
+- organizational GHG inventory;
+- semantic provenance graph;
+- executable assurance rules;
+- version-aware change attribution;
+- reproducible evidence export.
+
+If a mature project already provides this combination, extend/contribute/narrow instead. The original contract does **not** require proof of universal absence or a prior independent practitioner sign-off. The earlier HOLD incorrectly turned useful additional validation into mandatory gates. Symptom: indefinite HOLD despite no evidenced full-combination alternative. Cause: analyst-added requirements. Discriminating check: original Phase 0/11 and Gate A/B/D text. Recovery: same-case source comparison, bounded conclusion and explicit limitations; proof: refreshed primary interfaces and reproduced local case documented below.
 
 ## Evidence and decision
-[Related work](RELATED_WORK.md) documents substantial overlap: CarbonLedger numerical factor restatements; Arrhen organizational accounting; TEC/PECO carbon provenance plus executable Datalog; AutoMatCE/OpenDPP SHACL; yProv4DV PROV and RO-Crate packaging. No inspected source establishes the entire proposed organizational workflow, but absence of evidence is not a sufficient GO case. No comparative end-to-end reproduction or independent practitioner review establishes the remaining integration need. Search access and source-inspection limitations remain.
 
-**HOLD**, not abandonment: retain the narrow organizational assurance/interoperability overlay hypothesis. Do not claim first, unique, compliant, automated assurance, or publishable novelty. MIT covers our original scaffold, not third-party code or standards.
+[Related work](RELATED_WORK.md) compares extending CarbonLedger, adapting Arrhen, and composing TEC/PECO/ECFO + SHACL + RO-Crate using the **same ACME electricity case**: 1,000×0.5=500 → 800×0.6=480 kgCO2e. The declared activity-first bridge is −100 activity/+80 factor = −20.
 
-## Conditions to reconsider
-1. Domain lead reviews one concrete inventory-version assurance case and the required evidence outputs.
-2. Compare extending CarbonLedger, adapting Arrhen, and composing TEC/PECO + SHACL + RO-Crate against that same case; document what each can and cannot provide, license/runtime constraints included.
-3. Specify a defensible multi-driver attribution convention, boundary/method comparability and unresolved residual behavior; identify an independent evaluation oracle. This is research design, not permission to implement Phase 1.
-4. Resolve material prior-art leads and obtain an explicit recorded GO or PIVOT. Prefer an upstream contribution/overlay if reuse covers the need.
+CarbonLedger implements factor-vintage restatement on a fixed activity table, not the inspected two-snapshot bridge. Arrhen exports organization/activity/factor lineage but the inspected report interface does not supply the semantic version bridge and reproducible numerical evidence profile. TEC and mature generic validators/packagers supply reusable building blocks; inventory revision contracts, domain constraints, comparability and reconciled attribution still require implementation. Detailed licenses, source pins and maturity limits are recorded in the comparison. Competitor runtimes were not executed; this is source-grounded workflow comparison, not a performance benchmark.
 
-Publication infrastructure is a separate gate: local documentation may be prepared while research is HOLD, but public visibility, remote issue creation and submission readiness cannot be inferred from local files. See [acceptance](PHASE0_ACCEPTANCE.md) and [audit](PUBLICATION_AUDIT.md).
+**GO for the narrow compositional organizational assurance/interoperability overlay.** No inspected mature turnkey project establishes the entire combination. The positive gap is the identified domain integration contract, not a claim that ingredients are new. Reuse RDFLib, PROV, pySHACL and ro-crate-py; consider PECO/ECFO alignment rather than assert semantic novelty. No general calculator, LCA engine, blockchain, UI or AI novelty is authorized by this reasoning.
 
-## Bounded owner exception — 2026-09-26
-The owner separately authorized experimental Phase 1 implementation only. See
-[contract](PHASE1_CONTRACT.md). The original research HOLD and its unresolved
-conditions remain; this is not practitioner review, novelty evidence or a GO.
+Current local code reproduced the electricity bridge and 196 selected graph/validation/diff/package tests passed. This supports feasibility only. Raw-snapshot matching, caller-asserted semantic labels, non-bundled external evidence and absent authenticated approval service remain limitations. Zero residual is not causal proof.
 
-## Bounded Phase 2 owner exception — 2026-09-26
-Owner separately authorized the synthetic benchmark only; see [contract](PHASE2_CONTRACT.md).
-Research HOLD remains unchanged. Gate B still requires independent domain review;
-no automatic authorization for Phase 3 or stronger standards/novelty claims.
+## What remains separate
 
-## Remaining-phase authorization — 2026-09-28
-Owner explicitly authorized engineering through all remaining original phases.
-This supersedes historical phase-only restrictions, not Gate A research HOLD.
-The [acceptance matrix](ROADMAP_ACCEPTANCE.md) preserves external, practitioner,
-fresh-machine and publication gates. No novelty or conformity approval is implied.
+- Human/domain review is **not performed**; [bounded owner questionnaire](DOMAIN_REVIEW.md) records unanswered method questions. Owner feedback is not independent assurance.
+- Gate B asks whether benchmark problems are meaningful, not merely toy arithmetic. Gate C requires quantitative evaluation. Gate D/Phase 11 retain actual original feature/release/reproduction/publication requirements; this decision does not mark them complete.
+- No “first,” “unique,” “standards-compliant,” “automatic assurance,” external adoption or publishability claims.
+- Reopen/pivot if a concrete maintained implementation meets the entire case with less bespoke work. Current licenses and runtime constraints must be reviewed before copying/integrating third-party assets.
+
+## Historical authorization record
+
+2026-09-26 owner authorized experimental Phase 1, then Phase 2 while the historical research HOLD stood. On 2026-09-28 owner authorized engineering through remaining phases. This reassessment supersedes that HOLD on evidence; it does not fabricate retrospective practitioner approval or alter publication responsibility. Older dated HOLD statements elsewhere describe prior state and must not override this decision.

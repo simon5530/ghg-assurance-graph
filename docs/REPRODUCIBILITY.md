@@ -68,3 +68,6 @@ executes all three cases and uploads outputs; hosted success must be observed se
 The first comparison used a fixture while retrieval timestamps were still being
 finalized, and correctly differed. Freeze input hashes before byte-reproduction checks.
 Source PDFs stay local; tests use only attributable fact extracts.
+
+## Published artifact fresh-host proof — 2026-09-28
+[Released source and wheel reproduction](FRESH_RELEASE_REPRODUCTION.md) completed successfully on a new Ubuntu hosted runner; its application inputs came only from digest-pinned public release assets. This satisfies fresh-machine software reproduction, not human practitioner review. [Archive proof](ARCHIVE_STATUS.md) resolves the published tag in Software Heritage.

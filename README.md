@@ -27,13 +27,15 @@ production factor database, complete inventory calculator or compliance service.
   [generic external JSON/CSV adapter](docs/ADAPTERS.md) and
   [bounded read-only tools](docs/TOOLS.md).
 
-**Research Gate A remains HOLD.** Owner authorization extends engineering through
-the remaining phases, not research novelty, practitioner approval or publication
-readiness. [Exact phase matrix](docs/ROADMAP_ACCEPTANCE.md). Phase 11/v1.0 is not
-complete: fresh-machine reproduction and archival evidence remain outstanding.
-Practitioner review remains a research limitation; the official SoftwareX template
-and human journal approvals are submission gates, not alpha-release permissions.
-PACT/openLCA/Brightway integrations and Jev are not implemented or required.
+**Gate A: scoped GO for the compositional evidence overlay**, not a novelty or
+assurance claim. [Exact original-phase matrix](docs/ROADMAP_ACCEPTANCE.md).
+[Fresh-host release-source and wheel CI](https://github.com/simon5530/ghg-assurance-graph/actions/runs/36382755169)
+passed; [Software Heritage preservation](docs/ARCHIVE_STATUS.md) resolves the actual
+released tag. This remains a qualified alpha, not a stable v1.0 or journal submission.
+[Full initial SoftwareX manuscript](paper/softwarex/MANUSCRIPT.md) is available for
+human review. Authorship/declarations and official submission formatting remain
+owner decisions. PACT/openLCA/Brightway integrations and Jev remain optional;
+[adapter assessment](docs/ADAPTER_FEASIBILITY.md) and [AI decision](docs/OPTIONAL_AI_DECISION.md).
 
 [ISO review](docs/STANDARDS_ALIGNMENT.md) inspected English ISO 14064-1:2018
 privately, including normative Annexes D/E. Only paraphrases and references are
@@ -79,7 +81,7 @@ Validation exit codes: 0 clean selected checks, 1 findings, 2 invalid request.
 - [Related work](docs/RELATED_WORK.md), [research decision](docs/GATE_A.md),
   [publication strategy](docs/PUBLICATION_STRATEGY.md), [roadmap](.github/roadmap.json)
 - [SoftwareX highlights](paper/softwarex/HIGHLIGHTS.md),
-  [SoftwareX draft](paper/softwarex/OUTLINE.md),
+  [SoftwareX full initial manuscript](paper/softwarex/MANUSCRIPT.md),
   [results ledger](paper/softwarex/RESULTS_LEDGER.md),
   [distinct methods research](paper/methods/FUTURE_PAPER.md)
 - [AI disclosure](docs/AI_USAGE_LOG.md), [contributing](CONTRIBUTING.md),

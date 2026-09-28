@@ -54,3 +54,10 @@ review usage edges, five bound SPARQL queries and local ghgag graph CLI. No Phas
 - Add independent adversarial tests and a reproducible evaluation SVG.
 - Reconcile standards coverage and original final gates without conformity claims.
 - The published 0.2.0a1 artifact is unchanged; these are subsequent source changes.
+
+## 2026-09-28 — manuscript and verification checkpoint (no application version change)
+- Reassessed original gates with primary-source same-case comparison; scoped GO for a compositional overlay, no novelty/superiority claim.
+- Added full initial SoftwareX manuscript and reading formats, official current-guide check and bounded human review questions.
+- Published fresh GitHub-runner reproduction of digest-pinned released source and wheel; all 207 public-output files match independently fetched expected artifacts.
+- Preserved released source in Software Heritage with a verified snapshot/release SWHID; no DOI invented.
+- Reconciled optional vendor/Jev assessments and original phase acceptance. Application remains 0.3.0a1; no existing tag moved.

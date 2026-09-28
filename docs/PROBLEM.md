@@ -1,6 +1,6 @@
 # Problem
 
-Status: Phase 0 planning; domain features are not implemented.
+Status: bounded deterministic implementation and public-disclosure examples exist; [Gate A scoped GO](GATE_A.md), not a general novelty or assurance claim.
 
 ## Hypothesis, not novelty claim
 Organizational GHG results can lose their connection to source evidence, factor

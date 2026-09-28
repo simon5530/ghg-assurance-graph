@@ -79,3 +79,6 @@ attributed numeric facts and original mapping notes are included. Human practiti
 verification is not claimed. Source assurance labels do not become tool approval.
 Independent tests, release/publication checks and measured missingness are recorded
 in the results ledger/audit. No model is needed to reproduce the runtime.
+
+## 2026-09-28 — original-criteria reconciliation and initial manuscript
+Tool/model: OpenClaw, openai/gpt-6-astra. Tasks: full original-plan review, primary prior-art comparison, executable phase inventory, fresh-host released-source/wheel verification harness, Software Heritage archival request, initial manuscript and deterministic explanatory graphics. Human declarations/domain review remain pending; AI is not an author. Full baseline 448 tests, seven docs oracles, lint/format/build passed; hosted checkpoint tests and independent released-artifact reproduction passed. No licensed ISO text or private attachment is published. Gate A scoped GO is a bounded evidence decision, not fabricated practitioner approval.

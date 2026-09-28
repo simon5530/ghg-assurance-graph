@@ -4,11 +4,11 @@
 
 ## Decision summary
 
-**Gate A: HOLD.** The prior draft recommendation of conditional GO is superseded by [the recorded gate decision](GATE_A.md). Corporate carbon accounting, factor-version restatement, numerical factor-change attribution, machine-readable carbon provenance, executable graph validation, and evidence exports each already exist. The strongest near-neighbor discovered beyond the requested list is **TEC Toolkit**: actual PROV-extending carbon ontologies, machine-readable calculation traces, and executable Datalog validation. CarbonLedger already implements factor-vintage change attribution. AutoMatCE and OpenDPP already provide carbon-related RDF/JSON-LD with SHACL.
+**Gate A: scoped GO, reassessed 2026-09-28.** This supersedes the 2026-09-25 HOLD; see [the recorded gate decision](GATE_A.md) and the same-case comparison below. Corporate carbon accounting, factor-version restatement, numerical factor-change attribution, machine-readable carbon provenance, executable graph validation, and evidence exports each already exist. The strongest near-neighbor discovered beyond the requested list is **TEC Toolkit**: actual PROV-extending carbon ontologies, machine-readable calculation traces, and executable Datalog validation. CarbonLedger already implements factor-vintage change attribution. AutoMatCE and OpenDPP already provide carbon-related RDF/JSON-LD with SHACL.
 
 A potentially defensible contribution is an **organizational-inventory assurance case joining versioned source evidence, RDF/PROV calculation dependencies, executable inventory-specific constraints, and reconciled numerical attribution of changes across approved inventory versions, with a portable reviewer evidence package**. The inspected evidence does not establish one existing project delivering that full combination. That is an integration/use-case gap hypothesis, not algorithmic novelty or a market-exclusivity claim. AI is neither necessary nor a novelty differentiator.
 
-Recommended next decision test: compare the proposed workflow against **CarbonLedger + TEC/PECO/ECFO + a SHACL implementation**, and against adapting Arrhen. PIVOT to an interoperability/assurance overlay if these components already satisfy the practical workflow. Do not start a replacement LCA engine or generic Scope 1/2/3 dashboard on novelty grounds.
+The focused comparison below now assesses **CarbonLedger + TEC/PECO/ECFO + SHACL/RO-Crate**, and adapting Arrhen. Its decision is to proceed as an interoperability/assurance overlay, reusing the components rather than replacing them. Do not start a replacement LCA engine or generic Scope 1/2/3 dashboard on novelty grounds.
 
 ## Method and interpretation
 
@@ -130,7 +130,9 @@ A web search also surfaced [openepcis/openepcis-dpp-ready](https://github.com/op
 
 **Unresolved:** actual deployment/adoption; full test status; compliance; security; source-document authenticity and access control; reproducibility of complete exports; immutable approval history; simultaneous multi-driver attribution; commercial/private alternatives; other languages/repos not found by these searches. No exhaustive ecosystem or commercial product audit was performed.
 
-### Narrow GO/HOLD/PIVOT criteria for the parent decision
+### Historical proposed criteria (superseded on 2026-09-28)
+
+The following were analyst-added criteria, not the original Gate A contract. They are historical, not active restrictions; the current decision below supersedes them.
 
 1. **GO only if** a reviewer demonstrably needs the joined workflow and a bounded test can prove: correct organizational boundary/context; immutable approved-version identity; deterministic recalculation; a specified interaction/allocation policy for change attribution; a change bridge that reconciles to total delta; queryable evidence dependencies; failing constraints with actionable violations; and a portable package another reviewer can inspect/recompute.
 2. **HOLD novelty marketing** until TEC/PECO/ECFO reuse and CarbonLedger overlap are acknowledged and at least one practitioner compares the proposed output against current tools. Avoid “first,” “unique,” “certified,” “automatic assurance,” or “standards-compliant” claims from this report.
@@ -142,3 +144,42 @@ All source links were accessed on 2026-09-24 unless explicitly described as an u
 ## Independent verification on 2026-09-25
 
 The completion review re-read Arrhen LICENSE and README at the pinned commit: AGPL-3.0 and a literal JOSS `papers/placeholder/status.svg` badge are confirmed. Earlier MIT/JOSS-published descriptions are incorrect. No publication acceptance is established. CarbonLedger pinned `drift.py` was re-read: candidate-minus-baseline per-activity deltas and gross/net drift are implemented; no runtime results were reproduced. TEC official site confirms PECO/ECFO, carbon provenance and Datalog validation. Other detailed code observations above are retained as dated prior research reports, not independently rerun verification. See [search log](NOVELTY_SEARCH.md) and [publication precedent](SOFTWAREX_PRECEDENTS.md).
+
+## 2026-09-28 focused reassessment: one case, three alternatives
+
+**Scope:** an organizational-inventory overlay, not a new accounting engine. Original sections 11/23 ask whether an existing mature open-source project supplies the full combination, not whether every ingredient is new. This bounded review cannot prove universal absence; it identifies concrete missing integration work in the strongest inspected alternatives. Practitioner review is valuable utility evidence, not an original Gate A or Phase 11 prerequisite.
+
+### Common case and acceptance outputs
+
+Existing ACME selected-source electricity row, same Taiwan facility and explicit stable identity, location-based Scope 2 only: 2025-v2 **1,000 kWh × 0.5 kgCO2e/kWh = 500 kgCO2e** versus 2026-v1 **800 × 0.6 = 480 kgCO2e**. Factors are invented, precharacterized CO2e, allocation 1, no second GWP multiplication. Synthetic evidence/review states are not authentic invoices or human approvals.
+
+Required workflow: retain two identified snapshots; query result → calculation → activity/evidence/factor/method/review; flag missing provenance; produce a declared two-driver bridge; export records, graph, versions and integrity metadata for another installation. Activity-first gives (800−1000)×0.5 = **−100**, then 800×(0.6−0.5) = **+80**, total **−20 kgCO2e**, residual 0. Factor-first instead gives +100/−120. Neither ordering proves causation or uniquely correct attribution.
+
+| Alternative | Actual primary evidence applied to this case | Missing work / decision |
+|---|---|---|
+| Extend CarbonLedger | Re-read pinned recompute.py and drift.py: one accepted activity table is recomputed under two factor libraries. Fixed 1,000 kWh would give 500→600 (+100); fixed 800 gives 400→480 (+80). These are analytical consequences of source, **not competitor runtime measurements**. The stage does not accept two independent activity snapshots. | Add snapshot matching and interaction convention to explain 500→480; add RDF/PROV, inventory shapes and portable evidence profile. Factor-restatement arithmetic is prior art. README MIT without a license file leaves copying permission unresolved. Prefer an adapter/specification contribution over copying. |
+| Adapt Arrhen | Re-read generate_json_report: joins organization/site/activity/emission/factor by reporting year; exports quantity/unit, factor source/version, GWP/results. This supplies much of the two input records. The shown factor export does not provide a full numerical-factor reconstruction contract. | Need immutable revisions, snapshot bridge, semantic mapping, shapes and packaging profile. AGPL-3.0 permits reuse with obligations, not silent MIT relicensing. Full-stack/database deployment is broader than the local-library request. A report adapter is plausible, not implemented/benchmarked here. |
+| Compose TEC/PECO/ECFO + pySHACL + ro-crate-py | PECO extends PROV with versioned ontology URIs and RDF serializations. Inspected TEC Datalog sums related non-CO2e gas factors and flags sums exceeding a CO2e value. pySHACL validates supplied RDF/shapes; ro-crate-py creates/consumes research packages. | Still author corporate snapshot identity, evidence/review contracts, inventory shapes, comparability, attribution convention and verification profile. No inspected component automatically implements the 500→480 organizational bridge. Composition is the **chosen architectural strategy**, not a mature turnkey competitor or reason to rebuild libraries; PECO/ECFO alignment remains a reuse assessment, not an already implemented dependency. TEC validation needs commercial RDFox (trial/research licenses described); SHACL is an engineering choice, not novelty. |
+
+**Evidence level:** competitor source inspection + exact arithmetic mapping; no competitor installed/executed, no timed usability comparison, no deployment/adoption claim. Missing behavior means not evidenced in inspected interfaces, not impossible elsewhere. Hyperledger, Battery graph, openLCA, Brightway, PACT, AutoMatCE and OpenDPP rows above remain dated 2026-09-24/25 evidence, not falsely refreshed audits.
+
+### Current primary refresh and licensing
+
+On 2026-09-28 GitHub repository/HEAD APIs returned unchanged pinned commits for CarbonLedger, Arrhen, PECO, TEC Data-Validation and the semantic ML calculator (snapshot table above); all five were unarchived. Relevant CarbonLedger stages, Arrhen report source, PECO README and TEC rule/README were retrieved again at those commits. CarbonLedger API still returns null license; Arrhen AGPL-3.0; PECO API NOASSERTION but README explicitly CC BY 4.0; Data-Validation MIT. Prototype/academic maturity cautions remain; unarchived is not deployment evidence.
+
+- [pySHACL README](https://github.com/RDFLib/pySHACL/blob/469cca7a22a078b36c167c1e8dadecf5e5ec6c75/README.md): Apache-2.0, HEAD 2026-07-28; RDFLib-based validator, CLI and distinct conformance/error exits. Reuse validator, author domain shapes.
+- [ro-crate-py README](https://github.com/ResearchObject/ro-crate-py/blob/05effe591443934e48e3fe59c53d7bc01a3334e0/README.md): Apache-2.0, HEAD 2026-07-10; supports RO-Crate 1.2/1.1/1.0 and file/contextual entities. [RO-Crate 1.2](https://www.researchobject.org/ro-crate/specification/1.2/) is a community Recommendation published 2025-06-04, not an assurance standard.
+- W3C SHACL refresh returned HTTP 403: no new normative interpretation from that failed fetch.
+- Python HTTPS failed local certificate validation; system curl succeeded normally for metadata. No TLS verification disabled; not a repository defect.
+
+### Current implementation versus proposed scope
+
+At local revision 25231a6a5078d2d6f452a7c1136e91e2776184bd, read diff.py, tests/test_diff.py and CARBONDIFF/EVIDENCE contracts. Reproduced the electricity row using Snapshot/compare: 500→480, −100/+80, −20 total, residual 0. Ran:
+
+    .venv/bin/python -m pytest -q tests/test_diff.py tests/test_evidence.py tests/test_graph.py tests/test_validation.py
+
+**196 passed in 12.04 s.** Literal/Fraction-based test oracles, not model self-review, check arithmetic. This establishes bounded feasibility, not independent domain acceptance or the whole intended workflow. Comparator uses raw ACME snapshots, not arbitrary RDF matching; semantic declarations are unauthenticated caller assertions, with one whole-row label rather than simultaneous semantic decomposition. Packages retain citations but do **not** fetch/bundle invoices; hashes are not signatures. Review fields do not implement immutable human approval. Preserve these limitations in release/manuscript claims.
+
+### Decision and stop condition
+
+**Scoped GO:** no mature ready-to-use project was established among required/strongest inspected alternatives supplying the entire organizational snapshot → semantic checks → declared numerical attribution → reproducible export combination. The positive justification is the concrete domain glue still needed on the same case even when existing components are composed, not zero search hits. Proceed with the small overlay and reusable profiles/tests. No claims of new provenance standards, decomposition algorithms, automatic assurance, superiority, universal absence, adoption or publishability. Reopen if a maintained full-combination implementation is identified; prefer extension/upstream then. Primary evidence now covers this scoped decision; further broad searches are unlikely to change it.

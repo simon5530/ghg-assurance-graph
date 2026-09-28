@@ -1,5 +1,6 @@
 # Phase 5 CarbonDiff acceptance contract
 
+Current status note (2026-09-28): this is a historical phase contract. Its dated authorization/HOLD restrictions are superseded by [current Gate A](GATE_A.md) and [original-phase acceptance](ROADMAP_ACCEPTANCE.md); technical invariants remain unless explicitly superseded.
 Experimental deterministic comparison, not causal inference or assurance. ISO
 licensed-clause review and Gate A status are unchanged.
 

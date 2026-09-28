@@ -1,7 +1,7 @@
 # Phase 3 local provenance graph
 
 Experimental owner-authorized implementation; [contract](PHASE3_CONTRACT.md).
-Research Gate A remains HOLD; ISO 14064-1 clause review UNVERIFIED/deferred.
+Gate A is scoped GO; current licensed-review scope and limitations are in STANDARDS_ALIGNMENT.md.
 
 ## Reproduce
 

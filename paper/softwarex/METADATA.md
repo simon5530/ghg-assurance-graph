@@ -1,20 +1,16 @@
-# SoftwareX metadata draft
+# SoftwareX metadata — initial full manuscript
 
-- Version: 0.3.0a1 qualified alpha; not v1.0 or a DOI-archived release.
+Current authoritative C1–C8 table: [MANUSCRIPT.md](MANUSCRIPT.md).
+Official guide and template Version 6 (March 2026) retrieved and inspected
+2026-09-28: [journal check](JOURNAL_GUIDE_CHECK.md). The old 403 blocker is resolved.
+Current limit 4,000 words, six figures; not the older 3,000 planning assumption.
+
+- Code: 0.3.0a1 qualified alpha, MIT, Git, Python 3.12.14, uv.lock.
+- Frozen code: b0de4b8a9373eee24d631cad14265e37bffcc75d.
 - Repository: https://github.com/simon5530/ghg-assurance-graph
-- License: MIT; dependencies retain upstream licenses.
-- Language/environment: Python 3.12.14; uv.lock; local CLI/library, no cloud key.
-- Capabilities: canonical model, RDF/PROV, selected SHACL/domain checks, bounded
-  CarbonDiff, ACME benchmark, portable evidence, graph export and generic adapter.
-- Developer/user documentation: README and docs; support: repository issues.
-- Archive/DOI/submission identifier: none assigned.
-- Authors, affiliations, funding, competing interests: human confirmation pending.
-- Official template and current mandatory submission fields: verification pending.
-- Claims: synthetic defect evaluation plus bounded public-company assertion inspection;
-  no causal accuracy, novelty, certification or adoption claim.
-- Contribution brief: [qualified highlights](HIGHLIGHTS.md).
-
-Template access check (2026-09-28): the official [Guide for Authors](https://www.sciencedirect.com/journal/softwarex/publish/guide-for-authors)
-returned HTTP 403. Current official template contents were not retrieved or
-verified; no locally invented template is presented as official. The Markdown
-article remains a content draft, not a submission-ready document.
+- No archival DOI or submission identifier assigned.
+- Human authors/affiliations/contact/CRediT/funding/conflicts remain unconfirmed.
+- C8 requires approved support email; repository issues are interim support only.
+- Full Markdown and readable PDF exist; neither claims official submission layout.
+- Gate A scoped GO; human practitioner review and external impact evidence remain absent.
+- Fresh-host source/wheel CI passed; Software Heritage source archive verified, no DOI.

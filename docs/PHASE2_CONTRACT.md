@@ -1,5 +1,6 @@
 # Phase 2 acceptance contract — 2026-09-26
 
+Current status note (2026-09-28): this is a historical phase contract. Its dated authorization/HOLD restrictions are superseded by [current Gate A](GATE_A.md) and [original-phase acceptance](ROADMAP_ACCEPTANCE.md); technical invariants remain unless explicitly superseded.
 Defined before implementation. Owner authorizes only bounded synthetic benchmark
 implementation/publication. Gate A remains HOLD; Gate B needs independent domain
 review. No general graph builder, SHACL detector, CarbonDiff algorithm or AI.

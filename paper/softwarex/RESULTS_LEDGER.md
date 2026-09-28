@@ -1,7 +1,8 @@
 # Results ledger
 
-No scientific experiments or domain measurements have been run. Documentation check
-results belong in the publication audit, not in a scientific performance table.
+Historical entries below distinguish executed synthetic regression and public assertion
+workflows from independent scientific validation. Documentation checks are not scientific
+performance measurements.
 
 ## Entry template (copy only after an actual run)
 
@@ -137,3 +138,19 @@ restatement and rounding prevent unqualified like-for-like comparisons.
 Full graph/explain/validate/diff/package/vault outputs are committed for inspection.
 Same-machine isolated wheel reproduction is byte-identical for UMC Group and TSMC
 with frozen inputs. Hosted CI and final publication status are separately verified.
+
+
+## 2026-09-28 — full initial manuscript verification
+
+Full pytest rerun: 448 passed, 11 upstream RDFLib warnings, 16.10 seconds.
+Benchmark evaluator rerun: 10 TP / 0 FP / 0 FN; clean findings zero;
+unassisted next-year residual +300 and absolute UNKNOWN 500 kgCO2e.
+Public committed summaries inspected: 24 assertions, 33 assessed checks,
+144 not assessable; 207 output files counted. All three statuses not_assessable,
+all causes UNKNOWN; no new external assurance or causal experiment claimed.
+Full manuscript and two original figures drafted; current official SoftwareX
+4,000-word/six-figure guide and Version 6 March 2026 template inspected.
+See SOURCE_LEDGER.md and MANUSCRIPT_METRICS.json. Owner approval pending.
+
+## 2026-09-28 — independently fetched release and source preservation
+Harness commit 82a7ea2c697af158619581bf6f960670a6c61e35, application 0.3.0a1. Hosted Ubuntu run 36382755169 passed after fetching published source, wheel and expected outputs with exact digest pins. Both installations regenerate every benchmark fixture and all 207 public-company output files identically; source regression suite passes. Artifact 10952658541, SHA256 24ddbb3249a70fcec097663a27c354738fd6e65edd76f2b91fb071d11078e40f, 531924 bytes. Local artifact download remains blocked by gh TLS, not a failed hosted run. Software Heritage full visit archives release object cbd30c9cc797de3bcff750ece70c01167ea2bb23 targeting original code b0de4b8a9373eee24d631cad14265e37bffcc75d; no DOI. Updated reading manuscript conservatively counts 2636 words, 98-word abstract, two figures. These are software verification/preservation results, not practitioner assurance.

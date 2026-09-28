@@ -1,6 +1,6 @@
 # Learning Log
 
-Status: Phase 0 planning; domain features are not implemented.
+Status: bounded implementation, quantitative synthetic/public examples and initial manuscript; dated entries below preserve earlier learning.
 
 ## 2026-09-24 — Separate a scaffold from research evidence
 A working documentation check demonstrates repository consistency, not scientific
@@ -99,3 +99,6 @@ report formatting. Cheapest checks: adversarial exponent context, literal manife
 assertions, and an HTML organization string. Repairs use a complete numeric context,
 versioned replay metadata and escaped presentation. The independent negative tests
 remain executable regression oracles; no source truth is inferred from passing them.
+
+## Original criteria are the acceptance oracle — 2026-09-28
+A useful review recommendation is not automatically a mandatory phase gate. Earlier HOLD and fresh-machine/archive summaries conflated practitioner review with software reproduction and DOI with source preservation. Re-read the exact original exit list, map each requirement to executable or external evidence, and preserve human-review limits separately. Proof here: digest-pinned released source AND wheel ran on a fresh hosted runner; Software Heritage resolved the released tag; neither result claims independent assurance or a DOI.

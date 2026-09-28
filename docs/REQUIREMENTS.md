@@ -1,7 +1,7 @@
 # Requirements and authority
 
 Owner authorization on 2026-09-28 extends engineering through all remaining
-original phases. Research Gate A remains HOLD. The
+original phases. [Research Gate A](GATE_A.md) is now scoped GO after source-grounded comparison. The
 [original-plan acceptance matrix](ROADMAP_ACCEPTANCE.md) records mandatory versus
 optional work and nonwaivable stop gates. Historical contracts retain earlier
 promises; their phase-only restrictions do not override the new authorization.

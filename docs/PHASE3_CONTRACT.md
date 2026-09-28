@@ -1,5 +1,6 @@
 # Phase 3 acceptance contract — 2026-09-27
 
+Current status note (2026-09-28): this is a historical phase contract. Its dated authorization/HOLD restrictions are superseded by [current Gate A](GATE_A.md) and [original-phase acceptance](ROADMAP_ACCEPTANCE.md); technical invariants remain unless explicitly superseded.
 Defined before implementation. Owner explicitly authorizes this experimental phase
 with ISO review deferred, superseding the earlier ISO-before-Phase-3 gate. Research
 Gate A remains HOLD. ISO 14064-1 licensed-clause review remains UNVERIFIED; no

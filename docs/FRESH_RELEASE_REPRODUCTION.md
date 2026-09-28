@@ -2,9 +2,7 @@
 
 ## Status and scope
 
-This is an executable verification protocol, **not a claim of a completed hosted run**.
-A successful run URL, head SHA, archived report and artifact digest must be recorded
-after observing CI. Local helper checks or a same-machine clean environment do not
+Observed [hosted run 36382755169](https://github.com/simon5530/ghg-assurance-graph/actions/runs/36382755169) completed **successfully** on 2026-09-28 at harness commit `82a7ea2c697af158619581bf6f960670a6c61e35`. The source/wheel reproduction step and evidence upload passed. Artifact `released-reproduction-36382755169-1`, ID `10952658541`, is 531,924 bytes with SHA256 `24ddbb3249a70fcec097663a27c354738fd6e65edd76f2b91fb071d11078e40f` (public API readback). Local download/independent report inspection currently fails normal gh TLS verification; do not claim that extra inspection completed. Local helper checks or a same-machine clean environment do not
 constitute fresh-host evidence. The qualified alpha remains non-assurance software;
 synthetic label accuracy is not independent practitioner validation.
 
@@ -86,4 +84,4 @@ The report directory must not exist. Local results remain local evidence only.
 TLS failures must be repaired through normal scoped trust/auth procedures; never
 disable verification or silently substitute local archives. During implementation
 the local GitHub API inspection failed certificate trust, so fresh API/download and
-hosted success remain unverified until the recorded run above.
+local artifact retrieval remains blocked; hosted success is now independently visible in the recorded public run above.

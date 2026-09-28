@@ -1,83 +1,36 @@
 # Original-plan acceptance matrix
 
-2026-09-28: owner authorizes engineering through all remaining phases. This
-supersedes earlier phase-only authorization, **not** research GO or external review.
-The complete original 2,159-line plan was read. Current implementation status is
-tracked below; phase completion requires code, tests, reproducible commands, honest
-docs, limitations, publication evidence and a scoped commit, not merely files.
+2026-09-28. The complete 2,159-line original specification was read, including original exit criteria and definition of done. The owner authorizes all remaining engineering phases and an initial full SoftwareX manuscript. Optional experiments are not silently made mandatory.
 
-| Original phase | Inspectable acceptance | Current evidence status | Stop gate / optionality |
-|---|---|---|---|
-| 0 Gap verification | Comparative workflow evidence, original backlog, explicit gap decision | Scaffold/research evidence exists; Gate A HOLD | Independent practitioner/prior-art comparison missing; owner engineering exception is not GO |
-| 1 Canonical model | 17 record types, 10 examples, identity/unit/RDF schema tests | Implemented, prior verified baseline | Contract/schema 0.1 retained |
-| 2 Benchmark | Three fixed-seed versions, separate truth, documented defects and assumptions | Implemented, prior verified baseline | Gate B domain representativeness remains unreviewed |
-| 3 Graph | Five queries, collision-safe graph, complete clean provenance | Implemented, prior verified baseline | Only allowlisted local queries |
-| 4 SHACL | Packaged Turtle shapes, pySHACL, stable findings, class-wise precision/recall/F1 | Implemented and locally tested; scope limits below | Synthetic defect coverage is not standards conformity |
-| 5 CarbonDiff | Stable matching, typed causes, numeric attribution, residual, independent reconciliation | Implemented and locally tested; scope limits below | Gate C requires quantitative results; no causal decarbonization claim |
-| 6 Evidence | Manifest, versions, digests, JSON-LD/Turtle, RO-Crate, isolated verification | Implemented and locally tested; scope limits below | No source-directory dependence; tampering fails closed |
-| 7 Obsidian | Graph-derived notes, frontmatter, stable links/index, link tests | Implemented and locally tested; scope limits below | Nonblocking for v1; screenshot only if real interface inspected |
-| 8 Adapters | At least one external result format mapped with provenance | Implemented and locally tested; scope limits below | Generic adapter prioritized; PACT/openLCA/Brightway individually optional |
-| 9 Agent tools | Bounded deterministic tools, evidence-linked questions, grounding measured | Seven deterministic actions and evidence-linked question tests implemented; no LLM study | Optional for v1; no hosted LLM required |
-| 10 Jev | Opt-in baseline comparison, probabilities/cost/privacy logs, meaningful result | Deferred | Optional; no spend/model credentials authorized, exclude from paper results |
-| 11 SoftwareX v1.0 | All mandatory software features, quantitative evaluation, CI, tagged archive, licenses, fresh-machine reproduction | Not met | Fresh-machine reproduction and archive remain unproven; reasonable GitHub prerelease publication is authorized |
-| SoftwareX manuscript/submission | Current official template, authorship/disclosures, current related work, Gate D | Draft only | Submission and archival DOI publication not authorized here |
-| Methods extension | Distinct research question, baselines/sensitivity/new results | Research plan only | No fabricated study, novelty, external use or journal acceptance |
+Run `python scripts/check_phase_acceptance.py --run` in the locked environment for an executable phase-to-file/test inventory. It reports missing evidence and actual test exit codes; file presence does not prove scientific approval. Full baseline: 448 tests passed, seven documentation-oracle tests, lint/format and wheel/sdist build passed. The hosted released-artifact run is tracked separately below.
 
-Original Gate E / JOSS is superseded by the owner's chosen SoftwareX + distinct
-methods route. Keep issue 24 as historical superseded work, not a new JOSS scaffold.
+| Phase | Original exit criterion | Evidence and bounded status |
+|---|---|---|
+| 0 | Defensible gap; no inspected mature tool covers full combination | Current comparative decision in [Gate A](GATE_A.md), primary-source [comparison](RELATED_WORK.md), original 30-issue backlog. Not a universal novelty proof. |
+| 1 | Representative examples without per-example ad hoc fields | Complete bounded model: 17 types, ten hand-authored examples, JSON/JSON-LD/Turtle, schema/unit/identity tests in `test_contract.py`. |
+| 2 | Cases understandable and reproducible with separate ground truth | Complete synthetic benchmark: fixed seed, three versions, twelve source types, documented fifteen change/defect cases, independent Fraction/literal oracle, public development/holdout split. Domain realism is a limitation, not fabricated practitioner approval. |
+| 3 | Every clean result traces to source/factor/method/version/review | Complete bounded graph builder and five queries; `test_graph.py`; collision/reference/lineage failures explicit. |
+| 4 | Defects detected or scoped out, FP characterized, automatic metrics | Complete selected checks: real pySHACL plus raw-row rules; 10 TP, 0 FP/FN on public synthetic fixtures; class/split metrics. Not standards conformity. |
+| 5 | Reconciliation, cause evaluation, explicit unresolved cases | Complete ACME deterministic convention, nine annotation-assisted components, exact Decimal reconciliation and unknown residual. General RDF matching and causal inference not claimed. |
+| 6 | Fresh clone verifies package without original directory | Complete bounded RO-Crate directory profile, versions/digests/commands, JSON-LD/Turtle, isolated verification and tamper tests; no authenticity guarantee. |
+| 7 | Usable graph-derived vault, no manual edits | Complete generated notes/frontmatter/index/wikilinks with link tests; no fabricated Obsidian application screenshot. Optional for v1. |
+| 8 | At least one external result format mapped | Complete generic JSON/CSV external-result profile and fixtures/tests. Vendor engines are optional and not executed. Public aggregates have a separate missingness-preserving profile. |
+| 9 | Evidence-linked question set and measurable grounding | Complete deterministic seven-action facade and executable evidence/arithmetic/permission questions. No natural-language router or model-performance study. Optional for v1. |
+| 10 | Publish Jev only for meaningful reproducible comparison; otherwise exclude | [Capability reassessed; optional experiment excluded](OPTIONAL_AI_DECISION.md). Full non-Jev baseline evaluated; no invented credential blocker or model metrics. |
+| 11 | Mandatory software scope, tests/CI, tagged archive, licenses, fresh-machine reproduction | Published qualified v0.3.0a1 source/wheel/output assets; [Software Heritage source archive verified](ARCHIVE_STATUS.md). Fresh-runner source AND wheel reproduction [protocol and observed status](FRESH_RELEASE_REPRODUCTION.md). Hosted run 36382755169 passed. Stable v1.0 freeze is not claimed; local proof download and release-readiness reconciliation remain distinct. |
 
-## Invariants and verification
+## Research gates versus engineering and submission
 
-- Location/market-based electricity are alternative series, never additive totals.
-- Precharacterized CO2e is never multiplied by GWP again; raw gases require a basis.
-- Duplicate identities, cross-version joins, missing/wrong provenance fail closed.
-- Synthetic factors remain explicitly nonproduction; no licensed standards text.
-- Schema/benchmark 0.1 and baseline fixture history remain available; API evolution
-  must not silently relabel earlier benchmark or validation results.
-- Fresh local virtual environments and remote CI are evidence, not a claim that an
-  independent practitioner reproduced the system on a fresh machine.
+Gate A is decided against the original bounded comparative gap, not an invented requirement for an independent interview. Gate B asks whether cases represent meaningful assurance/change problems: method transitions, boundary additions, missing evidence and allocation are present, beyond toy multiplication, but external representativeness remains untested. Gate C permits paper preparation because SHACL/detection and CarbonDiff have quantitative outputs; semantic labels are supplied, not autonomously discovered.
 
-See [research HOLD](GATE_A.md), [standards coverage](STANDARDS_ALIGNMENT.md),
-[publication strategy](PUBLICATION_STRATEGY.md) and [roadmap](../.github/roadmap.json).
+A hosted clean GitHub runner **does** qualify as fresh-machine software reproduction. It does not qualify as human practitioner review. Phase 11 asks for Zenodo **or equivalent**, and DOI **if available**; verified Software Heritage content-addressed source preservation is an equivalent source archive, not a DOI or promise to preserve release binaries. Actions evidence expires on its configured retention; retain downloaded proof separately.
 
-## Verified engineering scope and unresolved breadth
-The published 0.2.0a1 baseline had 297 tests; the subsequent independent audit
-adds adversarial tests and facade coverage (see results ledger for the current run).
-Phase 4 detects all ten seeded defects with zero FP/FN; clean graphs pass real SHACL.
-Phase 5 calculated attribution is ACME raw-row matching, not general RDF version matching.
-The additive 0.3.0a1 reported-disclosure profile compares public aggregate series
-with UNKNOWN causes and explicit basis qualifications; it does not extend causal attribution. Semantic cause
-accuracy is annotation-assisted; no automatic causal attribution. Phase 6 is a
-bounded directory RO-Crate profile, not signed evidence or fetched source documents.
-Phase 7 emits tested notes/links; no Obsidian application screenshot was fabricated.
-Phase 8 maps a defined generic external-result format, not an executed vendor engine.
-An additive public-aggregate profile avoids fictitious external calculation lineage;
-manual attributable numeric fact mapping is required, not arbitrary PDF ingestion.
-Phase 9 implements the seven planned deterministic actions with explicit host-only
-export consent and evidence-linked questions. No natural-language router or AI
-grounding study is claimed; those optional experiments are not prerequisites for
-the deterministic facade. Remaining Phase 11 gates are not waived.
+Gate D before journal submission remains separate: exact official template, human-approved authorship/affiliations/CRediT/funding/conflicts, verified article claims and release freeze. The initial manuscript is not submission. No journal action, account creation, spending or invented human approval is authorized. Methods-paper #30 is distinct future research, not an additional software phase. JOSS #24 was superseded/not planned by the chosen SoftwareX + methods route.
 
-## GitHub reconciliation status
-Authenticated API access recovered on 2026-09-28 following an owner-approved
-narrow trust repair. All 30 existing issues were read before mutation. Repository
-description now reflects experimental scope. Graph issues #9/#10 were closed
-against 75 passing graph tests; #24 was closed as superseded/not planned.
-Other issue acceptance reconciliation remains pending, not blanket completion.
-#13 needs domain-reviewed examples; #25–#27/#30 remain open; #20/#21/#29 deferred.
-The alpha release is only a draft: its separate upload endpoint fails TLS
-verification. See [publication evidence](RELEASE_PUBLICATION_0.3.0a1.md).
+## Invariants and breadth
 
-## Exact original final-gate interpretation
+Location/market electricity are alternative series, never additive. Precharacterized CO2e is not characterized again. Invalid units/identities/lineage fail closed. All synthetic factors are nonproduction. Private ISO text stays outside the repository; published original clause paraphrases do not establish full conformity. Public UMC/TSMC runs contain 24 explicitly mapped assertions across three datasets, 33 assessed metadata checks and 144 not assessable; no upstream recalculation or causal reduction inference. This is not arbitrary-PDF support.
 
-Phase 11 explicitly requires a fresh-machine reproduction and an archive in Zenodo
-or equivalent; it lists a release DOI **if available**. Gate D, before journal
-submission, separately requires release DOI/archive and the populated official
-template. A same-machine virtual environment is not a fresh machine. Hosted CI
-is a fresh runner but does not constitute practitioner review or research impact.
-The original Phase 11 list does not require independent practitioner approval;
-that remains the project's research/domain evidence limitation under Gates A/B,
-not an invented requirement for publishing a clearly qualified alpha release.
-The owner has authorized reasonable GitHub release publication. Remaining asset-upload
-certificate failures are technical blockers, not missing release permission.
-Journal submission, DOI account operations and paid services remain separate.
+## Remote reconciliation
+
+The v0.3.0a1 release is **public**, not a draft; four assets were verified. Earlier API/upload-TLS blocker statements in old snapshots are historical, not release status. Current normal local gh access regressed on 2026-09-28; Git push and anonymous public API reads work. Remote issue mutations must wait for supported authenticated access and exact readback, without TLS bypass. #9/#10 were previously closed against graph tests, #24 as not planned. Individual issue contracts can be stricter than original phase exits: #13 explicitly requests domain-reviewed examples and remains open until actual review. No blanket closure of research, v1.0, submission or methods work.

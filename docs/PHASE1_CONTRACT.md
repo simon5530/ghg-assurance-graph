@@ -1,5 +1,6 @@
 # Phase 1 experimental implementation contract
 
+Current status note (2026-09-28): this is a historical phase contract. Its dated authorization/HOLD restrictions are superseded by [current Gate A](GATE_A.md) and [original-phase acceptance](ROADMAP_ACCEPTANCE.md); technical invariants remain unless explicitly superseded.
 Authorized 2026-09-26 by the owner: proceed with Phase 1 only. This is a bounded
 engineering exception to [Gate A HOLD](GATE_A.md), not a research GO, practitioner
 review, novelty finding, or permission to begin Phase 2. SoftwareX and the distinct
