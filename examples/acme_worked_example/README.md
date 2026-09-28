@@ -26,7 +26,7 @@ Runner output map:
 - `negative-validation.json`: deliberate double-GWP rejection, expected CLI exit 1; the runner itself succeeds only when this expected failure is observed.
 - `manifest.json`: run-file digests excluding itself; internal integrity, not authenticity.
 
-The runner checks Fraction products independently of the benchmark calculator, compares literal totals/deltas, and verifies source-document digests and vault links. Its process-local socket guard is not an OS sandbox. It generates all ten defects but executes one negative control; `benchmark run` and tests below evaluate the full public defect set. An absent `uv` on PATH is an environment issue: if already installed locally, use `.venv/bin/uv` for locked commands or `.venv/bin/python scripts/run_acme_example.py --out OUTPUT` after syncing. Do not silently replace the locked install with unpinned dependencies.
+The runner checks Fraction products independently of the benchmark calculator, compares literal totals/deltas, and verifies source-document digests and vault links. Its process-local socket guard is not an OS sandbox. It generates all ten defects and executes two negative controls (double GWP and missing factor source); `benchmark run` and tests below evaluate the full public defect set. An absent `uv` on PATH is an environment issue: if already installed locally, use `.venv/bin/uv` for locked commands or `.venv/bin/python scripts/run_acme_example.py --out OUTPUT` after syncing. Do not silently replace the locked install with unpinned dependencies.
 
 The [complete generated sample report](sample/REPORT.md) includes all 45 per-result calculations.
 Only [selected readable artifacts](sample/README.md) are committed; regenerate the full
