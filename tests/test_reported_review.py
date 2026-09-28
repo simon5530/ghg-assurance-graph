@@ -2,10 +2,7 @@
 
 import json
 import socket
-import subprocess
-import sys
 from decimal import localcontext
-from pathlib import Path
 
 import pytest
 from rdflib import RDF, Literal
@@ -213,19 +210,13 @@ def test_crate_and_vault_ancestor_symlinks_rejected(tmp_path):
         ReportedEvidenceTools(model()).obsidian(link / "vault")
 
 
-def test_public_runner_escapes_untrusted_organization(tmp_path):
+def test_obsidian_escapes_untrusted_organization(tmp_path):
     data = document()
-    data["organization"] = '<script>alert("untrusted")</script>'
-    source = tmp_path / "input.json"
-    source.write_text(json.dumps(data))
-    out = tmp_path / "out"
-    runner = Path(__file__).resolve().parents[1] / "scripts" / "run_public_case.py"
-    completed = subprocess.run(
-        [sys.executable, str(runner), str(source), "--out", str(out)],
-        check=False,
-        capture_output=True,
-        text=True,
-        timeout=60,
-    )
-    assert completed.returncode == 0, completed.stderr
-    assert "<script>" not in (out / "REPORT.md").read_text()
+    data["organization"] = '<script>alert("untrusted")</script> [[injected]]'
+    tools = ReportedEvidenceTools(ReportedDisclosure.model_validate(data))
+    out = tmp_path / "vault"
+    tools.obsidian(out)
+    notes = "".join(p.read_text() for p in out.glob("*.md"))
+    assert "untrusted" in notes
+    assert "<script>" not in notes
+    assert "[[injected]]" not in notes

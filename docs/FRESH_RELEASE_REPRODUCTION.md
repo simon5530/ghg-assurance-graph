@@ -1,5 +1,9 @@
 # Independently fetched release reproduction
 
+> Historical v0.3.0a1 evidence only. Current v0.4.0a1 removes company demonstrations;
+> this archived result is not current-version reproduction or external validation.
+
+
 ## Status and scope
 
 Observed [hosted run 36382755169](https://github.com/simon5530/ghg-assurance-graph/actions/runs/36382755169) completed **successfully** on 2026-09-28 at harness commit `82a7ea2c697af158619581bf6f960670a6c61e35`. The source/wheel reproduction step and evidence upload passed. Artifact `released-reproduction-36382755169-1`, ID `10952658541`, is 531,924 bytes with SHA256 `24ddbb3249a70fcec097663a27c354738fd6e65edd76f2b91fb071d11078e40f` (public API readback). Local download/independent report inspection currently fails normal gh TLS verification; do not claim that extra inspection completed. Local helper checks or a same-machine clean environment do not

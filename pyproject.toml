@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ghg-assurance-graph"
-version = "0.3.0a1"
+version = "0.4.0a1"
 description = "Offline experimental GHG provenance, selected assurance checks, change attribution and evidence export"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"

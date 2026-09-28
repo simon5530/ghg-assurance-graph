@@ -1,0 +1,107 @@
+{
+  "absolute_unknown_kg_co2e": "10.0",
+  "after": "2025-v2",
+  "attributed_kg_co2e": "20",
+  "before": "2025-v1",
+  "components": [
+    {
+      "cause": "ACTIVITY_CHANGE",
+      "entity": "fleet",
+      "evidence": null,
+      "kg_co2e": "20"
+    },
+    {
+      "cause": "UNKNOWN",
+      "entity": "travel",
+      "evidence": null,
+      "kg_co2e": "10.0"
+    }
+  ],
+  "convention": "activity-first; factor-second; allocation-last; semantic row override",
+  "delta": "30.0",
+  "matches": [
+    {
+      "changed_fields": [],
+      "entity": "allocation",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "capital",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "commuting",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "diesel",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "electricity",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [
+        "activity"
+      ],
+      "entity": "fleet",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "materials",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "method-transition",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "natural-gas",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "new-line",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "refrigerant",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "supplier-pcf",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "transport",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [
+        "activity",
+        "origin"
+      ],
+      "entity": "travel",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "waste",
+      "status": "matched"
+    }
+  ],
+  "residual_kg_co2e": "10.0",
+  "total_after": "3850.0",
+  "total_before": "3820.0"
+}

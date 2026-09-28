@@ -1,0 +1,12 @@
+{
+  "conforms": false,
+  "findings": [
+    {
+      "id": "urn:ghgag:finding-f9726656c060f3f707e6cf1de9e8f56e0c9c9407242638a0f561226fc46c678b:v1",
+      "message": "no double GWP",
+      "rule": "no double GWP",
+      "severity": "error",
+      "target": "refrigerant"
+    }
+  ]
+}

@@ -291,3 +291,42 @@ Full original specification re-read; fresh-host released-source/wheel workflow c
 Software Heritage request 2510390 succeeded with a full visit and snapshot/release objects resolved to the exact released code; see ARCHIVE_STATUS.md. Source preservation does not imply DOI or binary retention. Initial complete manuscript is original text with original SVG figures and generated reading PDF, not licensed standards/report/template redistribution. Human authorship/declarations remain unconfirmed. Preserve historical audits above as dated evidence, not current-state assertions.
 
 Final original manuscript PDF was regenerated from the committed Markdown renderer: native PDFKit extracted 24,222 characters across nine pages, including new fresh-host run identifier and final reference; targeted private-path checks clear. It is the sole deliberately included original PDF, not a third-party source/standard/template. The publication scope checker flags PDFs/binaries for manual review by design; this reviewed generated reading artifact is an explicit exception, not a weakening of the checker.
+
+## 2026-09-28 — 0.4.0a1 synthetic-only worked-example replacement
+
+The current tree removes 213 company-example files (including 207 generated outputs),
+the company source catalogue, runner and company-specific oracle. The generic
+reported-disclosure API is retained; anonymous invented fixtures preserve missingness,
+boundary separation, Scope 2 alternatives and unknown-causality regressions. Historical
+v0.3.0a1 tags/releases and the pinned historical reproduction harness are unchanged.
+Their observations are not current-release external validation.
+
+The new runner executes 73 actual CLI actions with Python socket/DNS access blocked
+before application imports (not an OS sandbox). It materializes and hash-checks 45
+local synthetic source records, records seven fictional semantic declarations, checks
+all 45 arithmetic results independently, and exports three verified crates and three
+258-note vaults. Totals 3820/3850/4060 and deltas 30/210 agree with literal oracles.
+Double-GWP and missing-factor-source controls each exit 1; nonempty output is rejected.
+A new environment installed 29 locked hashed runtime dependencies offline and the
+0.4.0a1 wheel without dependencies. Two complete executions produced byte-identical
+1,023-file output trees. This is isolated same-host wheel proof, not external review.
+Only a bounded readable sample subset is committed; the complete report is unedited.
+
+Documentation link oracle and seven negative documentation tests, Ruff lint/format,
+source/wheel build and diff whitespace checks passed. Gitleaks scanned the current
+tree and all 16 reachable prior commits without findings. The targeted semantic scan
+inspected 238 intended files and 479 historical blobs; its only exceptions were the
+intentionally generated manuscript PDF (blanket PDF/binary policy). Its renderer,
+source manuscript, PDFKit text check and nine nonempty pages establish original
+project authorship; no licensed standard or company PDF is included. HTML/SVG byte
+reproduction is tested; browser PDF metadata is not claimed byte-deterministic.
+
+Normal gh API access was retried and failed x509 trust. No trust store, proxy, TLS or
+credential configuration was changed. New release API publication is blocked; source
+Git publication and observed current CI are tracked separately. Do not present the
+old release assets as the new version or claim a new release exists without readback.
+
+Final local suite: **458 passed**, 11 upstream RDFLib deprecation warnings; seven
+documentation-oracle tests passed. The new runner regression includes actual CLI
+exit checks, two different hash-seed byte-tree replays, exact component oracles,
+source/declaration hashes, package/vault checks and untouched nonempty destinations.

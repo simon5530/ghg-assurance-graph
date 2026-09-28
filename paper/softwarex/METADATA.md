@@ -1,16 +1,15 @@
-# SoftwareX metadata — initial full manuscript
+# SoftwareX metadata — full initial manuscript
 
-Current authoritative C1–C8 table: [MANUSCRIPT.md](MANUSCRIPT.md).
-Official guide and template Version 6 (March 2026) retrieved and inspected
-2026-09-28: [journal check](JOURNAL_GUIDE_CHECK.md). The old 403 blocker is resolved.
-Current limit 4,000 words, six figures; not the older 3,000 planning assumption.
+Authoritative C1–C8 table: [MANUSCRIPT.md](MANUSCRIPT.md).
+Official Version 6 (March 2026) template and 4,000-word/six-figure limits were
+previously verified: [journal check](JOURNAL_GUIDE_CHECK.md).
 
-- Code: 0.3.0a1 qualified alpha, MIT, Git, Python 3.12.14, uv.lock.
-- Frozen code: b0de4b8a9373eee24d631cad14265e37bffcc75d.
+- Code: 0.4.0a1 working-tree qualified alpha, MIT, Git, Python 3.12, uv.lock.
+- Scope: fictional ACME synthetic validation only; generic reported profile optional.
 - Repository: https://github.com/simon5530/ghg-assurance-graph
-- No archival DOI or submission identifier assigned.
-- Human authors/affiliations/contact/CRediT/funding/conflicts remain unconfirmed.
-- C8 requires approved support email; repository issues are interim support only.
-- Full Markdown and readable PDF exist; neither claims official submission layout.
-- Gate A scoped GO; human practitioner review and external impact evidence remain absent.
-- Fresh-host source/wheel CI passed; Software Heritage source archive verified, no DOI.
+- Immutable current-release code link, archive and DOI remain pending.
+- Historical v0.3 reproduction/archive identifiers do not identify this release.
+- Author identities, affiliations, contact, CRediT, funding and conflicts pending.
+- C8 needs approved support email; issues are interim support only.
+- Full Markdown, HTML and reading PDF are not an official submission layout.
+- No practitioner validation, external impact or current-release hosted replay claimed.

@@ -1,0 +1,23 @@
+[
+  {
+    "after": "2025-v2",
+    "before": "2025-v1",
+    "cause": "CORRECTION",
+    "entity": "fleet",
+    "evidence": "sources/scenarios/2025-v1--2025-v2/fleet.md#sha256=aa688c5028c182b0d9a4446a0ea2d388cc27bdbcb09db2ce8ec44972cc3cd9ca",
+    "fields": [
+      "activity"
+    ]
+  },
+  {
+    "after": "2025-v2",
+    "before": "2025-v1",
+    "cause": "MISSING_DATA_RESOLVED",
+    "entity": "travel",
+    "evidence": "sources/scenarios/2025-v1--2025-v2/travel.md#sha256=6d2865ddcc727682322d6ec82200c6ce018ce145859504cdc8607365c749c1e4",
+    "fields": [
+      "activity",
+      "origin"
+    ]
+  }
+]

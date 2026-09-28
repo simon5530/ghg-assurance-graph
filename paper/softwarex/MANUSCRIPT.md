@@ -1,12 +1,12 @@
 # GHG Assurance Graph: Inspectable provenance and bounded comparison of organizational emissions
 
-**Initial manuscript — 28 September 2026. Qualified alpha 0.3.0a1. Not submitted or human-approved.**
+**Initial manuscript — 28 September 2026. Qualified alpha 0.4.0a1. Not submitted or human-approved.**
 
 Authors, affiliations, postal addresses and corresponding-author email: **pending owner confirmation**. No authorship or institutional endorsement is inferred from repository ownership.
 
 ## Abstract
 
-GHG Assurance Graph is an offline Python library for inspecting organizational greenhouse-gas evidence without confusing reported totals with reconstructed calculations. Typed records, RDF provenance, selected executable constraints, bounded version comparison and portable evidence packages support reproducible review. A synthetic benchmark resolves 45 result lineages and detects ten seeded defects; annotation-assisted comparison reconciles nine expected components. These are public, nonblind regression results, not autonomous causal accuracy. Three public-disclosure workflows preserve 24 assertions from UMC and TSMC, with 144 checks not assessable and all causal drivers UNKNOWN. The software exposes missing evidence rather than manufacturing assurance, completeness or standards conformity.
+GHG Assurance Graph is an offline Python library for inspecting organizational greenhouse-gas evidence without confusing reported totals with reconstructed calculations. Typed records, RDF provenance, selected executable constraints, bounded version comparison and portable evidence packages support reproducible review. A synthetic benchmark resolves 45 result lineages and detects ten seeded defects; annotation-assisted comparison reconciles nine expected components. These are public, nonblind regression results, not autonomous causal accuracy. Three fictional ACME snapshots total 3,820, 3,850 and 4,060 kgCO2e, with differences +30 and +210. Validation is synthetic-only. The software exposes missing evidence rather than manufacturing assurance, completeness or standards conformity.
 
 **Keywords:** greenhouse gases; provenance; SHACL; reproducibility; change attribution; evidence graphs
 
@@ -14,20 +14,20 @@ GHG Assurance Graph is an offline Python library for inspecting organizational g
 
 | Nr | Code metadata description | Metadata |
 |---|---|---|
-| C1 | Current code version | 0.3.0a1, qualified alpha |
-| C2 | Permanent link to code/repository used for this code version | https://github.com/simon5530/ghg-assurance-graph/tree/b0de4b8a9373eee24d631cad14265e37bffcc75d |
+| C1 | Current code version | 0.4.0a1, qualified alpha |
+| C2 | Permanent link to code/repository used for this code version | Pending immutable release link; working repository https://github.com/simon5530/ghg-assurance-graph |
 | C3 | Legal code license | MIT; upstream dependencies retain their licenses |
 | C4 | Code versioning system used | Git |
 | C5 | Software code languages, tools and services used | Python; local CLI/library; no hosted service required |
-| C6 | Compilation requirements, operating environments and dependencies | Python 3.12; tested 3.12.14 on macOS arm64 and hosted Ubuntu 24.04; uv.lock; Pydantic, Pint, RDFLib, pySHACL 0.31.0, RO-Crate 0.15.1; package verification requires POSIX facilities |
-| C7 | If available, link to developer documentation/manual | https://github.com/simon5530/ghg-assurance-graph/tree/v0.3.0a1/docs |
+| C6 | Compilation requirements, operating environments and dependencies | Python 3.12; local Python 3.12.14 on macOS arm64; current-release hosted reproduction pending; uv.lock; Pydantic, Pint, RDFLib, pySHACL 0.31.0, RO-Crate 0.15.1; package verification requires POSIX facilities |
+| C7 | If available, link to developer documentation/manual | https://github.com/simon5530/ghg-assurance-graph/tree/main/docs (mutable; release permalink pending) |
 | C8 | Support email for questions | Owner must provide an approved email; interim support through repository issues |
 
 ## 1. Motivation and significance
 
 Organizational greenhouse-gas inventories combine activity evidence, emission factors, characterization conventions, boundaries and review decisions. A plausible total does not identify these dependencies. A year-to-year decrease may reflect changed activity, a corrected input, a different factor or a reporting-boundary change. Researchers need to inspect those alternatives before interpreting a numerical trend. The GHG Protocol Corporate Standard, Scope 2 Guidance and Scope 3 Standard define distinct accounting contexts [1–3]; a software check cannot substitute for establishing their applicability.
 
-GHG Assurance Graph addresses a narrower problem: preserving inspectable evidence relationships, executing selected consistency checks and displaying what a comparison cannot explain. A researcher supplies local structured records, runs a command-line workflow, examines findings and exports a portable evidence directory. Two input profiles prevent an important category error. Calculated results require declared calculation lineage; public reported totals remain attributed assertions when that lineage is unavailable. Neither profile supplies an independent assurance opinion.
+GHG Assurance Graph addresses a narrower problem: preserving inspectable evidence relationships, executing selected consistency checks and displaying what a comparison cannot explain. A researcher supplies local structured records, runs a command-line workflow, examines findings and exports a portable evidence directory. Two input profiles prevent an important category error. Calculated results require declared calculation lineage; optional reported totals remain attributed assertions when that lineage is unavailable. Neither profile supplies an independent assurance opinion.
 
 Existing infrastructure is reused rather than reimplemented. PROV-O represents provenance, SHACL supplies graph constraints, and RO-Crate describes portable research objects [4–6]. TEC Toolkit already combines carbon ontologies, PROV-based calculation provenance and executable validation [7]. CarbonLedger implements factor-vintage restatement [8]. Consequently, neither carbon provenance nor numerical factor-change attribution is claimed as new. The contribution is an experimental organizational-GHG integration with explicit authority boundaries, conservative missing-evidence behavior and reproducible examples. No comparative superiority has been measured; the repository's scoped GO rests on a same-case primary-source comparison of the remaining organizational integration contract, not universal novelty or practitioner endorsement.
 
@@ -45,13 +45,13 @@ The canonical schema has 17 record types covering organizations, facilities, per
 
 Calculated packages require explicit factor, method, GWP and boundary context. The bounded profile supports one activity and factor per run, not arbitrary multi-input life-cycle models. Generic JSON/CSV interchange accepts caller-mapped external results with complete provenance; it is not a tested PACT, openLCA or Brightway integration. Graph-derived Markdown provides an optional Obsidian inspection view without making Obsidian the database.
 
-### 2.2. Validation and reported assertions
+### 2.2. Validation and optional reported assertions
 
 Validation combines closed schemas, reference integrity, selected SHACL constraints and independent raw-row domain rules. Findings have stable identifiers and explicit rule/target/severity fields. Checks include factor provenance, supported units, review metadata and arithmetic consistency. Raw decimal strings are checked using exact rational arithmetic, independently of the benchmark calculator. Some restrictions, such as the ACME factor-year policy, are deliberately narrower than accounting standards and must not be mistaken for universal requirements.
 
-The additive reported-disclosure/1 profile stores organization, year, scope/category, Scope 2 basis, decimal-string quantity, source URL/hash/page/retrieval time and explicit boundary, GWP, restatement and rounding metadata. Unknown metadata remains null. A ReportedAssertion does not become an EmissionResult, ActivityRecord or CalculationRun. Validation distinguishes assessed, invalid and not_assessable; the last is neither a defect nor a pass. Report-wide status remains not_assessable because totals alone cannot establish source authenticity, upstream recalculation or independent assurance.
+An optional generic reported-disclosure/1 profile, outside the empirical evaluation here, stores organization, year, scope/category, Scope 2 basis, decimal-string quantity, source URL/hash/page/retrieval time and explicit boundary, GWP, restatement and rounding metadata. Unknown metadata remains null. A ReportedAssertion does not become an EmissionResult, ActivityRecord or CalculationRun. Validation distinguishes assessed, invalid and not_assessable; the last is neither a defect nor a pass. Report-wide status remains not_assessable because totals alone cannot establish source authenticity, upstream recalculation or independent assurance.
 
-Scope 2 location-based and market-based values are alternatives, never additive. Totals and their components are also not blindly summed. Public comparisons match explicit series and report arithmetic deltas separately from comparability. Missing years are missing, not zero. Where a total reconciliation is eligible, the tolerance uses disclosed rounding increments; an absent increment is not replaced with an invented tolerance.
+Scope 2 location-based and market-based values are alternatives, never additive. Totals and their components are also not blindly summed. Reported-profile comparisons match explicit series and report arithmetic deltas separately from comparability. Missing years are missing, not zero. Where a total reconciliation is eligible, the tolerance uses disclosed rounding increments; an absent increment is not replaced with an invented tolerance.
 
 ### 2.3. CarbonDiff
 
@@ -80,6 +80,7 @@ From a locked installation, the principal commands are:
 ~~~sh
 uv sync --locked
 uv run ghgag benchmark run
+uv run python scripts/run_acme_example.py --out /tmp/acme-paper-example
 uv run ghgag graph explain urn:ghgag:acme-2025-v1-electricity-result:v1 --input benchmark/generated/2025-v1
 uv run pytest -q
 ~~~
@@ -94,49 +95,60 @@ Annotation-assisted comparison reproduces nine expected component labels and amo
 
 **Figure 2.** Executed ACME selected-defect regression and unassisted differences. The source generator reads committed fixtures and calls the evaluator; public labels are nonblind. Signed and absolute UNKNOWN quantities expose unresolved change rather than measured abatement. Original computational figure, with AI-assisted code; no generative image model or third-party artwork.
 
-### 3.2. Public UMC and TSMC disclosures
+### 3.2. A detailed inspectable calculation and change example
 
-A separate workflow tests whether real aggregate disclosures can be inspected without invented upstream evidence. A precommitted SHA256 seed selected UMC from the ordered candidates TSMC, UMC, Delta and ASE; TSMC provides a lightweight held-out transfer case, not a blinded or representative sample. Facts come from the official 2024-report vintages [9,10], rather than separate annual-report vintages or the latest available disclosures. Source hashes and exact locators are retained. Extraction was checked against rendered tables; reproduction uses frozen facts, not a general PDF extraction model.
+The electricity row illustrates the full contract. In both 2025 snapshots, activity is 1,000 kWh, the invented precharacterized factor is 0.5 kgCO2e/kWh and allocation share is one: 1,000 × 0.5 × 1 = 500 kgCO2e. The 2026 row uses 800 kWh and 0.6 kgCO2e/kWh, giving 480 kgCO2e. No additional GWP multiplier is applied to a precharacterized factor. Activity-first decomposition gives (800 − 1,000) × 0.5 = −100 and 800 × (0.6 − 0.5) = +80. Their sum is −20, exactly 480 − 500. Reversing the interaction convention would change components, not the total.
 
-UMC Group contributes seven assertions, a separate parent-only fixture nine, and TSMC eight. Table 1 reports the numerical 2023–2024 differences. UMC parent and group boundaries are never merged. Group Scope 3 has only a selected 2024 value, 1,713,507 tCO2e, so no prior-year change is invented. UMC's Scope 2 basis remains unspecified rather than inferred from narrative discussion.
+The graph explanation links this result to its evidence URI, factor revision, method, GWP basis, inventory version, reporting period, boundary and simulated review. All evidence is invented. A reviewer can inspect relationships and arithmetic, but cannot infer an authenticated electricity bill or an actual organization's emissions reduction.
 
-**Table 1.** Selected reported 2023–2024 changes, tCO2e. Source: UMC pp.99–100 and 209; TSMC p.266. Every cause is UNKNOWN; these are arithmetic differences, not comparable performance or operational attribution.
+**Table 1.** Partial synthetic ACME inventory, kgCO2e. Stable identifiers align selected sources, not complete scope totals. Literal expected amounts and a separate Fraction oracle check these values.
 
-| Series | UMC Group | UMC parent only | TSMC |
+| Source | 2025-v1 | 2025-v2 | 2026-v1 |
 |---|---:|---:|---:|
-| Scope 1 | −45,885 | −69,518 | +229,841 |
-| Scope 2, unspecified | −112,353 | −42,158 | Not supplied |
-| Scope 2, location-based | Not supplied | Not supplied | +1,208,803 |
-| Scope 2, market-based | Not supplied | Not supplied | +770,010 |
-| Scope 3 | No matched year | −476,241 | +606,518 |
+| Electricity | 500 | 500 | 480 |
+| Natural gas | 200 | 200 | 200 |
+| Diesel | 60 | 60 | 60 |
+| Fleet | 60 | 80 | 80 |
+| Refrigerant | 2000 | 2000 | 2400 |
+| Materials | 400 | 400 | 300 |
+| Capital goods | 200 | 200 | 200 |
+| Transport | 10 | 10 | 10 |
+| Waste | 10 | 10 | 10 |
+| Travel | 20 | 30 | 30 |
+| Commuting | 10 | 10 | 10 |
+| Supplier product footprint | 150 | 150 | 150 |
+| Method transition | 100 | 100 | 50 |
+| Allocation | 100 | 100 | 50 |
+| New production line | 0 | 0 | 30 |
+| Partial total | 3820 | 3850 | 4060 |
 
-TSMC reports 2024 boundary additions, and its Scope 3 boundary descriptions conflict between pp.115 and 266. The conflict remains unresolved rather than silently corrected. Row-specific restatement and rounding information were not established for these series. Different boundaries, unavailable metadata and aggregate-only evidence prevent an unqualified like-for-like interpretation. Company-reported external verification is attributed disclosure, not an assurance engagement performed by this software.
+The same-year change is 3,850 − 3,820 = +30; the next-year change is 4,060 − 3,850 = +210. Without semantic declarations, method, characterization-basis and allocation-policy changes leave −50, +400 and −50 unresolved. Their signed sum is +300 while their absolute exposure is 500. Neither is a confidence interval. Bare activity and factor differences remain mechanical components, not inferred explanations such as correction or supplier-mix change. Supplying reviewed scenario declarations resolves the authored labels; it does not authenticate them externally.
 
-All three runs are structurally accepted and their evidence packages verify internally, but all remain not_assessable overall. There are 33 assessed checks (three schema checks and 30 metadata-presence declarations), 144 not-assessable checks, zero invalid findings on the selected inputs, and upstream recalculation available for 0/24 assertions. Every causal driver remains UNKNOWN. The committed workflows contain 207 output files, including explanations, differences, validation, graphs, verified crates and inspection notes. Output-file counts describe artifact coverage, not additional observations or independent evidence.
+The dedicated scripts/run_acme_example.py command above requires an absent or empty output directory. Use --help for its installed-Python override. It reuses the existing benchmark, not a second data set. Its outputs support navigation from snapshot records through graph explanations, selected validation and assisted/unassisted differences to portable evidence. The benchmark and test commands above remain the numerical reproduction oracle; output-file counts are not additional observations.
 
 ### 3.3. Verification scope
 
-The current regression baseline is 448 passing tests, separate from scientific performance metrics. Adversarial tests cover identity collisions, malformed inputs, precision isolation, unsupported methods, package tampering and denied writes. The synthetic detector does not receive the ground-truth file; the evaluator does. This separation reduces direct answer leakage but does not make development independent or blinded.
+Executable tests check literal amounts and exact Fraction arithmetic separately from the calculator, 45 required lineage chains, selected seeded defects and assisted component agreement. Adversarial tests cover identity collisions, malformed inputs, precision isolation, unsupported methods, package tampering and denied writes. Regression pass counts describe engineering checks, not scientific performance. The detector does not receive the ground-truth file; the evaluator does. This separation reduces direct answer leakage but does not make development independent or blinded.
 
-Public-case runners block Python socket connections and DNS during execution. Recorded same-machine isolated wheel installations reproduced UMC Group and TSMC output trees byte-for-byte after input timestamps were frozen. Installation still requires dependencies from a network or cache. A subsequent fresh GitHub-hosted Ubuntu runner independently fetched the published source, wheel and expected-output archive, verified pinned digests, installed separate environments and reproduced all 207 output files byte-for-byte in both installations (run 36382755169). This is fresh-machine software reproduction, not a security sandbox or practitioner replication. Exact commands, environment and per-file digests are in the archived CI report.
+The evaluation population is exclusively fictional ACME snapshots and authored negative fixtures. There are no real-company observations, public-report transfer experiments, independent practitioner assessments or measured production adoption. Current-release fresh-machine reproduction and archival identifiers remain pending. Historical release reproduction does not prove this changed release was reproduced externally. Local replay checks software contracts, not source truth, population coverage or causal validity.
 
 ## 4. Impact
 
-The immediate utility is methodological transparency: a researcher can ask which factor revision supports a result, which evidence is missing, and whether a numerical change has sufficient context for interpretation. A second use is teaching the distinction between internally consistent data and a substantiated inventory. The public cases show that preserving “not assessable” can be more informative than constructing a superficially complete graph from missing inputs.
+The immediate utility is methodological transparency: a researcher can ask which factor revision supports a result, which evidence is missing, and whether a numerical change has sufficient context for interpretation. A second use is teaching the distinction between internally consistent data and a substantiated inventory. The optional reported profile is designed to preserve “not assessable” rather than invent missing lineage; that design is not externally validated here.
 
 The software enables future studies of review effort, error discovery and disagreement over attribution conventions. It also supplies a reproducible starting point for comparing an evidence overlay with existing accounting and semantic-provenance tools. Those are prospective uses, not established outcomes. There are no measured independent users, adoption counts, commercial deployments, reductions in review time or publications using this software. Download statistics and repository activity are not substituted for research impact.
 
-Important limitations remain. The model does not implement complete gas-resolved inventories, category-level uncertainty, organizational controls, full significance screening, production recalculation or independently authenticated review. ISO 14064-1:2018 source inspection informs a documented coverage assessment [11]; it does not establish conformity, and ISO categories must not be conflated with GHG Protocol scopes. Scope 2 contractual eligibility is not proved by retaining a market-based number. Synthetic policy restrictions do not become normative requirements. Broader matching, simultaneous semantic causes and vendor-specific adapters require further implementation and validation.
+Important limitations remain. The model does not implement complete gas-resolved inventories, category-level uncertainty, organizational controls, full significance screening, production recalculation or independently authenticated review. ISO 14064-1:2018 source inspection informs a documented coverage assessment [9]; it does not establish conformity, and ISO categories must not be conflated with GHG Protocol scopes. Scope 2 contractual eligibility is not proved by retaining a market-based number. Synthetic policy restrictions do not become normative requirements. Broader matching, simultaneous semantic causes and vendor-specific adapters require further implementation and validation.
 
 The authority boundary is deliberate: software may expose relationships and reconcile declared quantities, while qualified people must decide source truth, completeness, methodological appropriateness and assurance. Future evaluation should include independently specified cases, practitioner review and external reproduction before stronger claims are made.
 
 ## 5. Conclusions
 
-GHG Assurance Graph provides an inspectable, offline evidence workflow connecting typed organizational-GHG records, semantic provenance, selected validation, bounded change comparison and portable outputs. Synthetic results demonstrate encoded contracts; public reports demonstrate useful preservation of missingness, not reconstructed emissions. The qualified alpha is a reproducible research artifact, not a certified accounting system or autonomous assurance provider. Human review and stronger impact evidence remain publication-development needs; source preservation and fresh-host software reproduction do not provide those forms of validation.
+GHG Assurance Graph provides an inspectable, offline evidence workflow connecting typed organizational-GHG records, semantic provenance, selected validation, bounded change comparison and portable outputs. Synthetic-only results demonstrate encoded contracts and unresolved changes; no external validation is claimed. The qualified alpha is a reproducible research artifact, not a certified accounting system or autonomous assurance provider. Human review and stronger impact evidence remain publication-development needs; local replay does not provide those forms of validation.
 
 ## Code and data availability
 
-MIT source and synthetic fixtures are available at https://github.com/simon5530/ghg-assurance-graph, with qualified prerelease v0.3.0a1 and frozen code commit in the metadata. Public numeric extracts and all 207 workflow outputs are under examples/public_companies; source citations identify the copyrighted company reports, which are not redistributed. Licensed standards text and private evidence are excluded. Released source is preserved by Software Heritage snapshot swh:1:snp:71149c7bca5b8439549ade1f2617371b5aa716bd; release object swh:1:rel:cbd30c9cc797de3bcff750ece70c01167ea2bb23 resolves the tagged code. This preserves source-control objects, not all release binaries or a retention SLA. No archival DOI has been assigned. The manuscript's render script and original figure sources are included; the PDF is a reading copy, not the official submission format.
+MIT source and synthetic fixtures are available at https://github.com/simon5530/ghg-assurance-graph. This draft describes the 0.4.0a1 working-tree qualified alpha; an immutable release commit, current-release archival identifier and DOI remain pending. Evaluation inputs are benchmark/generated and benchmark/ground_truth, version 0.1, seed 20250926. No company reports, licensed standards text or private evidence are needed for the experiment. Editable figures and the manuscript renderer are included; the PDF is a reading copy, not the official submission format. Historical v0.3 release/archive identifiers do not identify the current code.
 
 ## CRediT authorship contribution statement
 
@@ -176,8 +188,4 @@ No named acknowledgements are included pending permission and owner confirmation
 
 [8] CarbonLedger project. Carbon-Ledger software, commit ce9f16ed1d987753555d366ceae94e23c81c32b7. https://github.com/jackson-marcus/Carbon-Ledger/tree/ce9f16ed1d987753555d366ceae94e23c81c32b7 (accessed 24 September 2026).
 
-[9] United Microelectronics Corporation. 2024 Sustainability Report. Published July 2025; pp.99–100, 209. https://www.umc.com/upload/media/07_Sustainability/72_Reports_and_Results/1_Corporate_Sustainability_Reports/CSR_Reports/CS_Report_English_pdf/2024_CSR_report_eng/UMC-2024-EN-elink.pdf (retrieved 28 September 2026).
-
-[10] Taiwan Semiconductor Manufacturing Company. 2024 Sustainability Report. Report year 2024; pp.115, 260, 266. https://esg.tsmc.com/file/public/2024-TSMC-Sustainability-Report-e.pdf (retrieved 28 September 2026; actual publication date not independently established).
-
-[11] International Organization for Standardization. ISO 14064-1:2018: Greenhouse gases — Part 1: Specification with guidance at the organization level for quantification and reporting of greenhouse gas emissions and removals. Second edition; 2018. https://www.iso.org/standard/66453.html (metadata and bounded licensed-source review recorded 28 September 2026).
+[9] International Organization for Standardization. ISO 14064-1:2018: Greenhouse gases — Part 1: Specification with guidance at the organization level for quantification and reporting of greenhouse gas emissions and removals. Second edition; 2018. https://www.iso.org/standard/66453.html (metadata and bounded licensed-source review recorded 28 September 2026).

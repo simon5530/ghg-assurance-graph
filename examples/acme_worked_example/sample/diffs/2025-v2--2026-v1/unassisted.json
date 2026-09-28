@@ -1,0 +1,152 @@
+{
+  "absolute_unknown_kg_co2e": "500.00",
+  "after": "2026-v1",
+  "attributed_kg_co2e": "-90.0",
+  "before": "2025-v2",
+  "components": [
+    {
+      "cause": "UNKNOWN",
+      "entity": "allocation",
+      "evidence": null,
+      "kg_co2e": "-50.00"
+    },
+    {
+      "cause": "ACTIVITY_CHANGE",
+      "entity": "electricity",
+      "evidence": null,
+      "kg_co2e": "-100.0"
+    },
+    {
+      "cause": "EMISSION_FACTOR_CHANGE",
+      "entity": "electricity",
+      "evidence": null,
+      "kg_co2e": "80.0"
+    },
+    {
+      "cause": "EMISSION_FACTOR_CHANGE",
+      "entity": "materials",
+      "evidence": null,
+      "kg_co2e": "-100"
+    },
+    {
+      "cause": "UNKNOWN",
+      "entity": "method-transition",
+      "evidence": null,
+      "kg_co2e": "-50.0"
+    },
+    {
+      "cause": "ACTIVITY_CHANGE",
+      "entity": "new-line",
+      "evidence": null,
+      "kg_co2e": "30"
+    },
+    {
+      "cause": "UNKNOWN",
+      "entity": "refrigerant",
+      "evidence": null,
+      "kg_co2e": "400"
+    }
+  ],
+  "convention": "activity-first; factor-second; allocation-last; semantic row override",
+  "delta": "210.00",
+  "matches": [
+    {
+      "changed_fields": [
+        "allocation_method",
+        "allocation_share"
+      ],
+      "entity": "allocation",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "capital",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "commuting",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "diesel",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [
+        "activity",
+        "factor"
+      ],
+      "entity": "electricity",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "fleet",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [
+        "factor"
+      ],
+      "entity": "materials",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [
+        "activity",
+        "factor",
+        "factor_unit",
+        "method",
+        "pcf_boundary",
+        "unit"
+      ],
+      "entity": "method-transition",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "natural-gas",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [
+        "activity"
+      ],
+      "entity": "new-line",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [
+        "factor",
+        "gwp_basis"
+      ],
+      "entity": "refrigerant",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "supplier-pcf",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "transport",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "travel",
+      "status": "matched"
+    },
+    {
+      "changed_fields": [],
+      "entity": "waste",
+      "status": "matched"
+    }
+  ],
+  "residual_kg_co2e": "300.00",
+  "total_after": "4060.00",
+  "total_before": "3850.0"
+}

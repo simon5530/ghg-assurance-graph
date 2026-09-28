@@ -1,4 +1,4 @@
-"""Fetch and reproduce only digest-pinned public release assets (Python 3.12)."""
+"""Historical v0.3.0a1 baseline only: reproduce pinned released assets, not current code."""
 
 import argparse
 import hashlib

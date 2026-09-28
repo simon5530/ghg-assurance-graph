@@ -1,0 +1,59 @@
+[
+  {
+    "after": "2026-v1",
+    "before": "2025-v2",
+    "cause": "SUPPLIER_MIX_CHANGE",
+    "entity": "materials",
+    "evidence": "sources/scenarios/2025-v2--2026-v1/materials.md#sha256=6abda84555c2f2a0a57e8b60d7aa73baa3187df8312a1070937e4e32ab92751b",
+    "fields": [
+      "factor"
+    ]
+  },
+  {
+    "after": "2026-v1",
+    "before": "2025-v2",
+    "cause": "GWP_CHANGE",
+    "entity": "refrigerant",
+    "evidence": "sources/scenarios/2025-v2--2026-v1/refrigerant.md#sha256=7f31f0efa2c97481111300b74e0721cba2178df3a1c9e579b0671a288a196063",
+    "fields": [
+      "factor",
+      "gwp_basis"
+    ]
+  },
+  {
+    "after": "2026-v1",
+    "before": "2025-v2",
+    "cause": "BOUNDARY_CHANGE",
+    "entity": "new-line",
+    "evidence": "sources/scenarios/2025-v2--2026-v1/new-line.md#sha256=60c6d0588473d0927b4c90115196febe9e894a3422b3f1db16e127fd6a749ae6",
+    "fields": [
+      "activity"
+    ]
+  },
+  {
+    "after": "2026-v1",
+    "before": "2025-v2",
+    "cause": "ALLOCATION_CHANGE",
+    "entity": "allocation",
+    "evidence": "sources/scenarios/2025-v2--2026-v1/allocation.md#sha256=ed89af0776b0fecc6ac269bdfe71e2e527eb616ef56f41e964720c4f48416d89",
+    "fields": [
+      "allocation_method",
+      "allocation_share"
+    ]
+  },
+  {
+    "after": "2026-v1",
+    "before": "2025-v2",
+    "cause": "METHOD_CHANGE",
+    "entity": "method-transition",
+    "evidence": "sources/scenarios/2025-v2--2026-v1/method-transition.md#sha256=ee86dea0451f5d2ef40011dfeea2ac73577f582baee9df59eccffe03ac95116c",
+    "fields": [
+      "activity",
+      "unit",
+      "factor_unit",
+      "factor",
+      "method",
+      "pcf_boundary"
+    ]
+  }
+]

@@ -1,5 +1,9 @@
 # Software archive evidence
 
+> Historical v0.3.0a1 evidence only. Current v0.4.0a1 removes company demonstrations;
+> this archived result is not current-version reproduction or external validation.
+
+
 2026-09-28. The published [v0.3.0a1 release](https://github.com/simon5530/ghg-assurance-graph/releases/tag/v0.3.0a1) has source, wheel, sdist and numerical-output assets whose exact hashes are in [publication evidence](RELEASE_PUBLICATION_0.3.0a1.md). GitHub release hosting alone is not immutable long-term preservation: maintainers can delete releases, and ordinary Actions artifacts expire after their configured retention period.
 
 A free public Software Heritage Save Code Now request was accepted at 05:34 UTC without credentials or new account creation. [Request 2510390](https://archive.softwareheritage.org/api/1/origin/save/2510390/) initially reported `pending`, not completed. Only the already-public repository URL was supplied. The subsequent JSON API check verified `succeeded`, `visit_status=full`, with visit time 05:34:09.924 UTC. Snapshot [swh:1:snp:71149c7bca5b8439549ade1f2617371b5aa716bd](https://archive.softwareheritage.org/swh:1:snp:71149c7bca5b8439549ade1f2617371b5aa716bd) contains main revision `25231a6a5078d2d6f452a7c1136e91e2776184bd` and the released tag. [Release object swh:1:rel:cbd30c9cc797de3bcff750ece70c01167ea2bb23](https://archive.softwareheritage.org/swh:1:rel:cbd30c9cc797de3bcff750ece70c01167ea2bb23) resolves to exact code revision `b0de4b8a9373eee24d631cad14265e37bffcc75d`, matching v0.3.0a1. This independently hosted source archive satisfies the source-preservation meaning of Zenodo or equivalent; it is not a DOI. No DOI was minted.

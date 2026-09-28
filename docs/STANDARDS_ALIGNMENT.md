@@ -202,8 +202,8 @@ resolved reporting, uncertainty assessment, completeness/significance procedure,
 ISO six-category report or organizational assurance controls have been added.
 Private licensed sources and extracts remain outside the repository.
 
-## Public aggregate evidence limit (0.3.0a1)
-Reported company totals extend empirical input coverage, not standards conformity.
+## Optional reported-aggregate profile evidence limit
+The generic reported-aggregate profile preserves missingness; it is not empirical external validation.
 Aggregate citations cannot establish activity completeness, factor eligibility,
 contractual Scope 2 quality, gas/GWP reconstruction, controls, uncertainty or review
 authenticity. Source assurance wording is attributed disclosure, not tool assurance.

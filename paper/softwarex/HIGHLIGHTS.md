@@ -1,7 +1,7 @@
 # Highlights
 
-- Typed graphs distinguish calculated emissions from public reported assertions.
+- Typed graphs preserve inspectable organizational emissions lineage.
 - Selected checks expose missing evidence without inventing assurance.
-- Bounded version comparison reconciles changes and preserves UNKNOWN causes.
+- Bounded comparison reconciles changes and preserves UNKNOWN causes.
 - Offline evidence packages support reproducible inspection without AI services.
-- Public UMC and TSMC cases retain scope and boundary limitations.
+- Fictional ACME examples provide explicitly synthetic-only validation.

@@ -1,0 +1,222 @@
+{
+  "profile": "reported-disclosure/1",
+  "organization": "Anonymous synthetic parent",
+  "assertions": [
+    {
+      "id": "parent-2022-scope1",
+      "year": 2022,
+      "scope": 1,
+      "category": null,
+      "scope2_basis": null,
+      "quantity": {
+        "value": "500",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-parent.txt",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic parent test data; no real disclosure"
+      },
+      "boundary": "synthetic parent only",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "parent-2022-scope2-unspecified",
+      "year": 2022,
+      "scope": 2,
+      "category": null,
+      "scope2_basis": "unspecified",
+      "quantity": {
+        "value": "1200",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-parent.txt",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic parent test data; no real disclosure"
+      },
+      "boundary": "synthetic parent only",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "parent-2022-scope3",
+      "year": 2022,
+      "scope": 3,
+      "category": null,
+      "scope2_basis": null,
+      "quantity": {
+        "value": "1600",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-parent.txt",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic parent test data; no real disclosure"
+      },
+      "boundary": "synthetic parent only",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "parent-2023-scope1",
+      "year": 2023,
+      "scope": 1,
+      "category": null,
+      "scope2_basis": null,
+      "quantity": {
+        "value": "350",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-parent.txt",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic parent test data; no real disclosure"
+      },
+      "boundary": "synthetic parent only",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "parent-2023-scope2-unspecified",
+      "year": 2023,
+      "scope": 2,
+      "category": null,
+      "scope2_basis": "unspecified",
+      "quantity": {
+        "value": "1100",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-parent.txt",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic parent test data; no real disclosure"
+      },
+      "boundary": "synthetic parent only",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "parent-2023-scope3",
+      "year": 2023,
+      "scope": 3,
+      "category": null,
+      "scope2_basis": null,
+      "quantity": {
+        "value": "1500",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-parent.txt",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic parent test data; no real disclosure"
+      },
+      "boundary": "synthetic parent only",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "parent-2024-scope1",
+      "year": 2024,
+      "scope": 1,
+      "category": null,
+      "scope2_basis": null,
+      "quantity": {
+        "value": "250",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-parent.txt",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic parent test data; no real disclosure"
+      },
+      "boundary": "synthetic parent only",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "parent-2024-scope2-unspecified",
+      "year": 2024,
+      "scope": 2,
+      "category": null,
+      "scope2_basis": "unspecified",
+      "quantity": {
+        "value": "1000",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-parent.txt",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic parent test data; no real disclosure"
+      },
+      "boundary": "synthetic parent only",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "parent-2024-scope3",
+      "year": 2024,
+      "scope": 3,
+      "category": null,
+      "scope2_basis": null,
+      "quantity": {
+        "value": "1300",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-parent.txt",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic parent test data; no real disclosure"
+      },
+      "boundary": "synthetic parent only",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    }
+  ]
+}

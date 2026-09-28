@@ -1,0 +1,12 @@
+{
+  "conforms": false,
+  "findings": [
+    {
+      "id": "urn:ghgag:finding-c56b16b595723227a3409ec693fd0b76d8cbce7cc1bc26df91de979b688e5c36:v1",
+      "message": "factor provenance",
+      "rule": "factor provenance",
+      "severity": "error",
+      "target": "natural-gas"
+    }
+  ]
+}

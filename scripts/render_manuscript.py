@@ -18,8 +18,8 @@ PAPER = ROOT / "paper/softwarex"
 
 def architecture():
     boxes = [
-        (25, 35, "Calculated evidence", "Activity / factor / method / review"),
-        (465, 35, "Reported assertions", "Source / total / explicit unknowns"),
+        (25, 35, "ACME calculated evidence", "Synthetic activity / factor / review"),
+        (465, 35, "Optional reported profile", "Generic assertions; not evaluated"),
         (25, 145, "Typed records + RDF / PROV", "Required lineage; no guessed links"),
         (465, 145, "ReportedAssertion graph", "No invented calculation or factor"),
         (25, 255, "Selected checks + CarbonDiff", "Reconcile; expose UNKNOWN"),

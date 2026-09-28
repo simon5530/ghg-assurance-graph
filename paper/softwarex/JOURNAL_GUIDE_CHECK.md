@@ -23,7 +23,7 @@ Guide requires AI disclosure and human accountability, permits explanatory diagr
 
 Run: python scripts/render_manuscript.py --pdf with existing local Chrome/Chromium. HTML/SVG use Python standard library only; no paid service or installation. No references fetched; Chrome background networking/DNS disabled. MANUSCRIPT_METRICS.json conservatively counts table/code/declaration text too.
 
-Before submission transfer human-reviewed content into current official template without altering format. Unknown human declarations remain pending, not fabricated. Guide retrieval does not supply human review, impact or submission approval. Current scoped Gate A GO, fresh-host CI and Software Heritage source capture are documented separately; no DOI is claimed.
+Before submission transfer human-reviewed content into current official template without altering format. Unknown human declarations remain pending, not fabricated. Guide retrieval does not supply human review, impact or submission approval. Current-release hosted reproduction and archival links remain pending; historical v0.3 records are not carried forward.
 
 
 ## Observed render verification
@@ -31,7 +31,4 @@ Before submission transfer human-reviewed content into current official template
 Local Chrome produced a complete PDF but lingered during shutdown. Renderer now
 uses a fresh staging destination, kills/reaps its own timed-out process, and accepts
 only a newly generated PDF with header and EOF markers; never a stale prior PDF.
-Native PDFKit independently opened the final 361,300-byte PDF: 9 nonempty pages,
-all with extractable text, references and final ISO URL present. Page rasterization
-succeeded; model visual inspection was blocked by the tool's allowed-path policy,
-so no full visual-proofreading claim is made. HTML/PDF are reading copies.
+Current PDF verification is recorded in RESULTS_LEDGER.md; historical PDF byte/page counts do not apply to this revision. HTML/PDF are reading copies.

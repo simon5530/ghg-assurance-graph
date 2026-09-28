@@ -1,6 +1,6 @@
 # Manuscript claim and source ledger
 
-Initial manuscript, 2026-09-28. References cite primary sources, not model-generated bibliography. No invented DOI, author, affiliation or approval. Primary standards and company reports remain outside Git.
+Initial manuscript, 2026-09-28. References cite primary sources, not model-generated bibliography. No invented DOI, author, affiliation or approval. Primary standards remain outside Git; company reports are not evaluation sources.
 
 ## Bibliography verification
 
@@ -14,37 +14,32 @@ Initial manuscript, 2026-09-28. References cite primary sources, not model-gener
 
 7–8: primary website, repository docs and source-code snapshots inspected 2026-09-24, with exact commits and capability qualifiers in [related work](../../docs/RELATED_WORK.md). TEC provenance/validation and CarbonLedger factor-vintage restatement are prior art, not rerun comparator experiments.
 
-9–10: official report bytes, rendered-page transcription checks and original fact extraction recorded in [public sources](../../docs/PUBLIC_COMPANY_SOURCES.md). UMC SHA256 d66619bea5b4ca327ef128c7d31adb8559386a328ee974657ad28129698a8b4d; TSMC SHA256 68c093548001a5b90222997590089fac3378bc3611dff63d65b4460e36e6ff41. UMC July 2025 publication; TSMC actual publication date not established. 2024-report historical series, not latest reports or annual-vintage restatements. No source PDFs redistributed.
-
-11: official ISO metadata and bounded private licensed-source inspection are recorded in standards alignment. ISO 14064-1:2018 second edition, not 2024 edition. Clause inspection is not conformity; no licensed content or local access identifiers reproduced.
+9: official ISO metadata and bounded licensed-source review are recorded in standards alignment. ISO 14064-1:2018 second edition; inspection is not conformity. No licensed text redistributed.
 
 Publisher guide/template verified independently for this draft: [journal check](JOURNAL_GUIDE_CHECK.md). Template SHA256 9fcf40ede96a2f188ee4ef77134e0596d01e1b65fd9db63f2874d29f2ecb916d (44,823 bytes).
 
 ## Quantitative claim mapping
 
-| Claim | Executable/source evidence | Meaning |
+| Claim | Executable evidence | Meaning |
 |---|---|---|
-| 448 tests, 11 warnings | Full pytest rerun 2026-09-28, 16.10 s | Engineering regression only |
-| 45/45 lineages | tests/test_graph.py; three ACME snapshots | Asserted relationships resolve |
-| 10 TP, 0 FP/FN; 6/4 split | ghgag benchmark run rerun; expected_findings.json | Nonblind public fixture checks |
-| Nine assisted components | expected_change_attribution.json; tests/test_diff.py in passing full suite | Seven supplied semantic labels, two mechanical components |
-| 3820/3850/4060; +30/+210 | Benchmark evaluator rerun; independent Fraction/literal test oracles | Partial synthetic kgCO2e |
-| +300 signed, 500 absolute UNKNOWN | Unassisted evaluator rerun | Unsupported delta exposure, not statistical uncertainty |
-| 24 assertions; 33 assessed; 144 not assessable | Three committed full_run/*/summary.json inspected | Presence/schema checks, not truth checks |
-| 207 outputs | Recursive file count of examples/public_companies/full_run | Artifact count, not sample size |
-| All public statuses not_assessable; all causes UNKNOWN | Three summaries and diff contracts | No upstream reconstruction or causal inference |
-| UMC/TSMC deltas | Public source table; committed differences; tests/test_public_company_facts.py | tCO2e, independent series only |
-
-UMC Group checks: 12 assessed / 41 not assessable. Parent: 10 / 57. TSMC: 11 / 46. All packages internally valid. Schema accounts for 3 of 33 assessed checks; other 30 are metadata-presence declarations. Upstream recalculation 0/24.
+| 45/45 lineages | tests/test_graph.py | Stored relationships only |
+| 10 TP, 0 FP/FN; 6/4 split | benchmark evaluator; expected_findings.json | Nonblind synthetic regression |
+| Nine assisted components | tests/test_diff.py; expected_change_attribution.json | Seven supplied labels, two mechanical components |
+| 3820/3850/4060; +30/+210 | Raw rows, evaluator, literal/Fraction oracle | Partial synthetic kgCO2e |
+| +300 signed, 500 absolute UNKNOWN | Unassisted evaluator | Unsupported changes, not uncertainty intervals |
 
 ## Reproduction entry points
 
-- ACME: uv sync --locked; uv run ghgag benchmark run; uv run pytest -q.
-- Public cases: all three explicit commands in [public example README](../../examples/public_companies/README.md); new output directories required.
-- Figure 1 + reading HTML/PDF: python scripts/render_manuscript.py --pdf.
-- Figure 2: python scripts/render_figures.py; existing byte-equality test verifies its source-driven regeneration.
-- Frozen code: b0de4b8a9373eee24d631cad14265e37bffcc75d, v0.3.0a1. Manuscript is a later working-tree content draft, not part of that frozen release.
+- uv sync --locked; uv run ghgag benchmark run; uv run pytest -q.
+- Detailed workflow: scripts/run_acme_example.py (see --help).
+- uv run python scripts/render_figures.py; uv run python scripts/render_manuscript.py --pdf.
+- tests/test_figures.py checks generated SVG equality and manuscript scope/table contracts.
+- Current version 0.4.0a1; immutable release and archival links pending.
 
 ## Review boundaries
 
-No human domain sign-off, independent external adoption, DOI, submission, fee approval or causal accuracy inferred. Fresh hosted-runner source/wheel reproduction is observed in run 36382755169; source preservation resolves the released tag in Software Heritage (see docs/FRESH_RELEASE_REPRODUCTION.md and docs/ARCHIVE_STATUS.md). Bibliography uses corporate/group sources when appropriate and does not fabricate individual authors. Final journal style and author-approved source interpretation remain review work.
+Only fictional ACME data support this manuscript's evaluation. No current external
+validation, real-company transfer, adoption, DOI, human approval or journal submission
+is claimed. Historical v0.3 reproduction and archive records are not current evidence.
+Bibliographic sources are prior verified records; this scope edit did not repeat
+source retrieval or introduce new external research.

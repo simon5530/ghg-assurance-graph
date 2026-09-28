@@ -2,7 +2,7 @@
 
 2026-09-28. The complete 2,159-line original specification was read, including original exit criteria and definition of done. The owner authorizes all remaining engineering phases and an initial full SoftwareX manuscript. Optional experiments are not silently made mandatory.
 
-Run `python scripts/check_phase_acceptance.py --run` in the locked environment for an executable phase-to-file/test inventory. It reports missing evidence and actual test exit codes; file presence does not prove scientific approval. Full baseline: 448 tests passed, seven documentation-oracle tests, lint/format and wheel/sdist build passed. The hosted released-artifact run is tracked separately below.
+Run `python scripts/check_phase_acceptance.py --run` in the locked environment for an executable phase-to-file/test inventory. It reports missing evidence and actual test exit codes; file presence does not prove scientific approval. Historical v0.3 baseline: 448 tests. Current synthetic workflow evidence is recorded in the publication audit; historical release evidence is not current-version proof.
 
 | Phase | Original exit criterion | Evidence and bounded status |
 |---|---|---|
@@ -17,7 +17,7 @@ Run `python scripts/check_phase_acceptance.py --run` in the locked environment f
 | 8 | At least one external result format mapped | Complete generic JSON/CSV external-result profile and fixtures/tests. Vendor engines are optional and not executed. Public aggregates have a separate missingness-preserving profile. |
 | 9 | Evidence-linked question set and measurable grounding | Complete deterministic seven-action facade and executable evidence/arithmetic/permission questions. No natural-language router or model-performance study. Optional for v1. |
 | 10 | Publish Jev only for meaningful reproducible comparison; otherwise exclude | [Capability reassessed; optional experiment excluded](OPTIONAL_AI_DECISION.md). Full non-Jev baseline evaluated; no invented credential blocker or model metrics. |
-| 11 | Mandatory software scope, tests/CI, tagged archive, licenses, fresh-machine reproduction | Published qualified v0.3.0a1 source/wheel/output assets; [Software Heritage source archive verified](ARCHIVE_STATUS.md). Fresh-runner source AND wheel reproduction [protocol and observed status](FRESH_RELEASE_REPRODUCTION.md). Hosted run 36382755169 passed. Stable v1.0 freeze is not claimed; local proof download and release-readiness reconciliation remain distinct. |
+| 11 | Mandatory software scope, tests/CI, tagged archive, licenses, fresh-machine reproduction | Historical qualified v0.3.0a1 source/wheel/output assets; [Software Heritage source archive verified](ARCHIVE_STATUS.md). Fresh-runner source AND wheel reproduction [protocol and observed status](FRESH_RELEASE_REPRODUCTION.md). Hosted run 36382755169 passed. Stable v1.0 freeze is not claimed; local proof download and release-readiness reconciliation remain distinct. |
 
 ## Research gates versus engineering and submission
 
@@ -29,7 +29,7 @@ Gate D before journal submission remains separate: exact official template, huma
 
 ## Invariants and breadth
 
-Location/market electricity are alternative series, never additive. Precharacterized CO2e is not characterized again. Invalid units/identities/lineage fail closed. All synthetic factors are nonproduction. Private ISO text stays outside the repository; published original clause paraphrases do not establish full conformity. Public UMC/TSMC runs contain 24 explicitly mapped assertions across three datasets, 33 assessed metadata checks and 144 not assessable; no upstream recalculation or causal reduction inference. This is not arbitrary-PDF support.
+Location/market electricity are alternative series, never additive. Precharacterized CO2e is not characterized again. Invalid units/identities/lineage fail closed. All synthetic factors are nonproduction. Private ISO text stays outside the repository; published original clause paraphrases do not establish full conformity. The current demonstration is the complete fictional ACME selected-source workflow, not external empirical validation or arbitrary-PDF support. Company examples were removed because missing upstream evidence could not support calculation lineage. The generic reported profile remains fail-closed and tested with anonymous synthetic inputs.
 
 ## Remote reconciliation
 

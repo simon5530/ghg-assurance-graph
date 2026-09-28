@@ -1,0 +1,137 @@
+[
+  {
+    "activity": "800",
+    "allocation_share": "1",
+    "factor": "0.6",
+    "factor_denominator": "kWh",
+    "kg_co2e": "480",
+    "source": "electricity",
+    "unit": "kWh"
+  },
+  {
+    "activity": "100",
+    "allocation_share": "1",
+    "factor": "2",
+    "factor_denominator": "meter ** 3",
+    "kg_co2e": "200",
+    "source": "natural-gas",
+    "unit": "meter ** 3"
+  },
+  {
+    "activity": "20",
+    "allocation_share": "1",
+    "factor": "3",
+    "factor_denominator": "liter",
+    "kg_co2e": "60",
+    "source": "diesel",
+    "unit": "liter"
+  },
+  {
+    "activity": "40",
+    "allocation_share": "1",
+    "factor": "2",
+    "factor_denominator": "liter",
+    "kg_co2e": "80",
+    "source": "fleet",
+    "unit": "liter"
+  },
+  {
+    "activity": "2",
+    "allocation_share": "1",
+    "factor": "1200",
+    "factor_denominator": "kg",
+    "kg_co2e": "2400",
+    "source": "refrigerant",
+    "unit": "kg"
+  },
+  {
+    "activity": "100",
+    "allocation_share": "1",
+    "factor": "3",
+    "factor_denominator": "kg",
+    "kg_co2e": "300",
+    "source": "materials",
+    "unit": "kg"
+  },
+  {
+    "activity": "1000",
+    "allocation_share": "1",
+    "factor": "0.2",
+    "factor_denominator": "USD",
+    "kg_co2e": "200",
+    "source": "capital",
+    "unit": "USD"
+  },
+  {
+    "activity": "100",
+    "allocation_share": "1",
+    "factor": "0.1",
+    "factor_denominator": "tonne * km",
+    "kg_co2e": "10",
+    "source": "transport",
+    "unit": "tonne * km"
+  },
+  {
+    "activity": "50",
+    "allocation_share": "1",
+    "factor": "0.2",
+    "factor_denominator": "kg",
+    "kg_co2e": "10",
+    "source": "waste",
+    "unit": "kg"
+  },
+  {
+    "activity": "150",
+    "allocation_share": "1",
+    "factor": "0.2",
+    "factor_denominator": "km",
+    "kg_co2e": "30",
+    "source": "travel",
+    "unit": "km"
+  },
+  {
+    "activity": "100",
+    "allocation_share": "1",
+    "factor": "0.1",
+    "factor_denominator": "km",
+    "kg_co2e": "10",
+    "source": "commuting",
+    "unit": "km"
+  },
+  {
+    "activity": "50",
+    "allocation_share": "1",
+    "factor": "3",
+    "factor_denominator": "kg",
+    "kg_co2e": "150",
+    "source": "supplier-pcf",
+    "unit": "kg"
+  },
+  {
+    "activity": "50",
+    "allocation_share": "1",
+    "factor": "1",
+    "factor_denominator": "kg",
+    "kg_co2e": "50",
+    "source": "method-transition",
+    "unit": "kg"
+  },
+  {
+    "activity": "100",
+    "allocation_share": "0.25",
+    "factor": "2",
+    "factor_denominator": "kg",
+    "kg_co2e": "50",
+    "source": "allocation",
+    "unit": "kg"
+  },
+  {
+    "activity": "10",
+    "allocation_share": "1",
+    "factor": "3",
+    "factor_denominator": "liter",
+    "kg_co2e": "30",
+    "source": "new-line",
+    "unit": "liter"
+  }
+]

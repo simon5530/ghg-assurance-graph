@@ -102,3 +102,17 @@ remain executable regression oracles; no source truth is inferred from passing t
 
 ## Original criteria are the acceptance oracle — 2026-09-28
 A useful review recommendation is not automatically a mandatory phase gate. Earlier HOLD and fresh-machine/archive summaries conflated practitioner review with software reproduction and DOI with source preservation. Re-read the exact original exit list, map each requirement to executable or external evidence, and preserve human-review limits separately. Proof here: digest-pinned released source AND wheel ran on a fresh hosted runner; Software Heritage resolved the released tag; neither result claims independent assurance or a DOI.
+
+## 2026-09-28 — complete examples without false empirical claims
+
+Symptom: a public aggregate demonstration could not show full upstream calculation
+lineage. Cause: published totals lack underlying activity, factor, allocation
+and review records. Cheapest check: inspect whether every calculated result has
+those inputs, rather than only a citation to a total.
+Recovery: remove current company demos; retain the generic missingness-preserving
+API and use explicitly fictional, complete local evidence for teaching.
+Proof: deterministic CLI receipts, independent arithmetic oracles, negative missing
+evidence tests and isolated-wheel reproduction. Synthetic review events are authored
+fixtures, not practitioner review. Closed-world success tests encoded behavior; it
+cannot establish field validity, inventory completeness, source truth or conformity.
+Historical releases are audit evidence and are not rewritten to hide the change.

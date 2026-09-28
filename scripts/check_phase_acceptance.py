@@ -10,7 +10,13 @@ ROOT = Path(__file__).resolve().parents[1]
 PHASES = {
     0: ("docs/GATE_A.md", "docs/RELATED_WORK.md", ".github/roadmap.json"),
     1: ("tests/test_contract.py", "examples/hand_authored.py"),
-    2: ("tests/test_benchmark.py", "benchmark/ground_truth"),
+    2: (
+        "tests/test_benchmark.py",
+        "tests/test_worked_example.py",
+        "benchmark/ground_truth",
+        "examples/acme_worked_example/README.md",
+        "examples/acme_worked_example/sample/REPORT.md",
+    ),
     3: ("tests/test_graph.py", "docs/GRAPH.md"),
     4: ("tests/test_validation.py", "docs/VALIDATION.md"),
     5: ("tests/test_diff.py", "docs/CARBONDIFF.md"),

@@ -82,3 +82,12 @@ in the results ledger/audit. No model is needed to reproduce the runtime.
 
 ## 2026-09-28 — original-criteria reconciliation and initial manuscript
 Tool/model: OpenClaw, openai/gpt-6-astra. Tasks: full original-plan review, primary prior-art comparison, executable phase inventory, fresh-host released-source/wheel verification harness, Software Heritage archival request, initial manuscript and deterministic explanatory graphics. Human declarations/domain review remain pending; AI is not an author. Full baseline 448 tests, seven docs oracles, lint/format/build passed; hosted checkpoint tests and independent released-artifact reproduction passed. No licensed ISO text or private attachment is published. Gate A scoped GO is a bounded evidence decision, not fabricated practitioner approval.
+
+## 2026-09-28 — synthetic worked-example scope correction
+
+OpenClaw/openai/gpt-6-astra assisted replacement of current company demonstrations
+with the complete fictional ACME workflow, anonymous reported-profile regression
+fixtures, guide, actual-output report and synthetic-only SoftwareX manuscript.
+Independent arithmetic, executable negative controls and installed-wheel replay
+check encoded behavior, not source truth or practitioner approval. Historical
+release records remain historical. Human author declarations remain pending.

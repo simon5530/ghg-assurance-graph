@@ -56,18 +56,14 @@ requires new export/package directories plus explicit creation/data metadata.
 Packages retain inert citations, not the referenced source documents. The verifier
 checks its own bounded profile offline; external authenticity is not established.
 
-## Real public-company reproduction (0.3.0a1)
-See [full inputs, reports and commands](../examples/public_companies/README.md).
-The runner executes every reported CLI action with socket networking/DNS blocked.
-A fresh same-machine environment installed all 29 exact hashed runtime dependencies
-offline, then the wheel built from sdist. UMC Group and TSMC runs outside the source
-checkout produced byte-identical full output trees after freezing source timestamps.
-This is not practitioner replication or a fresh physical host. The pinned CI workflow
-executes all three cases and uploads outputs; hosted success must be observed separately.
+## Current synthetic worked example (0.4.0a1)
 
-The first comparison used a fixture while retrieval timestamps were still being
-finalized, and correctly differed. Freeze input hashes before byte-reproduction checks.
-Source PDFs stay local; tests use only attributable fact extracts.
+[Canonical guide](../examples/acme_worked_example/README.md):
+`uv run python scripts/run_acme_example.py --out artifacts/acme-worked`.
+A new output directory is required. Runtime networking is blocked after installation.
+The runner records actual commands, findings, calculations, differences and package
+verification; it does not turn missing upstream data into evidence. Current CI tests
+this workflow. Generic reported-disclosure API tests use anonymous synthetic fixtures.
 
-## Published artifact fresh-host proof — 2026-09-28
+## Historical v0.3.0a1 published artifact fresh-host proof — 2026-09-28
 [Released source and wheel reproduction](FRESH_RELEASE_REPRODUCTION.md) completed successfully on a new Ubuntu hosted runner; its application inputs came only from digest-pinned public release assets. This satisfies fresh-machine software reproduction, not human practitioner review. [Archive proof](ARCHIVE_STATUS.md) resolves the published tag in Software Heritage.

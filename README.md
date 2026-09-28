@@ -1,6 +1,6 @@
 # GHG Assurance Graph
 
-**v0.3.0a1 — research prototype, not an assurance opinion or certification.**
+**v0.4.0a1 — research prototype, not an assurance opinion or certification.**
 
 An offline Python toolkit that turns declared organizational greenhouse-gas
 evidence into a queryable RDF/PROV graph, checks selected evidence constraints,
@@ -29,9 +29,9 @@ production factor database, complete inventory calculator or compliance service.
 
 **Gate A: scoped GO for the compositional evidence overlay**, not a novelty or
 assurance claim. [Exact original-phase matrix](docs/ROADMAP_ACCEPTANCE.md).
-[Fresh-host release-source and wheel CI](https://github.com/simon5530/ghg-assurance-graph/actions/runs/36382755169)
-passed; [Software Heritage preservation](docs/ARCHIVE_STATUS.md) resolves the actual
-released tag. This remains a qualified alpha, not a stable v1.0 or journal submission.
+The previous v0.3.0a1 release has [historical fresh-host reproduction](docs/FRESH_RELEASE_REPRODUCTION.md)
+and [source preservation](docs/ARCHIVE_STATUS.md). Those records do not certify this revision.
+This remains a qualified alpha, not a stable v1.0 or journal submission.
 [Full initial SoftwareX manuscript](paper/softwarex/MANUSCRIPT.md) is available for
 human review. Authorship/declarations and official submission formatting remain
 owner decisions. PACT/openLCA/Brightway integrations and Jev remain optional;
@@ -42,13 +42,19 @@ privately, including normative Annexes D/E. Only paraphrases and references are
 published. Gas-resolved reporting, completeness/significance, uncertainty and
 organizational controls remain gaps; no full conformity claim.
 
-## Real public-company run
+## Complete fictional worked example
 
-[Full UMC/TSMC inputs, outputs and exact commands](examples/public_companies/README.md).
-UMC Group 2022–2024 plus separate parent-only figures; TSMC 2023–2024 held-out.
-24 reported assertions, no invented upstream data. All packages verify internally;
-all three evidence assessments remain **not assessable**, not assurance passes.
-See [official sources and comparability limits](docs/PUBLIC_COMPANY_SOURCES.md).
+Start with the [ACME step-by-step guide](examples/acme_worked_example/README.md)
+and [complete sample report](examples/acme_worked_example/sample/REPORT.md).
+One command executes the selected-source inventory through calculation evidence,
+graphs, validation, explanation, unassisted/annotation-assisted differences,
+verified evidence packages and Obsidian notes, with offline command receipts.
+All activities, factors and source documents are explicitly fictional; simulated
+reviews are not human assurance. The [ten hand-authored cases](examples/README.md)
+remain small schema examples, distinct from the three-snapshot ACME workflow.
+Public-company demonstration inputs/outputs have been removed from the current tree:
+missing upstream records cannot be repaired by invented data. Historical tags and
+release assets remain unchanged; the generic reported-disclosure API is retained.
 
 ## Reproduce locally
 
@@ -56,6 +62,7 @@ Python 3.12.14 and uv; no API key or cloud model.
 
 ```sh
 uv sync --locked
+uv run python scripts/run_acme_example.py --out artifacts/acme-worked
 uv run ghgag benchmark run
 uv run ghgag graph build benchmark/generated/2026-v1
 uv run ghgag validate benchmark/generated/2026-v1

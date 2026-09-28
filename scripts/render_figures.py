@@ -1,4 +1,4 @@
-"""Deterministic original SVG figures from executed public benchmark evaluation."""
+"""Deterministic original SVG figures from executed synthetic-only ACME evaluation."""
 
 from html import escape
 from pathlib import Path
@@ -12,9 +12,18 @@ def render():
     result = evaluate_benchmark(ROOT / "benchmark/generated", ROOT / "benchmark/ground_truth")
     validation = result["validation"]
     rows = [
-        "Public synthetic regression evaluation — not blind generalization",
+        "ACME synthetic-only regression — no external validation",
         f"Seeded findings: TP={validation['tp']}, FP={validation['fp']}, FN={validation['fn']}",
         f"Precision={validation['precision']:.2f}; recall={validation['recall']:.2f}; F1={validation['f1']:.2f}",
+        "Partial totals (kg CO2e): "
+        + " → ".join(
+            str(value)
+            for value in (
+                result["carbondiff_unassisted"][0]["total_before"],
+                result["carbondiff_unassisted"][0]["total_after"],
+                result["carbondiff_unassisted"][1]["total_after"],
+            )
+        ),
         "Unassisted CarbonDiff (kg CO2e):",
     ]
     for item in result["carbondiff_unassisted"]:
@@ -26,7 +35,7 @@ def render():
         f'<text x="24" y="{40 + 34 * i}">{escape(row)}</text>' for i, row in enumerate(rows)
     )
     return (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="290" viewBox="0 0 1080 290"><title>Observed ACME regression results</title><rect width="1080" height="290" fill="white"/><g font-family="sans-serif" font-size="16" fill="#172b4d">'
+        '<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="320" viewBox="0 0 1080 320"><title>Observed ACME regression results</title><rect width="1080" height="290" fill="white"/><g font-family="sans-serif" font-size="16" fill="#172b4d">'
         + text
         + "</g></svg>\n"
     )

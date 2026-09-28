@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.0a1 — 2026-09-28 (qualified alpha)
+
+- Replace current public-company demonstrations with a complete fictional ACME
+  worked example, deterministic runner, detailed guide and generated report.
+- Retain the generic reported-disclosure API and missingness safeguards; migrate
+  its regressions to anonymous synthetic disclosures. No canonical schema migration.
+- Reframe the full SoftwareX draft as closed-world synthetic validation, not
+  external validation. Invented evidence never repairs real missing source records.
+- Historical tags/releases, including v0.3.0a1 company assets, remain unchanged.
+  This is a new distribution version, not v1.0 or journal submission.
+
 ## 0.0.1 — 2026-09-24
 
 - Added Phase 0 research documentation and software-paper planning scaffold.

@@ -1,0 +1,198 @@
+{
+  "profile": "reported-disclosure/1",
+  "organization": "Anonymous synthetic alternatives",
+  "assertions": [
+    {
+      "id": "alternatives-2023-scope1",
+      "year": 2023,
+      "scope": 1,
+      "category": null,
+      "scope2_basis": null,
+      "quantity": {
+        "value": "1200",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-alternatives.txt",
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic alternatives test data; no real disclosure"
+      },
+      "boundary": "synthetic group",
+      "gwp_basis": "AR5",
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "alternatives-2023-scope2-market-based",
+      "year": 2023,
+      "scope": 2,
+      "category": null,
+      "scope2_basis": "market-based",
+      "quantity": {
+        "value": "8000",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-alternatives.txt",
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic alternatives test data; no real disclosure"
+      },
+      "boundary": "synthetic group",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "alternatives-2023-scope2-location-based",
+      "year": 2023,
+      "scope": 2,
+      "category": null,
+      "scope2_basis": "location-based",
+      "quantity": {
+        "value": "9500",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-alternatives.txt",
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic alternatives test data; no real disclosure"
+      },
+      "boundary": "synthetic group",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "alternatives-2023-scope3",
+      "year": 2023,
+      "scope": 3,
+      "category": null,
+      "scope2_basis": null,
+      "quantity": {
+        "value": "6000",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-alternatives.txt",
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic alternatives test data; no real disclosure"
+      },
+      "boundary": "synthetic group",
+      "gwp_basis": "AR5",
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "alternatives-2024-scope1",
+      "year": 2024,
+      "scope": 1,
+      "category": null,
+      "scope2_basis": null,
+      "quantity": {
+        "value": "1350",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-alternatives.txt",
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic alternatives test data; no real disclosure"
+      },
+      "boundary": "synthetic group",
+      "gwp_basis": "AR5",
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "alternatives-2024-scope2-market-based",
+      "year": 2024,
+      "scope": 2,
+      "category": null,
+      "scope2_basis": "market-based",
+      "quantity": {
+        "value": "8500",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-alternatives.txt",
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic alternatives test data; no real disclosure"
+      },
+      "boundary": "synthetic group",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "alternatives-2024-scope2-location-based",
+      "year": 2024,
+      "scope": 2,
+      "category": null,
+      "scope2_basis": "location-based",
+      "quantity": {
+        "value": "10200",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-alternatives.txt",
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic alternatives test data; no real disclosure"
+      },
+      "boundary": "synthetic group",
+      "gwp_basis": null,
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    },
+    {
+      "id": "alternatives-2024-scope3",
+      "year": 2024,
+      "scope": 3,
+      "category": null,
+      "scope2_basis": null,
+      "quantity": {
+        "value": "6400",
+        "unit": "tCO2e"
+      },
+      "source": {
+        "url": "https://example.org/synthetic-alternatives.txt",
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "page": "1",
+        "retrieved_at": "2026-01-01T00:00:00Z",
+        "title": "Synthetic alternatives test data; no real disclosure"
+      },
+      "boundary": "synthetic group",
+      "gwp_basis": "AR5",
+      "restatement": null,
+      "rounding": null,
+      "total_scopes": [],
+      "note": "Invented fixture; citation and hash are placeholders, not authenticity evidence."
+    }
+  ]
+}

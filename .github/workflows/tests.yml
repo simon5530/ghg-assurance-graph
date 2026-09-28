@@ -24,16 +24,22 @@ jobs:
       - run: uv run python scripts/test_check_docs.py
       - run: uv run ghgag benchmark run > benchmark-evaluation.json
       - run: uv build
-      - run: uv run pip-audit --progress-spinner off
-      - name: Full real-company pipeline with socket networking blocked
+      - name: Fresh locked wheel and byte-identical worked-example replay
         run: |
-          uv run python scripts/run_public_case.py examples/public_companies/umc_group_2022_2024.json --out artifacts/public-umc
-          uv run python scripts/run_public_case.py examples/public_companies/umc_parent_2022_2024.json --out artifacts/public-umc-parent
-          uv run python scripts/run_public_case.py examples/public_companies/tsmc_heldout_2023_2024.json --out artifacts/public-tsmc
-      - name: Upload complete public-company outputs
+          uv export --locked --no-dev --no-emit-project --format requirements-txt --output-file "$RUNNER_TEMP/runtime.txt"
+          uv venv --python 3.12.14 "$RUNNER_TEMP/wheel-venv"
+          uv pip sync --python "$RUNNER_TEMP/wheel-venv/bin/python" --require-hashes "$RUNNER_TEMP/runtime.txt"
+          uv pip install --python "$RUNNER_TEMP/wheel-venv/bin/python" --no-deps dist/ghg_assurance_graph-0.4.0a1-py3-none-any.whl
+          uv run python scripts/run_acme_example.py --python "$RUNNER_TEMP/wheel-venv/bin/python" --out "$RUNNER_TEMP/acme-one"
+          uv run python scripts/run_acme_example.py --python "$RUNNER_TEMP/wheel-venv/bin/python" --out "$RUNNER_TEMP/acme-two"
+          diff -rq "$RUNNER_TEMP/acme-one" "$RUNNER_TEMP/acme-two"
+      - run: uv run pip-audit --progress-spinner off
+      - name: Complete synthetic ACME workflow with socket networking blocked
+        run: uv run python scripts/run_acme_example.py --out artifacts/acme-worked
+      - name: Upload complete synthetic worked example
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          name: public-company-full-run
-          path: artifacts/public-*
+          name: acme-worked-example
+          path: artifacts/acme-worked
           if-no-files-found: error
           retention-days: 30

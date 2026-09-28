@@ -5,8 +5,8 @@ submission-ready article: [MANUSCRIPT.md](MANUSCRIPT.md),
 [readable PDF](MANUSCRIPT.pdf), [standalone HTML](MANUSCRIPT.html).
 
 Includes the five official main sections, abstract, six keywords, metadata,
-ACME and public UMC/TSMC results, two original figures, limitations, declarations
-and eleven primary references. See [source ledger](SOURCE_LEDGER.md),
+detailed synthetic-only ACME results, two original figures, limitations, declarations
+and nine primary references. See [source ledger](SOURCE_LEDGER.md),
 [journal requirements](JOURNAL_GUIDE_CHECK.md) and [metrics](MANUSCRIPT_METRICS.json).
 
 Author metadata and declarations require actual owner decisions; no invented

@@ -1,0 +1,31 @@
+{
+  "commands": 73,
+  "created_at": "2026-09-28T00:00:00Z",
+  "negative_expected_exit": 1,
+  "network": "Python socket connections, DNS and datagram sends blocked; not an OS sandbox",
+  "oracle": "Fraction products plus literal totals/deltas",
+  "package_valid": {
+    "2025-v1": true,
+    "2025-v2": true,
+    "2026-v1": true
+  },
+  "python": "3.12.14",
+  "software": {
+    "ghg-assurance-graph": "0.4.0a1",
+    "pydantic": "2.13.5",
+    "pyshacl": "0.31.0",
+    "rdflib": "7.6.0",
+    "rocrate": "0.15.1"
+  },
+  "source_records": 45,
+  "totals_kg_co2e": {
+    "2025-v1": 3820,
+    "2025-v2": 3850,
+    "2026-v1": 4060
+  },
+  "vault_note_counts": {
+    "2025-v1": 258,
+    "2025-v2": 258,
+    "2026-v1": 258
+  }
+}
