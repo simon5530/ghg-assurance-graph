@@ -1,0 +1,11 @@
+# Phase 10 decision: exclude optional Jev from core paper
+
+Decision 2026-09-28: the original Phase 10 and RQ5 explicitly permit exclusion when a meaningful reproducible comparative result is absent. This is an opt-out, not a failed mandatory phase and not a claim that credentials are missing.
+
+## Capability inspection
+The available tool catalog did not expose a TypeSafe/Jev inference connector. The installed TypeSafe skill is documentation, not an authenticated integration. Live [documentation index](https://docs.typesafe.ai/llms.txt) and [HTTP API](https://docs.typesafe.ai/api.md) were inspected: hosted POST evaluation returns typed answers/probabilities and requires bearer authorization; `jev-latest` is a moving alias, unsuitable as an unqualified experimental pin. No secrets were read, account created, paid inference requested, or owner capability inferred from skill installation. Existing authenticated availability was not proved; absence of credentials was not proved either.
+
+## Evaluated non-Jev baseline
+The core benchmark and `tests/test_tools.py` execute with no model. The evidence question set tests a 500 kgCO2e result and its linked evidence, factor usage, graph retrieval, digest gaps, asserted versus computed findings, exact 3820→3850 kgCO2e version comparison, and explicit-consent package export. Negative cases reject arbitrary queries, malformed IDs, unauthorized export and injected request fields. Socket-blocked question tests establish deterministic offline behavior, not language-model grounding accuracy. Full baseline verification: 448 tests passed on 2026-09-28; selected validation 10 TP / 0 FP / 0 FN; annotation-assisted CarbonDiff 9/9 components matches public ground truth.
+
+No LLM/Jev accuracy, calibration, latency or cost comparison exists and none appears as a manuscript result. The optional experiment remains excluded, not implemented. A future opt-in study must pin a provider/model, use synthetic inputs, define disjoint evaluation data and abstention, log input hashes/probabilities/threshold/branch/latency/actual cost/labels, compare rules and structured LLM under the same protocol, and never let model suggestions modify accounting authority. No such experiment is needed to reproduce the present software.
