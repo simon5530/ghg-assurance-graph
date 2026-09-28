@@ -86,3 +86,16 @@ inputs and complete preflight findings fix the cause. Adversarial tests, origina
 fixtures and a full-suite run prove the encoded recovery; they do not prove
 standards conformity. SHACL also needs direct raw-graph mutation tests: canonical
 model validation can otherwise mask absent shape constraints.
+
+## Reported assertions versus reconstructed calculations
+A public emissions total is evidence of what was reported, not an activity × factor
+calculation. Forcing it into a complete calculated-result schema fabricates lineage.
+Use a separate closed, versioned profile with explicit missingness; keep the original
+clean calculated contract unchanged. Compare numeric rows without declaring causes.
+
+Independent review found that precision-only Decimal contexts inherit exponent limits,
+standalone manifests can lose software provenance, and raw organization text can inject
+report formatting. Cheapest checks: adversarial exponent context, literal manifest
+assertions, and an HTML organization string. Repairs use a complete numeric context,
+versioned replay metadata and escaped presentation. The independent negative tests
+remain executable regression oracles; no source truth is inferred from passing them.

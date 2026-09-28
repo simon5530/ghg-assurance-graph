@@ -1,0 +1,201 @@
+[
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "ingest",
+      "INPUT"
+    ],
+    "output": "canonical.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "validate",
+      "INPUT"
+    ],
+    "output": "validation.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "graph",
+      "INPUT"
+    ],
+    "output": "graph.ttl",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "graph",
+      "INPUT",
+      "--format",
+      "json-ld"
+    ],
+    "output": "graph.jsonld",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "explain",
+      "INPUT",
+      "umc-2022-scope1"
+    ],
+    "output": "explain-umc-2022-scope1.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "explain",
+      "INPUT",
+      "umc-2022-scope2-unspecified"
+    ],
+    "output": "explain-umc-2022-scope2-unspecified.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "explain",
+      "INPUT",
+      "umc-2022-scope3"
+    ],
+    "output": "explain-umc-2022-scope3.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "explain",
+      "INPUT",
+      "umc-2023-scope1"
+    ],
+    "output": "explain-umc-2023-scope1.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "explain",
+      "INPUT",
+      "umc-2023-scope2-unspecified"
+    ],
+    "output": "explain-umc-2023-scope2-unspecified.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "explain",
+      "INPUT",
+      "umc-2023-scope3"
+    ],
+    "output": "explain-umc-2023-scope3.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "explain",
+      "INPUT",
+      "umc-2024-scope1"
+    ],
+    "output": "explain-umc-2024-scope1.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "explain",
+      "INPUT",
+      "umc-2024-scope2-unspecified"
+    ],
+    "output": "explain-umc-2024-scope2-unspecified.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "explain",
+      "INPUT",
+      "umc-2024-scope3"
+    ],
+    "output": "explain-umc-2024-scope3.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "diff",
+      "OUTPUT/year-2022.json",
+      "OUTPUT/year-2023.json"
+    ],
+    "output": "diff-2022-2023.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "diff",
+      "OUTPUT/year-2023.json",
+      "OUTPUT/year-2024.json"
+    ],
+    "output": "diff-2023-2024.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "package",
+      "INPUT",
+      "--out",
+      "OUTPUT/crate",
+      "--created-at",
+      "2026-09-28T00:00:00Z"
+    ],
+    "output": "package-create.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "verify",
+      "OUTPUT/crate"
+    ],
+    "output": "package-verify.json",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "ghgag",
+      "reported",
+      "obsidian",
+      "INPUT",
+      "--out",
+      "OUTPUT/vault"
+    ],
+    "output": "obsidian.json",
+    "exit": 0
+  }
+]

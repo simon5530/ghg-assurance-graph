@@ -1,0 +1,76 @@
+{
+  "assertion": {
+    "boundary": "Operational control; UMC Taiwan and Singapore fabs plus foundry subsidiaries HJ, USCXM, Wavetek and USJC. Non-foundry subsidiaries excluded under disclosed <5% emissions materiality criterion (pp.4,99).",
+    "category": null,
+    "gwp_basis": null,
+    "id": "umc-2024-scope2-unspecified",
+    "note": "No explicit LB/MB label; basis must not be inferred from grid factors or renewable energy.",
+    "quantity": {
+      "unit": "tCO2e",
+      "value": "1523855"
+    },
+    "restatement": null,
+    "rounding": null,
+    "scope": 2,
+    "scope2_basis": "unspecified",
+    "source": {
+      "page": "PDF/printed p.99, GHG Emissions Management, UMC Group total chart labels",
+      "retrieved_at": "2026-09-28T00:56:45.306057Z",
+      "sha256": "d66619bea5b4ca327ef128c7d31adb8559386a328ee974657ad28129698a8b4d",
+      "title": "UMC 2024 Sustainability Report (English)",
+      "url": "https://www.umc.com/upload/media/07_Sustainability/72_Reports_and_Results/1_Corporate_Sustainability_Reports/CSR_Reports/CS_Report_English_pdf/2024_CSR_report_eng/UMC-2024-EN-elink.pdf"
+    },
+    "total_scopes": [],
+    "year": 2024
+  },
+  "causality": "UNKNOWN",
+  "checks": [
+    {
+      "outcome": "declared_not_verified",
+      "rule": "boundary",
+      "status": "assessed",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "gwp_basis",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "restatement",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "rounding",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "rule": "scope2_basis",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "rule": "source_authenticity",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "rule": "activity_factor_recalculation",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "rule": "independent_assurance",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    }
+  ],
+  "limitation": "Reported assertions only; no source authenticity, inventory completeness or assurance opinion.",
+  "node": "urn:ghgag:reported:4a79b1e2816e1aeb406780d593178765a752ce6259667286af5a9d8519b45e83:umc-2024-scope2-unspecified",
+  "tonnesCO2e": "1523855"
+}

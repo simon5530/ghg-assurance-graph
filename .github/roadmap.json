@@ -916,5 +916,6 @@
       ],
       "github_number": 30
     }
-  ]
+  ],
+  "release_candidate": "0.3.0a1 qualified alpha; GitHub Release API blocked by normal TLS verification; no remote issue reconciliation claimed"
 }

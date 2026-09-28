@@ -201,3 +201,10 @@ causes. Evidence packages prove internal consistency, not authenticity. No gas-
 resolved reporting, uncertainty assessment, completeness/significance procedure,
 ISO six-category report or organizational assurance controls have been added.
 Private licensed sources and extracts remain outside the repository.
+
+## Public aggregate evidence limit (0.3.0a1)
+Reported company totals extend empirical input coverage, not standards conformity.
+Aggregate citations cannot establish activity completeness, factor eligibility,
+contractual Scope 2 quality, gas/GWP reconstruction, controls, uncertainty or review
+authenticity. Source assurance wording is attributed disclosure, not tool assurance.
+The private ISO review scope and residual gaps above remain unchanged.

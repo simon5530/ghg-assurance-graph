@@ -37,6 +37,13 @@ evaluation. Seven semantic row labels are supplied as assertions; two electricit
 components are mechanically decomposed. Without these assertions, subsequent-year
 UNKNOWN is +300 kgCO2e signed and 500 absolute, against total delta +210.
 
+### Public aggregate-disclosure evaluation
+A separate `reported-disclosure/1` path preserves published totals as assertions
+without fabricated calculation lineage. A reproducibly selected Taiwanese company
+and a held-out company test explicit fact mapping, per-series comparisons, missing
+evidence and portable inspection. This evaluates workflow breadth, not causal
+accuracy or independently assured emissions. The raw source reports are not bundled.
+
 ## 4. Impact and limitations
 No independent users, empirical research adoption or practitioner validation is
 claimed. Generic JSON/CSV interchange is not a tested PACT/openLCA/Brightway adapter.

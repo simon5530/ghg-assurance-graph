@@ -124,3 +124,10 @@ zero/negative changes, precision isolation, immutable inputs and conversion once
 Broader external inventories, canonical graph matching, simultaneous semantic
 decomposition, authenticated event evidence, MB characterization and empirical
 expert-label validation remain gaps. The integrated CLI exposes this bounded API; no certification claim is added.
+
+## Public aggregate comparison
+The separate [reported-disclosure profile](REPORTED_CONTRACT.md) matches explicit
+organization, year, scope/category and Scope 2 basis. Numeric deltas are reported
+with boundary/GWP/restatement qualifications, never operational causes. Missing
+years/series remain missing, not zero. Totals, category components and Scope 2
+alternatives are not blindly added. Every public aggregate causal driver is UNKNOWN.

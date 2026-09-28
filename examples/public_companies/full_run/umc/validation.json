@@ -1,0 +1,300 @@
+{
+  "checks": [
+    {
+      "outcome": "pass",
+      "rule": "schema",
+      "status": "assessed"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "boundary",
+      "status": "assessed",
+      "target": "umc-2022-scope1"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "gwp_basis",
+      "status": "assessed",
+      "target": "umc-2022-scope1"
+    },
+    {
+      "outcome": "missing",
+      "rule": "restatement",
+      "status": "not_assessable",
+      "target": "umc-2022-scope1"
+    },
+    {
+      "outcome": "missing",
+      "rule": "rounding",
+      "status": "not_assessable",
+      "target": "umc-2022-scope1"
+    },
+    {
+      "rule": "source_authenticity",
+      "status": "not_assessable",
+      "target": "umc-2022-scope1"
+    },
+    {
+      "rule": "activity_factor_recalculation",
+      "status": "not_assessable",
+      "target": "umc-2022-scope1"
+    },
+    {
+      "rule": "independent_assurance",
+      "status": "not_assessable",
+      "target": "umc-2022-scope1"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "boundary",
+      "status": "assessed",
+      "target": "umc-2022-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "gwp_basis",
+      "status": "not_assessable",
+      "target": "umc-2022-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "restatement",
+      "status": "not_assessable",
+      "target": "umc-2022-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "rounding",
+      "status": "not_assessable",
+      "target": "umc-2022-scope2-unspecified"
+    },
+    {
+      "rule": "scope2_basis",
+      "status": "not_assessable",
+      "target": "umc-2022-scope2-unspecified"
+    },
+    {
+      "rule": "source_authenticity",
+      "status": "not_assessable",
+      "target": "umc-2022-scope2-unspecified"
+    },
+    {
+      "rule": "activity_factor_recalculation",
+      "status": "not_assessable",
+      "target": "umc-2022-scope2-unspecified"
+    },
+    {
+      "rule": "independent_assurance",
+      "status": "not_assessable",
+      "target": "umc-2022-scope2-unspecified"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "boundary",
+      "status": "assessed",
+      "target": "umc-2023-scope1"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "gwp_basis",
+      "status": "assessed",
+      "target": "umc-2023-scope1"
+    },
+    {
+      "outcome": "missing",
+      "rule": "restatement",
+      "status": "not_assessable",
+      "target": "umc-2023-scope1"
+    },
+    {
+      "outcome": "missing",
+      "rule": "rounding",
+      "status": "not_assessable",
+      "target": "umc-2023-scope1"
+    },
+    {
+      "rule": "source_authenticity",
+      "status": "not_assessable",
+      "target": "umc-2023-scope1"
+    },
+    {
+      "rule": "activity_factor_recalculation",
+      "status": "not_assessable",
+      "target": "umc-2023-scope1"
+    },
+    {
+      "rule": "independent_assurance",
+      "status": "not_assessable",
+      "target": "umc-2023-scope1"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "boundary",
+      "status": "assessed",
+      "target": "umc-2023-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "gwp_basis",
+      "status": "not_assessable",
+      "target": "umc-2023-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "restatement",
+      "status": "not_assessable",
+      "target": "umc-2023-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "rounding",
+      "status": "not_assessable",
+      "target": "umc-2023-scope2-unspecified"
+    },
+    {
+      "rule": "scope2_basis",
+      "status": "not_assessable",
+      "target": "umc-2023-scope2-unspecified"
+    },
+    {
+      "rule": "source_authenticity",
+      "status": "not_assessable",
+      "target": "umc-2023-scope2-unspecified"
+    },
+    {
+      "rule": "activity_factor_recalculation",
+      "status": "not_assessable",
+      "target": "umc-2023-scope2-unspecified"
+    },
+    {
+      "rule": "independent_assurance",
+      "status": "not_assessable",
+      "target": "umc-2023-scope2-unspecified"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "boundary",
+      "status": "assessed",
+      "target": "umc-2024-scope1"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "gwp_basis",
+      "status": "assessed",
+      "target": "umc-2024-scope1"
+    },
+    {
+      "outcome": "missing",
+      "rule": "restatement",
+      "status": "not_assessable",
+      "target": "umc-2024-scope1"
+    },
+    {
+      "outcome": "missing",
+      "rule": "rounding",
+      "status": "not_assessable",
+      "target": "umc-2024-scope1"
+    },
+    {
+      "rule": "source_authenticity",
+      "status": "not_assessable",
+      "target": "umc-2024-scope1"
+    },
+    {
+      "rule": "activity_factor_recalculation",
+      "status": "not_assessable",
+      "target": "umc-2024-scope1"
+    },
+    {
+      "rule": "independent_assurance",
+      "status": "not_assessable",
+      "target": "umc-2024-scope1"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "boundary",
+      "status": "assessed",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "gwp_basis",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "restatement",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "outcome": "missing",
+      "rule": "rounding",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "rule": "scope2_basis",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "rule": "source_authenticity",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "rule": "activity_factor_recalculation",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "rule": "independent_assurance",
+      "status": "not_assessable",
+      "target": "umc-2024-scope2-unspecified"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "boundary",
+      "status": "assessed",
+      "target": "umc-2024-scope3"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "gwp_basis",
+      "status": "assessed",
+      "target": "umc-2024-scope3"
+    },
+    {
+      "outcome": "missing",
+      "rule": "restatement",
+      "status": "not_assessable",
+      "target": "umc-2024-scope3"
+    },
+    {
+      "outcome": "missing",
+      "rule": "rounding",
+      "status": "not_assessable",
+      "target": "umc-2024-scope3"
+    },
+    {
+      "rule": "source_authenticity",
+      "status": "not_assessable",
+      "target": "umc-2024-scope3"
+    },
+    {
+      "rule": "activity_factor_recalculation",
+      "status": "not_assessable",
+      "target": "umc-2024-scope3"
+    },
+    {
+      "rule": "independent_assurance",
+      "status": "not_assessable",
+      "target": "umc-2024-scope3"
+    }
+  ],
+  "limitation": "Reported assertions only; no source authenticity, inventory completeness or assurance opinion.",
+  "profile": "reported-disclosure/1",
+  "status": "not_assessable"
+}

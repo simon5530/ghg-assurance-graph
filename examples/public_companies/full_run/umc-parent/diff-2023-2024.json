@@ -1,0 +1,35 @@
+{
+  "after_year": 2024,
+  "aggregate_delta": null,
+  "before_year": 2023,
+  "causality": "UNKNOWN",
+  "limitation": "Row deltas only: alternatives, categories and totals are not additive; no causal attribution.",
+  "organization": "United Microelectronics Corporation (parent only)",
+  "profile": "reported-disclosure/1",
+  "rows": [
+    {
+      "after": "umc-2024-scope1",
+      "arithmetic_delta_tCO2e": "-69518",
+      "before": "umc-2023-scope1",
+      "causality": "UNKNOWN",
+      "reason": "missing row or unknown/changed reporting basis",
+      "status": "not_assessable"
+    },
+    {
+      "after": "umc-2024-scope2-unspecified",
+      "arithmetic_delta_tCO2e": "-42158",
+      "before": "umc-2023-scope2-unspecified",
+      "causality": "UNKNOWN",
+      "reason": "missing row or unknown/changed reporting basis",
+      "status": "not_assessable"
+    },
+    {
+      "after": "umc-2024-scope3",
+      "arithmetic_delta_tCO2e": "-476241",
+      "before": "umc-2023-scope3",
+      "causality": "UNKNOWN",
+      "reason": "missing row or unknown/changed reporting basis",
+      "status": "not_assessable"
+    }
+  ]
+}

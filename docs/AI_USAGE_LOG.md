@@ -1,6 +1,6 @@
 # Ai Usage Log
 
-Status: Phase 0 planning; domain features are not implemented.
+Status: cumulative disclosure; current implemented scope is in README. Historical entries remain dated.
 
 ## 2026-09-24 — Phase 0 scaffold
 - Tool: OpenClaw AI coding/documentation assistant, model reported as GPT-6 Astra.
@@ -70,3 +70,12 @@ Human verification: no new practitioner or human domain sign-off asserted.
 Design owner: repository owner; research Gate A HOLD preserved.
 Tests and operational evidence: see latest RESULTS_LEDGER and PUBLICATION_AUDIT.
 No private ISO source/extract, hosted model experiment or paid service used.
+
+## 2026-09-28 — real public-company assertion workflow
+Tool/model: OpenClaw, openai/gpt-6-astra. Task: additive reported-assertion schema,
+independent primary-source extraction, adversarial review, offline CLI runner and
+qualified-alpha documentation. Raw public reports remain outside Git; only limited
+attributed numeric facts and original mapping notes are included. Human practitioner
+verification is not claimed. Source assurance labels do not become tool approval.
+Independent tests, release/publication checks and measured missingness are recorded
+in the results ledger/audit. No model is needed to reproduce the runtime.

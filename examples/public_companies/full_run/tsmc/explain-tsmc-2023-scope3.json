@@ -1,0 +1,71 @@
+{
+  "assertion": {
+    "boundary": "Unresolved boundary conflict: p.266 note 6 lists Taiwan fabs, Washington, China, Nanjing, VisEra; p.115 note 3 additionally lists JASM and Japan 3DIC R&D Center and specifies Taiwan R&D and Zero Waste centers.",
+    "category": null,
+    "gwp_basis": null,
+    "id": "tsmc-2023-scope3",
+    "note": "LB/MB are alternatives, not additive. Offsets not netted. Carbon-neutral natural gas discussion pp.113-114 leaves gross/net treatment unreconciled.",
+    "quantity": {
+      "unit": "tCO2e",
+      "value": "7616655"
+    },
+    "restatement": null,
+    "rounding": null,
+    "scope": 3,
+    "scope2_basis": null,
+    "source": {
+      "page": "PDF/printed p.266, ESG Performance Summary, Climate and Energy rows, 2023 column",
+      "retrieved_at": "2026-09-28T01:00:54.830111Z",
+      "sha256": "68c093548001a5b90222997590089fac3378bc3611dff63d65b4460e36e6ff41",
+      "title": "TSMC 2024 Sustainability Report (English)",
+      "url": "https://esg.tsmc.com/file/public/2024-TSMC-Sustainability-Report-e.pdf"
+    },
+    "total_scopes": [],
+    "year": 2023
+  },
+  "causality": "UNKNOWN",
+  "checks": [
+    {
+      "outcome": "declared_not_verified",
+      "rule": "boundary",
+      "status": "assessed",
+      "target": "tsmc-2023-scope3"
+    },
+    {
+      "outcome": "missing",
+      "rule": "gwp_basis",
+      "status": "not_assessable",
+      "target": "tsmc-2023-scope3"
+    },
+    {
+      "outcome": "missing",
+      "rule": "restatement",
+      "status": "not_assessable",
+      "target": "tsmc-2023-scope3"
+    },
+    {
+      "outcome": "missing",
+      "rule": "rounding",
+      "status": "not_assessable",
+      "target": "tsmc-2023-scope3"
+    },
+    {
+      "rule": "source_authenticity",
+      "status": "not_assessable",
+      "target": "tsmc-2023-scope3"
+    },
+    {
+      "rule": "activity_factor_recalculation",
+      "status": "not_assessable",
+      "target": "tsmc-2023-scope3"
+    },
+    {
+      "rule": "independent_assurance",
+      "status": "not_assessable",
+      "target": "tsmc-2023-scope3"
+    }
+  ],
+  "limitation": "Reported assertions only; no source authenticity, inventory completeness or assurance opinion.",
+  "node": "urn:ghgag:reported:956444b70a20ba7f8b23cbec6a83afd39c5f7195005a9f6a9bf4383155eb9285:tsmc-2023-scope3",
+  "tonnesCO2e": "7616655"
+}

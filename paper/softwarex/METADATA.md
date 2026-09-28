@@ -1,6 +1,6 @@
 # SoftwareX metadata draft
 
-- Version: 0.2.0a1 experimental prerelease; not v1.0 or archived release.
+- Version: 0.3.0a1 qualified alpha; not v1.0 or a DOI-archived release.
 - Repository: https://github.com/simon5530/ghg-assurance-graph
 - License: MIT; dependencies retain upstream licenses.
 - Language/environment: Python 3.12.14; uv.lock; local CLI/library, no cloud key.
@@ -10,7 +10,9 @@
 - Archive/DOI/submission identifier: none assigned.
 - Authors, affiliations, funding, competing interests: human confirmation pending.
 - Official template and current mandatory submission fields: verification pending.
-- Claims: public synthetic evaluation only; no novelty, certification or adoption claim.
+- Claims: synthetic defect evaluation plus bounded public-company assertion inspection;
+  no causal accuracy, novelty, certification or adoption claim.
+- Contribution brief: [qualified highlights](HIGHLIGHTS.md).
 
 Template access check (2026-09-28): the official [Guide for Authors](https://www.sciencedirect.com/journal/softwarex/publish/guide-for-authors)
 returned HTTP 403. Current official template contents were not retrieved or

@@ -72,3 +72,9 @@ ACME same-year rule is narrower fixture policy. Gas-resolved, ISO-category and
 market-instrument models remain unimplemented rather than populated with guessed
 normative fields. Snapshot-scoped canonical IDs are distinct from cross-period
 benchmark row keys; no general graph or revision matcher was added.
+
+## Additive reported-disclosure/1 profile
+Application 0.3.0a1 introduces [ReportedAssertion](REPORTED_CONTRACT.md) separately
+from schema 0.1 EmissionResult. No migration or weakening of required calculated
+lineage occurs. Source report totals with unavailable upstream evidence must use
+the new explicit profile; an assertion is not a reconstructed calculation.

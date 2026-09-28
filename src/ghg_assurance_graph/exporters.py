@@ -97,7 +97,7 @@ def export_obsidian(graph: Graph | EvidencePackage, destination: str | Path) -> 
         ):
             lines.append(f"- [[{names[subject]}]] via [[{names[predicate]}]]\n")
         (destination / (names[node] + ".md")).write_text(
-            frontmatter + "".join(lines), encoding="utf-8"
+            (frontmatter + "".join(lines)).rstrip() + "\n", encoding="utf-8"
         )
     index = "---\ntype: graph-index\n---\n\n# Evidence graph\n\n"
     index += "Experimental evidence navigation; not an assurance opinion.\n\n"

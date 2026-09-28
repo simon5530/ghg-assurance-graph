@@ -1,0 +1,314 @@
+[
+  {
+    "target": "umc-2022-scope1",
+    "rule": "gwp_basis",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2022-scope1",
+    "rule": "restatement",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2022-scope1",
+    "rule": "rounding",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2022-scope1",
+    "rule": "source_authenticity",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2022-scope1",
+    "rule": "activity_factor_recalculation",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2022-scope1",
+    "rule": "independent_assurance",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2022-scope2-unspecified",
+    "rule": "gwp_basis",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2022-scope2-unspecified",
+    "rule": "restatement",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2022-scope2-unspecified",
+    "rule": "rounding",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2022-scope2-unspecified",
+    "rule": "scope2_basis",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2022-scope2-unspecified",
+    "rule": "source_authenticity",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2022-scope2-unspecified",
+    "rule": "activity_factor_recalculation",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2022-scope2-unspecified",
+    "rule": "independent_assurance",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2022-scope3",
+    "rule": "gwp_basis",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2022-scope3",
+    "rule": "restatement",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2022-scope3",
+    "rule": "rounding",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2022-scope3",
+    "rule": "source_authenticity",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2022-scope3",
+    "rule": "activity_factor_recalculation",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2022-scope3",
+    "rule": "independent_assurance",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2023-scope1",
+    "rule": "gwp_basis",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2023-scope1",
+    "rule": "restatement",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2023-scope1",
+    "rule": "rounding",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2023-scope1",
+    "rule": "source_authenticity",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2023-scope1",
+    "rule": "activity_factor_recalculation",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2023-scope1",
+    "rule": "independent_assurance",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2023-scope2-unspecified",
+    "rule": "gwp_basis",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2023-scope2-unspecified",
+    "rule": "restatement",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2023-scope2-unspecified",
+    "rule": "rounding",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2023-scope2-unspecified",
+    "rule": "scope2_basis",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2023-scope2-unspecified",
+    "rule": "source_authenticity",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2023-scope2-unspecified",
+    "rule": "activity_factor_recalculation",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2023-scope2-unspecified",
+    "rule": "independent_assurance",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2023-scope3",
+    "rule": "gwp_basis",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2023-scope3",
+    "rule": "restatement",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2023-scope3",
+    "rule": "rounding",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2023-scope3",
+    "rule": "source_authenticity",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2023-scope3",
+    "rule": "activity_factor_recalculation",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2023-scope3",
+    "rule": "independent_assurance",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2024-scope1",
+    "rule": "gwp_basis",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2024-scope1",
+    "rule": "restatement",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2024-scope1",
+    "rule": "rounding",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2024-scope1",
+    "rule": "source_authenticity",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2024-scope1",
+    "rule": "activity_factor_recalculation",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2024-scope1",
+    "rule": "independent_assurance",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2024-scope2-unspecified",
+    "rule": "gwp_basis",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2024-scope2-unspecified",
+    "rule": "restatement",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2024-scope2-unspecified",
+    "rule": "rounding",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2024-scope2-unspecified",
+    "rule": "scope2_basis",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2024-scope2-unspecified",
+    "rule": "source_authenticity",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2024-scope2-unspecified",
+    "rule": "activity_factor_recalculation",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2024-scope2-unspecified",
+    "rule": "independent_assurance",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2024-scope3",
+    "rule": "gwp_basis",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2024-scope3",
+    "rule": "restatement",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2024-scope3",
+    "rule": "rounding",
+    "status": "not_assessable",
+    "outcome": "missing"
+  },
+  {
+    "target": "umc-2024-scope3",
+    "rule": "source_authenticity",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2024-scope3",
+    "rule": "activity_factor_recalculation",
+    "status": "not_assessable"
+  },
+  {
+    "target": "umc-2024-scope3",
+    "rule": "independent_assurance",
+    "status": "not_assessable"
+  }
+]

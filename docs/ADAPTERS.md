@@ -46,3 +46,10 @@ Malformed CSV parser errors are normalized to ValueError. JSON rejects nonfinite
 numbers (including exponent overflow), duplicate keys and nesting beyond 64 levels;
 input remains bounded to 2 MB. These bounds are not a general-purpose process
 sandbox or a vendor-format conformance claim.
+
+## Public aggregate disclosures are a different profile
+The complete external-result closure above is **not** relaxed for company reports.
+Use [reported-disclosure/1](REPORTED_CONTRACT.md) for published totals without
+activity/factor lineage. Its ReportedAssertion entities preserve missingness and
+never create dummy calculations, reviews or factors. Import is an explicit numeric
+fact mapping, not a universal PDF/table parser.

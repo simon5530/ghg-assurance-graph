@@ -55,3 +55,16 @@ The CLI preserves historical graph error text, never logs supplied paths, and
 requires new export/package directories plus explicit creation/data metadata.
 Packages retain inert citations, not the referenced source documents. The verifier
 checks its own bounded profile offline; external authenticity is not established.
+
+## Real public-company reproduction (0.3.0a1)
+See [full inputs, reports and commands](../examples/public_companies/README.md).
+The runner executes every reported CLI action with socket networking/DNS blocked.
+A fresh same-machine environment installed all 29 exact hashed runtime dependencies
+offline, then the wheel built from sdist. UMC Group and TSMC runs outside the source
+checkout produced byte-identical full output trees after freezing source timestamps.
+This is not practitioner replication or a fresh physical host. The pinned CI workflow
+executes all three cases and uploads outputs; hosted success must be observed separately.
+
+The first comparison used a fixture while retrieval timestamps were still being
+finalized, and correctly differed. Freeze input hashes before byte-reproduction checks.
+Source PDFs stay local; tests use only attributable fact extracts.

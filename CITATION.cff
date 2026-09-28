@@ -4,7 +4,7 @@ title: "GHG Assurance Graph"
 type: software
 authors:
   - name: "GHG Assurance Graph contributors"
-version: 0.2.0a1
+version: 0.3.0a1
 license: MIT
 abstract: "Offline experimental organizational GHG provenance, selected validation, deterministic change attribution and portable evidence exports."
 repository-code: "https://github.com/simon5530/ghg-assurance-graph"

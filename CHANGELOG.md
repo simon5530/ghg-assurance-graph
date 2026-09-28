@@ -39,7 +39,14 @@ review usage edges, five bound SPARQL queries and local ghgag graph CLI. No Phas
 - Original phase matrix and metadata reconciled; Gate A and external v1.0 gates
   remain open. Schema/benchmark 0.1 unchanged; no silent data migration.
 
-## Unreleased — independent completion review
+## 0.3.0a1 — 2026-09-28 (qualified alpha; publication status in release audit)
+
+- Add a separate reported-disclosure profile for real public-company aggregates;
+  preserve schema/benchmark 0.1 and calculated-result requirements unchanged.
+- Keep missing upstream provenance not assessable and comparison causes UNKNOWN.
+- Preserve source units, period/boundary qualifications and Scope 2 alternatives.
+
+### Independent completion review included in this version
 
 - Complete seven deterministic evidence actions and explicit host-consented export.
 - Fix context-sensitive validation arithmetic and incomplete CarbonDiff input checks.

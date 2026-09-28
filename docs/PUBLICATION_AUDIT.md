@@ -230,3 +230,46 @@ its current template is explicitly unverified, not fabricated. Alpha publishing
 is authorized; research/domain gates and archival/submission gates remain distinct.
 Final commit/push and hosted-CI readback are reported separately to avoid a
 self-referential commit hash. Published 0.2.0a1 is not retroactively changed.
+
+## 2026-09-28 — 0.3.0a1 real public-disclosure alpha
+
+Scope baseline43f3027: additive reported-disclosure/1, explicit CLI/evidence workflow,
+UMC Group and parent-only2022–2024 plus TSMC2023–2024, complete generated outputs,
+independent numeric/adversarial tests and synchronized paper/release docs. Existing
+calculated schema0.1 and ACME fixtures remain byte-unchanged. No raw company report,
+ISO source/extract, credentials or private user context is bundled. Company PDFs
+were inspected locally; exact source SHA256 values were independently recomputed.
+Only24 attributable numeric facts, original mapping/limitation notes and derived
+outputs are published. Company copyrights are not relicensed under project MIT.
+
+Observed locally: Python3.12.14, uv0.12.19, Ruff0.16.9, pytest9.1.1, Gitleaks8.30.1.
+448 tests pass with11 upstream RDFLib warnings, 7 docs-oracle tests pass, relative
+links in176 Markdown files pass; Ruff lint/format and diff whitespace checks pass.
+Independent review reproduced3 defects (ambient Decimal exponents, missing crate
+software/command metadata, raw HTML in report); all19 independent review tests now
+pass after fixes. No negative oracle was weakened. Dependency audit reports no known
+vulnerabilities; the unpublished project itself is outside PyPI advisory coverage.
+No dependency change; prior dependency-license review remains applicable.
+
+Wheel built from sdist and installed with29 hashed runtime dependencies in a fresh
+offline local environment. Full UMC Group and held-out TSMC workflows executed
+outside the source checkout with Python socket/DNS access blocked and produced
+byte-identical complete trees after freezing input metadata. A separate clean
+publication copy performs locked offline installation/full tests. This is same-host
+reproduction, not practitioner or fresh-host proof. CI now runs all3real cases and
+uploads complete artifacts using a pinned action; remote execution is not inferred.
+
+Publication-scope helper inspected344 intended UTF-8 files and231 historical blobs;
+targeted privacy scan clear. Gitleaks tree scan~1.83MB and all11reachable baseline
+commits~1.06MB found no secrets. Separate semantic review covered actual facts,
+source URLs, report text, filenames, scripts, generated crate/vault metadata and
+commit identities. Only intentional public company/source and GitHub attribution.
+No report binaries are retained. Final staged/postcommit scans and remote SHA/tag
+readback are reported externally to avoid a self-referential audit hash.
+
+Normal authenticated GitHub API probe failed certificate verification. No TLS bypass,
+trust edits, credential extraction or alternate authenticated HTTP route. Existing
+Git transport and anonymous repository read succeed. GitHub Release object/assets,
+issue closure, description/security-control updates remain API-blocked; a pushed tag
+is not those operations. No journal/DOI action attempted. Gate A HOLD and standards/
+comparability limitations remain. Parent independent review remains required.

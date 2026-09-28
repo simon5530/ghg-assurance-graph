@@ -1,0 +1,71 @@
+{
+  "assertion": {
+    "boundary": "Parent company and all subsidiaries (p.115 note 1); 2024 boundary additions p.260 note 3; like-for-like comparability not established.",
+    "category": null,
+    "gwp_basis": "IPCC AR5 GWP100; 2019 Refinement to 2006 IPCC Guidelines for 2020-2024 (p.115 note 2).",
+    "id": "tsmc-2023-scope1",
+    "note": "LB/MB are alternatives, not additive. Offsets not netted. Carbon-neutral natural gas discussion pp.113-114 leaves gross/net treatment unreconciled.",
+    "quantity": {
+      "unit": "tCO2e",
+      "value": "1596031"
+    },
+    "restatement": null,
+    "rounding": null,
+    "scope": 1,
+    "scope2_basis": null,
+    "source": {
+      "page": "PDF/printed p.266, ESG Performance Summary, Climate and Energy rows, 2023 column",
+      "retrieved_at": "2026-09-28T01:00:54.830111Z",
+      "sha256": "68c093548001a5b90222997590089fac3378bc3611dff63d65b4460e36e6ff41",
+      "title": "TSMC 2024 Sustainability Report (English)",
+      "url": "https://esg.tsmc.com/file/public/2024-TSMC-Sustainability-Report-e.pdf"
+    },
+    "total_scopes": [],
+    "year": 2023
+  },
+  "causality": "UNKNOWN",
+  "checks": [
+    {
+      "outcome": "declared_not_verified",
+      "rule": "boundary",
+      "status": "assessed",
+      "target": "tsmc-2023-scope1"
+    },
+    {
+      "outcome": "declared_not_verified",
+      "rule": "gwp_basis",
+      "status": "assessed",
+      "target": "tsmc-2023-scope1"
+    },
+    {
+      "outcome": "missing",
+      "rule": "restatement",
+      "status": "not_assessable",
+      "target": "tsmc-2023-scope1"
+    },
+    {
+      "outcome": "missing",
+      "rule": "rounding",
+      "status": "not_assessable",
+      "target": "tsmc-2023-scope1"
+    },
+    {
+      "rule": "source_authenticity",
+      "status": "not_assessable",
+      "target": "tsmc-2023-scope1"
+    },
+    {
+      "rule": "activity_factor_recalculation",
+      "status": "not_assessable",
+      "target": "tsmc-2023-scope1"
+    },
+    {
+      "rule": "independent_assurance",
+      "status": "not_assessable",
+      "target": "tsmc-2023-scope1"
+    }
+  ],
+  "limitation": "Reported assertions only; no source authenticity, inventory completeness or assurance opinion.",
+  "node": "urn:ghgag:reported:1fea98bea82052bd0fac91f57f581668959bb46dbf86b8cd00a571f7c4fcbfec:tsmc-2023-scope1",
+  "tonnesCO2e": "1596031"
+}

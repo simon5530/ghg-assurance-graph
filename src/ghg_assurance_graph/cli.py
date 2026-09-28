@@ -20,6 +20,9 @@ def output(value):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
+    from .reported_cli import register
+
+    register(commands)
     graph = commands.add_parser("graph")
     actions = graph.add_subparsers(dest="action", required=True)
     build = actions.add_parser("build")
@@ -62,7 +65,11 @@ def main(argv=None):
     adapter.add_argument("input", type=Path)
     args = parser.parse_args(argv)
     try:
-        if args.command == "graph":
+        if args.command == "reported":
+            from .reported_cli import run
+
+            run(args, output)
+        elif args.command == "graph":
             graph = build_graph([load_package(p) for p in args.inputs])
             if args.action == "build":
                 print(deterministic_turtle(graph), end="")

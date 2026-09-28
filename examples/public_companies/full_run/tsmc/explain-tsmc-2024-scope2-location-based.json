@@ -1,0 +1,71 @@
+{
+  "assertion": {
+    "boundary": "Parent company and all subsidiaries (p.115 note 1); 2024 boundary additions p.260 note 3; like-for-like comparability not established.",
+    "category": null,
+    "gwp_basis": null,
+    "id": "tsmc-2024-scope2-location-based",
+    "note": "LB/MB are alternatives, not additive. Offsets not netted. Carbon-neutral natural gas discussion pp.113-114 leaves gross/net treatment unreconciled.",
+    "quantity": {
+      "unit": "tCO2e",
+      "value": "12674921"
+    },
+    "restatement": null,
+    "rounding": null,
+    "scope": 2,
+    "scope2_basis": "location-based",
+    "source": {
+      "page": "PDF/printed p.266, ESG Performance Summary, Climate and Energy rows, 2024 column",
+      "retrieved_at": "2026-09-28T01:00:54.830111Z",
+      "sha256": "68c093548001a5b90222997590089fac3378bc3611dff63d65b4460e36e6ff41",
+      "title": "TSMC 2024 Sustainability Report (English)",
+      "url": "https://esg.tsmc.com/file/public/2024-TSMC-Sustainability-Report-e.pdf"
+    },
+    "total_scopes": [],
+    "year": 2024
+  },
+  "causality": "UNKNOWN",
+  "checks": [
+    {
+      "outcome": "declared_not_verified",
+      "rule": "boundary",
+      "status": "assessed",
+      "target": "tsmc-2024-scope2-location-based"
+    },
+    {
+      "outcome": "missing",
+      "rule": "gwp_basis",
+      "status": "not_assessable",
+      "target": "tsmc-2024-scope2-location-based"
+    },
+    {
+      "outcome": "missing",
+      "rule": "restatement",
+      "status": "not_assessable",
+      "target": "tsmc-2024-scope2-location-based"
+    },
+    {
+      "outcome": "missing",
+      "rule": "rounding",
+      "status": "not_assessable",
+      "target": "tsmc-2024-scope2-location-based"
+    },
+    {
+      "rule": "source_authenticity",
+      "status": "not_assessable",
+      "target": "tsmc-2024-scope2-location-based"
+    },
+    {
+      "rule": "activity_factor_recalculation",
+      "status": "not_assessable",
+      "target": "tsmc-2024-scope2-location-based"
+    },
+    {
+      "rule": "independent_assurance",
+      "status": "not_assessable",
+      "target": "tsmc-2024-scope2-location-based"
+    }
+  ],
+  "limitation": "Reported assertions only; no source authenticity, inventory completeness or assurance opinion.",
+  "node": "urn:ghgag:reported:4ac9dfbe02925ee1fb94a451cfecb4487d2e0fba361b378e3b7c06a1c155171a:tsmc-2024-scope2-location-based",
+  "tonnesCO2e": "12674921"
+}

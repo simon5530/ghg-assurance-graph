@@ -31,3 +31,10 @@ See [validation](VALIDATION.md), [CarbonDiff](CARBONDIFF.md),
 [evidence](EVIDENCE.md), [adapters](ADAPTERS.md), [tools](TOOLS.md) and
 [acceptance matrix](ROADMAP_ACCEPTANCE.md). Gate A remains HOLD. No compliance,
 causal effectiveness or full standards coverage is inferred from this architecture.
+
+## Additive public-disclosure path (0.3.0a1)
+Explicit human-mapped public numeric facts → `reported-disclosure/1` →
+ReportedAssertion RDF (not EmissionResult/CalculationRun) → structural checks and
+not-assessable evidence checks → per-series UNKNOWN-cause differences → bounded
+RO-Crate and graph-derived inspection. No source fetch or remote JSON-LD context
+resolution occurs in this path. See [contract](REPORTED_CONTRACT.md).

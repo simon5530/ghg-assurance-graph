@@ -44,11 +44,15 @@ See [research HOLD](GATE_A.md), [standards coverage](STANDARDS_ALIGNMENT.md),
 The published 0.2.0a1 baseline had 297 tests; the subsequent independent audit
 adds adversarial tests and facade coverage (see results ledger for the current run).
 Phase 4 detects all ten seeded defects with zero FP/FN; clean graphs pass real SHACL.
-Phase 5 is ACME raw-row matching, not general RDF version matching. Semantic cause
+Phase 5 calculated attribution is ACME raw-row matching, not general RDF version matching.
+The additive 0.3.0a1 reported-disclosure profile compares public aggregate series
+with UNKNOWN causes and explicit basis qualifications; it does not extend causal attribution. Semantic cause
 accuracy is annotation-assisted; no automatic causal attribution. Phase 6 is a
 bounded directory RO-Crate profile, not signed evidence or fetched source documents.
 Phase 7 emits tested notes/links; no Obsidian application screenshot was fabricated.
 Phase 8 maps a defined generic external-result format, not an executed vendor engine.
+An additive public-aggregate profile avoids fictitious external calculation lineage;
+manual attributable numeric fact mapping is required, not arbitrary PDF ingestion.
 Phase 9 implements the seven planned deterministic actions with explicit host-only
 export consent and evidence-linked questions. No natural-language router or AI
 grounding study is claimed; those optional experiments are not prerequisites for

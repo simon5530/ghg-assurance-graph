@@ -1,0 +1,19 @@
+---
+id: "https://w3id.org/ghgag/reported/1/SourceCitation"
+type: "iri"
+---
+
+# https://w3id.org/ghgag/reported/1/SourceCitation
+
+## Outgoing
+
+
+## Incoming
+
+- [[node-fd50f115f35ce7f10bdc7703f657d48152255e4cc94911abe3dc73386374a59c]] via [[node-0e4e1f007e1f51f376e8e1a8da11f6ce7e23f27f5a739161700db96f86e8ff4f]]
+- [[node-64763b2bc69cd2b36809aa3549176df877600f627e5d5deac856c2f6a8fb10a5]] via [[node-0e4e1f007e1f51f376e8e1a8da11f6ce7e23f27f5a739161700db96f86e8ff4f]]
+- [[node-b34c3e43179ca0559615aa4238a3e07d751289592694db427d8b64d36b0797cd]] via [[node-0e4e1f007e1f51f376e8e1a8da11f6ce7e23f27f5a739161700db96f86e8ff4f]]
+- [[node-b6c1e7937ed5ee894e9422c280a90eb20a64c1c0a475d99c24e566cc2df84f41]] via [[node-0e4e1f007e1f51f376e8e1a8da11f6ce7e23f27f5a739161700db96f86e8ff4f]]
+- [[node-0dd6ddbd53e8604ce286331c40d1f5e25c7e34d9e0b5e4a0ff09a8ef0e279450]] via [[node-0e4e1f007e1f51f376e8e1a8da11f6ce7e23f27f5a739161700db96f86e8ff4f]]
+- [[node-430d7412e98346ae69e08e493c8f18e4e3ce0d8aedd8f691e67819a835af34ef]] via [[node-0e4e1f007e1f51f376e8e1a8da11f6ce7e23f27f5a739161700db96f86e8ff4f]]
+- [[node-df43b57b87e77f1586fa438ba5e177d1beedd9cd7f8fd9f44756ca0189b396d6]] via [[node-0e4e1f007e1f51f376e8e1a8da11f6ce7e23f27f5a739161700db96f86e8ff4f]]

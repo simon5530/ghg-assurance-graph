@@ -1,13 +1,17 @@
 # GHG Assurance Graph
 
-**v0.2.0a1 — research prototype, not an assurance opinion or certification.**
+**v0.3.0a1 — research prototype, not an assurance opinion or certification.**
 
 An offline Python toolkit that turns declared organizational greenhouse-gas
 evidence into a queryable RDF/PROV graph, checks selected evidence constraints,
-compares synthetic inventory versions and exports portable evidence. It is not a
+compares inventory versions and public reported aggregates, and exports portable evidence. It is not a
 production factor database, complete inventory calculator or compliance service.
 
 ## Implemented and bounded
+
+- Additive [reported-disclosure profile](docs/REPORTED_CONTRACT.md): public totals
+  remain ReportedAssertions, not invented activity/factor calculations. Missing
+  upstream evidence is not assessable; numeric differences are not causal reductions.
 
 - 17 canonical record types, explicit units/versions and five safe graph queries.
 - [ACME benchmark](benchmark/README.md): three snapshots, independent numeric truth
@@ -35,6 +39,14 @@ PACT/openLCA/Brightway integrations and Jev are not implemented or required.
 privately, including normative Annexes D/E. Only paraphrases and references are
 published. Gas-resolved reporting, completeness/significance, uncertainty and
 organizational controls remain gaps; no full conformity claim.
+
+## Real public-company run
+
+[Full UMC/TSMC inputs, outputs and exact commands](examples/public_companies/README.md).
+UMC Group 2022–2024 plus separate parent-only figures; TSMC 2023–2024 held-out.
+24 reported assertions, no invented upstream data. All packages verify internally;
+all three evidence assessments remain **not assessable**, not assurance passes.
+See [official sources and comparability limits](docs/PUBLIC_COMPANY_SOURCES.md).
 
 ## Reproduce locally
 
@@ -66,7 +78,8 @@ Validation exit codes: 0 clean selected checks, 1 findings, 2 invalid request.
   [security](SECURITY.md), [audit](docs/PUBLICATION_AUDIT.md)
 - [Related work](docs/RELATED_WORK.md), [research decision](docs/GATE_A.md),
   [publication strategy](docs/PUBLICATION_STRATEGY.md), [roadmap](.github/roadmap.json)
-- [SoftwareX draft](paper/softwarex/OUTLINE.md),
+- [SoftwareX highlights](paper/softwarex/HIGHLIGHTS.md),
+  [SoftwareX draft](paper/softwarex/OUTLINE.md),
   [results ledger](paper/softwarex/RESULTS_LEDGER.md),
   [distinct methods research](paper/methods/FUTURE_PAPER.md)
 - [AI disclosure](docs/AI_USAGE_LOG.md), [contributing](CONTRIBUTING.md),

@@ -25,3 +25,15 @@ jobs:
       - run: uv run ghgag benchmark run > benchmark-evaluation.json
       - run: uv build
       - run: uv run pip-audit --progress-spinner off
+      - name: Full real-company pipeline with socket networking blocked
+        run: |
+          uv run python scripts/run_public_case.py examples/public_companies/umc_group_2022_2024.json --out artifacts/public-umc
+          uv run python scripts/run_public_case.py examples/public_companies/umc_parent_2022_2024.json --out artifacts/public-umc-parent
+          uv run python scripts/run_public_case.py examples/public_companies/tsmc_heldout_2023_2024.json --out artifacts/public-tsmc
+      - name: Upload complete public-company outputs
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: public-company-full-run
+          path: artifacts/public-*
+          if-no-files-found: error
+          retention-days: 30
