@@ -15,7 +15,7 @@ from ghg_assurance_graph.diff import Cause, Declaration, Snapshot, compare
 from ghg_assurance_graph.models import ChangeEvent
 
 ROOT = Path(__file__).resolve().parents[1]
-NS = "synthetic://acme/20250926"
+NS = "synthetic://exampleco-ghg-001/20250926"
 
 
 def rows(version):
@@ -120,7 +120,10 @@ def test_duplicate_wrong_snapshot_and_wrong_join_reject():
         compare(snapshot("2025-v1"), snapshot("2025-v2", data))
     other = [dict(r, evidence=r["evidence"].replace("20250926", "other")) for r in rows("2025-v2")]
     with pytest.raises(ValueError, match="namespace"):
-        compare(snapshot("2025-v1"), Snapshot("synthetic://acme/other", "2025-v2", tuple(other)))
+        compare(
+            snapshot("2025-v1"),
+            Snapshot("synthetic://exampleco-ghg-001/other", "2025-v2", tuple(other)),
+        )
 
 
 def test_added_removed_not_fuzzy_joined_or_assumed_acquisition():

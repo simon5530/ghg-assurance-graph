@@ -1,4 +1,4 @@
-"""Bounded ACME CarbonDiff: exact attribution, explicit identity and evidence."""
+"""Bounded ExampleCo-GHG-001 CarbonDiff: exact attribution, explicit identity and evidence."""
 
 from collections.abc import Mapping
 from dataclasses import dataclass

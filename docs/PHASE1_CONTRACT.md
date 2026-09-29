@@ -21,7 +21,7 @@ methods-paper track remain; the removed JOSS scaffold must not be restored.
   and data-quality uncertainty are explicit where relevant. Synthetic claims are
   not assurance opinions or verified real factors.
 - Ten hand-authored cases exercise the same schema; no per-case schema extension.
-  No generated ACME benchmark or seeded-defect evaluation is included.
+  No generated ExampleCo-GHG-001 benchmark or seeded-defect evaluation is included.
 - JSON is lossless canonical exchange. RDFLib emits JSON-LD/Turtle with explicit
   typed nodes and PROV-O relationships. RDF semantic roundtrip is tested by graph
   isomorphism; this does not promise arbitrary RDF-to-domain-model import.

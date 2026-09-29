@@ -5,7 +5,7 @@ Defined before implementation. Owner authorizes only bounded synthetic benchmark
 implementation/publication. Gate A remains HOLD; Gate B needs independent domain
 review. No general graph builder, SHACL detector, CarbonDiff algorithm or AI.
 
-1. Fixed seed 20250926 generates ACME HQ/Taiwan semiconductor/Vietnam assembly
+1. Fixed seed 20250926 generates ExampleCo-GHG-001 HQ/Taiwan semiconductor/Vietnam assembly
    fixtures for 2025-v1, 2025-v2 and 2026-v1; all clean packages validate and JSON
    roundtrip. Identical command yields byte-identical files and SHA256 manifest.
 2. Original twelve representative source types and all fifteen specified changes/

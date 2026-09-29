@@ -51,14 +51,14 @@ professional interpretation; no verbatim standards passages are shipped.
 
 | Topic / source | Bounded implementation and test evidence | Status / limitation |
 |---|---|---|
-| Organizational consolidation C ch.3 | Canonical BoundaryDefinition names operational/financial control/equity share; ACME explicitly 100% operational control of 3 sites. Package integrity + clean oracle test | Only operational-control scenario exercised; no inferred equity percentages |
+| Organizational consolidation C ch.3 | Canonical BoundaryDefinition names operational/financial control/equity share; ExampleCo-GHG-001 explicitly 100% operational control of 3 sites. Package integrity + clean oracle test | Only operational-control scenario exercised; no inferred equity percentages |
 | Operational boundaries C ch.4; S3 Table5.4 | Scope/category/source fields; category coverage below and benchmark assumptions; category coverage test | Selected sources, not complete Scope1/2/3; no cross-company comparability claim |
 | ISO direct vs indirect: ISO §5.2.4; Annex B (informative) | Six ISO categories remain separate from GHG scopes and the fifteen Scope3 categories. Scenario-specific correspondence is documented below | Source-inspected interpretation only; no ISO-category field, automatic crosswalk or ISO aggregation is implemented |
 | Dual Scope2 S2 §§7.1,7.4 | Location-only partial output; market-based request rejects; test_no_gas_or_market_or_netting_fallback and missing-contract case | Not a complete dual report. Never add LB + MB; no invented contractual eligibility |
 | Instrument quality S2 Table7.1 | Need emission-rate attribute, exclusive claims, tracking/retirement, vintage, market match; supplier/direct-contract provisions as applicable, residual-mix information and absence disclosure. No eligible instrument provided, so benchmark refuses MB | Standard's evidenced data hierarchy/fallback is not prohibited; this benchmark declines to manufacture missing evidence or silently use zero/grid proxy |
 | Units/provenance C ch.7; S3 ch.7; T3 | Every row has evidence, factor year/geography/unit/basis, quality/uncertainty; schema + independent Fraction calculations; missing source/year/unit failures | Factors are invented, nonofficial, never production defaults. Same-year restriction is fixture policy, NOT a universal factor expiry rule |
 | CO2e vs gases C ch.9/current gas list | Only precharacterized kgCO2e factors; factor GWP basis recorded and never multiplied again. GWP scenario replaces synthetic characterization factor; double-GWP and gas-factor rejection tests | No gas-resolved seven-gas reporting implemented. Synthetic A/B are NOT IPCC values; this limitation prevents full compliance claims |
-| Biogenic/removals/offsets C pp.25,63–64 | Separate stream values rejected by inventory arithmetic, not netted. No biomass or removals in ACME scenario; test rejects each separate stream | Direct biogenic CO2 must be separate; non-CO2 biomass gases are not thereby excluded from scopes. No removal/offset quantification implementation |
+| Biogenic/removals/offsets C pp.25,63–64 | Separate stream values rejected by inventory arithmetic, not netted. No biomass or removals in ExampleCo-GHG-001 scenario; test rejects each separate stream | Direct biogenic CO2 must be separate; non-CO2 biomass gases are not thereby excluded from scopes. No removal/offset quantification implementation |
 | PCF and EEIO T3 cat1 | Explicit cradle-to-gate boundary, declared kg versus USD; same nominal year/currency, no currency conversion; unsupported PCF fails | Supplier data can contain upstream allocation; supplier-specific does NOT universally mean allocation-free |
 | Capital/transport/waste/travel T3 cat2,4–7 | Capital acquired-year emissions not amortized; tonne-km freight, total passenger-km encoded as km with declared passenger interpretation; waste treatment, travel/commuting selected source boundaries | No generic distance-factor equivalence; no recycling credit or telework model |
 | Allocation S3 ch.8 | Explicit mass/economic fractions, once only; independent positive allocation test | Method transition is a measurement change, not physical reduction; causal appropriateness requires domain review |
@@ -79,7 +79,7 @@ through OCR and is not used as an implementation oracle. OCR can introduce
 character and layout errors; this is a source-based engineering assessment, not
 an authenticated transcription or an exhaustive professional interpretation.
 
-The baseline standards review inspected the canonical model, fixed ACME benchmark
+The baseline standards review inspected the canonical model, fixed ExampleCo-GHG-001 benchmark
 and lineage/query layer: [models](../src/ghg_assurance_graph/models.py),
 [benchmark code](../src/ghg_assurance_graph/benchmark.py),
 [scenario assumptions](../benchmark/README.md), and

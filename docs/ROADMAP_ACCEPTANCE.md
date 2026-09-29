@@ -11,7 +11,7 @@ Run `python scripts/check_phase_acceptance.py --run` in the locked environment f
 | 2 | Cases understandable and reproducible with separate ground truth | Complete synthetic benchmark: fixed seed, three versions, twelve source types, documented fifteen change/defect cases, independent Fraction/literal oracle, public development/holdout split. Domain realism is a limitation, not fabricated practitioner approval. |
 | 3 | Every clean result traces to source/factor/method/version/review | Complete bounded graph builder and five queries; `test_graph.py`; collision/reference/lineage failures explicit. |
 | 4 | Defects detected or scoped out, FP characterized, automatic metrics | Complete selected checks: real pySHACL plus raw-row rules; 10 TP, 0 FP/FN on public synthetic fixtures; class/split metrics. Not standards conformity. |
-| 5 | Reconciliation, cause evaluation, explicit unresolved cases | Complete ACME deterministic convention, nine annotation-assisted components, exact Decimal reconciliation and unknown residual. General RDF matching and causal inference not claimed. |
+| 5 | Reconciliation, cause evaluation, explicit unresolved cases | Complete ExampleCo-GHG-001 deterministic convention, nine annotation-assisted components, exact Decimal reconciliation and unknown residual. General RDF matching and causal inference not claimed. |
 | 6 | Fresh clone verifies package without original directory | Complete bounded RO-Crate directory profile, versions/digests/commands, JSON-LD/Turtle, isolated verification and tamper tests; no authenticity guarantee. |
 | 7 | Usable graph-derived vault, no manual edits | Complete generated notes/frontmatter/index/wikilinks with link tests; no fabricated Obsidian application screenshot. Optional for v1. |
 | 8 | At least one external result format mapped | Complete generic JSON/CSV external-result profile and fixtures/tests. Vendor engines are optional and not executed. Public aggregates have a separate missingness-preserving profile. |
@@ -29,7 +29,7 @@ Gate D before journal submission remains separate: exact official template, huma
 
 ## Invariants and breadth
 
-Location/market electricity are alternative series, never additive. Precharacterized CO2e is not characterized again. Invalid units/identities/lineage fail closed. All synthetic factors are nonproduction. Private ISO text stays outside the repository; published original clause paraphrases do not establish full conformity. The current demonstration is the complete fictional ACME selected-source workflow, not external empirical validation or arbitrary-PDF support. Company examples were removed because missing upstream evidence could not support calculation lineage. The generic reported profile remains fail-closed and tested with anonymous synthetic inputs.
+Location/market electricity are alternative series, never additive. Precharacterized CO2e is not characterized again. Invalid units/identities/lineage fail closed. All synthetic factors are nonproduction. Private ISO text stays outside the repository; published original clause paraphrases do not establish full conformity. The current demonstration is the complete fictional ExampleCo-GHG-001 selected-source workflow, not external empirical validation or arbitrary-PDF support. Company examples were removed because missing upstream evidence could not support calculation lineage. The generic reported profile remains fail-closed and tested with anonymous synthetic inputs.
 
 ## Remote reconciliation
 

@@ -1,0 +1,119 @@
+{
+  "manifest": {
+    "command": [
+      "ghgag",
+      "package",
+      "create"
+    ],
+    "created_at": "2026-09-28T00:00:00Z",
+    "data_version": "exampleco-ghg-001-0.1-2026-v1",
+    "files": {
+      "graph.jsonld": {
+        "bytes": 229933,
+        "sha256": "ebd809c25cf9e9b782684d6105e27eff0f7fa8dc9cf6ff70d5ad42ec2b230ce2"
+      },
+      "graph.ttl": {
+        "bytes": 312607,
+        "sha256": "62c45401eb9da4b930fd715dfe418827de453f28aabd447ee2f63e98a6fae684"
+      },
+      "ontology.json": {
+        "bytes": 191,
+        "sha256": "de246e835b458d404181518bdf622b897b295037e06a975f2a0c54d46e515a89"
+      },
+      "package.json": {
+        "bytes": 85894,
+        "sha256": "7919ec33e8dfcd290f923670c39e6817acbad0e8286d4f47064a162c74143e5a"
+      },
+      "ro-crate-metadata.json": {
+        "bytes": 1359,
+        "sha256": "5d597d5dfa6da504aca81298dd819433b0e35582c8fa1bea2a562ea6a5485b11"
+      },
+      "schema.json": {
+        "bytes": 20614,
+        "sha256": "8fe0365b341a5feb896e43005acf6b24ecac5065cc979f7ee18cbc749b368aab"
+      }
+    },
+    "format": "ghgag-evidence-1",
+    "identities": {
+      "CalculationMethod": [
+        "urn:ghgag:exampleco-ghg-001-2026-v1-allocation-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-capital-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-commuting-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-diesel-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-electricity-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-fleet-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-materials-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-method-transition-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-natural-gas-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-new-line-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-refrigerant-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-supplier-pcf-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-transport-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-travel-method:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-waste-method:v1"
+      ],
+      "EmissionFactor": [
+        "urn:ghgag:exampleco-ghg-001-2026-v1-allocation-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-capital-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-commuting-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-diesel-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-electricity-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-fleet-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-materials-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-method-transition-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-natural-gas-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-new-line-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-refrigerant-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-supplier-pcf-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-transport-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-travel-factor:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-waste-factor:v1"
+      ],
+      "EvidenceArtifact": [
+        "urn:ghgag:exampleco-ghg-001-2026-v1-allocation-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-capital-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-commuting-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-diesel-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-electricity-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-fleet-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-materials-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-method-transition-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-natural-gas-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-new-line-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-refrigerant-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-supplier-pcf-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-transport-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-travel-evidence:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-waste-evidence:v1"
+      ],
+      "GWPSet": [
+        "urn:ghgag:exampleco-ghg-001-2026-v1-allocation-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-capital-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-commuting-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-diesel-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-electricity-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-fleet-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-materials-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-method-transition-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-natural-gas-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-new-line-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-refrigerant-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-supplier-pcf-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-transport-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-travel-gwp:v1",
+        "urn:ghgag:exampleco-ghg-001-2026-v1-waste-gwp:v1"
+      ]
+    },
+    "ontology": "https://simon5530.github.io/ghg-assurance-graph/ns/0.1/",
+    "schema_version": "0.1.0",
+    "software": {
+      "ghg-assurance-graph": "0.4.0a1",
+      "pydantic": "2.13.5",
+      "rdflib": "7.6.0",
+      "rocrate": "0.15.1"
+    }
+  },
+  "manifest_sha256": "b14e03bf2ccc102b87745561e264fd49dc053d720c2f20d0d737c40002bb8d6a",
+  "record_count": 158,
+  "valid": true
+}

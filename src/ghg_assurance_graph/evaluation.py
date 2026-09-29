@@ -26,7 +26,9 @@ def evaluate_benchmark(root: Path, truth: Path) -> dict:
         findings = (*validate_rows(rows), *validate_package(package))
         clean[version] = len(findings)
         predictions[version] = findings
-        snapshots[version] = Snapshot("synthetic://acme/20250926", version, tuple(rows))
+        snapshots[version] = Snapshot(
+            "synthetic://exampleco-ghg-001/20250926", version, tuple(rows)
+        )
     metrics = evaluate_findings(predictions, expected)
     metrics["by_rule"] = {
         rule: evaluate_findings(

@@ -6,7 +6,7 @@ Authors, affiliations, postal addresses and corresponding-author email: **pendin
 
 ## Abstract
 
-GHG Assurance Graph is an offline Python library for inspecting organizational greenhouse-gas evidence without confusing reported totals with reconstructed calculations. Typed records, RDF provenance, selected executable constraints, bounded version comparison and portable evidence packages support reproducible review. A synthetic benchmark resolves 45 result lineages and detects ten seeded defects; annotation-assisted comparison reconciles nine expected components. These are public, nonblind regression results, not autonomous causal accuracy. Three fictional ACME snapshots total 3,820, 3,850 and 4,060 kgCO2e, with differences +30 and +210. Validation is synthetic-only. The software exposes missing evidence rather than manufacturing assurance, completeness or standards conformity.
+GHG Assurance Graph is an offline Python library for inspecting organizational greenhouse-gas evidence without confusing reported totals with reconstructed calculations. Typed records, RDF provenance, selected executable constraints, bounded version comparison and portable evidence packages support reproducible review. A synthetic benchmark resolves 45 result lineages and detects ten seeded defects; annotation-assisted comparison reconciles nine expected components. These are public, nonblind regression results, not autonomous causal accuracy. Three fictional ExampleCo-GHG-001 snapshots total 3,820, 3,850 and 4,060 kgCO2e, with differences +30 and +210. Validation is synthetic-only. The software exposes missing evidence rather than manufacturing assurance, completeness or standards conformity.
 
 **Keywords:** greenhouse gases; provenance; SHACL; reproducibility; change attribution; evidence graphs
 
@@ -47,7 +47,7 @@ Calculated packages require explicit factor, method, GWP and boundary context. T
 
 ### 2.2. Validation and optional reported assertions
 
-Validation combines closed schemas, reference integrity, selected SHACL constraints and independent raw-row domain rules. Findings have stable identifiers and explicit rule/target/severity fields. Checks include factor provenance, supported units, review metadata and arithmetic consistency. Raw decimal strings are checked using exact rational arithmetic, independently of the benchmark calculator. Some restrictions, such as the ACME factor-year policy, are deliberately narrower than accounting standards and must not be mistaken for universal requirements.
+Validation combines closed schemas, reference integrity, selected SHACL constraints and independent raw-row domain rules. Findings have stable identifiers and explicit rule/target/severity fields. Checks include factor provenance, supported units, review metadata and arithmetic consistency. Raw decimal strings are checked using exact rational arithmetic, independently of the benchmark calculator. Some restrictions, such as the ExampleCo-GHG-001 factor-year policy, are deliberately narrower than accounting standards and must not be mistaken for universal requirements.
 
 An optional generic reported-disclosure/1 profile, outside the empirical evaluation here, stores organization, year, scope/category, Scope 2 basis, decimal-string quantity, source URL/hash/page/retrieval time and explicit boundary, GWP, restatement and rounding metadata. Unknown metadata remains null. A ReportedAssertion does not become an EmissionResult, ActivityRecord or CalculationRun. Validation distinguishes assessed, invalid and not_assessable; the last is neither a defect nor a pass. Report-wide status remains not_assessable because totals alone cannot establish source authenticity, upstream recalculation or independent assurance.
 
@@ -55,7 +55,7 @@ Scope 2 location-based and market-based values are alternatives, never additive.
 
 ### 2.3. CarbonDiff
 
-CarbonDiff compares validated ACME raw snapshots through asserted namespace and stable row identifiers. For activity q, unallocated factor f and allocation share s, its ordered decomposition is:
+CarbonDiff compares validated ExampleCo-GHG-001 raw snapshots through asserted namespace and stable row identifiers. For activity q, unallocated factor f and allocation share s, its ordered decomposition is:
 
 - Activity component: (q1 − q0) × f0 × s0.
 - Factor component: q1 × (f1 − f0) × s0.
@@ -71,17 +71,17 @@ The RO-Crate-based export contains canonical JSON, Turtle, JSON-LD, schema, voca
 
 ## 3. Illustrative examples
 
-### 3.1. Synthetic ACME workflow
+### 3.1. Synthetic ExampleCo-GHG-001 workflow
 
-ACME Electronics is a fictional three-site organizational scenario, not a complete corporate inventory. Version 0.1 supplies three snapshots (2025-v1, 2025-v2, 2026-v1), each with 158 canonical records and 15 results. Factors and characterization bases are invented and nonproduction. Selected Scope 3 sources are included; omitted applicable categories are not declared immaterial. The fixed seed is 20250926, and literal expected values plus a separate Fraction oracle check calculations.
+ExampleCo-GHG-001 is a fictional three-site organizational scenario, not a complete corporate inventory. Version 0.1 supplies three snapshots (2025-v1, 2025-v2, 2026-v1), each with 158 canonical records and 15 results. Factors and characterization bases are invented and nonproduction. Selected Scope 3 sources are included; omitted applicable categories are not declared immaterial. The fixed seed is 20250926, and literal expected values plus a separate Fraction oracle check calculations.
 
 From a locked installation, the principal commands are:
 
 ~~~sh
 uv sync --locked
 uv run ghgag benchmark run
-uv run python scripts/run_acme_example.py --out /tmp/acme-paper-example
-uv run ghgag graph explain urn:ghgag:acme-2025-v1-electricity-result:v1 --input benchmark/generated/2025-v1
+uv run python scripts/run_example.py --out /tmp/exampleco-ghg-001-paper-example
+uv run ghgag graph explain urn:ghgag:exampleco-ghg-001-2025-v1-electricity-result:v1 --input benchmark/generated/2025-v1
 uv run pytest -q
 ~~~
 
@@ -93,7 +93,7 @@ Annotation-assisted comparison reproduces nine expected component labels and amo
 
 ![Synthetic validation and unassisted comparison](figures/evaluation.svg)
 
-**Figure 2.** Executed ACME selected-defect regression and unassisted differences. The source generator reads committed fixtures and calls the evaluator; public labels are nonblind. Signed and absolute UNKNOWN quantities expose unresolved change rather than measured abatement. Original computational figure, with AI-assisted code; no generative image model or third-party artwork.
+**Figure 2.** Executed ExampleCo-GHG-001 selected-defect regression and unassisted differences. The source generator reads committed fixtures and calls the evaluator; public labels are nonblind. Signed and absolute UNKNOWN quantities expose unresolved change rather than measured abatement. Original computational figure, with AI-assisted code; no generative image model or third-party artwork.
 
 ### 3.2. A detailed inspectable calculation and change example
 
@@ -101,7 +101,7 @@ The electricity row illustrates the full contract. In both 2025 snapshots, activ
 
 The graph explanation links this result to its evidence URI, factor revision, method, GWP basis, inventory version, reporting period, boundary and simulated review. All evidence is invented. A reviewer can inspect relationships and arithmetic, but cannot infer an authenticated electricity bill or an actual organization's emissions reduction.
 
-**Table 1.** Partial synthetic ACME inventory, kgCO2e. Stable identifiers align selected sources, not complete scope totals. Literal expected amounts and a separate Fraction oracle check these values.
+**Table 1.** Partial synthetic ExampleCo-GHG-001 inventory, kgCO2e. Stable identifiers align selected sources, not complete scope totals. Literal expected amounts and a separate Fraction oracle check these values.
 
 | Source | 2025-v1 | 2025-v2 | 2026-v1 |
 |---|---:|---:|---:|
@@ -124,13 +124,13 @@ The graph explanation links this result to its evidence URI, factor revision, me
 
 The same-year change is 3,850 − 3,820 = +30; the next-year change is 4,060 − 3,850 = +210. Without semantic declarations, method, characterization-basis and allocation-policy changes leave −50, +400 and −50 unresolved. Their signed sum is +300 while their absolute exposure is 500. Neither is a confidence interval. Bare activity and factor differences remain mechanical components, not inferred explanations such as correction or supplier-mix change. Supplying reviewed scenario declarations resolves the authored labels; it does not authenticate them externally.
 
-The dedicated scripts/run_acme_example.py command above requires an absent or empty output directory. Use --help for its installed-Python override. It reuses the existing benchmark, not a second data set. Its outputs support navigation from snapshot records through graph explanations, selected validation and assisted/unassisted differences to portable evidence. The benchmark and test commands above remain the numerical reproduction oracle; output-file counts are not additional observations.
+The dedicated scripts/run_example.py command above requires an absent or empty output directory. Use --help for its installed-Python override. It reuses the existing benchmark, not a second data set. Its outputs support navigation from snapshot records through graph explanations, selected validation and assisted/unassisted differences to portable evidence. The benchmark and test commands above remain the numerical reproduction oracle; output-file counts are not additional observations.
 
 ### 3.3. Verification scope
 
 Executable tests check literal amounts and exact Fraction arithmetic separately from the calculator, 45 required lineage chains, selected seeded defects and assisted component agreement. Adversarial tests cover identity collisions, malformed inputs, precision isolation, unsupported methods, package tampering and denied writes. Regression pass counts describe engineering checks, not scientific performance. The detector does not receive the ground-truth file; the evaluator does. This separation reduces direct answer leakage but does not make development independent or blinded.
 
-The evaluation population is exclusively fictional ACME snapshots and authored negative fixtures. There are no real-company observations, public-report transfer experiments, independent practitioner assessments or measured production adoption. Current-release fresh-machine reproduction and archival identifiers remain pending. Historical release reproduction does not prove this changed release was reproduced externally. Local replay checks software contracts, not source truth, population coverage or causal validity.
+The evaluation population is exclusively fictional ExampleCo-GHG-001 snapshots and authored negative fixtures. There are no real-company observations, public-report transfer experiments, independent practitioner assessments or measured production adoption. Current-release fresh-machine reproduction and archival identifiers remain pending. Historical release reproduction does not prove this changed release was reproduced externally. Local replay checks software contracts, not source truth, population coverage or causal validity.
 
 ## 4. Impact
 

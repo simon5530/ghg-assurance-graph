@@ -1,7 +1,7 @@
 # Examples
 
-**Start here:** [complete ACME worked example](acme_worked_example/README.md),
-with [generated sample report](acme_worked_example/sample/REPORT.md).
+**Start here:** [complete ExampleCo-GHG-001 worked example](worked_example/README.md),
+with [generated sample report](worked_example/sample/REPORT.md).
 This is a fictional selected-source inventory, not a complete organizational inventory.
 
 ## Ten hand-authored representative cases

@@ -31,14 +31,14 @@ Publisher guide/template verified independently for this draft: [journal check](
 ## Reproduction entry points
 
 - uv sync --locked; uv run ghgag benchmark run; uv run pytest -q.
-- Detailed workflow: scripts/run_acme_example.py (see --help).
+- Detailed workflow: scripts/run_example.py (see --help).
 - uv run python scripts/render_figures.py; uv run python scripts/render_manuscript.py --pdf.
 - tests/test_figures.py checks generated SVG equality and manuscript scope/table contracts.
 - Current version 0.4.0a1; immutable release and archival links pending.
 
 ## Review boundaries
 
-Only fictional ACME data support this manuscript's evaluation. No current external
+Only fictional ExampleCo-GHG-001 data support this manuscript's evaluation. No current external
 validation, real-company transfer, adoption, DOI, human approval or journal submission
 is claimed. Historical v0.3 reproduction and archive records are not current evidence.
 Bibliographic sources are prior verified records; this scope edit did not repeat

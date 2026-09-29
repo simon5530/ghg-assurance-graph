@@ -1,6 +1,6 @@
 # Results ledger
 
-Current scope is synthetic-only ACME validation (0.4.0a1). Earlier entries below
+Current scope is synthetic-only ExampleCo-GHG-001 validation (0.4.0a1). Earlier entries below
 are explicitly historical engineering records, not current-release validation. Documentation checks are not scientific
 performance measurements.
 
@@ -34,7 +34,7 @@ performance measurements.
 - Reproduction: isolated same-machine clean-copy install recorded in audit; human
   review pending. SoftwareX submission policy and research HOLD remain unresolved.
 
-## 2026-09-26 — Phase 2 ACME benchmark v0.1
+## 2026-09-26 — Phase 2 ExampleCo-GHG-001 benchmark v0.1
 
 Question: can standards-bounded synthetic inventory changes and defects be reproduced
 without an AI or circular numerical oracle? Software 0.1.0a1; benchmark 0.1;

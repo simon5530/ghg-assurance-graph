@@ -4,7 +4,7 @@ Current status note (2026-09-28): this is a historical phase contract. Its dated
 Experimental deterministic comparison, not causal inference or assurance. ISO
 licensed-clause review and Gate A status are unchanged.
 
-1. Compare two explicit ACME raw snapshots using supplied namespace, version and
+1. Compare two explicit ExampleCo-GHG-001 raw snapshots using supplied namespace, version and
    stable row IDs. Never match by position, labels, suffixes or fuzzy similarity.
    Reject duplicate IDs, mixed snapshot evidence, namespace mismatch and reused
    version IDs. Classification context changes under one ID fail closed.

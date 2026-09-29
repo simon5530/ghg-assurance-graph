@@ -1,0 +1,321 @@
+{
+  "generated_manifest_sha256": "a68da678b1d0f97506633d63ceeeff8a8469e2ffa7956b7dda71035f92e43903",
+  "scope": "Generated synthetic citation records, not external authenticated evidence",
+  "sources": [
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-electricity-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/electricity-evidence.json",
+      "sha256": "1a4b8a48c2592338f4dbf51b0d925e74b470fa6e382296ea4f06efab9616cc57",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-natural-gas-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/natural-gas-evidence.json",
+      "sha256": "fdb457e0ce2f0792353a1d6f24a9cb15f02f3761ab4201f43662eeea78d25e35",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-diesel-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/diesel-evidence.json",
+      "sha256": "f9e2637d10366697b77eb2657d95a1f3a850d9cace9cddbfb244c0cbf8936c3a",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-fleet-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/fleet-evidence.json",
+      "sha256": "11f871258167629cf1743953525046109d0c2dc579af9719f51354a7ed128b41",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-refrigerant-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/refrigerant-evidence.json",
+      "sha256": "fddb33bbd0911bffeb67559a5271486a47d12a2b624f03c6dd20c25c0872feb9",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-materials-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/materials-evidence.json",
+      "sha256": "a1e9e49ae32092869a9da13f5c242b53d3a79002daccc391244f602dbb19921d",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-capital-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/capital-evidence.json",
+      "sha256": "ff9af6cdf7059aea58e660e25b821459d6e031512cbe4c6348cf4b138c7b1e47",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-transport-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/transport-evidence.json",
+      "sha256": "7b1031dbf406139580ae3781ed23360997835c1aefbb33474b0201148777ff60",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-waste-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/waste-evidence.json",
+      "sha256": "7f4b6a5348ee3d1302cb5cd29206dddce7e8e8b59a649a64ce9e5228dd67b4de",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-travel-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/travel-evidence.json",
+      "sha256": "a276195788b4cb23c9bbc37bfe7260473cd50e96556bcd9e5016dcb5e5d50d47",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-commuting-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/commuting-evidence.json",
+      "sha256": "78943730d25e6fb3144b14d1d2a91dc9c9bb16e08a280891aeff0bb36bedcbab",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-supplier-pcf-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/supplier-pcf-evidence.json",
+      "sha256": "258b40b14300b7a090aeac5404f25e2a28bfec6f1940d98146a8ee65f4f8a818",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-method-transition-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/method-transition-evidence.json",
+      "sha256": "ef1c909f8c2526c55a78599d7bfcdadd52dac16ae7643d23469a65754f343cc6",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-allocation-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/allocation-evidence.json",
+      "sha256": "f65137f0d8a3e500302bb57366516bd5b0ceb3f6b997070a3f690af6f2390f1d",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v1-new-line-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v1/new-line-evidence.json",
+      "sha256": "16805258d0b307efd34e59eb7b983777a6b9d96ed9ede42c3a4bcc74335bea31",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/electricity-evidence.json",
+      "sha256": "9e9d814064e7fed1afb2f032ed0b7e99aec47d89e6a84010591ac0c36200949e",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-natural-gas-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/natural-gas-evidence.json",
+      "sha256": "9e58cc0ff6470b01fc0a72be27d53855259781fbe25d71517295e21aa051d797",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-diesel-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/diesel-evidence.json",
+      "sha256": "c4b231dd29000f3d62cbb9e156bb865a596c83f1abe7fc9ef0c9f48a7476bcad",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-fleet-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/fleet-evidence.json",
+      "sha256": "4cab5ac82ee3862abc9024adf4586bc8e4874319d9b5c3b3473b0cb40797f0b6",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-refrigerant-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/refrigerant-evidence.json",
+      "sha256": "2e63640de5963433cfcc018d25315d5bd5fad31dff2ea71eb88bd237b37ba173",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-materials-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/materials-evidence.json",
+      "sha256": "7c65c52bd6217bc2e7ce1018b5a991d8f14c9e6460695680027a56a8c2bb6496",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-capital-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/capital-evidence.json",
+      "sha256": "8aa0870203227e5d8ddeaa88d9dfd4830ee7718c6864929a8def9b57a9e5e808",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-transport-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/transport-evidence.json",
+      "sha256": "907f37eb40a3b46ab5b19b10042743eb10d5c42c0ee146569fcffe73df474857",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-waste-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/waste-evidence.json",
+      "sha256": "df243a3bd1a7a844f80e0456c299b961ff20a1e3794b3c7f44a34cf1504ded0b",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-travel-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/travel-evidence.json",
+      "sha256": "10ef53a21ca582fa51a79b2d78bca101ce69f942371b4e1c5a66667f8b1bcf5b",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-commuting-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/commuting-evidence.json",
+      "sha256": "94e605716bd252c5bc38511a3956ff5d267fb68cd263e95b1f9f6a2a09e196df",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-supplier-pcf-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/supplier-pcf-evidence.json",
+      "sha256": "5167d0547aabcd6e801d4ed2d79ef53449229623bbc3591a1ca0cc5181c56004",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-method-transition-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/method-transition-evidence.json",
+      "sha256": "b16cc5b104b5a6cc98ead0c1982ed8f0fff81c890002d00f478c84d9b0c9492d",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-allocation-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/allocation-evidence.json",
+      "sha256": "920befb58523f24aa29c24957cdaebd3a86aefb9c39e6dbc7c154fbefb65ae01",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2025-v2-new-line-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2025-v2/new-line-evidence.json",
+      "sha256": "c480e1a26d118abf3f831c6ace1cd53afba692c310bf400b76586b66393cf1e6",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-electricity-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/electricity-evidence.json",
+      "sha256": "961248ac341bb51345dec82bcf8009a3ffcee38a4817ea9b590dd9828c449edd",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-natural-gas-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/natural-gas-evidence.json",
+      "sha256": "4798dfaa7f92321da59b30233d883658657a473c2ff106f9f9006ddb66d9e576",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-diesel-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/diesel-evidence.json",
+      "sha256": "e35783467e2eb911690b2d0395318846ae7c7102d43cdc7a7d7522ab66090f82",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-fleet-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/fleet-evidence.json",
+      "sha256": "48a05ec16df7cf92e3904f1f37a94fe722acd4780c1ff76e83bb7e6a97687871",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-refrigerant-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/refrigerant-evidence.json",
+      "sha256": "0d7b79f0ea7ed89cf41d7fed11a90d5e2bf77b85adb8301913ea501a981b8bab",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-materials-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/materials-evidence.json",
+      "sha256": "bc29f2601aad4f0b77e758429e6d92aacf131808272c912c8d628825d84b4d84",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-capital-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/capital-evidence.json",
+      "sha256": "23c4585ab27d8566ea359e767b5c59be1c90cfc0271461dbcc1189806c52e00a",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-transport-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/transport-evidence.json",
+      "sha256": "1689ff6ea0f51da20123e9bf47ca7f062150a71cc98f77938ca2ef0351aba279",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-waste-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/waste-evidence.json",
+      "sha256": "e43d43ee023af7260a8964b436fbeb6fda2313980811e6664f30fd6440472e6d",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-travel-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/travel-evidence.json",
+      "sha256": "c732538548cb8026c7a29b49cb51a103a805a6292d459b1c9e8ac5d417ca54f0",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-commuting-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/commuting-evidence.json",
+      "sha256": "b05622d59e1a84d5cb9f21242caf9dba36ed8085a97e3667d2e66d6336112327",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-supplier-pcf-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/supplier-pcf-evidence.json",
+      "sha256": "635226d23791317b11032780854ebcd9e44657c8b2ec3d9d4ffd6bf1fa70bcab",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-method-transition-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/method-transition-evidence.json",
+      "sha256": "67d6c919e22eaab3a803ce391f374f656f886f447f8e12754eab7af8d67ac9d7",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-allocation-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/allocation-evidence.json",
+      "sha256": "74ea60fc3bc7d1e6cf27a9bc68940f8be194663657d11f9c136345bee764c100",
+      "synthetic": true
+    },
+    {
+      "artifact_id": "urn:ghgag:exampleco-ghg-001-2026-v1-new-line-evidence:v1",
+      "license": "MIT",
+      "path": "sources/2026-v1/new-line-evidence.json",
+      "sha256": "c41f13fff744d9452751d186c9d1094447adddfe44369cc920667c5a295ba888",
+      "synthetic": true
+    }
+  ]
+}

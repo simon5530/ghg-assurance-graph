@@ -36,7 +36,7 @@ ROWS = [
 
 
 def ref(version, name):
-    return f"urn:ghgag:acme-{version}-{name}:v1"
+    return f"urn:ghgag:exampleco-ghg-001-{version}-{name}:v1"
 
 
 @pytest.fixture(scope="module")
@@ -205,7 +205,7 @@ def test_explicit_revision_chain(packages):
         "https://example.invalid/",
         "urn:ghgag:x:v1> } SERVICE <https://example.invalid/> { ?s ?p ?o } #",
         "urn:ghgag:absent:v1",
-        "urn:ghgag:acme-2025-v1-org:v1",
+        "urn:ghgag:exampleco-ghg-001-2025-v1-org:v1",
     ],
 )
 def test_bad_targets(graph, target):
@@ -243,7 +243,7 @@ def cli(*args):
         ("build", "benchmark/generated/2025-v1"),
         (
             "explain",
-            "urn:ghgag:acme-2025-v1-electricity-result:v1",
+            "urn:ghgag:exampleco-ghg-001-2025-v1-electricity-result:v1",
             "--input",
             "benchmark/generated/2025-v1",
         ),

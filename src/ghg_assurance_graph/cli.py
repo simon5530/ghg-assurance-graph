@@ -109,7 +109,7 @@ def main(argv=None):
 
             def snapshot(path):
                 data = json.loads((path / "inputs.json").read_text())
-                return Snapshot("synthetic://acme/20250926", path.name, tuple(data))
+                return Snapshot("synthetic://exampleco-ghg-001/20250926", path.name, tuple(data))
 
             declarations = []
             if args.declarations:

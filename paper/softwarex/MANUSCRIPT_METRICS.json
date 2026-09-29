@@ -1,6 +1,6 @@
 {
   "word_count_method": "whitespace tokens; abstract plus sections 1-5, captions, table, code and declarations; excludes title, authors, metadata and references",
-  "counted_words_conservative": 2694,
+  "counted_words_conservative": 2693,
   "abstract_words": 96,
   "figures": 2,
   "official_word_limit": 4000,

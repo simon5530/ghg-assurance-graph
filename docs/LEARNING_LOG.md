@@ -116,3 +116,8 @@ evidence tests and isolated-wheel reproduction. Synthetic review events are auth
 fixtures, not practitioner review. Closed-world success tests encoded behavior; it
 cannot establish field validity, inventory completeness, source truth or conformity.
 Historical releases are audit evidence and are not rewritten to hide the change.
+
+
+## 2026-09-29 — Identity-bearing fixture rename
+
+A fictional-label rename changes embedded citations, canonical IDs and downstream digests. Replacing display text in generated outputs leaves stale manifests: regenerate from source, compare independent Fraction totals, and replay complete trees. Preserve historical release bytes rather than retroactively renaming them. PDF checks require both layout bounds and rendered visual review; text extraction alone does not prove readable charts.

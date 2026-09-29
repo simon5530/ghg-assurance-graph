@@ -1,0 +1,26 @@
+[
+  {
+    "activity": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-activity:v1",
+    "boundary": "urn:ghgag:exampleco-ghg-001-2025-v2-boundary:v1",
+    "calculation": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-run:v1",
+    "evidence": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-evidence:v1",
+    "factor": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-factor:v1",
+    "factorEvidence": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-evidence:v1",
+    "factorVersion": "1",
+    "gwp": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-gwp:v1",
+    "gwpEvidence": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-evidence:v1",
+    "inventory": "urn:ghgag:exampleco-ghg-001-2025-v2-inventory:v1",
+    "inventoryVersion": "1",
+    "method": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-method:v1",
+    "methodEvidence": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-evidence:v1",
+    "methodVersion": "1",
+    "period": "urn:ghgag:exampleco-ghg-001-2025-v2-period:v1",
+    "result": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-result:v1",
+    "review": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-review:v1",
+    "reviewer": "urn:ghgag:exampleco-ghg-001-2025-v2-reviewer:v1",
+    "source": "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-source:v1",
+    "status": "accepted",
+    "unit": "kg_CO2e",
+    "value": "500.0"
+  }
+]

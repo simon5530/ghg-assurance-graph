@@ -19,7 +19,7 @@ At that historical Phase 0 snapshot no domain implementation existed. This is no
 
 ## Current reassessment — 2026-09-28
 
-The complete original plan was reread. [Gate A](GATE_A.md) is now **scoped GO** for an organizational assurance/interoperability overlay, supported by refreshed primary-source interfaces and the same ACME case compared against CarbonLedger, Arrhen and TEC/PECO + SHACL + RO-Crate. This is not universal absence proof or algorithmic novelty. The earlier practitioner prerequisite was analyst-added, not part of original Gate A or Phase 11.
+The complete original plan was reread. [Gate A](GATE_A.md) is now **scoped GO** for an organizational assurance/interoperability overlay, supported by refreshed primary-source interfaces and the same ExampleCo-GHG-001 case compared against CarbonLedger, Arrhen and TEC/PECO + SHACL + RO-Crate. This is not universal absence proof or algorithmic novelty. The earlier practitioner prerequisite was analyst-added, not part of original Gate A or Phase 11.
 
 The repository now contains the typed package, graph/shapes, benchmark, CarbonDiff and evidence package implementation. Selected graph/validation/diff/evidence tests rerun here: **196 passed**. See [related work](RELATED_WORK.md) for exact command, revision, case output and limits. This updates stale Phase 0 statements; it does not certify all later phase acceptance criteria.
 

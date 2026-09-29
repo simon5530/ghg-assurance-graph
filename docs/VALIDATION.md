@@ -10,7 +10,7 @@ src/ghg_assurance_graph/shapes/core.ttl and is loaded with importlib.resources.
 
 - Finding(target: str, rule: str, severity="error", message=""): frozen ordered
   dataclass; .id is a SHA256-derived URN; .to_dict() includes id and all fields.
-- validate_rows(rows: Iterable[Mapping]) -> tuple[Finding, ...]: ACME policy and
+- validate_rows(rows: Iterable[Mapping]) -> tuple[Finding, ...]: ExampleCo-GHG-001 policy and
   independent numeric rules, accepts only row payloads, no filenames or truth.
 - validate_graph(graph: rdflib.Graph) -> tuple[Finding, ...]: real pySHACL Core;
   caller graph is data, never shapes. Does not mutate the graph.

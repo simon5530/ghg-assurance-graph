@@ -1,7 +1,7 @@
 # Architecture
 
 ## Implemented workflow
-Trigger: explicit local CLI/library call. Inputs are synthetic ACME raw rows or
+Trigger: explicit local CLI/library call. Inputs are synthetic ExampleCo-GHG-001 raw rows or
 canonical evidence packages; generic external-result envelopes require a caller's
 explicit provenance mapping. No URL fetching or arbitrary graph/query input.
 
@@ -9,7 +9,7 @@ explicit provenance mapping. No URL fetching or arbitrary graph/query input.
 2. RDFLib builds collision-checked RDF/PROV graphs; five bound query templates.
 3. pySHACL runs packaged Core shapes; independent raw-row domain checks produce
    stable findings. The evaluator alone receives ground-truth labels.
-4. CarbonDiff validates ACME snapshots and joins explicit namespace/stable IDs.
+4. CarbonDiff validates ExampleCo-GHG-001 snapshots and joins explicit namespace/stable IDs.
    Ordered Decimal decomposition reconciles; unsupported semantics remain UNKNOWN.
 5. RO-Crate library builds metadata; package verification checks file sets, hashes,
    canonical payload replay and graph equivalence without external contexts.

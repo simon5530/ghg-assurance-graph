@@ -14,7 +14,7 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-RUNNER = ROOT / "scripts/run_acme_example.py"
+RUNNER = ROOT / "scripts/run_example.py"
 VERSIONS = ("2025-v1", "2025-v2", "2026-v1")
 
 
@@ -176,7 +176,7 @@ def test_nonempty_destination_is_untouched(completed):
 
 
 def test_network_guard_blocks_before_application_import(monkeypatch):
-    spec = importlib.util.spec_from_file_location("acme_runner", RUNNER)
+    spec = importlib.util.spec_from_file_location("exampleco-ghg-001_runner", RUNNER)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     # Keep guard installation local to this test process.

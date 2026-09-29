@@ -9,7 +9,7 @@ from ghg_assurance_graph.serialization import from_json
 from ghg_assurance_graph.tools import EvidenceTools, QueryRequest
 
 ROOT = Path(__file__).parents[1]
-RESULT = "urn:ghgag:acme-2025-v1-electricity-result:v1"
+RESULT = "urn:ghgag:exampleco-ghg-001-2025-v1-electricity-result:v1"
 
 
 @pytest.fixture
@@ -54,7 +54,7 @@ def test_benchmark_question_what_supports_500_kg(tools, monkeypatch):
         {"name": "unreviewed_results", "target": RESULT},
         {"name": "explain_result"},
         {"name": "explain_result", "target": "urn:ghgag:absent:v1"},
-        {"name": "explain_result", "target": "urn:ghgag:acme-2025-v1-org:v1"},
+        {"name": "explain_result", "target": "urn:ghgag:exampleco-ghg-001-2025-v1-org:v1"},
     ],
 )
 def test_reject_unsafe_or_unsupported_requests(tools, payload):
@@ -63,7 +63,7 @@ def test_reject_unsafe_or_unsupported_requests(tools, payload):
 
 
 def test_truncation_and_evidence_lookup(tools):
-    evidence = "urn:ghgag:acme-2025-v1-electricity-evidence:v1"
+    evidence = "urn:ghgag:exampleco-ghg-001-2025-v1-electricity-evidence:v1"
     answer = tools.call(
         QueryRequest(name="records_supported_by_evidence", target=evidence, limit=1)
     )
@@ -109,7 +109,7 @@ def test_question_set_factor_graph_and_digest_gaps(package, offline):
         for r in package.records
     )
     tools = EvidenceTools([EvidencePackage(records=records)])
-    factor = "urn:ghgag:acme-2025-v1-electricity-factor:v1"
+    factor = "urn:ghgag:exampleco-ghg-001-2025-v1-electricity-factor:v1"
     answer = tools.call({"name": "find_results_using_factor", "target": factor})
     assert [r["result"] for r in answer["rows"]] == [RESULT]
     assert tools.call({"name": "query_graph", "query": "explain_result", "target": RESULT}) == (
@@ -151,9 +151,9 @@ def comparison_tools():
     for version in ("2025-v1", "2025-v2"):
         base = ROOT / "benchmark/generated" / version
         packages.append(from_json((base / "package.json").read_text()))
-        inventory = f"urn:ghgag:acme-{version}-inventory:v1"
+        inventory = f"urn:ghgag:exampleco-ghg-001-{version}-inventory:v1"
         snapshots[inventory] = Snapshot(
-            "synthetic://acme/20250926",
+            "synthetic://exampleco-ghg-001/20250926",
             version,
             tuple(json.loads((base / "inputs.json").read_text())),
         )

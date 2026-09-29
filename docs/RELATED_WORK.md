@@ -151,7 +151,7 @@ The completion review re-read Arrhen LICENSE and README at the pinned commit: AG
 
 ### Common case and acceptance outputs
 
-Existing ACME selected-source electricity row, same Taiwan facility and explicit stable identity, location-based Scope 2 only: 2025-v2 **1,000 kWh × 0.5 kgCO2e/kWh = 500 kgCO2e** versus 2026-v1 **800 × 0.6 = 480 kgCO2e**. Factors are invented, precharacterized CO2e, allocation 1, no second GWP multiplication. Synthetic evidence/review states are not authentic invoices or human approvals.
+Existing ExampleCo-GHG-001 selected-source electricity row, same Taiwan facility and explicit stable identity, location-based Scope 2 only: 2025-v2 **1,000 kWh × 0.5 kgCO2e/kWh = 500 kgCO2e** versus 2026-v1 **800 × 0.6 = 480 kgCO2e**. Factors are invented, precharacterized CO2e, allocation 1, no second GWP multiplication. Synthetic evidence/review states are not authentic invoices or human approvals.
 
 Required workflow: retain two identified snapshots; query result → calculation → activity/evidence/factor/method/review; flag missing provenance; produce a declared two-driver bridge; export records, graph, versions and integrity metadata for another installation. Activity-first gives (800−1000)×0.5 = **−100**, then 800×(0.6−0.5) = **+80**, total **−20 kgCO2e**, residual 0. Factor-first instead gives +100/−120. Neither ordering proves causation or uniquely correct attribution.
 
@@ -178,7 +178,7 @@ At local revision 25231a6a5078d2d6f452a7c1136e91e2776184bd, read diff.py, tests/
 
     .venv/bin/python -m pytest -q tests/test_diff.py tests/test_evidence.py tests/test_graph.py tests/test_validation.py
 
-**196 passed in 12.04 s.** Literal/Fraction-based test oracles, not model self-review, check arithmetic. This establishes bounded feasibility, not independent domain acceptance or the whole intended workflow. Comparator uses raw ACME snapshots, not arbitrary RDF matching; semantic declarations are unauthenticated caller assertions, with one whole-row label rather than simultaneous semantic decomposition. Packages retain citations but do **not** fetch/bundle invoices; hashes are not signatures. Review fields do not implement immutable human approval. Preserve these limitations in release/manuscript claims.
+**196 passed in 12.04 s.** Literal/Fraction-based test oracles, not model self-review, check arithmetic. This establishes bounded feasibility, not independent domain acceptance or the whole intended workflow. Comparator at that historical revision uses raw ACME snapshots, not arbitrary RDF matching; semantic declarations are unauthenticated caller assertions, with one whole-row label rather than simultaneous semantic decomposition. Packages retain citations but do **not** fetch/bundle invoices; hashes are not signatures. Review fields do not implement immutable human approval. Preserve these limitations in release/manuscript claims.
 
 ### Decision and stop condition
 

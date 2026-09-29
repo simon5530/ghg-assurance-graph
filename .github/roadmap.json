@@ -356,7 +356,7 @@
         6
       ],
       "acceptance_criteria": [
-        "Generate deterministic synthetic ACME data from recorded seed/version with independent expected results.",
+        "Generate deterministic synthetic ExampleCo-GHG-001 data from recorded seed/version with independent expected results.",
         "Record verification evidence and limitations; use synthetic, license-reviewed data only."
       ],
       "status": "closed remotely; verified implementation",
@@ -365,7 +365,7 @@
         "priority:p1",
         "type:benchmark"
       ],
-      "scope": "Generate deterministic synthetic ACME data from recorded seed/version with independent expected results.",
+      "scope": "Generate deterministic synthetic ExampleCo-GHG-001 data from recorded seed/version with independent expected results.",
       "non_goals": "No work outside the assigned milestone; no confidential data, unsupported compliance claims, or mandatory cloud/AI dependency.",
       "verification": "Review versioned evidence against each acceptance criterion; later domain implementation requires independent positive and negative executable tests.",
       "evidence_paths": [

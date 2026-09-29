@@ -10,12 +10,12 @@ From the repository with Python 3.12 and locked uv environment:
 ~~~sh
 uv sync --locked
 mkdir -p artifacts
-uv run ghgag graph build benchmark/generated/2025-v1 > artifacts/acme.ttl
-uv run ghgag graph explain urn:ghgag:acme-2025-v1-electricity-result:v1 --input benchmark/generated/2025-v1
-uv run ghgag graph query results_using_factor --target urn:ghgag:acme-2025-v1-electricity-factor:v1 --input benchmark/generated/2025-v1
-uv run ghgag graph query records_supported_by_evidence --target urn:ghgag:acme-2025-v1-electricity-evidence:v1 --input benchmark/generated/2025-v1
+uv run ghgag graph build benchmark/generated/2025-v1 > artifacts/exampleco-ghg-001.ttl
+uv run ghgag graph explain urn:ghgag:exampleco-ghg-001-2025-v1-electricity-result:v1 --input benchmark/generated/2025-v1
+uv run ghgag graph query results_using_factor --target urn:ghgag:exampleco-ghg-001-2025-v1-electricity-factor:v1 --input benchmark/generated/2025-v1
+uv run ghgag graph query records_supported_by_evidence --target urn:ghgag:exampleco-ghg-001-2025-v1-electricity-evidence:v1 --input benchmark/generated/2025-v1
 uv run ghgag graph query unreviewed_results --input benchmark/generated/2025-v1 benchmark/generated/2025-v2 benchmark/generated/2026-v1
-uv run ghgag graph query revisions --target urn:ghgag:acme-2025-v1-electricity-result:v1 --input benchmark/generated/2025-v1 benchmark/generated/2025-v2 benchmark/generated/2026-v1
+uv run ghgag graph query revisions --target urn:ghgag:exampleco-ghg-001-2025-v1-electricity-result:v1 --input benchmark/generated/2025-v1 benchmark/generated/2025-v2 benchmark/generated/2026-v1
 uv run pytest -q
 ~~~
 

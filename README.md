@@ -14,7 +14,7 @@ production factor database, complete inventory calculator or compliance service.
   upstream evidence is not assessable; numeric differences are not causal reductions.
 
 - 17 canonical record types, explicit units/versions and five safe graph queries.
-- [ACME benchmark](benchmark/README.md): three snapshots, independent numeric truth
+- [ExampleCo-GHG-001 benchmark](benchmark/README.md): three snapshots, independent numeric truth
   and ten defective fixtures; all factors are invented and nonproduction.
 - [SHACL and domain validation](docs/VALIDATION.md): packaged pySHACL shapes plus
   independent raw-row rules; ten true positives, zero false positives/negatives on
@@ -44,14 +44,14 @@ organizational controls remain gaps; no full conformity claim.
 
 ## Complete fictional worked example
 
-Start with the [ACME step-by-step guide](examples/acme_worked_example/README.md)
-and [complete sample report](examples/acme_worked_example/sample/REPORT.md).
+Start with the [illustrated PDF workbook](docs/user-guide/GUIDE.pdf) ([HTML](docs/user-guide/GUIDE.html)), then the [ExampleCo-GHG-001 step-by-step guide](examples/worked_example/README.md)
+and [complete sample report](examples/worked_example/sample/REPORT.md).
 One command executes the selected-source inventory through calculation evidence,
 graphs, validation, explanation, unassisted/annotation-assisted differences,
 verified evidence packages and Obsidian notes, with offline command receipts.
 All activities, factors and source documents are explicitly fictional; simulated
 reviews are not human assurance. The [ten hand-authored cases](examples/README.md)
-remain small schema examples, distinct from the three-snapshot ACME workflow.
+remain small schema examples, distinct from the three-snapshot ExampleCo-GHG-001 workflow.
 Public-company demonstration inputs/outputs have been removed from the current tree:
 missing upstream records cannot be repaired by invented data. Historical tags and
 release assets remain unchanged; the generic reported-disclosure API is retained.
@@ -62,14 +62,14 @@ Python 3.12.14 and uv; no API key or cloud model.
 
 ```sh
 uv sync --locked
-uv run python scripts/run_acme_example.py --out artifacts/acme-worked
+uv run python scripts/run_example.py --out artifacts/exampleco-ghg-001-worked
 uv run ghgag benchmark run
 uv run ghgag graph build benchmark/generated/2026-v1
 uv run ghgag validate benchmark/generated/2026-v1
 uv run ghgag diff benchmark/generated/2025-v2 benchmark/generated/2026-v1
-uv run ghgag package create benchmark/generated/2026-v1 --out artifacts/acme-crate --created-at 2026-09-28T00:00:00Z --data-version acme-0.1-2026-v1
-uv run ghgag package verify artifacts/acme-crate
-uv run ghgag export obsidian artifacts/acme-vault --input benchmark/generated/2026-v1
+uv run ghgag package create benchmark/generated/2026-v1 --out artifacts/exampleco-ghg-001-crate --created-at 2026-09-28T00:00:00Z --data-version exampleco-ghg-001-0.1-2026-v1
+uv run ghgag package verify artifacts/exampleco-ghg-001-crate
+uv run ghgag export obsidian artifacts/exampleco-ghg-001-vault --input benchmark/generated/2026-v1
 uv run pytest -q
 ```
 

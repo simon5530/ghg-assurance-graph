@@ -7,13 +7,13 @@ and practitioner review are separate, unresolved gates; no ISO clauses are inven
 
 ## Workflow and acceptance
 
-1. Input: local canonical EvidencePackage/in-memory RDF, or ACME raw row mappings.
+1. Input: local canonical EvidencePackage/in-memory RDF, or ExampleCo-GHG-001 raw row mappings.
    Detector never receives case filenames, truth labels, mutation metadata or network data.
 2. Canonical packages retain existing Pydantic integrity validation. Packaged Turtle
    Core SHACL runs through pySHACL with no caller shapes, arbitrary SPARQL, imports,
    JS, advanced rules or inference. It validates required typed single-valued
    provenance/context edges and evidence citation/license presence.
-3. Raw domain detector independently checks published ACME policy and Decimal
+3. Raw domain detector independently checks published ExampleCo-GHG-001 policy and Decimal
    arithmetic, not benchmark.amount/preflight. It reports all applicable rules.
 4. Findings have stable sorted ordering and content-derived identifiers for stable
    entity IDs. No input is repaired or silently replaced with zero.

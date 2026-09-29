@@ -1,4 +1,4 @@
-# ACME Electronics benchmark v0.1
+# ExampleCo-GHG-001 benchmark v0.1
 
 Original synthetic data and code: MIT. **Nonofficial factors; never production defaults.**
 Clean = valid selected-source evidence, not complete GHG/ISO reporting or assurance.
@@ -34,7 +34,7 @@ A general version graph/matcher remains Phase 3/5 work.
 
 ## Synthetic assumptions and arithmetic
 
-ACME Electronics Group has Taiwan HQ, Taiwan Semiconductor Plant and Vietnam
+ExampleCo-GHG-001 has Taiwan HQ, Taiwan Semiconductor Plant and Vietnam
 Assembly Plant, all fully operationally controlled. These names/geographies are
 fictional scenario descriptors. No actual company, invoice or supplier data used.
 All numerical factors and 100-year GWP bases are invented; these are not Taiwan,

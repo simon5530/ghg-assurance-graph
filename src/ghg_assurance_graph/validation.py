@@ -1,4 +1,4 @@
-"""Offline SHACL structure checks and bounded ACME domain checks.
+"""Offline SHACL structure checks and bounded ExampleCo-GHG-001 domain checks.
 
 No benchmark generator, mutation metadata or ground truth is imported by detectors.
 """
@@ -95,7 +95,7 @@ _SCALES = {
 
 
 def validate_rows(rows: Iterable[Mapping]) -> tuple[Finding, ...]:
-    """Detect all applicable ACME raw-row errors without reading labels or filenames.
+    """Detect all applicable ExampleCo-GHG-001 raw-row errors without reading labels or filenames.
 
     Decimal arithmetic and explicit conversions are independent of benchmark.amount.
     Findings are set-valued by entity/rule. Duplicate identity is an error even if
@@ -123,7 +123,7 @@ def validate_rows(rows: Iterable[Mapping]) -> tuple[Finding, ...]:
         if not isinstance(target, str) or not target.strip():
             target = f"row-{index}"
             add(target, "missing activity identity")
-        if row.get("factor_source") != "ACME invented factor sheet v0.1; MIT":
+        if row.get("factor_source") != "ExampleCo-GHG-001 invented factor sheet v0.1; MIT":
             add(target, "factor provenance")
         if (
             type(row.get("year")) is not int
@@ -174,7 +174,7 @@ def validate_rows(rows: Iterable[Mapping]) -> tuple[Finding, ...]:
         # Evidence identity binds to this row, not merely an arbitrary URI prefix.
         if (
             not isinstance(evidence, str)
-            or not evidence.startswith("synthetic://acme/")
+            or not evidence.startswith("synthetic://exampleco-ghg-001/")
             or evidence.rsplit("/", 1)[-1] != target
         ):
             add(target, "activity evidence")

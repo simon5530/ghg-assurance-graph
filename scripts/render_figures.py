@@ -1,4 +1,4 @@
-"""Deterministic original SVG figures from executed synthetic-only ACME evaluation."""
+"""Deterministic original SVG figures from executed synthetic-only ExampleCo-GHG-001 evaluation."""
 
 from html import escape
 from pathlib import Path
@@ -12,7 +12,7 @@ def render():
     result = evaluate_benchmark(ROOT / "benchmark/generated", ROOT / "benchmark/ground_truth")
     validation = result["validation"]
     rows = [
-        "ACME synthetic-only regression — no external validation",
+        "ExampleCo-GHG-001 synthetic-only regression — no external validation",
         f"Seeded findings: TP={validation['tp']}, FP={validation['fp']}, FN={validation['fn']}",
         f"Precision={validation['precision']:.2f}; recall={validation['recall']:.2f}; F1={validation['f1']:.2f}",
         "Partial totals (kg CO2e): "
@@ -35,7 +35,7 @@ def render():
         f'<text x="24" y="{40 + 34 * i}">{escape(row)}</text>' for i, row in enumerate(rows)
     )
     return (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="320" viewBox="0 0 1080 320"><title>Observed ACME regression results</title><rect width="1080" height="290" fill="white"/><g font-family="sans-serif" font-size="16" fill="#172b4d">'
+        '<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="320" viewBox="0 0 1080 320"><title>Observed ExampleCo-GHG-001 regression results</title><rect width="1080" height="290" fill="white"/><g font-family="sans-serif" font-size="16" fill="#172b4d">'
         + text
         + "</g></svg>\n"
     )

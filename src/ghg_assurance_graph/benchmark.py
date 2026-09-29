@@ -1,4 +1,4 @@
-"""ACME-only fixture arithmetic and generation; not a general inventory engine."""
+"""ExampleCo-GHG-001-only fixture arithmetic and generation; not a general inventory engine."""
 
 import argparse
 import hashlib
@@ -38,7 +38,7 @@ def dumps(value):
 
 def amount(row):
     """Bounded positive arithmetic. No currency conversion or inferred factors."""
-    if row["factor_source"] != "ACME invented factor sheet v0.1; MIT":
+    if row["factor_source"] != "ExampleCo-GHG-001 invented factor sheet v0.1; MIT":
         raise ValueError("factor provenance")
     if (
         row["factor_year"] != row["year"]
@@ -86,7 +86,7 @@ def amount(row):
         raise ValueError("unsupported PCF boundary")
     if row["method"] not in ("supplier-pcf", "spend-based", "activity-based"):
         raise ValueError("unknown method")
-    if not row["evidence"].startswith("synthetic://acme/"):
+    if not row["evidence"].startswith("synthetic://exampleco-ghg-001/"):
         raise ValueError("activity evidence")
     return q * scale * f * share
 
@@ -120,7 +120,7 @@ def inputs(version, seed=SEED):
             "factor_unit": unit,
             "factor_year": year,
             "geography": "VN" if site == "vn-plant" else "TW",
-            "factor_source": "ACME invented factor sheet v0.1; MIT",
+            "factor_source": "ExampleCo-GHG-001 invented factor sheet v0.1; MIT",
             "factor_basis": "precharacterized-kg-CO2e",
             "apply_gwp": False,
             "gwp_basis": "synthetic-GWP-A-100y",
@@ -138,7 +138,7 @@ def inputs(version, seed=SEED):
             else "supplier-pcf"
             if name == "supplier-pcf"
             else "activity-based",
-            "evidence": f"synthetic://acme/{seed}/{version}/{name}",
+            "evidence": f"synthetic://exampleco-ghg-001/{seed}/{version}/{name}",
             "uncertainty": "Not statistically quantified; invented exact test inputs",
             "coverage": "selected source only",
         }
@@ -175,11 +175,11 @@ def inputs(version, seed=SEED):
 
 
 def package(version, rows):
-    """Map one complete ACME snapshot to existing canonical records."""
+    """Map one complete ExampleCo-GHG-001 snapshot to existing canonical records."""
     records = []
 
     def ref(name):
-        return f"urn:ghgag:acme-{version}-{name}:v1"
+        return f"urn:ghgag:exampleco-ghg-001-{version}-{name}:v1"
 
     def add(kind, name, **fields):
         records.append(
@@ -197,7 +197,7 @@ def package(version, rows):
         "boundary",
         organization=ref("org"),
         consolidation="operational-control",
-        description="ACME HQ, Taiwan Semiconductor Plant, Vietnam Assembly Plant; "
+        description="ExampleCo-GHG-001 HQ, Taiwan Semiconductor Plant, Vietnam Assembly Plant; "
         "100% operational control. New line in 2026 is organic expansion, not acquisition.",
     )
     add(
@@ -254,7 +254,7 @@ def package(version, rows):
             "CalculationMethod",
             n + "-method",
             method_type=row["method"],
-            description="ACME activity x synthetic precharacterized CO2e factor; allocation "
+            description="ExampleCo-GHG-001 activity x synthetic precharacterized CO2e factor; allocation "
             "embedded exactly once in canonical factor",
             allocation=row["allocation_method"],
             evidence=ref(n + "-evidence"),
@@ -282,7 +282,7 @@ def package(version, rows):
             boundary=ref("boundary"),
             inventory=ref("inventory"),
             performed_at="2026-09-26T00:00:00Z",
-            software="acme/0.1",
+            software="exampleco-ghg-001/0.1",
         )
         add(
             "EmissionResult",

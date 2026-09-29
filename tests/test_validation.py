@@ -68,7 +68,7 @@ def test_metric_oracle_penalizes_wrong_entity_rule_severity_and_missing():
     "field,value,rule",
     [
         ("factor_source", "plausible but wrong source", "factor provenance"),
-        ("evidence", "synthetic://acme/20250926/2025-v1/other", "activity evidence"),
+        ("evidence", "synthetic://exampleco-ghg-001/20250926/2025-v1/other", "activity evidence"),
         ("activity", "NaN", "invalid amount or allocation"),
         ("activity", "Infinity", "invalid amount or allocation"),
         ("activity", "-1", "invalid amount or allocation"),
@@ -110,13 +110,13 @@ def test_numeric_conversion_allocation_and_duplicate_identity():
 def test_real_shacl_provenance(mutation):
     package = EvidencePackage.model_validate(load("generated/2025-v1/package.json"))
     graph = to_graph(package)
-    factor = URIRef("urn:ghgag:acme-2025-v1-electricity-factor:v1")
+    factor = URIRef("urn:ghgag:exampleco-ghg-001-2025-v1-electricity-factor:v1")
     original = graph.value(factor, PROV.wasDerivedFrom)
     if mutation != "duplicate":
         graph.remove((factor, PROV.wasDerivedFrom, original))
     replacement = {
-        "wrong-type": URIRef("urn:ghgag:acme-2025-v1-org:v1"),
-        "duplicate": URIRef("urn:ghgag:acme-2025-v1-fleet-evidence:v1"),
+        "wrong-type": URIRef("urn:ghgag:exampleco-ghg-001-2025-v1-org:v1"),
+        "duplicate": URIRef("urn:ghgag:exampleco-ghg-001-2025-v1-fleet-evidence:v1"),
         "dangling": URIRef("urn:ghgag:missing:v1"),
     }.get(mutation)
     if replacement:
@@ -207,7 +207,7 @@ def test_raw_graph_required_literals_not_only_model_validation(kind, field):
 
     package = EvidencePackage.model_validate(load("generated/2025-v1/package.json"))
     graph = to_graph(package)
-    node = URIRef(f"urn:ghgag:acme-2025-v1-electricity-{kind}:v1")
+    node = URIRef(f"urn:ghgag:exampleco-ghg-001-2025-v1-electricity-{kind}:v1")
     assert graph.value(node, GHG[field]) is not None
     graph.remove((node, GHG[field], None))
     assert any(f.target == str(node) for f in validate_graph(graph))

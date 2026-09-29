@@ -25,7 +25,7 @@ turtle and json-ld. RDF roundtrip means graph isomorphism, not arbitrary domain 
 Selected SHACL/domain metrics and bounded CarbonDiff are now reproduced by the
 [complete README workflow](../README.md); no general assurance claim.
 
-## Phase 2 ACME reproduction
+## Phase 2 ExampleCo-GHG-001 reproduction
 Run `uv run python -m ghg_assurance_graph.benchmark --seed 20250926`, then
 `uv run pytest -q`. See [benchmark assumptions](../benchmark/README.md).
 The hash test generates twice into temporary directories and compares every byte
@@ -58,8 +58,8 @@ checks its own bounded profile offline; external authenticity is not established
 
 ## Current synthetic worked example (0.4.0a1)
 
-[Canonical guide](../examples/acme_worked_example/README.md):
-`uv run python scripts/run_acme_example.py --out artifacts/acme-worked`.
+[Canonical guide](../examples/worked_example/README.md):
+`uv run python scripts/run_example.py --out artifacts/exampleco-ghg-001-worked`.
 A new output directory is required. Runtime networking is blocked after installation.
 The runner records actual commands, findings, calculations, differences and package
 verification; it does not turn missing upstream data into evidence. Current CI tests

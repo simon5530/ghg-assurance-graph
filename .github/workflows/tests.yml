@@ -30,16 +30,16 @@ jobs:
           uv venv --python 3.12.14 "$RUNNER_TEMP/wheel-venv"
           uv pip sync --python "$RUNNER_TEMP/wheel-venv/bin/python" --require-hashes "$RUNNER_TEMP/runtime.txt"
           uv pip install --python "$RUNNER_TEMP/wheel-venv/bin/python" --no-deps dist/ghg_assurance_graph-0.4.0a1-py3-none-any.whl
-          uv run python scripts/run_acme_example.py --python "$RUNNER_TEMP/wheel-venv/bin/python" --out "$RUNNER_TEMP/acme-one"
-          uv run python scripts/run_acme_example.py --python "$RUNNER_TEMP/wheel-venv/bin/python" --out "$RUNNER_TEMP/acme-two"
-          diff -rq "$RUNNER_TEMP/acme-one" "$RUNNER_TEMP/acme-two"
+          uv run python scripts/run_example.py --python "$RUNNER_TEMP/wheel-venv/bin/python" --out "$RUNNER_TEMP/exampleco-ghg-001-one"
+          uv run python scripts/run_example.py --python "$RUNNER_TEMP/wheel-venv/bin/python" --out "$RUNNER_TEMP/exampleco-ghg-001-two"
+          diff -rq "$RUNNER_TEMP/exampleco-ghg-001-one" "$RUNNER_TEMP/exampleco-ghg-001-two"
       - run: uv run pip-audit --progress-spinner off
-      - name: Complete synthetic ACME workflow with socket networking blocked
-        run: uv run python scripts/run_acme_example.py --out artifacts/acme-worked
+      - name: Complete synthetic ExampleCo-GHG-001 workflow with socket networking blocked
+        run: uv run python scripts/run_example.py --out artifacts/exampleco-ghg-001-worked
       - name: Upload complete synthetic worked example
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          name: acme-worked-example
-          path: artifacts/acme-worked
+          name: exampleco-ghg-001-worked-example
+          path: artifacts/exampleco-ghg-001-worked
           if-no-files-found: error
           retention-days: 30

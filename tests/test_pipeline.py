@@ -46,7 +46,7 @@ def test_pipeline(tmp_path, capsys):
             "--created-at",
             "2026-09-28T00:00:00Z",
             "--data-version",
-            "acme-0.1-2026-v1",
+            "exampleco-ghg-001-0.1-2026-v1",
         ]
     )
     capsys.readouterr()

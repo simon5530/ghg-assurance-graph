@@ -1,6 +1,6 @@
 # CarbonDiff — experimental Phase 5 Python API
 
-`ghg_assurance_graph.diff` compares validated ACME raw snapshots. It does not
+`ghg_assurance_graph.diff` compares validated ExampleCo-GHG-001 raw snapshots. It does not
 compare arbitrary RDF graphs, infer corporate causality, certify inventories or
 automatically harmonize base years. [Acceptance contract](PHASE5_CONTRACT.md).
 
@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 from ghg_assurance_graph.diff import Snapshot, compare
 
-namespace = "synthetic://acme/20250926"
+namespace = "synthetic://exampleco-ghg-001/20250926"
 def load(version):
     rows = json.loads(Path(f"benchmark/generated/{version}/inputs.json").read_text())
     return Snapshot(namespace, version, tuple(rows))
@@ -88,7 +88,7 @@ ALLOCATION_CHANGE, CORRECTION, MISSING_DATA_RESOLVED, UNKNOWN. There is no
 automatic causal precedence among semantic labels. A supplied incorrect label
 can still be incorrect: evidence authenticity remains human review work.
 
-ACME explanatory annotations in tests come from the published scenario README:
+ExampleCo-GHG-001 explanatory annotations in tests come from the published scenario README:
 corrected fleet invoice; travel estimate resolution; fixed supplier technology
 and changed mix; same lot with method change; characterization-only refrigerant
 change; organic new source (not acquisition); allocation policy transition.
@@ -96,7 +96,7 @@ These are separate from the expected numeric truth consumed only by tests.
 
 ## Safety and scope
 
-Existing ACME preflight rejects market-based electricity: MB is unavailable, not
+Existing ExampleCo-GHG-001 preflight rejects market-based electricity: MB is unavailable, not
 zero. LB and MB cannot be added, including rows with distinct IDs. This API does
 not yet support separate valid MB comparisons. It rejects offsets, removals and
 biogenic streams rather than netting them. All factors are precharacterized CO2e;

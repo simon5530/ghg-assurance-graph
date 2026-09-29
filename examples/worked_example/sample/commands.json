@@ -1,0 +1,1214 @@
+[
+  {
+    "argv": [
+      "ghgag",
+      "benchmark",
+      "generate",
+      "--out",
+      "generated"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "benchmark-generate.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "benchmark-generate.json",
+    "stdout_sha256": "e2db63c1cd531e0dbab51f62e706d128785f7b7c63ec3f0732d09da7e331d6b3"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "validate",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/validation.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/validation.json",
+    "stdout_sha256": "016f05e11e938e286dbf386721f3eae1b31db58ed4541c0dff0a67078819de8f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "validate",
+      "generated/2025-v1/package.json"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/shacl.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/shacl.json",
+    "stdout_sha256": "016f05e11e938e286dbf386721f3eae1b31db58ed4541c0dff0a67078819de8f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "build",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/graph.ttl.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/graph.ttl",
+    "stdout_sha256": "87557439ed892e7a3e4c6a12709107b0b98acce60fd84cfbb06d3e434fd461d6"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-electricity-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/electricity.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/electricity.json",
+    "stdout_sha256": "a76e7f084debda579a6e185bf2959b4073197a8d1a022ca8dbffbc2aad551f5f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-natural-gas-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/natural-gas.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/natural-gas.json",
+    "stdout_sha256": "1ec1406e79fcb2bc4d248977da9fa7302af7bfd7e66d72e60aebdf900449ba4c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-diesel-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/diesel.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/diesel.json",
+    "stdout_sha256": "a458629e9035d97e3a7a78750e8fc9e1bddb199ad6edc1d5eac089bcf403300c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-fleet-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/fleet.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/fleet.json",
+    "stdout_sha256": "47767c94cd6f9cba23b3a8c36df8b1358c662e2a7aa6932a8d2d7118d18a3b3b"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-refrigerant-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/refrigerant.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/refrigerant.json",
+    "stdout_sha256": "3acc7eb39c7882fae83f26e7d65c06238280f9e8b4334f36b12f5b8758fb020b"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-materials-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/materials.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/materials.json",
+    "stdout_sha256": "225b59fe2447889a2fe97a16ef4c081065e673af32f7d09ea35c600a5e7d8df1"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-capital-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/capital.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/capital.json",
+    "stdout_sha256": "af62a0d011caa3f17ab016a9630088819caa5c997222db22ae132c8588ab1aa0"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-transport-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/transport.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/transport.json",
+    "stdout_sha256": "2d741533cc6aee662f7d4d7fa866d17fc7f766f3d18cdce3e374a4620acd9d5a"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-waste-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/waste.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/waste.json",
+    "stdout_sha256": "75510e1e1feed9d17757d453d61a3288b1f9c4f07c5fc92e257a55da3c12fdee"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-travel-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/travel.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/travel.json",
+    "stdout_sha256": "18544239920691df9e174b27b4567abc6a6b9333f2a8b50cb9ac9521767654c2"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-commuting-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/commuting.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/commuting.json",
+    "stdout_sha256": "aa253a80a5da9a801cc32ff5b53a17063d6104e6ec09252f22ff3f148d4f7ea5"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-supplier-pcf-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/supplier-pcf.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/supplier-pcf.json",
+    "stdout_sha256": "1dc7eb3cdae38c34ecb2768fec61ad482889d365860626896cb20d489ed3c7b8"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-method-transition-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/method-transition.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/method-transition.json",
+    "stdout_sha256": "784930c9f29a96340bc3b42de96dd9fe6c38c4fb78c5042cfc89b65eaf4405af"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-allocation-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/allocation.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/allocation.json",
+    "stdout_sha256": "3ff6513edac2856b5d96c83f999a262e64ba517fe39fee16c30cc8e5ff4920e3"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v1-new-line-result:v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/explain/new-line.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/explain/new-line.json",
+    "stdout_sha256": "1e239b8c11791dffcc45bcc15b9b9980b81494ad0a3d1d8d946f42335ac8f833"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "export",
+      "json-ld",
+      "stages/2025-v1/graph.jsonld",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/export-jsonld.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/export-jsonld.json",
+    "stdout_sha256": "9c608695129eae3c9b5e383d602e9046d77c1591f3ee625bb1fdc18fd2fb0c2c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "package",
+      "create",
+      "generated/2025-v1",
+      "--out",
+      "packages/2025-v1",
+      "--created-at",
+      "2026-09-28T00:00:00Z",
+      "--data-version",
+      "exampleco-ghg-001-0.1-2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/package-create.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/package-create.json",
+    "stdout_sha256": "c1a75c8b781577c574cccb0e248a12c7bd2afa71300e1aa5953e77fbbdc080ee"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "package",
+      "verify",
+      "packages/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/package-verify.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/package-verify.json",
+    "stdout_sha256": "91a30c73d50478368922b6f8d951d9d5067b70e88cf9f725232de08be173b50c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "export",
+      "obsidian",
+      "vaults/2025-v1",
+      "--input",
+      "generated/2025-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v1/obsidian.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v1/obsidian.json",
+    "stdout_sha256": "9c608695129eae3c9b5e383d602e9046d77c1591f3ee625bb1fdc18fd2fb0c2c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "validate",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/validation.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/validation.json",
+    "stdout_sha256": "016f05e11e938e286dbf386721f3eae1b31db58ed4541c0dff0a67078819de8f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "validate",
+      "generated/2025-v2/package.json"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/shacl.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/shacl.json",
+    "stdout_sha256": "016f05e11e938e286dbf386721f3eae1b31db58ed4541c0dff0a67078819de8f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "build",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/graph.ttl.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/graph.ttl",
+    "stdout_sha256": "93e309c3d60e6e71b6a468fadc4dfdc92ee97d821d3f1e40328554d19ff5e26b"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-electricity-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/electricity.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/electricity.json",
+    "stdout_sha256": "7deb621969104e3f2fdc8874c8dc42135f1f0f275dc4aab624aa108f5e1760b0"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-natural-gas-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/natural-gas.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/natural-gas.json",
+    "stdout_sha256": "41a2997f229af27238b5e911c27fe3ec73408471d31523786994c3be5fc43913"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-diesel-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/diesel.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/diesel.json",
+    "stdout_sha256": "ad9be6084e8bdbc3262be4d2fd8b519c7544215b9d4294f98e87a50edc3adcd4"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-fleet-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/fleet.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/fleet.json",
+    "stdout_sha256": "12299850b36d606f052993f6ebc360ac7d5d0a6f506a3a48e613b27a9b4bf75e"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-refrigerant-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/refrigerant.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/refrigerant.json",
+    "stdout_sha256": "48e23cab95e22c4e7bd78dc7411302c3ae838ec47b1a6c6c4309f40b75e19924"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-materials-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/materials.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/materials.json",
+    "stdout_sha256": "d003910e95c24c43292a9fa787331797f49ea803a3dc5b8be1509417e489897a"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-capital-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/capital.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/capital.json",
+    "stdout_sha256": "7edc99f567564e4ca0cf863da167943daefab7d536099180c666e74f5b455d1b"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-transport-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/transport.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/transport.json",
+    "stdout_sha256": "95c4623c8aa7a54fddaf046af68bc90b0623af420f99012f38368cb22cf30880"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-waste-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/waste.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/waste.json",
+    "stdout_sha256": "eb43f4022e5c30708ec7ba26ad2f8d85aeca54239718f9539ed3a86538ac1a42"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-travel-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/travel.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/travel.json",
+    "stdout_sha256": "f7c08f4e904a5cc31f7358042e5b14c79baeb8722c0cd807ccd109ca19989346"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-commuting-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/commuting.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/commuting.json",
+    "stdout_sha256": "0f773f8a0f89fd6021030585541d7bd4536972114c2ae0bd8b709d5c3a80c5d8"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-supplier-pcf-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/supplier-pcf.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/supplier-pcf.json",
+    "stdout_sha256": "a13f1028763c36016600b49c348fbe6d4c8e07cbd88cec6cc9d3e68e42962c64"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-method-transition-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/method-transition.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/method-transition.json",
+    "stdout_sha256": "3c2991a97e2ac39ca71c2c36b23876b74bb4dfc5c579374ab2d9223af1675d0c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-allocation-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/allocation.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/allocation.json",
+    "stdout_sha256": "020ad76c3afbbfe87fcb41d6cb80686e66e5cf5e03e1ab78eb6b5746c331e298"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2025-v2-new-line-result:v1",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/explain/new-line.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/explain/new-line.json",
+    "stdout_sha256": "345ed353b5c6a0e7ee24bb8ef9c53c594d7664dd65cf6d2dd3c5522bb11e5bf9"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "export",
+      "json-ld",
+      "stages/2025-v2/graph.jsonld",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/export-jsonld.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/export-jsonld.json",
+    "stdout_sha256": "9c608695129eae3c9b5e383d602e9046d77c1591f3ee625bb1fdc18fd2fb0c2c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "package",
+      "create",
+      "generated/2025-v2",
+      "--out",
+      "packages/2025-v2",
+      "--created-at",
+      "2026-09-28T00:00:00Z",
+      "--data-version",
+      "exampleco-ghg-001-0.1-2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/package-create.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/package-create.json",
+    "stdout_sha256": "c1a75c8b781577c574cccb0e248a12c7bd2afa71300e1aa5953e77fbbdc080ee"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "package",
+      "verify",
+      "packages/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/package-verify.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/package-verify.json",
+    "stdout_sha256": "f0a3391feb342bef8a8a2758e77549ce976fb151cf527eb3c3818cc19fce260e"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "export",
+      "obsidian",
+      "vaults/2025-v2",
+      "--input",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2025-v2/obsidian.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2025-v2/obsidian.json",
+    "stdout_sha256": "9c608695129eae3c9b5e383d602e9046d77c1591f3ee625bb1fdc18fd2fb0c2c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "validate",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/validation.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/validation.json",
+    "stdout_sha256": "016f05e11e938e286dbf386721f3eae1b31db58ed4541c0dff0a67078819de8f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "validate",
+      "generated/2026-v1/package.json"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/shacl.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/shacl.json",
+    "stdout_sha256": "016f05e11e938e286dbf386721f3eae1b31db58ed4541c0dff0a67078819de8f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "build",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/graph.ttl.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/graph.ttl",
+    "stdout_sha256": "094fcfd30cd619b3a3511cf669920849a05b2315d1ea8d5af0bb381dc7656ac4"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-electricity-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/electricity.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/electricity.json",
+    "stdout_sha256": "76cb61d239196a0a834e59b2d4d9a1e91c302e20e4afb7d314f5855b4f1d29a9"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-natural-gas-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/natural-gas.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/natural-gas.json",
+    "stdout_sha256": "4ce4a94a0d89a01ed7420cd33e84aebb521ad5ac2dcb8abb150f20190851f896"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-diesel-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/diesel.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/diesel.json",
+    "stdout_sha256": "3122ec4c8bfa630cde87094338f9f891e199aed1e45db3bbb5d0efeede99d8f9"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-fleet-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/fleet.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/fleet.json",
+    "stdout_sha256": "17b9bd6a45b36429a775c8d7cdccc3a21c6b712180e34486a196098abde06a88"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-refrigerant-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/refrigerant.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/refrigerant.json",
+    "stdout_sha256": "e757aa905688d50a601708002d1c022645d3d1cf6a76fc59091fcafcfd20116d"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-materials-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/materials.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/materials.json",
+    "stdout_sha256": "4e6917955d14ac34d6634ea7b51e1d3102d2777412d1bfd730644aaa8358caaa"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-capital-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/capital.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/capital.json",
+    "stdout_sha256": "e6cc840e978f2c8a2a9d4d15dd8a2eda7a68e20611ced6a4d828e386d80ec27f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-transport-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/transport.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/transport.json",
+    "stdout_sha256": "ce22acd8f625a703a36caa6e90806b97852d9c942b44d200d71187608521fbad"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-waste-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/waste.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/waste.json",
+    "stdout_sha256": "16a9b1c92930a66af05b1a33ccc7d5f8633209dd0b009dbd74464a03ca98d183"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-travel-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/travel.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/travel.json",
+    "stdout_sha256": "baf6d1f7599d377e3a8704d8b7d7588217bbc8b00c5d244ba843b98096eef282"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-commuting-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/commuting.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/commuting.json",
+    "stdout_sha256": "559e25d1087c4706ca886654f501cfd02b3aa28ddcf806316fd289638b6be04c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-supplier-pcf-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/supplier-pcf.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/supplier-pcf.json",
+    "stdout_sha256": "311c1829e851bb0388f2bb8228b4c618ace3ee6af3d323847cb6710500821d64"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-method-transition-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/method-transition.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/method-transition.json",
+    "stdout_sha256": "c7bcf7d9001c88137bcb48355de0616ca6be9b19462700323fe086a459ee35b5"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-allocation-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/allocation.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/allocation.json",
+    "stdout_sha256": "b47d718091a8ba46f12151573ff659bbdc1a5a8785d5c9cdbba86587410a7114"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:exampleco-ghg-001-2026-v1-new-line-result:v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/explain/new-line.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/explain/new-line.json",
+    "stdout_sha256": "6c7e0332611e7e303c71093864e1e6e4808099a7c059ce8c5cd76923686517c3"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "export",
+      "json-ld",
+      "stages/2026-v1/graph.jsonld",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/export-jsonld.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/export-jsonld.json",
+    "stdout_sha256": "9c608695129eae3c9b5e383d602e9046d77c1591f3ee625bb1fdc18fd2fb0c2c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "package",
+      "create",
+      "generated/2026-v1",
+      "--out",
+      "packages/2026-v1",
+      "--created-at",
+      "2026-09-28T00:00:00Z",
+      "--data-version",
+      "exampleco-ghg-001-0.1-2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/package-create.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/package-create.json",
+    "stdout_sha256": "c1a75c8b781577c574cccb0e248a12c7bd2afa71300e1aa5953e77fbbdc080ee"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "package",
+      "verify",
+      "packages/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/package-verify.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/package-verify.json",
+    "stdout_sha256": "efcba9988fba4c2736b41edf0b6822380e7750e0259859b84eb6be1eba76792c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "export",
+      "obsidian",
+      "vaults/2026-v1",
+      "--input",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2026-v1/obsidian.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2026-v1/obsidian.json",
+    "stdout_sha256": "9c608695129eae3c9b5e383d602e9046d77c1591f3ee625bb1fdc18fd2fb0c2c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "diff",
+      "generated/2025-v1",
+      "generated/2025-v2"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "diffs/2025-v1--2025-v2/unassisted.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "diffs/2025-v1--2025-v2/unassisted.json",
+    "stdout_sha256": "6bb7efb05ffccbe3716f23e5df859d3351b9615effb1272e02fc447177d3e8de"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "diff",
+      "generated/2025-v1",
+      "generated/2025-v2",
+      "--declarations",
+      "declarations/2025-v1--2025-v2.json"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "diffs/2025-v1--2025-v2/assisted.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "diffs/2025-v1--2025-v2/assisted.json",
+    "stdout_sha256": "35a80ed6891e095ba92d56ecbbaf6da2e660acaed1c0565937b2269fe28fa888"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "diff",
+      "generated/2025-v2",
+      "generated/2026-v1"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "diffs/2025-v2--2026-v1/unassisted.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "diffs/2025-v2--2026-v1/unassisted.json",
+    "stdout_sha256": "557bd51bee89a4970ee2aa82dc27a28234c5d8b2b36cd3ad5dd28c84f7143427"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "diff",
+      "generated/2025-v2",
+      "generated/2026-v1",
+      "--declarations",
+      "declarations/2025-v2--2026-v1.json"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "diffs/2025-v2--2026-v1/assisted.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "diffs/2025-v2--2026-v1/assisted.json",
+    "stdout_sha256": "006a11beb98cebcbcbd627a0464f278012a343ae583eff7e962d92c4856ca1dd"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "validate",
+      "generated/defects/double-gwp.json"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "stderr": "negative-validation.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "negative-validation.json",
+    "stdout_sha256": "17baa748b9fa0e2379ef808f8a49b34bea1a9ce1be93cf59da039826a7da7415"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "validate",
+      "generated/defects/missing-factor-source.json"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "stderr": "missing-evidence-validation.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "missing-evidence-validation.json",
+    "stdout_sha256": "472fe4e9ac621102b5780b9d2c62d183af0aa0d4a4a71bd9af441b07239354f3"
+  }
+]

@@ -16,7 +16,7 @@ If a mature project already provides this combination, extend/contribute/narrow 
 
 ## Evidence and decision
 
-[Related work](RELATED_WORK.md) compares extending CarbonLedger, adapting Arrhen, and composing TEC/PECO/ECFO + SHACL + RO-Crate using the **same ACME electricity case**: 1,000×0.5=500 → 800×0.6=480 kgCO2e. The declared activity-first bridge is −100 activity/+80 factor = −20.
+[Related work](RELATED_WORK.md) compares extending CarbonLedger, adapting Arrhen, and composing TEC/PECO/ECFO + SHACL + RO-Crate using the **same ExampleCo-GHG-001 electricity case**: 1,000×0.5=500 → 800×0.6=480 kgCO2e. The declared activity-first bridge is −100 activity/+80 factor = −20.
 
 CarbonLedger implements factor-vintage restatement on a fixed activity table, not the inspected two-snapshot bridge. Arrhen exports organization/activity/factor lineage but the inspected report interface does not supply the semantic version bridge and reproducible numerical evidence profile. TEC and mature generic validators/packagers supply reusable building blocks; inventory revision contracts, domain constraints, comparability and reconciled attribution still require implementation. Detailed licenses, source pins and maturity limits are recorded in the comparison. Competitor runtimes were not executed; this is source-grounded workflow comparison, not a performance benchmark.
 

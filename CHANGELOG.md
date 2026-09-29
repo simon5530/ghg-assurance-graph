@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased source update — 2026-09-29
+
+- Rename current fictional fixtures to ExampleCo-GHG-001, regenerate identities and hashes, and add a 16-page illustrated PDF/HTML workbook plus a safe-input exercise. Historical entries below retain former labels. No new release or schema change; arithmetic is unchanged.
+
 ## 0.4.0a1 — 2026-09-28 (qualified alpha)
 
 - Replace current public-company demonstrations with a complete fictional ACME
