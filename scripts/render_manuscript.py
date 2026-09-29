@@ -104,7 +104,7 @@ def render(source):
     return (
         """<!doctype html><html lang="en"><meta charset="utf-8">
 <title>GHG Assurance Graph — initial manuscript</title><style>
-@page{size:A4;margin:17mm 18mm;}body{font:11pt/1.4 Georgia,serif;color:#17212b;max-width:180mm;margin:24px auto;}
+@page{size:A4;margin:17mm 18mm;}body{font:11pt/1.36 Georgia,serif;color:#17212b;max-width:180mm;margin:24px auto;}
 h1{font:700 22pt/1.2 Arial,sans-serif;color:#173d52;}h2{font:700 15pt/1.2 Arial,sans-serif;margin-top:1.4em;}
 h3{font:700 12pt/1.2 Arial,sans-serif;margin-top:1.2em;}h1,h2,h3{break-after:avoid;}
 p{orphans:3;widows:3;margin:.65em 0;}a{color:#235c7c;overflow-wrap:anywhere;text-decoration:none;}
