@@ -121,3 +121,12 @@ Historical releases are audit evidence and are not rewritten to hide the change.
 ## 2026-09-29 — Identity-bearing fixture rename
 
 A fictional-label rename changes embedded citations, canonical IDs and downstream digests. Replacing display text in generated outputs leaves stale manifests: regenerate from source, compare independent Fraction totals, and replay complete trees. Preserve historical release bytes rather than retroactively renaming them. PDF checks require both layout bounds and rendered visual review; text extraction alone does not prove readable charts.
+
+## 2026-10-15 — evidence availability determines the example profile
+
+Public aggregates do not imply access to internal evidence. A traceability demo
+requiring meter logs, custody, stock balances and calibration cannot be honestly
+benchmarked against a named company's disclosure by inventing missing lineage.
+Use a complete labelled synthetic internal case mapped to an inspected collection
+standard, while retaining unknowns and source/version metadata. Keep legal boundary,
+corporate consolidation and software projection as separate declarations.

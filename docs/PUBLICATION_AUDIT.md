@@ -231,49 +231,11 @@ is authorized; research/domain gates and archival/submission gates remain distin
 Final commit/push and hosted-CI readback are reported separately to avoid a
 self-referential commit hash. Published 0.2.0a1 is not retroactively changed.
 
-## 2026-09-28 — 0.3.0a1 real public-disclosure alpha
+## Historical alpha scope
 
-Scope baseline43f3027: additive reported-disclosure/1, explicit CLI/evidence workflow,
-UMC Group and parent-only2022–2024 plus TSMC2023–2024, complete generated outputs,
-independent numeric/adversarial tests and synchronized paper/release docs. Existing
-calculated schema0.1 and ACME fixtures remain byte-unchanged. No raw company report,
-ISO source/extract, credentials or private user context is bundled. Company PDFs
-were inspected locally; exact source SHA256 values were independently recomputed.
-Only24 attributable numeric facts, original mapping/limitation notes and derived
-outputs are published. Company copyrights are not relicensed under project MIT.
-
-Observed locally: Python3.12.14, uv0.12.19, Ruff0.16.9, pytest9.1.1, Gitleaks8.30.1.
-448 tests pass with11 upstream RDFLib warnings, 7 docs-oracle tests pass, relative
-links in176 Markdown files pass; Ruff lint/format and diff whitespace checks pass.
-Independent review reproduced3 defects (ambient Decimal exponents, missing crate
-software/command metadata, raw HTML in report); all19 independent review tests now
-pass after fixes. No negative oracle was weakened. Dependency audit reports no known
-vulnerabilities; the unpublished project itself is outside PyPI advisory coverage.
-No dependency change; prior dependency-license review remains applicable.
-
-Wheel built from sdist and installed with29 hashed runtime dependencies in a fresh
-offline local environment. Full UMC Group and held-out TSMC workflows executed
-outside the source checkout with Python socket/DNS access blocked and produced
-byte-identical complete trees after freezing input metadata. A separate clean
-publication copy performs locked offline installation/full tests. This is same-host
-reproduction, not practitioner or fresh-host proof. CI now runs all3real cases and
-uploads complete artifacts using a pinned action; remote execution is not inferred.
-
-Publication-scope helper inspected344 intended UTF-8 files and231 historical blobs;
-targeted privacy scan clear. Gitleaks tree scan~1.83MB and all11reachable baseline
-commits~1.06MB found no secrets. Separate semantic review covered actual facts,
-source URLs, report text, filenames, scripts, generated crate/vault metadata and
-commit identities. Only intentional public company/source and GitHub attribution.
-No report binaries are retained. Final staged/postcommit scans and remote SHA/tag
-readback are reported externally to avoid a self-referential audit hash.
-
-Normal authenticated GitHub API probe failed certificate verification. No TLS bypass,
-trust edits, credential extraction or alternate authenticated HTTP route. Existing
-Git transport and anonymous repository read succeed. GitHub Release object/assets,
-issue closure, description/security-control updates remain API-blocked; a pushed tag
-is not those operations. No journal/DOI action attempted. Gate A HOLD and standards/
-comparability limitations remain. Parent independent review remains required.
-
+The earlier comparison case is superseded and excluded from current evidence.
+Historical source objects remain in Git for auditability; current acceptance is
+based on synthetic cases only.
 
 ## 2026-09-28 — API recovery and verified public prerelease
 Earlier API/upload-blocked observations are historical. Normal authenticated CLI
@@ -298,7 +260,7 @@ The current tree removes 213 company-example files (including 207 generated outp
 the company source catalogue, runner and company-specific oracle. The generic
 reported-disclosure API is retained; anonymous invented fixtures preserve missingness,
 boundary separation, Scope 2 alternatives and unknown-causality regressions. Historical
-v0.3.0a1 tags/releases and the pinned historical reproduction harness are unchanged.
+v0.3.0a1 tags/releases remain unchanged; the old execution harness is removed from the current tree.
 Their observations are not current-release external validation.
 
 The new runner executes 73 actual CLI actions with Python socket/DNS access blocked
@@ -330,3 +292,28 @@ Final local suite: **458 passed**, 11 upstream RDFLib deprecation warnings; seve
 documentation-oracle tests passed. The new runner regression includes actual CLI
 exit checks, two different hash-seed byte-tree replays, exact component oracles,
 source/declaration hashes, package/vault checks and untouched nonempty destinations.
+
+## 2026-10-15 — MOENV-guided internal evidence replacement
+
+Five official downloads were inspected and SHA256-recorded outside Git. The current
+primary case is an original fictional plant, 2023/2024, eleven mapped collection
+forms plus evidence/change extensions. It includes 120 monthly records, 122
+synthetic source documents, gas-level calculations, draft reports and canonical
+CO2e graphs. No source PDF/ODF, private standard, real invoice or real registration
+is redistributed. Historical company-comparison execution and current comparison
+material are removed; immutable Git/release history is not rewritten.
+
+Observed local checks: 475 pytest tests pass (15 MOENV tests), seven documentation
+oracle tests, Ruff lint/format and relative-link checks pass. Fraction arithmetic
+independently agrees with literal totals 95797.473564/95229.409244 kgCO2e. The actual
+canonical SHACL/domain checks accept both generated packages; accepted checks do
+not imply assurance or completeness. Workbook input mutation increases totals by
+21.33871 kgCO2e; blank input exposes MISSING. All 42 sheets were rendered; XLSX
+cached totals and formula errors were inspected separately. Native Excel execution
+was not exercised. No production factor defaults or full conformity are claimed.
+
+Gitleaks current-tree and reachable-history scans returned zero findings before
+publication. Original XLSX binaries are intentional reviewed deliverables; no
+third-party workbook is included. Metadata/private-path checks cover ZIP contents.
+Remote commit and hosted-CI results are reported after publication, not inferred
+from these local checks.

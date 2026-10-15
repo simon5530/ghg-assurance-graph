@@ -1,0 +1,75 @@
+{
+  "engine": "artifact-tool 2.8.58 (not native Excel verification)",
+  "scenario": "increase first boiler month by10m3, then blank it; restore before export",
+  "checks": [
+    {
+      "year": "2023",
+      "overview": [
+        [
+          32664.273564000003
+        ],
+        [
+          63133.2
+        ],
+        [
+          95797.473564
+        ],
+        [
+          95.797473564
+        ]
+      ]
+    },
+    {
+      "year": "2023",
+      "changed": [
+        [
+          95818.812274
+        ]
+      ]
+    },
+    {
+      "year": "2023",
+      "missing": [
+        [
+          "MISSING"
+        ]
+      ]
+    },
+    {
+      "year": "2024",
+      "overview": [
+        [
+          28964.209243999998
+        ],
+        [
+          66265.2
+        ],
+        [
+          95229.409244
+        ],
+        [
+          95.229409244
+        ]
+      ]
+    },
+    {
+      "year": "2024",
+      "changed": [
+        [
+          95250.747954
+        ]
+      ]
+    },
+    {
+      "year": "2024",
+      "missing": [
+        [
+          "MISSING"
+        ]
+      ]
+    }
+  ],
+  "rendered_sheet_count": 42,
+  "limitations": "fixed activity blocks; no automatic evidence/hash rewrite; native Excel not exercised",
+  "parameter_source_panels_rendered": 3
+}

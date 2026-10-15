@@ -1,0 +1,2 @@
+year,purchased_kwh,self_generated_kwh,sold_kwh,purchased_steam_t,generated_steam_t,sold_steam_t,evidence_id,note
+2024,139800,1440,0,0,0,0,scenario,"synthetic generator electricity used onsite; do not add it again as purchased electricity; boiler produces hot water, not steam"

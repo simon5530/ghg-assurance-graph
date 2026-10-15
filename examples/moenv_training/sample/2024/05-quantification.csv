@@ -1,0 +1,12 @@
+year,source_id,gas,activity,unit,lhv_mj_per_unit,factor,factor_unit,factor_source_id,gwp,gwp_basis,gas_kg,kg_co2e,synthetic
+2024,boiler,CO2,11580,meter ** 3,38,56100,kg-gas/TJ,official-factors,1,MOENV-113-AR5-100y,24686.244000,24686.244000,True
+2024,boiler,CH4,11580,meter ** 3,38,1,kg-gas/TJ,official-factors,28,MOENV-113-AR5-100y,0.440040,12.321120,True
+2024,boiler,N2O,11580,meter ** 3,38,0.1,kg-gas/TJ,official-factors,265,MOENV-113-AR5-100y,0.0440040,11.6610600,True
+2024,generator,CO2,498,liter,36,74100,kg-gas/TJ,official-factors,1,MOENV-113-AR5-100y,1328.464800,1328.464800,True
+2024,generator,CH4,498,liter,36,3,kg-gas/TJ,official-factors,28,MOENV-113-AR5-100y,0.053784,1.505952,True
+2024,generator,N2O,498,liter,36,0.6,kg-gas/TJ,official-factors,265,MOENV-113-AR5-100y,0.0107568,2.8505520,True
+2024,new-generator,CO2,120,liter,36,74100,kg-gas/TJ,official-factors,1,MOENV-113-AR5-100y,320.112000,320.112000,True
+2024,new-generator,CH4,120,liter,36,3,kg-gas/TJ,official-factors,28,MOENV-113-AR5-100y,0.012960,0.362880,True
+2024,new-generator,N2O,120,liter,36,0.6,kg-gas/TJ,official-factors,265,MOENV-113-AR5-100y,0.0025920,0.6868800,True
+2024,cooling,HFC-134a,2,kg,not-applicable,1,kg-gas/kg-leaked,official-factors,1300,MOENV-113-AR5-100y,2,2600,True
+2024,electricity,CO2e,139800,kWh,not-applicable,0.474,kg-CO2e/kWh,official-inventory-annex1,1,precharacterized-no-second-GWP,not-gas-resolved,66265.200,True

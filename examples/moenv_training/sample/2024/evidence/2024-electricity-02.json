@@ -1,0 +1,19 @@
+{
+  "document_type": "synthetic maintenance/meter/consumption record",
+  "evidence_id": "2024-electricity-02",
+  "license": "MIT",
+  "month": 2,
+  "note": "Cooling quantity is documented leaked gas mass from a closed synthetic service balance, not equipment charge or purchased refrigerant. Fuel quantity is consumption after stock reconciliation, not purchases. No actual invoice or human approval.",
+  "quantity": "11200",
+  "raw_data": {
+    "basis": "meter-difference",
+    "closing": "122300",
+    "multiplier": "1",
+    "opening": "111100"
+  },
+  "source_id": "electricity",
+  "status": "recorded",
+  "synthetic": true,
+  "unit": "kWh",
+  "year": 2024
+}

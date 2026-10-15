@@ -1,0 +1,2 @@
+year,direct_kg_co2e,energy_indirect_kg_co2e,total_kg_co2e,total_t_co2e,boundary,status
+2023,32664.2735640,63133.200,95797.4735640,95.797473564,demo-plant; direct + purchased energy,synthetic-not-assured

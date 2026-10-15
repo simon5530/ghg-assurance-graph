@@ -67,3 +67,10 @@ this workflow. Generic reported-disclosure API tests use anonymous synthetic fix
 
 ## Historical v0.3.0a1 published artifact fresh-host proof — 2026-09-28
 [Released source and wheel reproduction](FRESH_RELEASE_REPRODUCTION.md) completed successfully on a new Ubuntu hosted runner; its application inputs came only from digest-pinned public release assets. This satisfies fresh-machine software reproduction, not human practitioner review. [Archive proof](ARCHIVE_STATUS.md) resolves the published tag in Software Heritage.
+
+## MOENV training replay
+
+Use `python -m ghg_assurance_graph.moenv_example --out NEW_DIRECTORY` in the locked
+environment. [Training guide](../examples/moenv_training/README.md) links committed
+CSV, evidence, parameters, graph projection, workbooks and annual reports. Existing
+alpha-release reproduction is historical, not acceptance evidence for this dataset.

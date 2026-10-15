@@ -1,0 +1,6 @@
+year,source_id,activity_quality,factor_quality,calibration_evidence,custodian,review_status,limitation
+2023,boiler,synthetic-not-rated,official-values-plus-synthetic-LHV,not-established,simulated-facilities-team,not-human-reviewed,"hashes prove consistency only, not source authenticity"
+2023,generator,synthetic-not-rated,official-values-plus-synthetic-LHV,not-established,simulated-facilities-team,not-human-reviewed,"hashes prove consistency only, not source authenticity"
+2023,new-generator,synthetic-not-rated,official-values-plus-synthetic-LHV,not-established,simulated-facilities-team,not-human-reviewed,"hashes prove consistency only, not source authenticity"
+2023,cooling,synthetic-not-rated,official-values-plus-synthetic-LHV,not-established,simulated-facilities-team,not-human-reviewed,"hashes prove consistency only, not source authenticity"
+2023,electricity,synthetic-not-rated,official-values-plus-synthetic-LHV,not-established,simulated-facilities-team,not-human-reviewed,"hashes prove consistency only, not source authenticity"

@@ -1,0 +1,3 @@
+change_id,source_id,effective_date,change_type,before,after,evidence_id,comparability,review_status
+new-equipment-2024,new-generator,2024-07-01,organic-equipment-addition,not installed,installed; six months consumption,scenario,"same plant boundary, source composition changed; not acquisition",synthetic-not-human-reviewed
+electricity-vintage-2024,electricity,2024-01-01,factor-vintage-change,0.494 kgCO2e/kWh,0.474 kgCO2e/kWh,scenario,activity-first/factor-second convention; not uniquely causal abatement,synthetic-not-human-reviewed

@@ -208,3 +208,12 @@ Aggregate citations cannot establish activity completeness, factor eligibility,
 contractual Scope 2 quality, gas/GWP reconstruction, controls, uncertainty or review
 authenticity. Source assurance wording is attributed disclosure, not tool assurance.
 The private ISO review scope and residual gaps above remain unchanged.
+
+## MOENV training addition — 2026-10-15
+
+The [official-source mapping](../examples/moenv_training/SOURCES.md) and
+[training contract](MOENV_TRAINING_CONTRACT.md) govern the new primary case.
+Companion tables calculate CO2/CH4/N2O and HFC-134a using inspected parameters;
+canonical schema 0.1 still receives precharacterized CO2e, not gas records. This
+does not close the earlier core gas-schema gap or establish full conformity.
+Historical electricity vintages and synthetic LHV are explicit training policies.

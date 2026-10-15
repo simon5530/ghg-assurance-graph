@@ -1,6 +1,6 @@
 # ExampleCo-GHG-001: inputs → evidence graph → checks → change explanation
 
-This is the canonical worked-example guide for the **synthetic calculated-evidence profile**, not the separate public-company reported-assertion profile. Its objective is to make every operand, lineage edge, check and change explanation inspectable. **ExampleCo-GHG-001, its invoices, suppliers and reviews are fictional. All factors are invented, nonproduction values.** This is not human assurance, certification, a complete inventory or whole-ISO conformity.
+This is the earlier software-regression guide for the **synthetic calculated-evidence profile**. The primary internal collection workflow is now [MOENV training](../moenv_training/README.md). Its objective is to make every operand, lineage edge, check and change explanation inspectable. **ExampleCo-GHG-001, its invoices, suppliers and reviews are fictional. All factors are invented, nonproduction values.** This is not human assurance, certification, a complete inventory or whole-ISO conformity.
 
 ## 1. Locked installation and one-command run
 

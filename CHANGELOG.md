@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased source update — 2026-10-15
+
+- Make the MOENV-guided 2023/2024 fictional manufacturing case the primary collection workflow.
+- Add original tables 1–11, evidence/change extensions, 120 monthly records, 122 synthetic source documents, gas calculations, annual reports and canonical graphs.
+- Add blank and filled XLSX collection workbooks; retain CSV as inspectable source data.
+- Remove the superseded company-comparison harness/workflow and current comparison documentation. Historical Git/release bytes are not rewritten.
+- Keep the generic reported-assertion API separate from the evaluation dataset; no core schema migration or legal conformity claim.
+
 ## Unreleased source update — 2026-09-29
 
 - Rename current fictional fixtures to ExampleCo-GHG-001, regenerate identities and hashes, and add a 16-page illustrated PDF/HTML workbook plus a safe-input exercise. Historical entries below retain former labels. No new release or schema change; arithmetic is unchanged.
@@ -56,7 +64,7 @@ review usage edges, five bound SPARQL queries and local ghgag graph CLI. No Phas
 
 ## 0.3.0a1 — 2026-09-28 (qualified alpha; publication status in release audit)
 
-- Add a separate reported-disclosure profile for real public-company aggregates;
+- Add a separate reported-disclosure compatibility profile;
   preserve schema/benchmark 0.1 and calculated-result requirements unchanged.
 - Keep missing upstream provenance not assessable and comparison causes UNKNOWN.
 - Preserve source units, period/boundary qualifications and Scope 2 alternatives.

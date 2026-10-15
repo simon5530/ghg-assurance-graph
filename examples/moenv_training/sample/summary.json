@@ -1,0 +1,17 @@
+{
+  "limitations": "historical electricity vintages; synthetic LHV/activity; no independent assurance or quantified uncertainty",
+  "profile": "moenv-training/1",
+  "synthetic": true,
+  "years": {
+    "2023": {
+      "direct_kg_co2e": "32664.2735640",
+      "energy_indirect_kg_co2e": "63133.200",
+      "total_kg_co2e": "95797.4735640"
+    },
+    "2024": {
+      "direct_kg_co2e": "28964.2092440",
+      "energy_indirect_kg_co2e": "66265.200",
+      "total_kg_co2e": "95229.4092440"
+    }
+  }
+}

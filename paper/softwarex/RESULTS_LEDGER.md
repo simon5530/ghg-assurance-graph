@@ -152,3 +152,15 @@ Scope-correction lesson: replacing an evaluation population requires updating
 abstract, example, bibliography, metadata, ledgers and regenerated reading artifacts
 alongside the prose; old release reproduction must not become current evidence.
 The table and scope regression tests guard this contract.
+
+## 2026-10-15 current-source extension (not part of the September draft evaluation)
+
+Primary practical example now uses [MOENV-inspired internal collection](../../examples/moenv_training/README.md),
+not public-company comparison. Two years, 120 monthly activity rows, 122 synthetic
+evidence documents, gas companion calculations and original collection workbooks.
+The 475-test local suite includes 15 tests for literal arithmetic, missingness,
+unit/period/cutoff integrity, evidence hashes, file replay and altered saved inputs.
+These are encoded engineering contracts, not blind validation, practitioner review
+or a conformity claim. Current official-source metadata, synthetic LHV assumptions
+and historical electricity-factor policy are linked from the example. The original
+SoftwareX draft remains dated; no submission or refreshed paper result is implied.

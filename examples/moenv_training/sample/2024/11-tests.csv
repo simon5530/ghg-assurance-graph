@@ -1,0 +1,4 @@
+year,source_id,parameter,value,unit,test_method,test_date,laboratory,qualification,evidence_id,status
+2024,boiler,lower-heating-value,38,MJ/activity-unit,synthetic-assumption-not-laboratory,not-performed,none,not-established,scenario,synthetic-not-measured
+2024,generator,lower-heating-value,36,MJ/activity-unit,synthetic-assumption-not-laboratory,not-performed,none,not-established,scenario,synthetic-not-measured
+2024,new-generator,lower-heating-value,36,MJ/activity-unit,synthetic-assumption-not-laboratory,not-performed,none,not-established,scenario,synthetic-not-measured

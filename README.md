@@ -4,14 +4,10 @@
 
 An offline Python toolkit that turns declared organizational greenhouse-gas
 evidence into a queryable RDF/PROV graph, checks selected evidence constraints,
-compares inventory versions and public reported aggregates, and exports portable evidence. It is not a
+compares inventory versions, and exports portable evidence. It is not a
 production factor database, complete inventory calculator or compliance service.
 
 ## Implemented and bounded
-
-- Additive [reported-disclosure profile](docs/REPORTED_CONTRACT.md): public totals
-  remain ReportedAssertions, not invented activity/factor calculations. Missing
-  upstream evidence is not assessable; numeric differences are not causal reductions.
 
 - 17 canonical record types, explicit units/versions and five safe graph queries.
 - [ExampleCo-GHG-001 benchmark](benchmark/README.md): three snapshots, independent numeric truth
@@ -42,7 +38,30 @@ privately, including normative Annexes D/E. Only paraphrases and references are
 published. Gas-resolved reporting, completeness/significance, uncertainty and
 organizational controls remain gaps; no full conformity claim.
 
-## Complete fictional worked example
+## MOENV-guided internal collection (primary worked case)
+
+**2023 and 2024, entirely fictional single manufacturing plant.** Original collection
+forms map to MOENV inventory tables 1–11 and the all-industry report chapters.
+120 monthly records and 122 synthetic evidence documents preserve meter readings,
+fuel-stock balances and refrigerant mass balances. Includes blank CSV/XLSX templates,
+filled XLSX workbooks, annual reports, gas-level arithmetic and canonical graphs.
+
+- [Start / download workbooks](examples/moenv_training/README.md)
+- [Official source/version evidence](examples/moenv_training/SOURCES.md)
+- [Field mapping and evidence workflow](examples/moenv_training/FIELD_MAP.md)
+- [Scope and acceptance contract](docs/MOENV_TRAINING_CONTRACT.md)
+
+```sh
+uv run python -m ghg_assurance_graph.moenv_example --out artifacts/moenv-training
+uv run ghgag validate artifacts/moenv-training/2024/package.json
+```
+
+Historical electricity factor vintages are replayed for teaching; synthetic fuel
+LHV/activity and unquantified uncertainty mean this is not a current statutory
+filing or assurance opinion. Canonical CO2e projection is explicit; gas-resolved
+companion tables do not add a gas schema to the core.
+
+## Earlier synthetic software-regression example
 
 Start with the [illustrated PDF workbook](docs/user-guide/GUIDE.pdf) ([HTML](docs/user-guide/GUIDE.html)), then the [ExampleCo-GHG-001 step-by-step guide](examples/worked_example/README.md)
 and [complete sample report](examples/worked_example/sample/REPORT.md).
@@ -52,9 +71,11 @@ verified evidence packages and Obsidian notes, with offline command receipts.
 All activities, factors and source documents are explicitly fictional; simulated
 reviews are not human assurance. The [ten hand-authored cases](examples/README.md)
 remain small schema examples, distinct from the three-snapshot ExampleCo-GHG-001 workflow.
-Public-company demonstration inputs/outputs have been removed from the current tree:
-missing upstream records cannot be repaired by invented data. Historical tags and
-release assets remain unchanged; the generic reported-disclosure API is retained.
+The primary collection workflow is now the [MOENV-guided two-year internal training case](examples/moenv_training/README.md).
+The older ExampleCo benchmark remains a software regression suite, not an industry
+reference, company comparison or substitute for MOENV collection design.
+The optional reported-assertion API is retained only as a bounded interoperability
+feature; it is not the project evaluation dataset.
 
 ## Reproduce locally
 

@@ -1,0 +1,182 @@
+{
+  "GWP": {
+    "CH4": "28",
+    "CO2": "1",
+    "CO2e": "1",
+    "HFC-134a": "1300",
+    "N2O": "265"
+  },
+  "LHV": {
+    "boiler": "38",
+    "generator": "36",
+    "new-generator": "36"
+  },
+  "boundary": [
+    {
+      "boundary": "single fictional plant under operational control",
+      "exclusions": "onsite process gas; SF6/PFC/NF3; onsite wastewater; purchased steam; biomass",
+      "facility_id": "demo-plant",
+      "reason": "scenario has no relevant process/equipment; sanitary wastewater discharged to public sewer with no onsite anaerobic treatment; verify in any real application",
+      "site_plan_evidence": "scenario",
+      "synthetic": true,
+      "year": 2023
+    }
+  ],
+  "electricity_factor_policy": "historical-vintage replay, not latest-factor compliance",
+  "energy": [
+    {
+      "evidence_id": "scenario",
+      "generated_steam_t": "0",
+      "note": "synthetic generator electricity used onsite; do not add it again as purchased electricity; boiler produces hot water, not steam",
+      "purchased_kwh": "127800",
+      "purchased_steam_t": "0",
+      "self_generated_kwh": "1200",
+      "sold_kwh": "0",
+      "sold_steam_t": "0",
+      "year": 2023
+    }
+  ],
+  "event": "new-generator installed 2024-07-01; no organizational acquisition",
+  "license": "MIT",
+  "production": [
+    {
+      "evidence_id": "scenario",
+      "hours_per_day": "8",
+      "operating_days": "250",
+      "process_id": "demo-production",
+      "product": "fictional metal components",
+      "production": "12000",
+      "unit": "pieces",
+      "year": 2023
+    }
+  ],
+  "source_register": [
+    {
+      "biomass": false,
+      "cogeneration": false,
+      "direct_or_energy_indirect": "direct",
+      "emission_type": "固定燃燒",
+      "end_date": "ongoing",
+      "equipment_id": "boiler",
+      "evidence_id": "scenario",
+      "gases": "CO2;CH4;N2O",
+      "material": "天然氣",
+      "process_id": "demo-utilities",
+      "source_id": "boiler",
+      "source_name": "天然氣鍋爐",
+      "start_date": "before-2023",
+      "status": "included",
+      "year": 2023
+    },
+    {
+      "biomass": false,
+      "cogeneration": false,
+      "direct_or_energy_indirect": "direct",
+      "emission_type": "固定燃燒",
+      "end_date": "ongoing",
+      "equipment_id": "generator",
+      "evidence_id": "scenario",
+      "gases": "CO2;CH4;N2O",
+      "material": "柴油",
+      "process_id": "demo-utilities",
+      "source_id": "generator",
+      "source_name": "柴油備援發電機",
+      "start_date": "before-2023",
+      "status": "included",
+      "year": 2023
+    },
+    {
+      "biomass": false,
+      "cogeneration": false,
+      "direct_or_energy_indirect": "direct",
+      "emission_type": "固定燃燒",
+      "end_date": "ongoing",
+      "equipment_id": "new-generator",
+      "evidence_id": "scenario",
+      "gases": "CO2;CH4;N2O",
+      "material": "柴油",
+      "process_id": "demo-utilities",
+      "source_id": "new-generator",
+      "source_name": "新增柴油備援發電機",
+      "start_date": "2024-07-01",
+      "status": "not-installed",
+      "year": 2023
+    },
+    {
+      "biomass": false,
+      "cogeneration": false,
+      "direct_or_energy_indirect": "direct",
+      "emission_type": "逸散",
+      "end_date": "ongoing",
+      "equipment_id": "cooling",
+      "evidence_id": "scenario",
+      "gases": "HFCs",
+      "material": "HFC-134a",
+      "process_id": "demo-utilities",
+      "source_id": "cooling",
+      "source_name": "HFC-134a空調系統",
+      "start_date": "before-2023",
+      "status": "included",
+      "year": 2023
+    },
+    {
+      "biomass": false,
+      "cogeneration": false,
+      "direct_or_energy_indirect": "energy-indirect",
+      "emission_type": "外購電力",
+      "end_date": "ongoing",
+      "equipment_id": "electricity",
+      "evidence_id": "scenario",
+      "gases": "CO2e",
+      "material": "電力",
+      "process_id": "demo-utilities",
+      "source_id": "electricity",
+      "source_name": "外購電力總表",
+      "start_date": "before-2023",
+      "status": "included",
+      "year": 2023
+    }
+  ],
+  "synthetic": true,
+  "tests": [
+    {
+      "evidence_id": "scenario",
+      "laboratory": "none",
+      "parameter": "lower-heating-value",
+      "qualification": "not-established",
+      "source_id": "boiler",
+      "status": "synthetic-not-measured",
+      "test_date": "not-performed",
+      "test_method": "synthetic-assumption-not-laboratory",
+      "unit": "MJ/activity-unit",
+      "value": "38",
+      "year": 2023
+    },
+    {
+      "evidence_id": "scenario",
+      "laboratory": "none",
+      "parameter": "lower-heating-value",
+      "qualification": "not-established",
+      "source_id": "generator",
+      "status": "synthetic-not-measured",
+      "test_date": "not-performed",
+      "test_method": "synthetic-assumption-not-laboratory",
+      "unit": "MJ/activity-unit",
+      "value": "36",
+      "year": 2023
+    },
+    {
+      "evidence_id": "scenario",
+      "laboratory": "none",
+      "parameter": "lower-heating-value",
+      "qualification": "not-established",
+      "source_id": "new-generator",
+      "status": "synthetic-not-measured",
+      "test_date": "not-performed",
+      "test_method": "synthetic-assumption-not-laboratory",
+      "unit": "MJ/activity-unit",
+      "value": "36",
+      "year": 2023
+    }
+  ]
+}

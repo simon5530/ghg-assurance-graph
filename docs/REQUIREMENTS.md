@@ -24,3 +24,9 @@ See [Gate A](GATE_A.md), [standards scope](STANDARDS_ALIGNMENT.md) and
 fresh-machine reproduction, archive/DOI and submission gates remain explicit until
 separately evidenced. SoftwareX plus a distinct methods paper is the selected route;
 no recreated JOSS scaffold or journal acceptance claim.
+
+## Current collection scope
+
+[MOENV training contract](MOENV_TRAINING_CONTRACT.md) supersedes listed-company
+benchmarking as the primary example. Use complete fictional internal evidence
+for at least two annual periods; never reconstruct a real company’s missing logs.

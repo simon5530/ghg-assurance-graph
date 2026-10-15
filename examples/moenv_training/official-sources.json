@@ -1,0 +1,51 @@
+{
+  "listing_url": "https://ghgregistry.moenv.gov.tw/epa_ghg/Downloads/FileDownloads.aspx?Type_ID=1",
+  "sources": [
+    {
+      "file": "guideline.pdf",
+      "title": "溫室氣體排放量盤查作業指引113年版.pdf",
+      "url": "https://ghgregistry.moenv.gov.tw/upload/Tools/AI/%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94%E6%8E%92%E6%94%BE%E9%87%8F%E7%9B%A4%E6%9F%A5%E4%BD%9C%E6%A5%AD%E6%8C%87%E5%BC%95113%E5%B9%B4%E7%89%88.pdf",
+      "sha256": "0d7dd1d2ffa208c29d2e9cf0c51c927e14fa2da898eb935ad668311dd69503e9",
+      "bytes": 4799668,
+      "retrieved_at": "2026-10-15",
+      "listing_updated_at": "2024-03-07"
+    },
+    {
+      "file": "report.odt",
+      "title": "盤查報告書參考範本_各行業通用.odt",
+      "url": "https://ghgregistry.moenv.gov.tw/upload/Tools/AI/%E7%9B%A4%E6%9F%A5%E5%A0%B1%E5%91%8A%E6%9B%B8%E5%8F%83%E8%80%83%E7%AF%84%E6%9C%AC_%E5%90%84%E8%A1%8C%E6%A5%AD%E9%80%9A%E7%94%A8.odt",
+      "sha256": "1d253c71eb43f0d5c0f3fc79469d812e0e32f5a1a476fccad2042f65a3455013",
+      "bytes": 440688,
+      "retrieved_at": "2026-10-15",
+      "listing_updated_at": "2024-03-05"
+    },
+    {
+      "file": "inventory.ods",
+      "title": "溫室氣體排放量清冊表單(範例).ods",
+      "url": "https://ghgregistry.moenv.gov.tw/upload/Tools/AI/%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94%E6%8E%92%E6%94%BE%E9%87%8F%E6%B8%85%E5%86%8A%E8%A1%A8%E5%96%AE%28%E7%AF%84%E4%BE%8B%29.ods",
+      "sha256": "5fd54c596bca2b5b533fe96f57078b9c1204dd0588fee258f6bcb494a6028e8c",
+      "bytes": 916179,
+      "retrieved_at": "2026-10-15",
+      "listing_updated_at": "2026-06-04"
+    },
+    {
+      "file": "codes.ods",
+      "title": "溫室氣體盤查作業相關代碼檔V2.ods",
+      "url": "https://ghgregistry.moenv.gov.tw/upload/Tools/AI/%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94%E7%9B%A4%E6%9F%A5%E4%BD%9C%E6%A5%AD%E7%9B%B8%E9%97%9C%E4%BB%A3%E7%A2%BC%E6%AA%94V2.ods",
+      "sha256": "6799ac6cc9a0a4c5e8b51202289d271a5c0ead0181fac7cb61ec99f3e46c320b",
+      "bytes": 258292,
+      "retrieved_at": "2026-10-15",
+      "listing_updated_at": "2026-02-24"
+    },
+    {
+      "file": "factors.ods",
+      "title": "113年2月5日公告溫室氣體排放係數.ods",
+      "url": "https://ghgregistry.moenv.gov.tw/upload/Tools/AI/113%E5%B9%B42%E6%9C%885%E6%97%A5%E5%85%AC%E5%91%8A%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94%E6%8E%92%E6%94%BE%E4%BF%82%E6%95%B8.ods",
+      "sha256": "085fe962e158078e5b3383568b4eeeda0466373ae2d0f62f7870efa0a0dcd0b0",
+      "bytes": 130033,
+      "retrieved_at": "2026-10-15",
+      "listing_updated_at": "2026-02-24 (download entry; announcement 2024-02-05)"
+    }
+  ],
+  "redistribution": "Source bytes/extracts not bundled; original field designs and limited attributed numeric parameters only."
+}

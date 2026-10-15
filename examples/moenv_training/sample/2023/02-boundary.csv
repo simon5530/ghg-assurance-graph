@@ -1,0 +1,2 @@
+year,facility_id,boundary,site_plan_evidence,exclusions,reason,synthetic
+2023,demo-plant,single fictional plant under operational control,scenario,onsite process gas; SF6/PFC/NF3; onsite wastewater; purchased steam; biomass,scenario has no relevant process/equipment; sanitary wastewater discharged to public sewer with no onsite anaerobic treatment; verify in any real application,True

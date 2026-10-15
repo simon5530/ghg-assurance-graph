@@ -1,0 +1,6 @@
+year,source_id,source_name,process_id,equipment_id,material,direct_or_energy_indirect,emission_type,gases,biomass,cogeneration,status,start_date,end_date,evidence_id
+2024,boiler,天然氣鍋爐,demo-utilities,boiler,天然氣,direct,固定燃燒,CO2;CH4;N2O,False,False,included,before-2023,ongoing,scenario
+2024,generator,柴油備援發電機,demo-utilities,generator,柴油,direct,固定燃燒,CO2;CH4;N2O,False,False,included,before-2023,ongoing,scenario
+2024,new-generator,新增柴油備援發電機,demo-utilities,new-generator,柴油,direct,固定燃燒,CO2;CH4;N2O,False,False,included,2024-07-01,ongoing,scenario
+2024,cooling,HFC-134a空調系統,demo-utilities,cooling,HFC-134a,direct,逸散,HFCs,False,False,included,before-2023,ongoing,scenario
+2024,electricity,外購電力總表,demo-utilities,electricity,電力,energy-indirect,外購電力,CO2e,False,False,included,before-2023,ongoing,scenario

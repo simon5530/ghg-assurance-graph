@@ -1,0 +1,2 @@
+year,organization,facility_id,registration_id,industry,owner_role,contact_role,assurance_status,synthetic
+2023,示範製造廠（完全虛構）,demo-plant,NOT-A-REAL-REGISTRATION,generic-manufacturing-training,simulated-manager,simulated-coordinator,not-assured,True

@@ -71,15 +71,6 @@ Design owner: repository owner; research Gate A HOLD preserved.
 Tests and operational evidence: see latest RESULTS_LEDGER and PUBLICATION_AUDIT.
 No private ISO source/extract, hosted model experiment or paid service used.
 
-## 2026-09-28 — real public-company assertion workflow
-Tool/model: OpenClaw, openai/gpt-6-astra. Task: additive reported-assertion schema,
-independent primary-source extraction, adversarial review, offline CLI runner and
-qualified-alpha documentation. Raw public reports remain outside Git; only limited
-attributed numeric facts and original mapping notes are included. Human practitioner
-verification is not claimed. Source assurance labels do not become tool approval.
-Independent tests, release/publication checks and measured missingness are recorded
-in the results ledger/audit. No model is needed to reproduce the runtime.
-
 ## 2026-09-28 — original-criteria reconciliation and initial manuscript
 Tool/model: OpenClaw, openai/gpt-6-astra. Tasks: full original-plan review, primary prior-art comparison, executable phase inventory, fresh-host released-source/wheel verification harness, Software Heritage archival request, initial manuscript and deterministic explanatory graphics. Human declarations/domain review remain pending; AI is not an author. Full baseline 448 tests, seven docs oracles, lint/format/build passed; hosted checkpoint tests and independent released-artifact reproduction passed. No licensed ISO text or private attachment is published. Gate A scoped GO is a bounded evidence decision, not fabricated practitioner approval.
 
@@ -91,3 +82,11 @@ fixtures, guide, actual-output report and synthetic-only SoftwareX manuscript.
 Independent arithmetic, executable negative controls and installed-wheel replay
 check encoded behavior, not source truth or practitioner approval. Historical
 release records remain historical. Human author declarations remain pending.
+
+## 2026-10-15 — MOENV training workflow
+
+OpenClaw/openai/gpt-6.1-sol assisted official-source inspection, original internal
+collection design, two-year fictional records, workbook formulas, graph projection
+and deterministic tests. No human approval, practitioner assurance or full legal
+conformity is asserted. No private company data or source PDF/ODF is redistributed.
+The superseded company-comparison execution harness is removed from the current tree.
