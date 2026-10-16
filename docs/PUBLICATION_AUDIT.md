@@ -317,3 +317,32 @@ publication. Original XLSX binaries are intentional reviewed deliverables; no
 third-party workbook is included. Metadata/private-path checks cover ZIP contents.
 Remote commit and hosted-CI results are reported after publication, not inferred
 from these local checks.
+
+## 2026-10-16 — primary workflow, usage and SoftwareX reconciliation
+
+Found and corrected stale ExampleCo consumers after the MOENV landing-page update:
+README main commands, Chinese operating guide,14-page PDF/HTML,manuscript abstract,
+Table1,primary figures,metadata/source ledgers and CI now share the 2023/2024 case.
+The installed CLI implementations execute33 recorded invocations (30success,
+3intentional exit2 rejections),nine result explanations,unreviewed4/5states,two
+valid canonical crates and127/140Markdown notes. Legacy CarbonDiff input is
+explicitly rejected and never presented as primary-case attribution. Monthly
+source documents remain outside closed canonical crates; handoff preserves the
+whole output. Workbooks are not claimed as an automatic Excel-to-graph importer.
+
+Local proof:477tests pass,seven documentation-oracle tests pass,lint/format and
+relative links pass. Two complete primary executions under different hash seeds
+match all file paths and bytes; reference subset hashes bind actual receipts.
+Guide14pages and paper10pages were rendered and inspected; full text/geometry
+checks confirm numeric values,no private paths and no out-of-page text. The paper's
+Table1caption now stays with its table. Metrics3038conservative words,149abstract
+words,twofigures satisfy the previously inspected template budget,not submission
+or journal acceptance. Guide/source identity and primary table/figure literals
+are independently asserted in tests.
+
+Gitleaks current-tree and reachable-history scans are clear. Original generated
+PDFs/SVGs are deliberately included; no source PDF/ODF or licensed standard is
+published. Matplotlib3.10.7 was installed only in a temporary authoring environment,
+not the runtime lock or repository environment. ReportLab authoring reused the
+provided runtime. PDF metadata/browser bytes are not a cross-platform replay
+contract. Remote SHA and hosted workflow receipts are checked after push.

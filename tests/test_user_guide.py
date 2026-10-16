@@ -12,28 +12,30 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def test_workbook_data_matches_literal_scope_oracle():
     data = json.loads((ROOT / "docs/user-guide/figure-data.json").read_text())
-    assert data["pages"] == 16
-    assert data["totals"] == {"2025-v1": 3820, "2025-v2": 3850, "2026-v1": 4060}
-    assert data["scopes"] == {
-        "2025-v1": {"1": 2320, "2": 500, "3": 1000},
-        "2025-v2": {"1": 2340, "2": 500, "3": 1010},
-        "2026-v1": {"1": 2770, "2": 480, "3": 810},
-    }
-    sample = ROOT / "examples/worked_example/sample"
+    assert data["profile"] == "moenv-guide/1"
+    assert data["pages"] == 14
+    assert data["commands"] == 33
+    expected = {"2023": "95797.473564", "2024": "95229.409244"}
+    for year, total in expected.items():
+        assert Fraction(data["years"][year]["total_kg_co2e"]) == Fraction(total)
+        assert sum(
+            Fraction(v) for v in data["years"][year]["source_amounts_kg_co2e"].values()
+        ) == Fraction(total)
+    sample = ROOT / "examples/moenv_training/workflow"
     assert (
         data["run_manifest_sha256"]
-        == hashlib.sha256((sample / "full-run-manifest.json").read_bytes()).hexdigest()
+        == hashlib.sha256((sample / "manifest.json").read_bytes()).hexdigest()
     )
-    for name, expected in json.loads((sample / "selected-manifest.json").read_text())[
-        "sha256"
-    ].items():
-        assert hashlib.sha256((sample / name).read_bytes()).hexdigest() == expected
+    assert (
+        data["summary_sha256"] == hashlib.sha256((sample / "summary.json").read_bytes()).hexdigest()
+    )
     pdf = (ROOT / "docs/user-guide/GUIDE.pdf").read_bytes()
     assert pdf.startswith(b"%PDF-") and pdf.rstrip().endswith(b"%%EOF")
     assert len(pdf) < 10_000_000
     text = (ROOT / "docs/user-guide/GUIDE.html").read_text()
-    assert text.count("<section>") == 16
-    assert "ACME" not in text and "not trademark" in text
+    assert text.count("<section>") == 14
+    assert "MOENV" in text and "ExampleCo-GHG-001" not in text
+    assert "not CarbonDiff" in text and "unreviewed" in text
 
 
 def test_safe_input_exercise_regenerates_and_refuses_overwrite(tmp_path):

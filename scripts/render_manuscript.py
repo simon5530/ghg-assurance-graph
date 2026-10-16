@@ -18,12 +18,12 @@ PAPER = ROOT / "paper/softwarex"
 
 def architecture():
     boxes = [
-        (25, 35, "ExampleCo-GHG-001 / calculated", "Synthetic activity / factor / review"),
-        (465, 35, "Optional reported profile", "Generic assertions; not evaluated"),
+        (25, 35, "MOENV 2023 / 2024 collection", "120 monthly rows / 122 documents"),
+        (465, 35, "Gas companion calculations", "Official references / synthetic LHV"),
         (25, 145, "Typed records + RDF / PROV", "Required lineage; no guessed links"),
-        (465, 145, "ReportedAssertion graph", "No invented calculation or factor"),
-        (25, 255, "Selected checks + CarbonDiff", "Reconcile; expose UNKNOWN"),
-        (465, 255, "Checks + per-series differences", "Not assessable; causes UNKNOWN"),
+        (465, 145, "Explicit CO2e projection", "Core gas schema remains unchanged"),
+        (25, 255, "Selected checks / 9 lineages", "All results remain unreviewed"),
+        (465, 255, "Arithmetic year comparison", "Not CarbonDiff; causes UNKNOWN"),
         (245, 365, "Portable local inspection", "JSON / RDF / RO-Crate / Markdown"),
     ]
     svg = [
@@ -103,13 +103,13 @@ def render(source):
         i += 1
     return (
         """<!doctype html><html lang="en"><meta charset="utf-8">
-<title>GHG Assurance Graph — initial manuscript</title><style>
+<title>GHG Assurance Graph — MOENV reconciled content draft</title><style>
 @page{size:A4;margin:17mm 18mm;}body{font:11pt/1.36 Georgia,serif;color:#17212b;max-width:180mm;margin:24px auto;}
 h1{font:700 22pt/1.2 Arial,sans-serif;color:#173d52;}h2{font:700 15pt/1.2 Arial,sans-serif;margin-top:1.4em;}
 h3{font:700 12pt/1.2 Arial,sans-serif;margin-top:1.2em;}h1,h2,h3{break-after:avoid;}
 p{orphans:3;widows:3;margin:.65em 0;}a{color:#235c7c;overflow-wrap:anywhere;text-decoration:none;}
 figure{margin:1em 0 .4em;break-inside:avoid;break-after:avoid;}img{width:100%;max-height:130mm;object-fit:contain;}
-.caption{font:9.5pt/1.35 Arial,sans-serif;}table{border-collapse:collapse;width:100%;font:9pt/1.3 Arial,sans-serif;margin:1em 0;}
+.caption{font:9.5pt/1.35 Arial,sans-serif;break-after:avoid;break-inside:avoid;}table{border-collapse:collapse;width:100%;font:9pt/1.3 Arial,sans-serif;margin:1em 0;break-inside:avoid;}
 th,td{border-bottom:1px solid #b8c4cd;padding:6px;text-align:left;overflow-wrap:anywhere;}tr{break-inside:avoid;}th{border-top:1px solid #466274;}
 pre{font:8.3pt/1.4 monospace;white-space:pre-wrap;overflow-wrap:anywhere;padding:10px;background:#f2f5f7;}
 .bullet{margin:.2em 0 .2em 1em;}@media print{body{margin:0;max-width:none;}}</style><main>"""

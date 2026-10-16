@@ -1,28 +1,25 @@
-# Illustrated workbook
+# Primary illustrated user guide — MOENV 2023/2024
 
-- [16-page PDF](GUIDE.pdf): printable, vector charts and actual output excerpts.
-- [Editable standalone HTML](GUIDE.html): no external assets.
-- [Full reference guide](../../examples/worked_example/README.md) and [sample report](../../examples/worked_example/sample/REPORT.md).
-- [Figure data](figure-data.json) records totals, scopes and the complete run manifest digest.
-
-From the repository root, after `uv sync --locked`:
-
-```sh
-uv run --locked python scripts/run_example.py --out artifacts/worked-example
-uv run --locked python scripts/modify_example.py --out artifacts/electricity-exercise
-uv run --locked ghgag validate artifacts/electricity-exercise
-```
-
-To regenerate the PDF/HTML, use a separate authoring environment with ReportLab 4.4.10 (MIT-compatible BSD license), then run:
+- [14-page PDF](GUIDE.pdf), [editable standalone HTML](GUIDE.html).
+- [Chinese operating instructions](../USAGE.zh-TW.md).
+- [Collection/source mapping](../../examples/moenv_training/README.md).
+- [Actual 33-command reference report](../../examples/moenv_training/workflow/REPORT.md).
+- [Figure data](figure-data.json) binds both annual totals and all guide counts to the executed summary/manifest.
 
 ```sh
-python scripts/render_user_guide.py --run artifacts/worked-example
+uv sync --locked
+uv run python scripts/run_moenv_example.py --out artifacts/moenv-worked
 ```
 
-The renderer reads completed JSON and report artifacts, performs numeric assertions and rejects page overflow. No private data or hosted rendering service is used. PyMuPDF is optional local visual QA tooling, not a redistributed application dependency. All 16 pages were rendered and inspected; text bounds and extracted numeric values were checked. Desktop Obsidian behavior is explicitly unverified.
+The guide's primary case is 2023/2024, not the legacy ExampleCo regression.
+It covers raw balances, collection checking, gas-to-CO2e projection, graph queries,
+unreviewed results, arithmetic comparison, canonical packages, Markdown exports,
+expected failure controls and safe handoff. Legacy CarbonDiff does not accept
+these folders; no old benchmark score is presented as a MOENV observation.
 
-## Naming migration, 2026-09-29
-
-Current fictional organization: **ExampleCo-GHG-001**. CompanyX is already used by a real cyber-insurance business; see the [KHIPU Networks announcement](https://www.khipu-networks.com/news/companyx-partnership/) dated 2025-08-14, checked 2026-09-29. An exact-label web search for the chosen identifier returned no results that day. This is not legal, trademark or global-availability clearance.
-
-The former ACME fixture namespace and runner were renamed: use `scripts/run_example.py` and `examples/worked_example/`. No old namespace alias is emitted: mixing old and new identities would misrepresent continuity. Regenerate all dependent evidence, manifests, figures and exports. Old URLs into the source tree may require the historical commit; historical tags/releases and their hashes are untouched. This is a source/documentation update within 0.4.0a1, not a newly minted release. Schema 0.1.0, all 45 products, totals 3820/3850/4060 and deltas 30/210 are unchanged. Historical changelog/audit entries preserve their genuine former labels.
+Authoring only: a separate environment with ReportLab 4.4.10 (BSD) can run
+`python scripts/render_user_guide.py --run artifacts/moenv-worked`.
+The main software's locked dependencies do not include PDF authoring libraries.
+All pages are rendered for visual review and checked for text overflow; charts
+use saved real execution results, not application screenshots. Native Excel,
+desktop Obsidian, source authentication and human assurance remain unverified.

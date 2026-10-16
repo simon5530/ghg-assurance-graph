@@ -1,26 +1,47 @@
 {
-  "totals": {
-    "2025-v1": 3820,
-    "2025-v2": 3850,
-    "2026-v1": 4060
-  },
-  "scopes": {
-    "2025-v1": {
-      "2": 500.0,
-      "1": 2320.0,
-      "3": 1000.0
+  "commands": 33,
+  "delta_kg_co2e": "-568.0643200",
+  "pages": 14,
+  "profile": "moenv-guide/1",
+  "run_manifest_sha256": "9567f95d04d6a233f78670fda0ce6db33fe91bf9ad8335d420f413d09ffae69a",
+  "summary_sha256": "4b3b9149af57167ac2c4ffddf9f18e755f591e30f9a5535eb3d64ecf4a3ec3c5",
+  "years": {
+    "2023": {
+      "activity_rows": 60,
+      "canonical_records": 50,
+      "evidence_documents": 61,
+      "lineage_explanations": 4,
+      "monthly_documents": 60,
+      "package_valid": true,
+      "results": 4,
+      "source_amounts_kg_co2e": {
+        "boiler": "27270.87138",
+        "cooling": "3900.0",
+        "electricity": "63133.2",
+        "generator": "1493.402184"
+      },
+      "total_kg_co2e": "95797.4735640",
+      "unreviewed_results": 4,
+      "vault_notes": 127
     },
-    "2025-v2": {
-      "2": 500.0,
-      "1": 2340.0,
-      "3": 1010.0
-    },
-    "2026-v1": {
-      "2": 480.0,
-      "1": 2770.0,
-      "3": 810.0
+    "2024": {
+      "activity_rows": 60,
+      "canonical_records": 61,
+      "evidence_documents": 61,
+      "lineage_explanations": 5,
+      "monthly_documents": 60,
+      "package_valid": true,
+      "results": 5,
+      "source_amounts_kg_co2e": {
+        "boiler": "24710.22618",
+        "cooling": "2600.0",
+        "electricity": "66265.2",
+        "generator": "1332.821304",
+        "new-generator": "321.16176"
+      },
+      "total_kg_co2e": "95229.4092440",
+      "unreviewed_results": 5,
+      "vault_notes": 140
     }
-  },
-  "run_manifest_sha256": "de202e5180ee675d8fa25f2f48d3ae79755d7560ace67294c4da33117ab63a6f",
-  "pages": 16
+  }
 }

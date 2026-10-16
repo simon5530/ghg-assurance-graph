@@ -1,5 +1,9 @@
 # Deterministic evidence tools (Phase 9)
 
+> For the runnable primary MOENV 2023/2024 example, start with the
+> [operating guide](USAGE.zh-TW.md). API/phase examples below are reference or
+> legacy regression material, not an alternative primary dataset.
+
 EvidenceTools exposes the seven planned actions using the existing graph, Core
 SHACL, CarbonDiff and RO-Crate implementations. It is not an agent, AI integration,
 natural-language interpreter, certification service or assurance opinion. No LLM,
@@ -121,3 +125,12 @@ tests cover compatibility, injection/unknown requests, strict limits, truncation
 resource budgets, snapshot binding, response mutation, denied export, existing
 destinations and symlinks. This is executable retrieval/arithmetic/permission
 verification, not an evaluation of AI reasoning or real assurance performance.
+
+## Primary-case operating path
+
+The [MOENV operating guide](USAGE.zh-TW.md) and `scripts/run_moenv_example.py`
+execute these capabilities on the 2023/2024 primary case. The original Phase
+contracts and benchmark examples above remain API/regression references, not
+the primary dataset. Collection CSV checks are separate from canonical checks;
+legacy CarbonDiff does not accept the MOENV folders, and canonical crates alone
+do not contain the external monthly-document tree.

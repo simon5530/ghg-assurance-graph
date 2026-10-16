@@ -38,7 +38,21 @@
 與電力係數變更。電力採歷史版本作教學，不是現行申報所需最新係數的判定。
 不確定性、儀器校正及人員查驗均未實際完成，不宣稱整體標準符合性。
 
-## 重現與追溯
+## 一鍵完整操作
+
+[中文使用方法](../../docs/USAGE.zh-TW.md)、[14頁圖文手冊](../../docs/user-guide/GUIDE.pdf)
+及 [SoftwareX草稿](../../paper/softwarex/MANUSCRIPT.md)皆以本案例為基準。
+
+```sh
+uv sync --locked
+uv run python scripts/run_moenv_example.py --out artifacts/moenv-worked
+```
+
+先讀輸出REPORT.md。33次正式CLI回執包含資料檢查、9筆追溯、未覆核狀態、
+兩份RO-Crate驗證與Markdown匯出。跨年比較是原因UNKNOWN的算術差異，
+不是尚未接入本案例的legacy CarbonDiff。[已執行參考回執](workflow/REPORT.md)。
+
+## 僅重建資料及追溯
 
 ```sh
 uv run python -m ghg_assurance_graph.moenv_example --out artifacts/moenv-training
@@ -50,6 +64,6 @@ uv run ghgag graph build artifacts/moenv-training/2024/package.json
 uv run pytest tests/test_moenv_example.py -q
 ```
 
-新輸出路徑必須不存在，避免覆寫。CSV／JSON／報告可重現；RDF 以圖同構驗證，
-不承諾空白節點序列化位元一致。工作簿為發布的可編輯檢視，不是核心執行依賴。
+新輸出路徑必須不存在，避免覆寫。CSV／JSON／報告與排序Turtle可重現；完整workflow以不同hash seed
+核對全檔案位元一致，另做RDF圖同構檢查。工作簿為發布的可編輯檢視，不是核心執行依賴。
 來源 PDF／ODF 原檔不放入 Repo；[檢視雜湊清單](official-sources.json)。

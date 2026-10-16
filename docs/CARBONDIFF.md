@@ -1,3 +1,8 @@
+> Primary-case boundary: the MOENV 2023/2024 folders do not satisfy this legacy
+> raw-snapshot contract. Use the labelled arithmetic comparison in
+> [the operating guide](USAGE.zh-TW.md); do not transfer the old benchmark's semantic
+> decomposition results to the new example.
+
 # CarbonDiff — experimental Phase 5 Python API
 
 `ghg_assurance_graph.diff` compares validated ExampleCo-GHG-001 raw snapshots. It does not

@@ -9,28 +9,23 @@ From the repository with Python 3.12 and locked uv environment:
 
 ~~~sh
 uv sync --locked
-mkdir -p artifacts
-uv run ghgag graph build benchmark/generated/2025-v1 > artifacts/exampleco-ghg-001.ttl
-uv run ghgag graph explain urn:ghgag:exampleco-ghg-001-2025-v1-electricity-result:v1 --input benchmark/generated/2025-v1
-uv run ghgag graph query results_using_factor --target urn:ghgag:exampleco-ghg-001-2025-v1-electricity-factor:v1 --input benchmark/generated/2025-v1
-uv run ghgag graph query records_supported_by_evidence --target urn:ghgag:exampleco-ghg-001-2025-v1-electricity-evidence:v1 --input benchmark/generated/2025-v1
-uv run ghgag graph query unreviewed_results --input benchmark/generated/2025-v1 benchmark/generated/2025-v2 benchmark/generated/2026-v1
-uv run ghgag graph query revisions --target urn:ghgag:exampleco-ghg-001-2025-v1-electricity-result:v1 --input benchmark/generated/2025-v1 benchmark/generated/2025-v2 benchmark/generated/2026-v1
-uv run pytest -q
+uv run python scripts/run_moenv_example.py --out artifacts/moenv-worked
+uv run ghgag graph build artifacts/moenv-worked/generated/2024/package.json
+uv run ghgag graph explain urn:ghgag:moenv-demo-2024-electricity-result:v1 --input artifacts/moenv-worked/generated/2024/package.json
+uv run ghgag graph query results_using_factor --target urn:ghgag:moenv-demo-2024-electricity-factor:v1 --input artifacts/moenv-worked/generated/2024/package.json
+uv run ghgag graph query records_supported_by_evidence --target urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1 --input artifacts/moenv-worked/generated/2024/package.json
+uv run ghgag graph query unreviewed_results --input artifacts/moenv-worked/generated/2024/package.json
 ~~~
 
-Build accepts one or more package JSON files or directories containing package.json.
-It emits sorted Turtle triples to stdout; redirection is caller-owned. Explain and
-query rebuild in memory from explicit inputs; they do not open the Turtle output.
-All query values are strings; value/unit preserve serialized RDF literals.
-Electricity in 2025-v1 explains to 500.0 kg_CO2e, its source/activity/evidence,
-factor/method/GWP, inventory/period/boundary and simulated accepted review.
+Build accepts canonical package files or folders. It emits sorted Turtle to stdout;
+explain/query rebuild from the explicit package, not from the Turtle output.
+The 2024 electricity result explains to 66265.2 kg_CO2e and status unreviewed.
+All nine MOENV result lineages resolve; the years retain four/five unreviewed results.
+Monthly source files remain external to the canonical graph/crate; use the collection
+checker as well. See [operating instructions](USAGE.zh-TW.md).
 
-The draft specification's benchmark/2025_v1, result:CAT1-0042 and query-file syntax
-are deliberately adapted to actual generated paths, canonical URNs and allowlisted
-query names. There is no arbitrary SPARQL file execution or default hidden graph.
-Missing/wrong-kind IDs and invalid inputs fail nonzero, not as a silent empty answer.
-A legitimate query with no matches returns an empty JSON list.
+No arbitrary SPARQL file execution or hidden graph exists. Missing/wrong-kind IDs
+fail nonzero. A legitimate query with no matches returns an empty JSON list.
 
 ## Semantics and boundaries
 
@@ -60,7 +55,7 @@ A legitimate query with no matches returns an empty JSON list.
   caller-mutated RDF graphs are not integrity-validated at query time. No SHACL or
   general RDF assurance validator is implemented in this phase.
 
-The 45 synthetic results trace all required asserted nodes. This is not evidence
+The older benchmark separately traces 45 synthetic results; those counts are not the nine-result MOENV case. This is not evidence
 that an underlying document is true, the review actually occurred, the inventory
 is complete, or an organization is certified. No new dependency, remote service,
 licensed standard, factor database or source PDF is included. Later phases stopped.

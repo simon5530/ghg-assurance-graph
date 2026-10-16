@@ -764,9 +764,9 @@ def build(out):
             emit(f"{year}/{form}.csv", csv_bytes(FORMS[form], values))
         package = canonical(year, rows, docs, gas)
         emit(f"{year}/package.json", encode(package.model_dump(mode="json")))
-        from .graph import build_graph
+        from .graph import build_graph, deterministic_turtle
 
-        turtle = build_graph([package]).serialize(format="turtle").rstrip() + "\n"
+        turtle = deterministic_turtle(build_graph([package])).rstrip() + "\n"
         emit(f"{year}/graph.ttl", turtle.encode())
         report = f"# {year} 年示範盤查報告（合成資料，非查驗聲明）\n\n"
         sections = [
@@ -862,13 +862,16 @@ def check_collection(folder):
     }
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--out", type=Path)
     group.add_argument("--check", type=Path)
-    args = parser.parse_args()
-    result = check_collection(args.check) if args.check else build(args.out)
+    args = parser.parse_args(argv)
+    try:
+        result = check_collection(args.check) if args.check else build(args.out)
+    except (OSError, ValueError, KeyError, TypeError):
+        parser.exit(2, "error: invalid MOENV training input or destination; no result asserted\n")
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 

@@ -1,0 +1,26 @@
+[
+  {
+    "activity": "urn:ghgag:moenv-demo-2023-electricity-activity:v1",
+    "boundary": "urn:ghgag:moenv-demo-2023-boundary:v1",
+    "calculation": "urn:ghgag:moenv-demo-2023-electricity-run:v1",
+    "evidence": "urn:ghgag:moenv-demo-2023-electricity-activity-evidence:v1",
+    "factor": "urn:ghgag:moenv-demo-2023-electricity-factor:v1",
+    "factorEvidence": "urn:ghgag:moenv-demo-2023-electricity-factor-evidence:v1",
+    "factorVersion": "1",
+    "gwp": "urn:ghgag:moenv-demo-2023-electricity-gwp:v1",
+    "gwpEvidence": "urn:ghgag:moenv-demo-2023-electricity-factor-evidence:v1",
+    "inventory": "urn:ghgag:moenv-demo-2023-inventory:v1",
+    "inventoryVersion": "1",
+    "method": "urn:ghgag:moenv-demo-2023-electricity-method:v1",
+    "methodEvidence": "urn:ghgag:moenv-demo-2023-electricity-factor-evidence:v1",
+    "methodVersion": "1",
+    "period": "urn:ghgag:moenv-demo-2023-period:v1",
+    "result": "urn:ghgag:moenv-demo-2023-electricity-result:v1",
+    "review": "urn:ghgag:moenv-demo-2023-electricity-review:v1",
+    "reviewer": "urn:ghgag:moenv-demo-2023-simulated-review-role:v1",
+    "source": "urn:ghgag:moenv-demo-2023-electricity-source:v1",
+    "status": "unreviewed",
+    "unit": "kg_CO2e",
+    "value": "63133.2"
+  }
+]

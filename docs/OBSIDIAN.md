@@ -1,5 +1,9 @@
 # Obsidian graph export (Phase 7)
 
+> For the runnable primary MOENV 2023/2024 example, start with the
+> [operating guide](USAGE.zh-TW.md). API/phase examples below are reference or
+> legacy regression material, not an alternative primary dataset.
+
 `export_obsidian(graph_or_package, destination)` in
 `ghg_assurance_graph.exporters` creates a new plain-Markdown vault. Open its
 folder with Obsidian and start at `index.md`. No Obsidian installation, plugin,
@@ -40,3 +44,12 @@ records sorted by ID (project canonicalization, not RFC 8785).
 Run `python -m pytest -q tests/test_exporters.py`. Tests independently parse RDF
 for graph isomorphism, compare repeated output, check safe filenames/frontmatter,
 and resolve every wikilink against the actual generated note set.
+
+## Primary-case operating path
+
+The [MOENV operating guide](USAGE.zh-TW.md) and `scripts/run_moenv_example.py`
+execute these capabilities on the 2023/2024 primary case. The original Phase
+contracts and benchmark examples above remain API/regression references, not
+the primary dataset. Collection CSV checks are separate from canonical checks;
+legacy CarbonDiff does not accept the MOENV folders, and canonical crates alone
+do not contain the external monthly-document tree.

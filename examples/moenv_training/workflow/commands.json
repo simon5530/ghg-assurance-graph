@@ -1,0 +1,557 @@
+[
+  {
+    "argv": [
+      "python",
+      "-m",
+      "ghg_assurance_graph.moenv_example",
+      "--out",
+      "generated"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/generation.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/generation.json",
+    "stdout_sha256": "1c07a476fc88649dc6029905e3df8e610a27a1cd99f4b76af244327f8734cf1a"
+  },
+  {
+    "argv": [
+      "python",
+      "-m",
+      "ghg_assurance_graph.moenv_example",
+      "--check",
+      "generated/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/collection-check.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/collection-check.json",
+    "stdout_sha256": "dc21a3eef7479e2b99a1f6a795b517e5a7f982d636617f85c48f94b2964996dd"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "validate",
+      "generated/2023/package.json"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/validation.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/validation.json",
+    "stdout_sha256": "016f05e11e938e286dbf386721f3eae1b31db58ed4541c0dff0a67078819de8f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "build",
+      "generated/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/graph.ttl.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/graph.ttl",
+    "stdout_sha256": "9f12915a9d3e379f2be0eafd5504be89a19f4222ef059e5f9b4814fb3c03566d"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:moenv-demo-2023-boiler-result:v1",
+      "--input",
+      "generated/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/explain/boiler.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/explain/boiler.json",
+    "stdout_sha256": "55fa5af3e816ba3780f70d967123d4d22f1cffe87fe6929f160bb6229e78517f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:moenv-demo-2023-generator-result:v1",
+      "--input",
+      "generated/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/explain/generator.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/explain/generator.json",
+    "stdout_sha256": "a4dd40b84e605a7f70b00f01f88a124a40aa233c8a1824aae2ee3f6f4998c54f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:moenv-demo-2023-cooling-result:v1",
+      "--input",
+      "generated/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/explain/cooling.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/explain/cooling.json",
+    "stdout_sha256": "8c199460b7b8371d81ab7b87b5c134f3309e3486562647706e8c90fd9fb1ab20"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:moenv-demo-2023-electricity-result:v1",
+      "--input",
+      "generated/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/explain/electricity.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/explain/electricity.json",
+    "stdout_sha256": "adfdc690c4e36cbc5006f1ddca09c535452f5b0956bb827fc09979999bc5d3fd"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "query",
+      "unreviewed_results",
+      "--input",
+      "generated/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/unreviewed.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/unreviewed.json",
+    "stdout_sha256": "36ad8049b591a02467aac3413e41a3556c256bdff3e5550923fe4fc026790745"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "query",
+      "results_using_factor",
+      "--target",
+      "urn:ghgag:moenv-demo-2023-electricity-factor:v1",
+      "--input",
+      "generated/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/factor-use.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/factor-use.json",
+    "stdout_sha256": "47a25636d3bad36fd183bebf401da1dd07ef17167d0484cfe095f1f56c427f58"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "query",
+      "records_supported_by_evidence",
+      "--target",
+      "urn:ghgag:moenv-demo-2023-electricity-activity-evidence:v1",
+      "--input",
+      "generated/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/evidence-use.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/evidence-use.json",
+    "stdout_sha256": "d02e318e25ed6ffe82787dd798e16a57e10a1a6c23e5387d77ded79d1b1e3819"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "export",
+      "json-ld",
+      "stages/2023/graph.jsonld",
+      "--input",
+      "generated/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/export-jsonld.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/export-jsonld.json",
+    "stdout_sha256": "9c608695129eae3c9b5e383d602e9046d77c1591f3ee625bb1fdc18fd2fb0c2c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "package",
+      "create",
+      "generated/2023",
+      "--out",
+      "packages/2023",
+      "--created-at",
+      "2026-10-16T00:00:00Z",
+      "--data-version",
+      "moenv-training-1-2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/package-create.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/package-create.json",
+    "stdout_sha256": "c1a75c8b781577c574cccb0e248a12c7bd2afa71300e1aa5953e77fbbdc080ee"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "package",
+      "verify",
+      "packages/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/package-verify.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/package-verify.json",
+    "stdout_sha256": "37149af837b3205140067c0028f3817e08e569f147ee7ce96ddaf2d57fd78812"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "export",
+      "obsidian",
+      "vaults/2023",
+      "--input",
+      "generated/2023"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2023/obsidian.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2023/obsidian.json",
+    "stdout_sha256": "9c608695129eae3c9b5e383d602e9046d77c1591f3ee625bb1fdc18fd2fb0c2c"
+  },
+  {
+    "argv": [
+      "python",
+      "-m",
+      "ghg_assurance_graph.moenv_example",
+      "--check",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/collection-check.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/collection-check.json",
+    "stdout_sha256": "00b986fd1734ae883e976b6f6081de3f74808deec9f587a00e88d3ba1702404b"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "validate",
+      "generated/2024/package.json"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/validation.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/validation.json",
+    "stdout_sha256": "016f05e11e938e286dbf386721f3eae1b31db58ed4541c0dff0a67078819de8f"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "build",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/graph.ttl.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/graph.ttl",
+    "stdout_sha256": "ba3acb1001f8c64418ada107bb19bf10847c183f0910bc37c55c9875c63acfe9"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:moenv-demo-2024-boiler-result:v1",
+      "--input",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/explain/boiler.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/explain/boiler.json",
+    "stdout_sha256": "7e27936443abf6cd93388f7ca80d44290eb371d60f12dfd23aecbbb3ba668fb6"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:moenv-demo-2024-generator-result:v1",
+      "--input",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/explain/generator.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/explain/generator.json",
+    "stdout_sha256": "42dc8530f7da6a37b8b4fa32018fe10d462145cda96027c4433ea3dfb1d02a1a"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:moenv-demo-2024-new-generator-result:v1",
+      "--input",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/explain/new-generator.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/explain/new-generator.json",
+    "stdout_sha256": "3d83afa7b81420f9c65d78920a68bf68f7ff769f8f98fd1f95ffc420f8a42402"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:moenv-demo-2024-cooling-result:v1",
+      "--input",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/explain/cooling.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/explain/cooling.json",
+    "stdout_sha256": "039e3d7ccf8525f6d6f69b591e49e6a23fa123146bb2336b0c8f2680c1ffbc38"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "explain",
+      "urn:ghgag:moenv-demo-2024-electricity-result:v1",
+      "--input",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/explain/electricity.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/explain/electricity.json",
+    "stdout_sha256": "12ec8fa9bc81d217e1447d66a26c062277f525c75afc10cd860cfd094ca02e09"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "query",
+      "unreviewed_results",
+      "--input",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/unreviewed.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/unreviewed.json",
+    "stdout_sha256": "b560f4c6fba0f7a28ef06c0aad120cd41b5c4371a0d7c28645d276dc27774ab9"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "query",
+      "results_using_factor",
+      "--target",
+      "urn:ghgag:moenv-demo-2024-electricity-factor:v1",
+      "--input",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/factor-use.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/factor-use.json",
+    "stdout_sha256": "8353042e87cfe5a17f9670a84966f6557631d1172d75ab3f4824aa503b518344"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "graph",
+      "query",
+      "records_supported_by_evidence",
+      "--target",
+      "urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1",
+      "--input",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/evidence-use.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/evidence-use.json",
+    "stdout_sha256": "ebbf664a62c38b63b402b212a5ec65d51406c148ab30af384b1801c23d246dfb"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "export",
+      "json-ld",
+      "stages/2024/graph.jsonld",
+      "--input",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/export-jsonld.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/export-jsonld.json",
+    "stdout_sha256": "9c608695129eae3c9b5e383d602e9046d77c1591f3ee625bb1fdc18fd2fb0c2c"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "package",
+      "create",
+      "generated/2024",
+      "--out",
+      "packages/2024",
+      "--created-at",
+      "2026-10-16T00:00:00Z",
+      "--data-version",
+      "moenv-training-1-2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/package-create.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/package-create.json",
+    "stdout_sha256": "c1a75c8b781577c574cccb0e248a12c7bd2afa71300e1aa5953e77fbbdc080ee"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "package",
+      "verify",
+      "packages/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/package-verify.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/package-verify.json",
+    "stdout_sha256": "2c6332351775c26adf6f87645414eb3f6720d8a5de80fdf8e572e8baba2f3c91"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "export",
+      "obsidian",
+      "vaults/2024",
+      "--input",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "stderr": "stages/2024/obsidian.json.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "stages/2024/obsidian.json",
+    "stdout_sha256": "9c608695129eae3c9b5e383d602e9046d77c1591f3ee625bb1fdc18fd2fb0c2c"
+  },
+  {
+    "argv": [
+      "python",
+      "-m",
+      "ghg_assurance_graph.moenv_example",
+      "--check",
+      "negative/missing-month"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 2,
+    "expected_exit_code": 2,
+    "stderr": "negative/missing-month-check.json.stderr.txt",
+    "stderr_sha256": "d203633f12c37512d34000b6a312fffe9f50561cc40ca25c5518e16b84fbef28",
+    "stdout": "negative/missing-month-check.json",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "package",
+      "verify",
+      "negative/tampered-crate"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 2,
+    "expected_exit_code": 2,
+    "stderr": "negative/tampered-crate-check.json.stderr.txt",
+    "stderr_sha256": "ca8d19cfa94e3f3a96001e4a8a0bcbb518ebadb480cea45f2b66039841aec1df",
+    "stdout": "negative/tampered-crate-check.json",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "ghgag",
+      "diff",
+      "generated/2023",
+      "generated/2024"
+    ],
+    "cwd": "OUTPUT",
+    "exit_code": 2,
+    "expected_exit_code": 2,
+    "stderr": "negative/unsupported-carbondiff.json.stderr.txt",
+    "stderr_sha256": "ca8d19cfa94e3f3a96001e4a8a0bcbb518ebadb480cea45f2b66039841aec1df",
+    "stdout": "negative/unsupported-carbondiff.json",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

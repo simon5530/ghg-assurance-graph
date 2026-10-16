@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased source update — 2026-10-16
+
+- Align README main commands, Chinese usage,14-page PDF/HTML guide and revised SoftwareX abstract/table/figures to the MOENV 2023/2024 case.
+- Add an offline33-command primary runner with real CLI receipts, all nine unreviewed lineages, canonical crate/notes export and three observed negative boundaries.
+- Make unsupported MOENV CarbonDiff, Excel-to-graph import and crate/source-document boundaries explicit; retain old examples solely as regression evidence.
+- Check full byte replay under different hash seeds and regenerate primary source/figure data rather than retitling old results.
+
 ## Unreleased source update — 2026-10-15
 
 - Make the MOENV-guided 2023/2024 fictional manufacturing case the primary collection workflow.

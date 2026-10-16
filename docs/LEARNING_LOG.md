@@ -130,3 +130,14 @@ benchmarked against a named company's disclosure by inventing missing lineage.
 Use a complete labelled synthetic internal case mapped to an inspected collection
 standard, while retaining unknowns and source/version metadata. Keep legal boundary,
 corporate consolidation and software projection as separate declarations.
+
+## 2026-10-16 — change the evidence consumer, not just its landing link
+
+Symptom: a new primary case was linked, while main commands, PDF guide and paper
+still used the old population. Cause: case delivery did not include every consumer.
+Cheapest check: inspect the main reproduction block, guide figure data, manuscript
+Table1/captions and source ledger together. Recovery: execute one primary runner,
+regenerate consumers from its receipts, retain unsupported feature boundaries and
+add independent literal/table/byte-replay tests. Completion requires matching
+numbers and source IDs across executable output, guide, figures and manuscript;
+a link update alone is not proof.

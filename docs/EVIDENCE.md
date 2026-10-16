@@ -1,5 +1,9 @@
 # Portable evidence packages (Phase 6)
 
+> For the runnable primary MOENV 2023/2024 example, start with the
+> [operating guide](USAGE.zh-TW.md). API/phase examples below are reference or
+> legacy regression material, not an alternative primary dataset.
+
 The Python API creates a deterministic, closed-profile RO-Crate 1.2 **directory**.
 It reuses maintained `rocrate` Python entities, root datasets, file registration,
 and metadata generation; it does not imitate the library behind a label.
@@ -81,3 +85,12 @@ python -m pytest -q tests/test_evidence.py tests/test_exporters.py
 Tests cover relocated verification, RO-Crate library loading, deterministic bytes,
 RDF roundtrip isomorphism, recomputed-checksum semantic tampering, remote contexts,
 missing/extra files, symlinks, traversal and external manifest digest mismatch.
+
+## Primary-case operating path
+
+The [MOENV operating guide](USAGE.zh-TW.md) and `scripts/run_moenv_example.py`
+execute these capabilities on the 2023/2024 primary case. The original Phase
+contracts and benchmark examples above remain API/regression references, not
+the primary dataset. Collection CSV checks are separate from canonical checks;
+legacy CarbonDiff does not accept the MOENV folders, and canonical crates alone
+do not contain the external monthly-document tree.

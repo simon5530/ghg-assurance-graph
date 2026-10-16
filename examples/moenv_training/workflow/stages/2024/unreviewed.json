@@ -1,0 +1,22 @@
+[
+  {
+    "result": "urn:ghgag:moenv-demo-2024-boiler-result:v1",
+    "review": "urn:ghgag:moenv-demo-2024-boiler-review:v1"
+  },
+  {
+    "result": "urn:ghgag:moenv-demo-2024-cooling-result:v1",
+    "review": "urn:ghgag:moenv-demo-2024-cooling-review:v1"
+  },
+  {
+    "result": "urn:ghgag:moenv-demo-2024-electricity-result:v1",
+    "review": "urn:ghgag:moenv-demo-2024-electricity-review:v1"
+  },
+  {
+    "result": "urn:ghgag:moenv-demo-2024-generator-result:v1",
+    "review": "urn:ghgag:moenv-demo-2024-generator-review:v1"
+  },
+  {
+    "result": "urn:ghgag:moenv-demo-2024-new-generator-result:v1",
+    "review": "urn:ghgag:moenv-demo-2024-new-generator-review:v1"
+  }
+]

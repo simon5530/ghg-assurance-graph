@@ -1,5 +1,9 @@
 # Validation API and reproducibility
 
+> For the runnable primary MOENV 2023/2024 example, start with the
+> [operating guide](USAGE.zh-TW.md). API/phase examples below are reference or
+> legacy regression material, not an alternative primary dataset.
+
 Experimental, offline, selected-source validation. **Gate A is scoped GO; no conformity claim.**
 
 Dependency: pyshacl==0.31.0 (also initially tested with 0.30.1). Dependency
@@ -61,3 +65,12 @@ validate_graph; it is not a sandbox for hostile RDF store implementations or an
 unbounded denial-of-service defense. Simulated review status is not human review.
 Standards edition/clause authority review is handled separately; no certification,
 full reporting conformity or assurance readiness follows from passing these checks.
+
+## Primary-case operating path
+
+The [MOENV operating guide](USAGE.zh-TW.md) and `scripts/run_moenv_example.py`
+execute these capabilities on the 2023/2024 primary case. The original Phase
+contracts and benchmark examples above remain API/regression references, not
+the primary dataset. Collection CSV checks are separate from canonical checks;
+legacy CarbonDiff does not accept the MOENV folders, and canonical crates alone
+do not contain the external monthly-document tree.

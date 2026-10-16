@@ -1,6 +1,6 @@
 # Manuscript claim and source ledger
 
-Initial manuscript, 2026-09-28. References cite primary sources, not model-generated bibliography. No invented DOI, author, affiliation or approval. Primary standards remain outside Git; company reports are not evaluation sources.
+Bibliographic verification began 2026-09-28; primary-case reconciliation 2026-10-16. References cite primary sources, not model-generated bibliography. No invented DOI, author, affiliation or approval. Primary standards remain outside Git; company reports are not evaluation sources.
 
 ## Bibliography verification
 
@@ -18,28 +18,41 @@ Initial manuscript, 2026-09-28. References cite primary sources, not model-gener
 
 Publisher guide/template verified independently for this draft: [journal check](JOURNAL_GUIDE_CHECK.md). Template SHA256 9fcf40ede96a2f188ee4ef77134e0596d01e1b65fd9db63f2874d29f2ecb916d (44,823 bytes).
 
-## Quantitative claim mapping
+## Current primary quantitative claims — 2026-10-16
 
-| Claim | Executable evidence | Meaning |
+| Claim | Executable source / oracle | Meaning |
 |---|---|---|
-| 45/45 lineages | tests/test_graph.py | Stored relationships only |
-| 10 TP, 0 FP/FN; 6/4 split | benchmark evaluator; expected_findings.json | Nonblind synthetic regression |
-| Nine assisted components | tests/test_diff.py; expected_change_attribution.json | Seven supplied labels, two mechanical components |
-| 3820/3850/4060; +30/+210 | Raw rows, evaluator, literal/Fraction oracle | Partial synthetic kgCO2e |
-| +300 signed, 500 absolute UNKNOWN | Unassisted evaluator | Unsupported changes, not uncertainty intervals |
+| 2023/2024; 120 rows / 122 documents | moenv_example.py; test_moenv_example.py; workflow summary | Fictional internal collection, not real-company observations |
+| 95797.473564 / 95229.409244 kgCO2e | Gas CSV, independent Fraction and literal oracles | Primary annual totals |
+| 9 lineages, all unreviewed | Executed graph explain/query receipts; workflow tests | Explicit graph state, not human acceptance |
+| 33 calls; 30 success / 3 exit2 controls | commands.json and referenced output hashes | Actual CLI parser invocations, not a performance metric |
+| Two valid crates; 127/140 notes | Executed verification and link checks | Bounded integrity / export, not source authenticity |
+| -568.064320 delta; all causes UNKNOWN | comparison.json and exact rational reconciliation | Arithmetic only; legacy CarbonDiff unsupported |
 
-## Reproduction entry points
+Reference10 is the [inspected MOENV file ledger](../../examples/moenv_training/official-sources.json)
+and [source/parameter policy](../../examples/moenv_training/SOURCES.md). Five
+2024/2026 official downloads were inspected and hashed15October2026; bytes remain
+outside Git. Current editing reused that source evidence; no new legal conformity
+or latest-factor determination is implied. Official coefficients, synthetic LHV,
+historical electricity vintages and unquantified uncertainty remain separate.
 
-- uv sync --locked; uv run ghgag benchmark run; uv run pytest -q.
-- Detailed workflow: scripts/run_example.py (see --help).
-- uv run python scripts/render_figures.py; uv run python scripts/render_manuscript.py --pdf.
-- tests/test_figures.py checks generated SVG equality and manuscript scope/table contracts.
-- Current version 0.4.0a1; immutable release and archival links pending.
+## Separate regression evidence
 
-## Review boundaries
+The legacy ExampleCo benchmark's45lineages,10authoreddefects,nineassistedcomponents,
+3820/3850/4060totals and +300/500UNKNOWN quantities are not observations from the
+primary MOENV case. Bibliographic sources1–9 support definitions and prior-art
+context, not measured comparative superiority. No listed-company dataset is used.
 
-Only fictional ExampleCo-GHG-001 data support this manuscript's evaluation. No current external
-validation, real-company transfer, adoption, DOI, human approval or journal submission
-is claimed. Historical v0.3 reproduction and archive records are not current evidence.
-Bibliographic sources are prior verified records; this scope edit did not repeat
-source retrieval or introduce new external research.
+## Reproduction
+
+- `uv sync --locked`; `uv run python scripts/run_moenv_example.py --out NEW_OUTPUT`.
+- Open REPORT.md, commands.json, summary.json; [reference subset](../../examples/moenv_training/workflow/REPORT.md).
+- Authoring-only: `python scripts/render_moenv_figures.py` with Matplotlib3.10.7;
+  `python scripts/render_user_guide.py --run NEW_OUTPUT` with ReportLab4.4.10;
+  `python scripts/render_manuscript.py --pdf` with a local Chrome.
+- Primary figures/guide data bind to the same summary and manifest; regression
+  SVG remains a separate source fixture, not the manuscript evaluation figure.
+
+This is a working-source0.4.0a1alpha draft, not a minted release, DOI, practitioner
+review, conformity claim or journal submission. Actual authors must review and
+approve metadata and declarations; no approval is inferred from repository ownership.

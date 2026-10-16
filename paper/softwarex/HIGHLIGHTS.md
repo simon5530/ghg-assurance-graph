@@ -1,7 +1,7 @@
 # Highlights
 
 - Typed graphs preserve inspectable organizational emissions lineage.
-- Selected checks expose missing evidence without inventing assurance.
-- Bounded comparison reconciles changes and preserves UNKNOWN causes.
-- Offline evidence packages support reproducible inspection without AI services.
-- Fictional ExampleCo-GHG-001 examples provide explicitly synthetic-only validation.
+- MOENV-inspired collection links 120 monthly rows to synthetic source evidence.
+- Nine result lineages retain unreviewed status rather than invented assurance.
+- Offline packages and notes support reproducible local inspection.
+- Arithmetic year differences remain distinct from causal reductions.

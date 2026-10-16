@@ -1,0 +1,43 @@
+{
+  "causality": "UNKNOWN",
+  "delta_kg_co2e": "-568.0643200",
+  "not_carbon_diff": true,
+  "profile": "moenv-arithmetic-comparison/1",
+  "sources": [
+    {
+      "after": "1235511309/50000",
+      "before": "1363543569/50000",
+      "causality": "UNKNOWN",
+      "delta": "-6401613/2500",
+      "source": "boiler"
+    },
+    {
+      "after": "2600",
+      "before": "3900",
+      "causality": "UNKNOWN",
+      "delta": "-1300",
+      "source": "cooling"
+    },
+    {
+      "after": "331326/5",
+      "before": "315666/5",
+      "causality": "UNKNOWN",
+      "delta": "3132",
+      "source": "electricity"
+    },
+    {
+      "after": "166602663/125000",
+      "before": "186675273/125000",
+      "causality": "UNKNOWN",
+      "delta": "-2007261/12500",
+      "source": "generator"
+    },
+    {
+      "after": "2007261/6250",
+      "before": "0",
+      "causality": "UNKNOWN",
+      "delta": "2007261/6250",
+      "source": "new-generator"
+    }
+  ]
+}

@@ -1,10 +1,6 @@
-@prefix ghg: <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> a prov:Entity,
-        ghg:EvidenceArtifact ;
-    ghg:citation """{
+<urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EvidenceArtifact> .
+<urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/citation> """{
   "monthly_evidence": [
     {
       "id": "2024-boiler-01",
@@ -56,741 +52,29 @@
     }
   ],
   "synthetic": true
-}""" ;
-    ghg:label "boiler-activity-evidence" ;
-    ghg:license "MIT (original synthetic bundle; official citations are external)" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boiler-activity-evidence" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:sha256 "aede0987bb3a368ebed0b7f1952e878903fde435068f78cc26b365087c47e8e6" ;
-    ghg:synthetic true ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-boiler-quality:v1> a prov:Entity,
-        ghg:DataQualityAssessment ;
-    ghg:label "boiler-quality" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boiler-quality" ;
-    ghg:rating "unknown" ;
-    ghg:rationale "Synthetic exercise; not independently assessed" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:uncertainty "not quantified; see form 07" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-boiler-review:v1> a prov:Activity,
-        ghg:ReviewDecision ;
-    prov:used <urn:ghgag:moenv-demo-2024-boiler-result:v1> ;
-    prov:wasAssociatedWith <urn:ghgag:moenv-demo-2024-simulated-review-role:v1> ;
-    ghg:label "boiler-review" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boiler-review" ;
-    ghg:rationale "Training fixture only; no human approval or assurance performed" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:status "unreviewed" ;
-    ghg:target <urn:ghgag:moenv-demo-2024-boiler-result:v1> ;
-    ghg:timestamp "2026-10-15T00:00:00Z" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-boiler-run:v1> a prov:Activity,
-        ghg:CalculationRun ;
-    prov:used <urn:ghgag:moenv-demo-2024-boiler-activity:v1>,
-        <urn:ghgag:moenv-demo-2024-boiler-factor:v1>,
-        <urn:ghgag:moenv-demo-2024-boiler-gwp:v1>,
-        <urn:ghgag:moenv-demo-2024-boiler-method:v1>,
-        <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:activity <urn:ghgag:moenv-demo-2024-boiler-activity:v1> ;
-    ghg:boundary <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:factor <urn:ghgag:moenv-demo-2024-boiler-factor:v1> ;
-    ghg:gwp <urn:ghgag:moenv-demo-2024-boiler-gwp:v1> ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "boiler-run" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boiler-run" ;
-    ghg:method <urn:ghgag:moenv-demo-2024-boiler-method:v1> ;
-    ghg:performed_at "2026-10-15T00:00:00Z" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:software "moenv-training/1" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-boiler-source:v1> a prov:Entity,
-        ghg:EmissionSource ;
-    ghg:facility <urn:ghgag:moenv-demo-2024-plant:v1> ;
-    ghg:label "boiler-source" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boiler-source" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:scope 1 ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> a prov:Entity,
-        ghg:EvidenceArtifact ;
-    ghg:citation """{
-  "monthly_evidence": [
-    {
-      "id": "2024-cooling-01",
-      "sha256": "2b9126e3b8ecad2c034e04f1c1a2e528fb607ccdeb953eea2840ff61201cbc6a"
-    },
-    {
-      "id": "2024-cooling-02",
-      "sha256": "c8ef150caa759a0247e1611b78fd93b50cb92049954d04ab488f67510060716c"
-    },
-    {
-      "id": "2024-cooling-03",
-      "sha256": "f168b078d9b8ce4d3f922d65a5ed2e8be54eeb41bfe1dcde4db53b7e6d49eaa0"
-    },
-    {
-      "id": "2024-cooling-04",
-      "sha256": "dfa893ddd0ef74459997ce066451cecac004971a118389208a0288d4b958c431"
-    },
-    {
-      "id": "2024-cooling-05",
-      "sha256": "b19a0fd51046d6e508b2f4ede95d319dff0a5b5a741e5b3e037fa4830ec7bb5d"
-    },
-    {
-      "id": "2024-cooling-06",
-      "sha256": "729c24779e2a2f969faa80a8804d6791afe9dcaef065ef3bb6fd32a86853e69c"
-    },
-    {
-      "id": "2024-cooling-07",
-      "sha256": "b6aa285dd3585b0ff137daac16f24e84b920d2fe39c1c562d33e711fbe0492e3"
-    },
-    {
-      "id": "2024-cooling-08",
-      "sha256": "37b2950bceca641508f893b1b80607bf2ef83befa835bc56cf0acc19a905e2c4"
-    },
-    {
-      "id": "2024-cooling-09",
-      "sha256": "cee565b59451b66bcfc8c8143d53953ee33dcfedd2a00be3419244fa9fbef909"
-    },
-    {
-      "id": "2024-cooling-10",
-      "sha256": "0176db6427aae55bcd389bba3cf885ed25180e16a4847dac52761da48fc5db4a"
-    },
-    {
-      "id": "2024-cooling-11",
-      "sha256": "13b1ff9578062d80a8c37e4efef611206a85b669d62079724cc8adb0c759457f"
-    },
-    {
-      "id": "2024-cooling-12",
-      "sha256": "107ec403defe03cdd0e6051b457e543ead10eafa4c79ccd6bbec9437ed6dcd22"
-    }
-  ],
-  "synthetic": true
-}""" ;
-    ghg:label "cooling-activity-evidence" ;
-    ghg:license "MIT (original synthetic bundle; official citations are external)" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-cooling-activity-evidence" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:sha256 "5315f843f496518556f1904435891dfdb730e69ee26274af9a3c3f254a2bc8e8" ;
-    ghg:synthetic true ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-cooling-quality:v1> a prov:Entity,
-        ghg:DataQualityAssessment ;
-    ghg:label "cooling-quality" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-cooling-quality" ;
-    ghg:rating "unknown" ;
-    ghg:rationale "Synthetic exercise; not independently assessed" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:uncertainty "not quantified; see form 07" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-cooling-review:v1> a prov:Activity,
-        ghg:ReviewDecision ;
-    prov:used <urn:ghgag:moenv-demo-2024-cooling-result:v1> ;
-    prov:wasAssociatedWith <urn:ghgag:moenv-demo-2024-simulated-review-role:v1> ;
-    ghg:label "cooling-review" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-cooling-review" ;
-    ghg:rationale "Training fixture only; no human approval or assurance performed" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:status "unreviewed" ;
-    ghg:target <urn:ghgag:moenv-demo-2024-cooling-result:v1> ;
-    ghg:timestamp "2026-10-15T00:00:00Z" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-cooling-run:v1> a prov:Activity,
-        ghg:CalculationRun ;
-    prov:used <urn:ghgag:moenv-demo-2024-boundary:v1>,
-        <urn:ghgag:moenv-demo-2024-cooling-activity:v1>,
-        <urn:ghgag:moenv-demo-2024-cooling-factor:v1>,
-        <urn:ghgag:moenv-demo-2024-cooling-gwp:v1>,
-        <urn:ghgag:moenv-demo-2024-cooling-method:v1> ;
-    ghg:activity <urn:ghgag:moenv-demo-2024-cooling-activity:v1> ;
-    ghg:boundary <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:factor <urn:ghgag:moenv-demo-2024-cooling-factor:v1> ;
-    ghg:gwp <urn:ghgag:moenv-demo-2024-cooling-gwp:v1> ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "cooling-run" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-cooling-run" ;
-    ghg:method <urn:ghgag:moenv-demo-2024-cooling-method:v1> ;
-    ghg:performed_at "2026-10-15T00:00:00Z" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:software "moenv-training/1" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-cooling-source:v1> a prov:Entity,
-        ghg:EmissionSource ;
-    ghg:facility <urn:ghgag:moenv-demo-2024-plant:v1> ;
-    ghg:label "cooling-source" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-cooling-source" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:scope 1 ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> a prov:Entity,
-        ghg:EvidenceArtifact ;
-    ghg:citation """{
-  "monthly_evidence": [
-    {
-      "id": "2024-electricity-01",
-      "sha256": "559830fabc7947b223d8454d9d07782b9bd6858885f226c5b54488593d782eea"
-    },
-    {
-      "id": "2024-electricity-02",
-      "sha256": "f21e8579d7257e6edd55df0a4189359903239df7c139362561f8d69d5f36287e"
-    },
-    {
-      "id": "2024-electricity-03",
-      "sha256": "a26d84007c0b94ed53c5c2b9694696956ce5c41110e840821b67830d273f1167"
-    },
-    {
-      "id": "2024-electricity-04",
-      "sha256": "68fd51e6f9bcbcac379372a222c5a0f3db64510e89a38ad697487dd2c94fd328"
-    },
-    {
-      "id": "2024-electricity-05",
-      "sha256": "9d222579d1eac7835ca7e8be11e96fd76605924900d3c809067cd7272d327f11"
-    },
-    {
-      "id": "2024-electricity-06",
-      "sha256": "70a8f8864879cd1df9242679073fb314befde634f25dd2cdc554bb4980a7b6ae"
-    },
-    {
-      "id": "2024-electricity-07",
-      "sha256": "c4565efae48c538862b2eec5bb18024d83caa309b0a03e44dc0954e5deb3e4a9"
-    },
-    {
-      "id": "2024-electricity-08",
-      "sha256": "b4bd82d6ce9f3e1ea99aa716e064d352c0fabd0f3ccfe5f63bb3f1217a1c1fa1"
-    },
-    {
-      "id": "2024-electricity-09",
-      "sha256": "3a2bbcaf1b51f077ce60629320516618abda0ecfc71cf7b5add84d866cbdc776"
-    },
-    {
-      "id": "2024-electricity-10",
-      "sha256": "e6f134b2bb52c2a9f0bfc36ce2961f0fbb294a9a5626aeb16caa289c6905738c"
-    },
-    {
-      "id": "2024-electricity-11",
-      "sha256": "681c07867119e1050e9a06164140643ea89b476bb6d5b3f5698e025baf915e32"
-    },
-    {
-      "id": "2024-electricity-12",
-      "sha256": "a09989677e100b61d3255023bda176f1e8a5ab3b81a6ff63aa2f96c27aa211f1"
-    }
-  ],
-  "synthetic": true
-}""" ;
-    ghg:label "electricity-activity-evidence" ;
-    ghg:license "MIT (original synthetic bundle; official citations are external)" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-electricity-activity-evidence" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:sha256 "1bfde6c2dc7613950d97f84adba4fc5336628dd3b47a801c476724eabc4d8b10" ;
-    ghg:synthetic true ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-electricity-quality:v1> a prov:Entity,
-        ghg:DataQualityAssessment ;
-    ghg:label "electricity-quality" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-electricity-quality" ;
-    ghg:rating "unknown" ;
-    ghg:rationale "Synthetic exercise; not independently assessed" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:uncertainty "not quantified; see form 07" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-electricity-review:v1> a prov:Activity,
-        ghg:ReviewDecision ;
-    prov:used <urn:ghgag:moenv-demo-2024-electricity-result:v1> ;
-    prov:wasAssociatedWith <urn:ghgag:moenv-demo-2024-simulated-review-role:v1> ;
-    ghg:label "electricity-review" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-electricity-review" ;
-    ghg:rationale "Training fixture only; no human approval or assurance performed" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:status "unreviewed" ;
-    ghg:target <urn:ghgag:moenv-demo-2024-electricity-result:v1> ;
-    ghg:timestamp "2026-10-15T00:00:00Z" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-electricity-run:v1> a prov:Activity,
-        ghg:CalculationRun ;
-    prov:used <urn:ghgag:moenv-demo-2024-boundary:v1>,
-        <urn:ghgag:moenv-demo-2024-electricity-activity:v1>,
-        <urn:ghgag:moenv-demo-2024-electricity-factor:v1>,
-        <urn:ghgag:moenv-demo-2024-electricity-gwp:v1>,
-        <urn:ghgag:moenv-demo-2024-electricity-method:v1> ;
-    ghg:activity <urn:ghgag:moenv-demo-2024-electricity-activity:v1> ;
-    ghg:boundary <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:factor <urn:ghgag:moenv-demo-2024-electricity-factor:v1> ;
-    ghg:gwp <urn:ghgag:moenv-demo-2024-electricity-gwp:v1> ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "electricity-run" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-electricity-run" ;
-    ghg:method <urn:ghgag:moenv-demo-2024-electricity-method:v1> ;
-    ghg:performed_at "2026-10-15T00:00:00Z" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:software "moenv-training/1" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-electricity-source:v1> a prov:Entity,
-        ghg:EmissionSource ;
-    ghg:facility <urn:ghgag:moenv-demo-2024-plant:v1> ;
-    ghg:label "electricity-source" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-electricity-source" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:scope 2 ;
-    ghg:scope2_basis "location-based" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> a prov:Entity,
-        ghg:EvidenceArtifact ;
-    ghg:citation """{
-  "monthly_evidence": [
-    {
-      "id": "2024-generator-01",
-      "sha256": "f69f6eb2694e4c070b3bf44bab10d88d8b3feff899bae6e0b99e31a8bc454b5e"
-    },
-    {
-      "id": "2024-generator-02",
-      "sha256": "fac45df06af4707068e7e936184b4a7bf3a8c4827808c6307b88323d7a821df6"
-    },
-    {
-      "id": "2024-generator-03",
-      "sha256": "78a8fc881223a1885cb300c5a3377ac966f416d2b92db8072d6d47ad18da03f5"
-    },
-    {
-      "id": "2024-generator-04",
-      "sha256": "de64212752c0fe831cfea7d2def6beaf4375217973d346ee0be4e195328a8515"
-    },
-    {
-      "id": "2024-generator-05",
-      "sha256": "2135754e5081e7da451c0bd192820f46ab7319e11f1cbfb203431a3c1bcaeb29"
-    },
-    {
-      "id": "2024-generator-06",
-      "sha256": "4115213a79b2fb5eed211248c0f279790c0ed338269269c6cacefff1d7978dcc"
-    },
-    {
-      "id": "2024-generator-07",
-      "sha256": "494d14ab4815d0c177b0ef51ecb69b0152fd780674d3ed3f77218409a9bd3ccb"
-    },
-    {
-      "id": "2024-generator-08",
-      "sha256": "c97a370ab87e344cc455001024804f9ba5391f71a1012f5db70b387dc257358e"
-    },
-    {
-      "id": "2024-generator-09",
-      "sha256": "d0ecf89c5bd4264789ceeb37da4e3f3248ba0241cfac4ab4c282184dd27a2a1a"
-    },
-    {
-      "id": "2024-generator-10",
-      "sha256": "9ae77d2d39aa6651bb84a4699d8ca2696df1f0d757ee2c1edc9b2c1be3c472a4"
-    },
-    {
-      "id": "2024-generator-11",
-      "sha256": "df9a28cd74fee53063fcacf2d37600bd624698feac6da014c81fcb2e39f82ff5"
-    },
-    {
-      "id": "2024-generator-12",
-      "sha256": "61755b5055f80c2d3069bf7df75634e1ece4156fdb54ef0eb97a90722815c5cd"
-    }
-  ],
-  "synthetic": true
-}""" ;
-    ghg:label "generator-activity-evidence" ;
-    ghg:license "MIT (original synthetic bundle; official citations are external)" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-generator-activity-evidence" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:sha256 "fc1a3413c14a74a23e697db918564238e0215dc8a3f07d6569f3b510cedd5ae7" ;
-    ghg:synthetic true ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-generator-quality:v1> a prov:Entity,
-        ghg:DataQualityAssessment ;
-    ghg:label "generator-quality" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-generator-quality" ;
-    ghg:rating "unknown" ;
-    ghg:rationale "Synthetic exercise; not independently assessed" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:uncertainty "not quantified; see form 07" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-generator-review:v1> a prov:Activity,
-        ghg:ReviewDecision ;
-    prov:used <urn:ghgag:moenv-demo-2024-generator-result:v1> ;
-    prov:wasAssociatedWith <urn:ghgag:moenv-demo-2024-simulated-review-role:v1> ;
-    ghg:label "generator-review" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-generator-review" ;
-    ghg:rationale "Training fixture only; no human approval or assurance performed" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:status "unreviewed" ;
-    ghg:target <urn:ghgag:moenv-demo-2024-generator-result:v1> ;
-    ghg:timestamp "2026-10-15T00:00:00Z" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-generator-run:v1> a prov:Activity,
-        ghg:CalculationRun ;
-    prov:used <urn:ghgag:moenv-demo-2024-boundary:v1>,
-        <urn:ghgag:moenv-demo-2024-generator-activity:v1>,
-        <urn:ghgag:moenv-demo-2024-generator-factor:v1>,
-        <urn:ghgag:moenv-demo-2024-generator-gwp:v1>,
-        <urn:ghgag:moenv-demo-2024-generator-method:v1> ;
-    ghg:activity <urn:ghgag:moenv-demo-2024-generator-activity:v1> ;
-    ghg:boundary <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:factor <urn:ghgag:moenv-demo-2024-generator-factor:v1> ;
-    ghg:gwp <urn:ghgag:moenv-demo-2024-generator-gwp:v1> ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "generator-run" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-generator-run" ;
-    ghg:method <urn:ghgag:moenv-demo-2024-generator-method:v1> ;
-    ghg:performed_at "2026-10-15T00:00:00Z" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:software "moenv-training/1" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-generator-source:v1> a prov:Entity,
-        ghg:EmissionSource ;
-    ghg:facility <urn:ghgag:moenv-demo-2024-plant:v1> ;
-    ghg:label "generator-source" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-generator-source" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:scope 1 ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> a prov:Entity,
-        ghg:EvidenceArtifact ;
-    ghg:citation """{
-  "monthly_evidence": [
-    {
-      "id": "2024-new-generator-01",
-      "sha256": "9c3f0bd302eeebff48147f0482b3be654521640c3aad6c4dfed844d55f9bf55c"
-    },
-    {
-      "id": "2024-new-generator-02",
-      "sha256": "d541768f7e8171fed52c6beefa91f76e4fa3b1e4662a3f5d05fbe5005df6c258"
-    },
-    {
-      "id": "2024-new-generator-03",
-      "sha256": "793cc3e1e1b0e37f772d25a93822e9861e5376b8b30b768ed27fccf8b53064c4"
-    },
-    {
-      "id": "2024-new-generator-04",
-      "sha256": "2f2d4aabd7c1b82b634c0262a57e196edfe85c8ea27df88fa79d55c66807bda7"
-    },
-    {
-      "id": "2024-new-generator-05",
-      "sha256": "be884e48093d57972eec1611d68c9b2d82b839d673adeb311d48eac2602d465d"
-    },
-    {
-      "id": "2024-new-generator-06",
-      "sha256": "adc5d42f7113b5ff9a54bc22d61aa2a8d20292cf51a3da67bdf74019f4f59f23"
-    },
-    {
-      "id": "2024-new-generator-07",
-      "sha256": "d8de60fe42448218f3f57c3c3a014a7ba5bff50552e10fcbb1db8746b0948d01"
-    },
-    {
-      "id": "2024-new-generator-08",
-      "sha256": "b0fff4b5c70b2cd32b77e90875405410c39b295ddcdaaa6a69ad940087505e42"
-    },
-    {
-      "id": "2024-new-generator-09",
-      "sha256": "2197bf6d65b164b2761f13b8e6c4de31a71f0c5c77900f6372f8a66793e31832"
-    },
-    {
-      "id": "2024-new-generator-10",
-      "sha256": "506214aab267189fab30c9c59d8067544b5b73644642ee0aa7e3875db473ab33"
-    },
-    {
-      "id": "2024-new-generator-11",
-      "sha256": "e35b30e943f1c55c8bc43ab3eb08c63454278e456333b19f905f4eb0d7fd03b4"
-    },
-    {
-      "id": "2024-new-generator-12",
-      "sha256": "8bab316b3525c37bfc57563a0aac74d9b2ef2a1e5eb8694b6fa5c6998d71bf1a"
-    }
-  ],
-  "synthetic": true
-}""" ;
-    ghg:label "new-generator-activity-evidence" ;
-    ghg:license "MIT (original synthetic bundle; official citations are external)" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-new-generator-activity-evidence" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:sha256 "42e7347370bd66b1b49c268957eff445336f1397f8efd3e194676126a67e7b7a" ;
-    ghg:synthetic true ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-new-generator-quality:v1> a prov:Entity,
-        ghg:DataQualityAssessment ;
-    ghg:label "new-generator-quality" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-new-generator-quality" ;
-    ghg:rating "unknown" ;
-    ghg:rationale "Synthetic exercise; not independently assessed" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:uncertainty "not quantified; see form 07" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-new-generator-review:v1> a prov:Activity,
-        ghg:ReviewDecision ;
-    prov:used <urn:ghgag:moenv-demo-2024-new-generator-result:v1> ;
-    prov:wasAssociatedWith <urn:ghgag:moenv-demo-2024-simulated-review-role:v1> ;
-    ghg:label "new-generator-review" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-new-generator-review" ;
-    ghg:rationale "Training fixture only; no human approval or assurance performed" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:status "unreviewed" ;
-    ghg:target <urn:ghgag:moenv-demo-2024-new-generator-result:v1> ;
-    ghg:timestamp "2026-10-15T00:00:00Z" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-new-generator-run:v1> a prov:Activity,
-        ghg:CalculationRun ;
-    prov:used <urn:ghgag:moenv-demo-2024-boundary:v1>,
-        <urn:ghgag:moenv-demo-2024-new-generator-activity:v1>,
-        <urn:ghgag:moenv-demo-2024-new-generator-factor:v1>,
-        <urn:ghgag:moenv-demo-2024-new-generator-gwp:v1>,
-        <urn:ghgag:moenv-demo-2024-new-generator-method:v1> ;
-    ghg:activity <urn:ghgag:moenv-demo-2024-new-generator-activity:v1> ;
-    ghg:boundary <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:factor <urn:ghgag:moenv-demo-2024-new-generator-factor:v1> ;
-    ghg:gwp <urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "new-generator-run" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-new-generator-run" ;
-    ghg:method <urn:ghgag:moenv-demo-2024-new-generator-method:v1> ;
-    ghg:performed_at "2026-10-15T00:00:00Z" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:software "moenv-training/1" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-new-generator-source:v1> a prov:Entity,
-        ghg:EmissionSource ;
-    ghg:facility <urn:ghgag:moenv-demo-2024-plant:v1> ;
-    ghg:label "new-generator-source" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-new-generator-source" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:scope 1 ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-boiler-activity:v1> a prov:Entity,
-        ghg:ActivityRecord ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> ;
-    ghg:data_origin "primary" ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "boiler-activity" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boiler-activity" ;
-    ghg:quality <urn:ghgag:moenv-demo-2024-boiler-quality:v1> ;
-    ghg:quantity [ ghg:unit "meter ** 3" ;
-            ghg:value 1.158e+04 ] ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:source <urn:ghgag:moenv-demo-2024-boiler-source:v1> ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-boiler-factor:v1> a prov:Entity,
-        ghg:EmissionFactor ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> ;
-    ghg:boundary <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:denominator "meter ** 3" ;
-    ghg:geography "TW" ;
-    ghg:gwp <urn:ghgag:moenv-demo-2024-boiler-gwp:v1> ;
-    ghg:label "boiler-factor" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boiler-factor" ;
-    ghg:method <urn:ghgag:moenv-demo-2024-boiler-method:v1> ;
-    ghg:numerator "kg_CO2e" ;
-    ghg:period <urn:ghgag:moenv-demo-2024-period:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:value 2.133871e+00 ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-boiler-result:v1> a prov:Entity,
-        ghg:EmissionResult ;
-    prov:wasGeneratedBy <urn:ghgag:moenv-demo-2024-boiler-run:v1> ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "boiler-result" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boiler-result" ;
-    ghg:quantity [ ghg:unit "kg_CO2e" ;
-            ghg:value 2.471023e+04 ] ;
-    ghg:review <urn:ghgag:moenv-demo-2024-boiler-review:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-cooling-activity:v1> a prov:Entity,
-        ghg:ActivityRecord ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> ;
-    ghg:data_origin "primary" ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "cooling-activity" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-cooling-activity" ;
-    ghg:quality <urn:ghgag:moenv-demo-2024-cooling-quality:v1> ;
-    ghg:quantity [ ghg:unit "kg" ;
-            ghg:value 2e+00 ] ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:source <urn:ghgag:moenv-demo-2024-cooling-source:v1> ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-cooling-factor:v1> a prov:Entity,
-        ghg:EmissionFactor ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> ;
-    ghg:boundary <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:denominator "kg" ;
-    ghg:geography "TW" ;
-    ghg:gwp <urn:ghgag:moenv-demo-2024-cooling-gwp:v1> ;
-    ghg:label "cooling-factor" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-cooling-factor" ;
-    ghg:method <urn:ghgag:moenv-demo-2024-cooling-method:v1> ;
-    ghg:numerator "kg_CO2e" ;
-    ghg:period <urn:ghgag:moenv-demo-2024-period:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:value 1.3e+03 ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-cooling-result:v1> a prov:Entity,
-        ghg:EmissionResult ;
-    prov:wasGeneratedBy <urn:ghgag:moenv-demo-2024-cooling-run:v1> ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "cooling-result" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-cooling-result" ;
-    ghg:quantity [ ghg:unit "kg_CO2e" ;
-            ghg:value 2.6e+03 ] ;
-    ghg:review <urn:ghgag:moenv-demo-2024-cooling-review:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-electricity-activity:v1> a prov:Entity,
-        ghg:ActivityRecord ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> ;
-    ghg:data_origin "primary" ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "electricity-activity" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-electricity-activity" ;
-    ghg:quality <urn:ghgag:moenv-demo-2024-electricity-quality:v1> ;
-    ghg:quantity [ ghg:unit "kWh" ;
-            ghg:value 1.398e+05 ] ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:source <urn:ghgag:moenv-demo-2024-electricity-source:v1> ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-electricity-factor:v1> a prov:Entity,
-        ghg:EmissionFactor ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> ;
-    ghg:boundary <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:denominator "kWh" ;
-    ghg:geography "TW" ;
-    ghg:gwp <urn:ghgag:moenv-demo-2024-electricity-gwp:v1> ;
-    ghg:label "electricity-factor" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-electricity-factor" ;
-    ghg:method <urn:ghgag:moenv-demo-2024-electricity-method:v1> ;
-    ghg:numerator "kg_CO2e" ;
-    ghg:period <urn:ghgag:moenv-demo-2024-period:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:value 4.74e-01 ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-electricity-result:v1> a prov:Entity,
-        ghg:EmissionResult ;
-    prov:wasGeneratedBy <urn:ghgag:moenv-demo-2024-electricity-run:v1> ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "electricity-result" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-electricity-result" ;
-    ghg:quantity [ ghg:unit "kg_CO2e" ;
-            ghg:value 6.62652e+04 ] ;
-    ghg:review <urn:ghgag:moenv-demo-2024-electricity-review:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-generator-activity:v1> a prov:Entity,
-        ghg:ActivityRecord ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> ;
-    ghg:data_origin "primary" ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "generator-activity" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-generator-activity" ;
-    ghg:quality <urn:ghgag:moenv-demo-2024-generator-quality:v1> ;
-    ghg:quantity [ ghg:unit "liter" ;
-            ghg:value 4.98e+02 ] ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:source <urn:ghgag:moenv-demo-2024-generator-source:v1> ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-generator-factor:v1> a prov:Entity,
-        ghg:EmissionFactor ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> ;
-    ghg:boundary <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:denominator "liter" ;
-    ghg:geography "TW" ;
-    ghg:gwp <urn:ghgag:moenv-demo-2024-generator-gwp:v1> ;
-    ghg:label "generator-factor" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-generator-factor" ;
-    ghg:method <urn:ghgag:moenv-demo-2024-generator-method:v1> ;
-    ghg:numerator "kg_CO2e" ;
-    ghg:period <urn:ghgag:moenv-demo-2024-period:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:value 2.676348e+00 ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-generator-result:v1> a prov:Entity,
-        ghg:EmissionResult ;
-    prov:wasGeneratedBy <urn:ghgag:moenv-demo-2024-generator-run:v1> ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "generator-result" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-generator-result" ;
-    ghg:quantity [ ghg:unit "kg_CO2e" ;
-            ghg:value 1.332821e+03 ] ;
-    ghg:review <urn:ghgag:moenv-demo-2024-generator-review:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> a prov:Entity,
-        ghg:ActivityRecord ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> ;
-    ghg:data_origin "primary" ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "new-generator-activity" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-new-generator-activity" ;
-    ghg:quality <urn:ghgag:moenv-demo-2024-new-generator-quality:v1> ;
-    ghg:quantity [ ghg:unit "liter" ;
-            ghg:value 1.2e+02 ] ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:source <urn:ghgag:moenv-demo-2024-new-generator-source:v1> ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> a prov:Entity,
-        ghg:EmissionFactor ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> ;
-    ghg:boundary <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:denominator "liter" ;
-    ghg:geography "TW" ;
-    ghg:gwp <urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> ;
-    ghg:label "new-generator-factor" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-new-generator-factor" ;
-    ghg:method <urn:ghgag:moenv-demo-2024-new-generator-method:v1> ;
-    ghg:numerator "kg_CO2e" ;
-    ghg:period <urn:ghgag:moenv-demo-2024-period:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:value 2.676348e+00 ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-new-generator-result:v1> a prov:Entity,
-        ghg:EmissionResult ;
-    prov:wasGeneratedBy <urn:ghgag:moenv-demo-2024-new-generator-run:v1> ;
-    ghg:inventory <urn:ghgag:moenv-demo-2024-inventory:v1> ;
-    ghg:label "new-generator-result" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-new-generator-result" ;
-    ghg:quantity [ ghg:unit "kg_CO2e" ;
-            ghg:value 3.211618e+02 ] ;
-    ghg:review <urn:ghgag:moenv-demo-2024-new-generator-review:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> a prov:Entity,
-        ghg:EvidenceArtifact ;
-    ghg:citation """{
+}""" .
+<urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boiler-activity-evidence" .
+<urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/license> "MIT (original synthetic bundle; official citations are external)" .
+<urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boiler-activity-evidence" .
+<urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/sha256> "aede0987bb3a368ebed0b7f1952e878903fde435068f78cc26b365087c47e8e6" .
+<urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/synthetic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/ActivityRecord> .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/data_origin> "primary" .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boiler-activity" .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boiler-activity" .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quality> <urn:ghgag:moenv-demo-2024-boiler-quality:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quantity> _:0495a033c4c92a42ae660b84824d42a1e3737f7d94bfe3ee261727c26828171d .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/source> <urn:ghgag:moenv-demo-2024-boiler-source:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EvidenceArtifact> .
+<urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/citation> """{
   "components": [
     {
       "activity": "11580",
@@ -843,39 +127,192 @@
   ],
   "synthetic_case": true,
   "warning": "LHV is synthetic. Electricity factor vintages replay inspected historical ODS rows, not latest-factor regulatory compliance."
-}""" ;
-    ghg:label "boiler-factor-evidence" ;
-    ghg:license "MIT (original synthetic bundle; official citations are external)" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boiler-factor-evidence" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:sha256 "10aaf78c9b99074f0e14c0138d5a1b0d80d36fe6ec75e7eed9301c6800b5809f" ;
-    ghg:synthetic true ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-boiler-gwp:v1> a prov:Entity,
-        ghg:GWPSet ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> ;
-    ghg:basis "MOENV-113-AR5-100y; precharacterized gas sum (do not apply twice)" ;
-    ghg:horizon_years 100 ;
-    ghg:label "boiler-gwp" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boiler-gwp" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-boiler-method:v1> a prov:Entity,
-        ghg:CalculationMethod ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> ;
-    ghg:allocation "none" ;
-    ghg:description "Gas-resolved Decimal companion calculation projected to an explicit precharacterized CO2e factor; not a gas-resolved core schema" ;
-    ghg:label "boiler-method" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boiler-method" ;
-    ghg:method_type "activity-based" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> a prov:Entity,
-        ghg:EvidenceArtifact ;
-    ghg:citation """{
+}""" .
+<urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boiler-factor-evidence" .
+<urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/license> "MIT (original synthetic bundle; official citations are external)" .
+<urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boiler-factor-evidence" .
+<urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/sha256> "10aaf78c9b99074f0e14c0138d5a1b0d80d36fe6ec75e7eed9301c6800b5809f" .
+<urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/synthetic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionFactor> .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/boundary> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/denominator> "meter ** 3" .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/geography> "TW" .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/gwp> <urn:ghgag:moenv-demo-2024-boiler-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boiler-factor" .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boiler-factor" .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method> <urn:ghgag:moenv-demo-2024-boiler-method:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/numerator> "kg_CO2e" .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/period> <urn:ghgag:moenv-demo-2024-period:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "2.133871"^^<http://www.w3.org/2001/XMLSchema#double> .
+<urn:ghgag:moenv-demo-2024-boiler-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-gwp:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-boiler-gwp:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/GWPSet> .
+<urn:ghgag:moenv-demo-2024-boiler-gwp:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/basis> "MOENV-113-AR5-100y; precharacterized gas sum (do not apply twice)" .
+<urn:ghgag:moenv-demo-2024-boiler-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/horizon_years> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boiler-gwp" .
+<urn:ghgag:moenv-demo-2024-boiler-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boiler-gwp" .
+<urn:ghgag:moenv-demo-2024-boiler-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boiler-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-method:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-boiler-method:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/CalculationMethod> .
+<urn:ghgag:moenv-demo-2024-boiler-method:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/allocation> "none" .
+<urn:ghgag:moenv-demo-2024-boiler-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/description> "Gas-resolved Decimal companion calculation projected to an explicit precharacterized CO2e factor; not a gas-resolved core schema" .
+<urn:ghgag:moenv-demo-2024-boiler-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boiler-method" .
+<urn:ghgag:moenv-demo-2024-boiler-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boiler-method" .
+<urn:ghgag:moenv-demo-2024-boiler-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method_type> "activity-based" .
+<urn:ghgag:moenv-demo-2024-boiler-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boiler-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-quality:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-boiler-quality:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/DataQualityAssessment> .
+<urn:ghgag:moenv-demo-2024-boiler-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boiler-quality" .
+<urn:ghgag:moenv-demo-2024-boiler-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boiler-quality" .
+<urn:ghgag:moenv-demo-2024-boiler-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rating> "unknown" .
+<urn:ghgag:moenv-demo-2024-boiler-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rationale> "Synthetic exercise; not independently assessed" .
+<urn:ghgag:moenv-demo-2024-boiler-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boiler-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/uncertainty> "not quantified; see form 07" .
+<urn:ghgag:moenv-demo-2024-boiler-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-result:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-boiler-result:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionResult> .
+<urn:ghgag:moenv-demo-2024-boiler-result:v1> <http://www.w3.org/ns/prov#wasGeneratedBy> <urn:ghgag:moenv-demo-2024-boiler-run:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boiler-result" .
+<urn:ghgag:moenv-demo-2024-boiler-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boiler-result" .
+<urn:ghgag:moenv-demo-2024-boiler-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quantity> _:c2a7185ac0406993c3e7c1a2f6433006546a300f0466d0f001eede3aaf3e3ca1 .
+<urn:ghgag:moenv-demo-2024-boiler-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/review> <urn:ghgag:moenv-demo-2024-boiler-review:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boiler-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/ReviewDecision> .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-boiler-result:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <http://www.w3.org/ns/prov#wasAssociatedWith> <urn:ghgag:moenv-demo-2024-simulated-review-role:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boiler-review" .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boiler-review" .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rationale> "Training fixture only; no human approval or assurance performed" .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/status> "unreviewed" .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/target> <urn:ghgag:moenv-demo-2024-boiler-result:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/timestamp> "2026-10-15T00:00:00Z" .
+<urn:ghgag:moenv-demo-2024-boiler-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/CalculationRun> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-boiler-activity:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-boiler-factor:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-boiler-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-boiler-method:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/activity> <urn:ghgag:moenv-demo-2024-boiler-activity:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/boundary> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/factor> <urn:ghgag:moenv-demo-2024-boiler-factor:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/gwp> <urn:ghgag:moenv-demo-2024-boiler-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boiler-run" .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boiler-run" .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method> <urn:ghgag:moenv-demo-2024-boiler-method:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/performed_at> "2026-10-15T00:00:00Z" .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/software> "moenv-training/1" .
+<urn:ghgag:moenv-demo-2024-boiler-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-source:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-boiler-source:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionSource> .
+<urn:ghgag:moenv-demo-2024-boiler-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/facility> <urn:ghgag:moenv-demo-2024-plant:v1> .
+<urn:ghgag:moenv-demo-2024-boiler-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boiler-source" .
+<urn:ghgag:moenv-demo-2024-boiler-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boiler-source" .
+<urn:ghgag:moenv-demo-2024-boiler-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boiler-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/scope> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boiler-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-boundary:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-boundary:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/BoundaryDefinition> .
+<urn:ghgag:moenv-demo-2024-boundary:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/consolidation> "operational-control" .
+<urn:ghgag:moenv-demo-2024-boundary:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/description> "Fictional single registered manufacturing site; one plant, no subsidiaries; no claim of legal registration. Direct and purchased-energy sources only; no Scope 3 conformity claim." .
+<urn:ghgag:moenv-demo-2024-boundary:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "boundary" .
+<urn:ghgag:moenv-demo-2024-boundary:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-boundary" .
+<urn:ghgag:moenv-demo-2024-boundary:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/organization> <urn:ghgag:moenv-demo-2024-organization:v1> .
+<urn:ghgag:moenv-demo-2024-boundary:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-boundary:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EvidenceArtifact> .
+<urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/citation> """{
+  "monthly_evidence": [
+    {
+      "id": "2024-cooling-01",
+      "sha256": "2b9126e3b8ecad2c034e04f1c1a2e528fb607ccdeb953eea2840ff61201cbc6a"
+    },
+    {
+      "id": "2024-cooling-02",
+      "sha256": "c8ef150caa759a0247e1611b78fd93b50cb92049954d04ab488f67510060716c"
+    },
+    {
+      "id": "2024-cooling-03",
+      "sha256": "f168b078d9b8ce4d3f922d65a5ed2e8be54eeb41bfe1dcde4db53b7e6d49eaa0"
+    },
+    {
+      "id": "2024-cooling-04",
+      "sha256": "dfa893ddd0ef74459997ce066451cecac004971a118389208a0288d4b958c431"
+    },
+    {
+      "id": "2024-cooling-05",
+      "sha256": "b19a0fd51046d6e508b2f4ede95d319dff0a5b5a741e5b3e037fa4830ec7bb5d"
+    },
+    {
+      "id": "2024-cooling-06",
+      "sha256": "729c24779e2a2f969faa80a8804d6791afe9dcaef065ef3bb6fd32a86853e69c"
+    },
+    {
+      "id": "2024-cooling-07",
+      "sha256": "b6aa285dd3585b0ff137daac16f24e84b920d2fe39c1c562d33e711fbe0492e3"
+    },
+    {
+      "id": "2024-cooling-08",
+      "sha256": "37b2950bceca641508f893b1b80607bf2ef83befa835bc56cf0acc19a905e2c4"
+    },
+    {
+      "id": "2024-cooling-09",
+      "sha256": "cee565b59451b66bcfc8c8143d53953ee33dcfedd2a00be3419244fa9fbef909"
+    },
+    {
+      "id": "2024-cooling-10",
+      "sha256": "0176db6427aae55bcd389bba3cf885ed25180e16a4847dac52761da48fc5db4a"
+    },
+    {
+      "id": "2024-cooling-11",
+      "sha256": "13b1ff9578062d80a8c37e4efef611206a85b669d62079724cc8adb0c759457f"
+    },
+    {
+      "id": "2024-cooling-12",
+      "sha256": "107ec403defe03cdd0e6051b457e543ead10eafa4c79ccd6bbec9437ed6dcd22"
+    }
+  ],
+  "synthetic": true
+}""" .
+<urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "cooling-activity-evidence" .
+<urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/license> "MIT (original synthetic bundle; official citations are external)" .
+<urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-cooling-activity-evidence" .
+<urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/sha256> "5315f843f496518556f1904435891dfdb730e69ee26274af9a3c3f254a2bc8e8" .
+<urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/synthetic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/ActivityRecord> .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/data_origin> "primary" .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "cooling-activity" .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-cooling-activity" .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quality> <urn:ghgag:moenv-demo-2024-cooling-quality:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quantity> _:7b61d5defd1b944a6a2d4377130d81e639c24b0d4c1a4182e7a30414605ef711 .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/source> <urn:ghgag:moenv-demo-2024-cooling-source:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EvidenceArtifact> .
+<urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/citation> """{
   "components": [
     {
       "activity": "2",
@@ -896,39 +333,183 @@
   ],
   "synthetic_case": true,
   "warning": "LHV is synthetic. Electricity factor vintages replay inspected historical ODS rows, not latest-factor regulatory compliance."
-}""" ;
-    ghg:label "cooling-factor-evidence" ;
-    ghg:license "MIT (original synthetic bundle; official citations are external)" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-cooling-factor-evidence" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:sha256 "a5a535d4a1d2ab825712f51cf77e9eafba14933af12882918f0bb2a2b845dc34" ;
-    ghg:synthetic true ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-cooling-gwp:v1> a prov:Entity,
-        ghg:GWPSet ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> ;
-    ghg:basis "MOENV-113-AR5-100y; precharacterized gas sum (do not apply twice)" ;
-    ghg:horizon_years 100 ;
-    ghg:label "cooling-gwp" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-cooling-gwp" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-cooling-method:v1> a prov:Entity,
-        ghg:CalculationMethod ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> ;
-    ghg:allocation "none" ;
-    ghg:description "Gas-resolved Decimal companion calculation projected to an explicit precharacterized CO2e factor; not a gas-resolved core schema" ;
-    ghg:label "cooling-method" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-cooling-method" ;
-    ghg:method_type "activity-based" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> a prov:Entity,
-        ghg:EvidenceArtifact ;
-    ghg:citation """{
+}""" .
+<urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "cooling-factor-evidence" .
+<urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/license> "MIT (original synthetic bundle; official citations are external)" .
+<urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-cooling-factor-evidence" .
+<urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/sha256> "a5a535d4a1d2ab825712f51cf77e9eafba14933af12882918f0bb2a2b845dc34" .
+<urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/synthetic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionFactor> .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/boundary> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/denominator> "kg" .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/geography> "TW" .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/gwp> <urn:ghgag:moenv-demo-2024-cooling-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "cooling-factor" .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-cooling-factor" .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method> <urn:ghgag:moenv-demo-2024-cooling-method:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/numerator> "kg_CO2e" .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/period> <urn:ghgag:moenv-demo-2024-period:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "1300.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<urn:ghgag:moenv-demo-2024-cooling-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-gwp:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-cooling-gwp:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/GWPSet> .
+<urn:ghgag:moenv-demo-2024-cooling-gwp:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/basis> "MOENV-113-AR5-100y; precharacterized gas sum (do not apply twice)" .
+<urn:ghgag:moenv-demo-2024-cooling-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/horizon_years> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "cooling-gwp" .
+<urn:ghgag:moenv-demo-2024-cooling-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-cooling-gwp" .
+<urn:ghgag:moenv-demo-2024-cooling-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-cooling-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-method:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-cooling-method:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/CalculationMethod> .
+<urn:ghgag:moenv-demo-2024-cooling-method:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/allocation> "none" .
+<urn:ghgag:moenv-demo-2024-cooling-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/description> "Gas-resolved Decimal companion calculation projected to an explicit precharacterized CO2e factor; not a gas-resolved core schema" .
+<urn:ghgag:moenv-demo-2024-cooling-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "cooling-method" .
+<urn:ghgag:moenv-demo-2024-cooling-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-cooling-method" .
+<urn:ghgag:moenv-demo-2024-cooling-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method_type> "activity-based" .
+<urn:ghgag:moenv-demo-2024-cooling-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-cooling-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-quality:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-cooling-quality:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/DataQualityAssessment> .
+<urn:ghgag:moenv-demo-2024-cooling-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "cooling-quality" .
+<urn:ghgag:moenv-demo-2024-cooling-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-cooling-quality" .
+<urn:ghgag:moenv-demo-2024-cooling-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rating> "unknown" .
+<urn:ghgag:moenv-demo-2024-cooling-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rationale> "Synthetic exercise; not independently assessed" .
+<urn:ghgag:moenv-demo-2024-cooling-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-cooling-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/uncertainty> "not quantified; see form 07" .
+<urn:ghgag:moenv-demo-2024-cooling-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-result:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-cooling-result:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionResult> .
+<urn:ghgag:moenv-demo-2024-cooling-result:v1> <http://www.w3.org/ns/prov#wasGeneratedBy> <urn:ghgag:moenv-demo-2024-cooling-run:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "cooling-result" .
+<urn:ghgag:moenv-demo-2024-cooling-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-cooling-result" .
+<urn:ghgag:moenv-demo-2024-cooling-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quantity> _:3b8016fe47cbdfe99183b7d463dc798cd3bb754cca19ff03afc17557972a2091 .
+<urn:ghgag:moenv-demo-2024-cooling-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/review> <urn:ghgag:moenv-demo-2024-cooling-review:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-cooling-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/ReviewDecision> .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-cooling-result:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <http://www.w3.org/ns/prov#wasAssociatedWith> <urn:ghgag:moenv-demo-2024-simulated-review-role:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "cooling-review" .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-cooling-review" .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rationale> "Training fixture only; no human approval or assurance performed" .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/status> "unreviewed" .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/target> <urn:ghgag:moenv-demo-2024-cooling-result:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/timestamp> "2026-10-15T00:00:00Z" .
+<urn:ghgag:moenv-demo-2024-cooling-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/CalculationRun> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-cooling-activity:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-cooling-factor:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-cooling-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-cooling-method:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/activity> <urn:ghgag:moenv-demo-2024-cooling-activity:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/boundary> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/factor> <urn:ghgag:moenv-demo-2024-cooling-factor:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/gwp> <urn:ghgag:moenv-demo-2024-cooling-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "cooling-run" .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-cooling-run" .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method> <urn:ghgag:moenv-demo-2024-cooling-method:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/performed_at> "2026-10-15T00:00:00Z" .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/software> "moenv-training/1" .
+<urn:ghgag:moenv-demo-2024-cooling-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-source:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-cooling-source:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionSource> .
+<urn:ghgag:moenv-demo-2024-cooling-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/facility> <urn:ghgag:moenv-demo-2024-plant:v1> .
+<urn:ghgag:moenv-demo-2024-cooling-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "cooling-source" .
+<urn:ghgag:moenv-demo-2024-cooling-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-cooling-source" .
+<urn:ghgag:moenv-demo-2024-cooling-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-cooling-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/scope> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-cooling-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EvidenceArtifact> .
+<urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/citation> """{
+  "monthly_evidence": [
+    {
+      "id": "2024-electricity-01",
+      "sha256": "559830fabc7947b223d8454d9d07782b9bd6858885f226c5b54488593d782eea"
+    },
+    {
+      "id": "2024-electricity-02",
+      "sha256": "f21e8579d7257e6edd55df0a4189359903239df7c139362561f8d69d5f36287e"
+    },
+    {
+      "id": "2024-electricity-03",
+      "sha256": "a26d84007c0b94ed53c5c2b9694696956ce5c41110e840821b67830d273f1167"
+    },
+    {
+      "id": "2024-electricity-04",
+      "sha256": "68fd51e6f9bcbcac379372a222c5a0f3db64510e89a38ad697487dd2c94fd328"
+    },
+    {
+      "id": "2024-electricity-05",
+      "sha256": "9d222579d1eac7835ca7e8be11e96fd76605924900d3c809067cd7272d327f11"
+    },
+    {
+      "id": "2024-electricity-06",
+      "sha256": "70a8f8864879cd1df9242679073fb314befde634f25dd2cdc554bb4980a7b6ae"
+    },
+    {
+      "id": "2024-electricity-07",
+      "sha256": "c4565efae48c538862b2eec5bb18024d83caa309b0a03e44dc0954e5deb3e4a9"
+    },
+    {
+      "id": "2024-electricity-08",
+      "sha256": "b4bd82d6ce9f3e1ea99aa716e064d352c0fabd0f3ccfe5f63bb3f1217a1c1fa1"
+    },
+    {
+      "id": "2024-electricity-09",
+      "sha256": "3a2bbcaf1b51f077ce60629320516618abda0ecfc71cf7b5add84d866cbdc776"
+    },
+    {
+      "id": "2024-electricity-10",
+      "sha256": "e6f134b2bb52c2a9f0bfc36ce2961f0fbb294a9a5626aeb16caa289c6905738c"
+    },
+    {
+      "id": "2024-electricity-11",
+      "sha256": "681c07867119e1050e9a06164140643ea89b476bb6d5b3f5698e025baf915e32"
+    },
+    {
+      "id": "2024-electricity-12",
+      "sha256": "a09989677e100b61d3255023bda176f1e8a5ab3b81a6ff63aa2f96c27aa211f1"
+    }
+  ],
+  "synthetic": true
+}""" .
+<urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "electricity-activity-evidence" .
+<urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/license> "MIT (original synthetic bundle; official citations are external)" .
+<urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-electricity-activity-evidence" .
+<urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/sha256> "1bfde6c2dc7613950d97f84adba4fc5336628dd3b47a801c476724eabc4d8b10" .
+<urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/synthetic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/ActivityRecord> .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/data_origin> "primary" .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "electricity-activity" .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-electricity-activity" .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quality> <urn:ghgag:moenv-demo-2024-electricity-quality:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quantity> _:10ac085576ed99a8232840f6d7e82dda3243f71720d80b89603dafdfffc46b1f .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/source> <urn:ghgag:moenv-demo-2024-electricity-source:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EvidenceArtifact> .
+<urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/citation> """{
   "components": [
     {
       "activity": "139800",
@@ -949,39 +530,184 @@
   ],
   "synthetic_case": true,
   "warning": "LHV is synthetic. Electricity factor vintages replay inspected historical ODS rows, not latest-factor regulatory compliance."
-}""" ;
-    ghg:label "electricity-factor-evidence" ;
-    ghg:license "MIT (original synthetic bundle; official citations are external)" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-electricity-factor-evidence" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:sha256 "6e5b81a8e0081e82f15f1ed19d90ca7ea27938fc6f7cbb0f35a020a1f8f51a8e" ;
-    ghg:synthetic true ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-electricity-gwp:v1> a prov:Entity,
-        ghg:GWPSet ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> ;
-    ghg:basis "MOENV-113-AR5-100y; precharacterized gas sum (do not apply twice)" ;
-    ghg:horizon_years 100 ;
-    ghg:label "electricity-gwp" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-electricity-gwp" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-electricity-method:v1> a prov:Entity,
-        ghg:CalculationMethod ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> ;
-    ghg:allocation "none" ;
-    ghg:description "Gas-resolved Decimal companion calculation projected to an explicit precharacterized CO2e factor; not a gas-resolved core schema" ;
-    ghg:label "electricity-method" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-electricity-method" ;
-    ghg:method_type "activity-based" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> a prov:Entity,
-        ghg:EvidenceArtifact ;
-    ghg:citation """{
+}""" .
+<urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "electricity-factor-evidence" .
+<urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/license> "MIT (original synthetic bundle; official citations are external)" .
+<urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-electricity-factor-evidence" .
+<urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/sha256> "6e5b81a8e0081e82f15f1ed19d90ca7ea27938fc6f7cbb0f35a020a1f8f51a8e" .
+<urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/synthetic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionFactor> .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/boundary> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/denominator> "kWh" .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/geography> "TW" .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/gwp> <urn:ghgag:moenv-demo-2024-electricity-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "electricity-factor" .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-electricity-factor" .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method> <urn:ghgag:moenv-demo-2024-electricity-method:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/numerator> "kg_CO2e" .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/period> <urn:ghgag:moenv-demo-2024-period:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "0.474"^^<http://www.w3.org/2001/XMLSchema#double> .
+<urn:ghgag:moenv-demo-2024-electricity-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-gwp:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-electricity-gwp:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/GWPSet> .
+<urn:ghgag:moenv-demo-2024-electricity-gwp:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/basis> "MOENV-113-AR5-100y; precharacterized gas sum (do not apply twice)" .
+<urn:ghgag:moenv-demo-2024-electricity-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/horizon_years> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "electricity-gwp" .
+<urn:ghgag:moenv-demo-2024-electricity-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-electricity-gwp" .
+<urn:ghgag:moenv-demo-2024-electricity-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-electricity-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-method:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-electricity-method:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/CalculationMethod> .
+<urn:ghgag:moenv-demo-2024-electricity-method:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/allocation> "none" .
+<urn:ghgag:moenv-demo-2024-electricity-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/description> "Gas-resolved Decimal companion calculation projected to an explicit precharacterized CO2e factor; not a gas-resolved core schema" .
+<urn:ghgag:moenv-demo-2024-electricity-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "electricity-method" .
+<urn:ghgag:moenv-demo-2024-electricity-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-electricity-method" .
+<urn:ghgag:moenv-demo-2024-electricity-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method_type> "activity-based" .
+<urn:ghgag:moenv-demo-2024-electricity-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-electricity-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-quality:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-electricity-quality:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/DataQualityAssessment> .
+<urn:ghgag:moenv-demo-2024-electricity-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "electricity-quality" .
+<urn:ghgag:moenv-demo-2024-electricity-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-electricity-quality" .
+<urn:ghgag:moenv-demo-2024-electricity-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rating> "unknown" .
+<urn:ghgag:moenv-demo-2024-electricity-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rationale> "Synthetic exercise; not independently assessed" .
+<urn:ghgag:moenv-demo-2024-electricity-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-electricity-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/uncertainty> "not quantified; see form 07" .
+<urn:ghgag:moenv-demo-2024-electricity-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-result:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-electricity-result:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionResult> .
+<urn:ghgag:moenv-demo-2024-electricity-result:v1> <http://www.w3.org/ns/prov#wasGeneratedBy> <urn:ghgag:moenv-demo-2024-electricity-run:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "electricity-result" .
+<urn:ghgag:moenv-demo-2024-electricity-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-electricity-result" .
+<urn:ghgag:moenv-demo-2024-electricity-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quantity> _:0bf26e7b0f60f1c7836c0fef98d58ac771b62dd7a96c3013d95a7ee23544f0bd .
+<urn:ghgag:moenv-demo-2024-electricity-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/review> <urn:ghgag:moenv-demo-2024-electricity-review:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-electricity-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/ReviewDecision> .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-electricity-result:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <http://www.w3.org/ns/prov#wasAssociatedWith> <urn:ghgag:moenv-demo-2024-simulated-review-role:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "electricity-review" .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-electricity-review" .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rationale> "Training fixture only; no human approval or assurance performed" .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/status> "unreviewed" .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/target> <urn:ghgag:moenv-demo-2024-electricity-result:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/timestamp> "2026-10-15T00:00:00Z" .
+<urn:ghgag:moenv-demo-2024-electricity-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/CalculationRun> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-electricity-activity:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-electricity-factor:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-electricity-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-electricity-method:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/activity> <urn:ghgag:moenv-demo-2024-electricity-activity:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/boundary> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/factor> <urn:ghgag:moenv-demo-2024-electricity-factor:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/gwp> <urn:ghgag:moenv-demo-2024-electricity-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "electricity-run" .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-electricity-run" .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method> <urn:ghgag:moenv-demo-2024-electricity-method:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/performed_at> "2026-10-15T00:00:00Z" .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/software> "moenv-training/1" .
+<urn:ghgag:moenv-demo-2024-electricity-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-source:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-electricity-source:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionSource> .
+<urn:ghgag:moenv-demo-2024-electricity-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/facility> <urn:ghgag:moenv-demo-2024-plant:v1> .
+<urn:ghgag:moenv-demo-2024-electricity-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "electricity-source" .
+<urn:ghgag:moenv-demo-2024-electricity-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-electricity-source" .
+<urn:ghgag:moenv-demo-2024-electricity-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-electricity-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/scope2_basis> "location-based" .
+<urn:ghgag:moenv-demo-2024-electricity-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/scope> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-electricity-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EvidenceArtifact> .
+<urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/citation> """{
+  "monthly_evidence": [
+    {
+      "id": "2024-generator-01",
+      "sha256": "f69f6eb2694e4c070b3bf44bab10d88d8b3feff899bae6e0b99e31a8bc454b5e"
+    },
+    {
+      "id": "2024-generator-02",
+      "sha256": "fac45df06af4707068e7e936184b4a7bf3a8c4827808c6307b88323d7a821df6"
+    },
+    {
+      "id": "2024-generator-03",
+      "sha256": "78a8fc881223a1885cb300c5a3377ac966f416d2b92db8072d6d47ad18da03f5"
+    },
+    {
+      "id": "2024-generator-04",
+      "sha256": "de64212752c0fe831cfea7d2def6beaf4375217973d346ee0be4e195328a8515"
+    },
+    {
+      "id": "2024-generator-05",
+      "sha256": "2135754e5081e7da451c0bd192820f46ab7319e11f1cbfb203431a3c1bcaeb29"
+    },
+    {
+      "id": "2024-generator-06",
+      "sha256": "4115213a79b2fb5eed211248c0f279790c0ed338269269c6cacefff1d7978dcc"
+    },
+    {
+      "id": "2024-generator-07",
+      "sha256": "494d14ab4815d0c177b0ef51ecb69b0152fd780674d3ed3f77218409a9bd3ccb"
+    },
+    {
+      "id": "2024-generator-08",
+      "sha256": "c97a370ab87e344cc455001024804f9ba5391f71a1012f5db70b387dc257358e"
+    },
+    {
+      "id": "2024-generator-09",
+      "sha256": "d0ecf89c5bd4264789ceeb37da4e3f3248ba0241cfac4ab4c282184dd27a2a1a"
+    },
+    {
+      "id": "2024-generator-10",
+      "sha256": "9ae77d2d39aa6651bb84a4699d8ca2696df1f0d757ee2c1edc9b2c1be3c472a4"
+    },
+    {
+      "id": "2024-generator-11",
+      "sha256": "df9a28cd74fee53063fcacf2d37600bd624698feac6da014c81fcb2e39f82ff5"
+    },
+    {
+      "id": "2024-generator-12",
+      "sha256": "61755b5055f80c2d3069bf7df75634e1ece4156fdb54ef0eb97a90722815c5cd"
+    }
+  ],
+  "synthetic": true
+}""" .
+<urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "generator-activity-evidence" .
+<urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/license> "MIT (original synthetic bundle; official citations are external)" .
+<urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-generator-activity-evidence" .
+<urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/sha256> "fc1a3413c14a74a23e697db918564238e0215dc8a3f07d6569f3b510cedd5ae7" .
+<urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/synthetic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/ActivityRecord> .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/data_origin> "primary" .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "generator-activity" .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-generator-activity" .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quality> <urn:ghgag:moenv-demo-2024-generator-quality:v1> .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quantity> _:59d2f000e60243aa4c225fe0cb6a34c8101720fbb80d0ad07bf60a3f386c25c8 .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/source> <urn:ghgag:moenv-demo-2024-generator-source:v1> .
+<urn:ghgag:moenv-demo-2024-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EvidenceArtifact> .
+<urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/citation> """{
   "components": [
     {
       "activity": "498",
@@ -1034,39 +760,193 @@
   ],
   "synthetic_case": true,
   "warning": "LHV is synthetic. Electricity factor vintages replay inspected historical ODS rows, not latest-factor regulatory compliance."
-}""" ;
-    ghg:label "generator-factor-evidence" ;
-    ghg:license "MIT (original synthetic bundle; official citations are external)" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-generator-factor-evidence" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:sha256 "8633b5e12174838b46f7d9729a007676b17da5ea7d2f135ceef56fea949af6af" ;
-    ghg:synthetic true ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-generator-gwp:v1> a prov:Entity,
-        ghg:GWPSet ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> ;
-    ghg:basis "MOENV-113-AR5-100y; precharacterized gas sum (do not apply twice)" ;
-    ghg:horizon_years 100 ;
-    ghg:label "generator-gwp" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-generator-gwp" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-generator-method:v1> a prov:Entity,
-        ghg:CalculationMethod ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> ;
-    ghg:allocation "none" ;
-    ghg:description "Gas-resolved Decimal companion calculation projected to an explicit precharacterized CO2e factor; not a gas-resolved core schema" ;
-    ghg:label "generator-method" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-generator-method" ;
-    ghg:method_type "activity-based" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> a prov:Entity,
-        ghg:EvidenceArtifact ;
-    ghg:citation """{
+}""" .
+<urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "generator-factor-evidence" .
+<urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/license> "MIT (original synthetic bundle; official citations are external)" .
+<urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-generator-factor-evidence" .
+<urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/sha256> "8633b5e12174838b46f7d9729a007676b17da5ea7d2f135ceef56fea949af6af" .
+<urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/synthetic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionFactor> .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/boundary> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/denominator> "liter" .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/geography> "TW" .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/gwp> <urn:ghgag:moenv-demo-2024-generator-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "generator-factor" .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-generator-factor" .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method> <urn:ghgag:moenv-demo-2024-generator-method:v1> .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/numerator> "kg_CO2e" .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/period> <urn:ghgag:moenv-demo-2024-period:v1> .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "2.676348"^^<http://www.w3.org/2001/XMLSchema#double> .
+<urn:ghgag:moenv-demo-2024-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-gwp:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-generator-gwp:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/GWPSet> .
+<urn:ghgag:moenv-demo-2024-generator-gwp:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/basis> "MOENV-113-AR5-100y; precharacterized gas sum (do not apply twice)" .
+<urn:ghgag:moenv-demo-2024-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/horizon_years> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "generator-gwp" .
+<urn:ghgag:moenv-demo-2024-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-generator-gwp" .
+<urn:ghgag:moenv-demo-2024-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-method:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-generator-method:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/CalculationMethod> .
+<urn:ghgag:moenv-demo-2024-generator-method:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/allocation> "none" .
+<urn:ghgag:moenv-demo-2024-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/description> "Gas-resolved Decimal companion calculation projected to an explicit precharacterized CO2e factor; not a gas-resolved core schema" .
+<urn:ghgag:moenv-demo-2024-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "generator-method" .
+<urn:ghgag:moenv-demo-2024-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-generator-method" .
+<urn:ghgag:moenv-demo-2024-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method_type> "activity-based" .
+<urn:ghgag:moenv-demo-2024-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-quality:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-generator-quality:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/DataQualityAssessment> .
+<urn:ghgag:moenv-demo-2024-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "generator-quality" .
+<urn:ghgag:moenv-demo-2024-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-generator-quality" .
+<urn:ghgag:moenv-demo-2024-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rating> "unknown" .
+<urn:ghgag:moenv-demo-2024-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rationale> "Synthetic exercise; not independently assessed" .
+<urn:ghgag:moenv-demo-2024-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/uncertainty> "not quantified; see form 07" .
+<urn:ghgag:moenv-demo-2024-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-result:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-generator-result:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionResult> .
+<urn:ghgag:moenv-demo-2024-generator-result:v1> <http://www.w3.org/ns/prov#wasGeneratedBy> <urn:ghgag:moenv-demo-2024-generator-run:v1> .
+<urn:ghgag:moenv-demo-2024-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "generator-result" .
+<urn:ghgag:moenv-demo-2024-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-generator-result" .
+<urn:ghgag:moenv-demo-2024-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quantity> _:c5d1ba575baefde1f97a03257965fa62932a8cd7e6eb11b46c3ad0a0db420646 .
+<urn:ghgag:moenv-demo-2024-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/review> <urn:ghgag:moenv-demo-2024-generator-review:v1> .
+<urn:ghgag:moenv-demo-2024-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/ReviewDecision> .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-generator-result:v1> .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <http://www.w3.org/ns/prov#wasAssociatedWith> <urn:ghgag:moenv-demo-2024-simulated-review-role:v1> .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "generator-review" .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-generator-review" .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rationale> "Training fixture only; no human approval or assurance performed" .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/status> "unreviewed" .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/target> <urn:ghgag:moenv-demo-2024-generator-result:v1> .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/timestamp> "2026-10-15T00:00:00Z" .
+<urn:ghgag:moenv-demo-2024-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/CalculationRun> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-generator-activity:v1> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-generator-factor:v1> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-generator-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-generator-method:v1> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/activity> <urn:ghgag:moenv-demo-2024-generator-activity:v1> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/boundary> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/factor> <urn:ghgag:moenv-demo-2024-generator-factor:v1> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/gwp> <urn:ghgag:moenv-demo-2024-generator-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "generator-run" .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-generator-run" .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method> <urn:ghgag:moenv-demo-2024-generator-method:v1> .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/performed_at> "2026-10-15T00:00:00Z" .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/software> "moenv-training/1" .
+<urn:ghgag:moenv-demo-2024-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-source:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-generator-source:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionSource> .
+<urn:ghgag:moenv-demo-2024-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/facility> <urn:ghgag:moenv-demo-2024-plant:v1> .
+<urn:ghgag:moenv-demo-2024-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "generator-source" .
+<urn:ghgag:moenv-demo-2024-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-generator-source" .
+<urn:ghgag:moenv-demo-2024-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/scope> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-inventory:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-inventory:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/InventoryVersion> .
+<urn:ghgag:moenv-demo-2024-inventory:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/boundary> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-inventory:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "inventory" .
+<urn:ghgag:moenv-demo-2024-inventory:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-inventory" .
+<urn:ghgag:moenv-demo-2024-inventory:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/organization> <urn:ghgag:moenv-demo-2024-organization:v1> .
+<urn:ghgag:moenv-demo-2024-inventory:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/period> <urn:ghgag:moenv-demo-2024-period:v1> .
+<urn:ghgag:moenv-demo-2024-inventory:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-inventory:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/status> "draft" .
+<urn:ghgag:moenv-demo-2024-inventory:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EvidenceArtifact> .
+<urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/citation> """{
+  "monthly_evidence": [
+    {
+      "id": "2024-new-generator-01",
+      "sha256": "9c3f0bd302eeebff48147f0482b3be654521640c3aad6c4dfed844d55f9bf55c"
+    },
+    {
+      "id": "2024-new-generator-02",
+      "sha256": "d541768f7e8171fed52c6beefa91f76e4fa3b1e4662a3f5d05fbe5005df6c258"
+    },
+    {
+      "id": "2024-new-generator-03",
+      "sha256": "793cc3e1e1b0e37f772d25a93822e9861e5376b8b30b768ed27fccf8b53064c4"
+    },
+    {
+      "id": "2024-new-generator-04",
+      "sha256": "2f2d4aabd7c1b82b634c0262a57e196edfe85c8ea27df88fa79d55c66807bda7"
+    },
+    {
+      "id": "2024-new-generator-05",
+      "sha256": "be884e48093d57972eec1611d68c9b2d82b839d673adeb311d48eac2602d465d"
+    },
+    {
+      "id": "2024-new-generator-06",
+      "sha256": "adc5d42f7113b5ff9a54bc22d61aa2a8d20292cf51a3da67bdf74019f4f59f23"
+    },
+    {
+      "id": "2024-new-generator-07",
+      "sha256": "d8de60fe42448218f3f57c3c3a014a7ba5bff50552e10fcbb1db8746b0948d01"
+    },
+    {
+      "id": "2024-new-generator-08",
+      "sha256": "b0fff4b5c70b2cd32b77e90875405410c39b295ddcdaaa6a69ad940087505e42"
+    },
+    {
+      "id": "2024-new-generator-09",
+      "sha256": "2197bf6d65b164b2761f13b8e6c4de31a71f0c5c77900f6372f8a66793e31832"
+    },
+    {
+      "id": "2024-new-generator-10",
+      "sha256": "506214aab267189fab30c9c59d8067544b5b73644642ee0aa7e3875db473ab33"
+    },
+    {
+      "id": "2024-new-generator-11",
+      "sha256": "e35b30e943f1c55c8bc43ab3eb08c63454278e456333b19f905f4eb0d7fd03b4"
+    },
+    {
+      "id": "2024-new-generator-12",
+      "sha256": "8bab316b3525c37bfc57563a0aac74d9b2ef2a1e5eb8694b6fa5c6998d71bf1a"
+    }
+  ],
+  "synthetic": true
+}""" .
+<urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "new-generator-activity-evidence" .
+<urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/license> "MIT (original synthetic bundle; official citations are external)" .
+<urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-new-generator-activity-evidence" .
+<urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/sha256> "42e7347370bd66b1b49c268957eff445336f1397f8efd3e194676126a67e7b7a" .
+<urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/synthetic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/ActivityRecord> .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/data_origin> "primary" .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "new-generator-activity" .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-new-generator-activity" .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quality> <urn:ghgag:moenv-demo-2024-new-generator-quality:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quantity> _:c7700c66fa69d1b2b5747d1e862e9681218b10837e5a6e03bcd86e0feb268b40 .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/source> <urn:ghgag:moenv-demo-2024-new-generator-source:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-activity:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EvidenceArtifact> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/citation> """{
   "components": [
     {
       "activity": "120",
@@ -1119,85 +999,151 @@
   ],
   "synthetic_case": true,
   "warning": "LHV is synthetic. Electricity factor vintages replay inspected historical ODS rows, not latest-factor regulatory compliance."
-}""" ;
-    ghg:label "new-generator-factor-evidence" ;
-    ghg:license "MIT (original synthetic bundle; official citations are external)" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-new-generator-factor-evidence" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:sha256 "960267fd506d77ebc465fca3fbe9ed94987519d3146e516b9845b60e055a2633" ;
-    ghg:synthetic true ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> a prov:Entity,
-        ghg:GWPSet ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> ;
-    ghg:basis "MOENV-113-AR5-100y; precharacterized gas sum (do not apply twice)" ;
-    ghg:horizon_years 100 ;
-    ghg:label "new-generator-gwp" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-new-generator-gwp" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-new-generator-method:v1> a prov:Entity,
-        ghg:CalculationMethod ;
-    prov:wasDerivedFrom <urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> ;
-    ghg:allocation "none" ;
-    ghg:description "Gas-resolved Decimal companion calculation projected to an explicit precharacterized CO2e factor; not a gas-resolved core schema" ;
-    ghg:label "new-generator-method" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-new-generator-method" ;
-    ghg:method_type "activity-based" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-organization:v1> a prov:Agent,
-        ghg:Organization ;
-    ghg:label "organization" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-organization" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-plant:v1> a prov:Entity,
-        ghg:Facility ;
-    ghg:geography "TW" ;
-    ghg:label "plant" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-plant" ;
-    ghg:organization <urn:ghgag:moenv-demo-2024-organization:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-simulated-review-role:v1> a prov:Agent,
-        ghg:Organization ;
-    ghg:label "simulated-review-role" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-simulated-review-role" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-period:v1> a prov:Entity,
-        ghg:ReportingPeriod ;
-    ghg:end "2024-12-31" ;
-    ghg:label "period" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-period" ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:start "2024-01-01" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-inventory:v1> a prov:Entity,
-        ghg:InventoryVersion ;
-    ghg:boundary <urn:ghgag:moenv-demo-2024-boundary:v1> ;
-    ghg:label "inventory" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-inventory" ;
-    ghg:organization <urn:ghgag:moenv-demo-2024-organization:v1> ;
-    ghg:period <urn:ghgag:moenv-demo-2024-period:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:status "draft" ;
-    ghg:version 1 .
-
-<urn:ghgag:moenv-demo-2024-boundary:v1> a prov:Entity,
-        ghg:BoundaryDefinition ;
-    ghg:consolidation "operational-control" ;
-    ghg:description "Fictional single registered manufacturing site; one plant, no subsidiaries; no claim of legal registration. Direct and purchased-energy sources only; no Scope 3 conformity claim." ;
-    ghg:label "boundary" ;
-    ghg:logical_id "urn:ghgag:moenv-demo-2024-boundary" ;
-    ghg:organization <urn:ghgag:moenv-demo-2024-organization:v1> ;
-    ghg:schemaVersion "0.1.0" ;
-    ghg:version 1 .
+}""" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "new-generator-factor-evidence" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/license> "MIT (original synthetic bundle; official citations are external)" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-new-generator-factor-evidence" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/sha256> "960267fd506d77ebc465fca3fbe9ed94987519d3146e516b9845b60e055a2633" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/synthetic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionFactor> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/boundary> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/denominator> "liter" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/geography> "TW" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/gwp> <urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "new-generator-factor" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-new-generator-factor" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method> <urn:ghgag:moenv-demo-2024-new-generator-method:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/numerator> "kg_CO2e" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/period> <urn:ghgag:moenv-demo-2024-period:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "2.676348"^^<http://www.w3.org/2001/XMLSchema#double> .
+<urn:ghgag:moenv-demo-2024-new-generator-factor:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/GWPSet> .
+<urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/basis> "MOENV-113-AR5-100y; precharacterized gas sum (do not apply twice)" .
+<urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/horizon_years> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "new-generator-gwp" .
+<urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-new-generator-gwp" .
+<urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-method:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-new-generator-method:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/CalculationMethod> .
+<urn:ghgag:moenv-demo-2024-new-generator-method:v1> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/allocation> "none" .
+<urn:ghgag:moenv-demo-2024-new-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/description> "Gas-resolved Decimal companion calculation projected to an explicit precharacterized CO2e factor; not a gas-resolved core schema" .
+<urn:ghgag:moenv-demo-2024-new-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "new-generator-method" .
+<urn:ghgag:moenv-demo-2024-new-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-new-generator-method" .
+<urn:ghgag:moenv-demo-2024-new-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method_type> "activity-based" .
+<urn:ghgag:moenv-demo-2024-new-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-new-generator-method:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-quality:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-new-generator-quality:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/DataQualityAssessment> .
+<urn:ghgag:moenv-demo-2024-new-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "new-generator-quality" .
+<urn:ghgag:moenv-demo-2024-new-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-new-generator-quality" .
+<urn:ghgag:moenv-demo-2024-new-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rating> "unknown" .
+<urn:ghgag:moenv-demo-2024-new-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rationale> "Synthetic exercise; not independently assessed" .
+<urn:ghgag:moenv-demo-2024-new-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-new-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/uncertainty> "not quantified; see form 07" .
+<urn:ghgag:moenv-demo-2024-new-generator-quality:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-result:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-new-generator-result:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionResult> .
+<urn:ghgag:moenv-demo-2024-new-generator-result:v1> <http://www.w3.org/ns/prov#wasGeneratedBy> <urn:ghgag:moenv-demo-2024-new-generator-run:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "new-generator-result" .
+<urn:ghgag:moenv-demo-2024-new-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-new-generator-result" .
+<urn:ghgag:moenv-demo-2024-new-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/quantity> _:c9e21cc17e2682d52a42b8fd9c0258058b3d53ac12977aa3428b53dde9bba858 .
+<urn:ghgag:moenv-demo-2024-new-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/review> <urn:ghgag:moenv-demo-2024-new-generator-review:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-new-generator-result:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/ReviewDecision> .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-new-generator-result:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <http://www.w3.org/ns/prov#wasAssociatedWith> <urn:ghgag:moenv-demo-2024-simulated-review-role:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "new-generator-review" .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-new-generator-review" .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/rationale> "Training fixture only; no human approval or assurance performed" .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/status> "unreviewed" .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/target> <urn:ghgag:moenv-demo-2024-new-generator-result:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/timestamp> "2026-10-15T00:00:00Z" .
+<urn:ghgag:moenv-demo-2024-new-generator-review:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/CalculationRun> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-new-generator-activity:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-new-generator-factor:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <http://www.w3.org/ns/prov#used> <urn:ghgag:moenv-demo-2024-new-generator-method:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/activity> <urn:ghgag:moenv-demo-2024-new-generator-activity:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/boundary> <urn:ghgag:moenv-demo-2024-boundary:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/factor> <urn:ghgag:moenv-demo-2024-new-generator-factor:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/gwp> <urn:ghgag:moenv-demo-2024-new-generator-gwp:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/inventory> <urn:ghgag:moenv-demo-2024-inventory:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "new-generator-run" .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-new-generator-run" .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/method> <urn:ghgag:moenv-demo-2024-new-generator-method:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/performed_at> "2026-10-15T00:00:00Z" .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/software> "moenv-training/1" .
+<urn:ghgag:moenv-demo-2024-new-generator-run:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-source:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-new-generator-source:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/EmissionSource> .
+<urn:ghgag:moenv-demo-2024-new-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/facility> <urn:ghgag:moenv-demo-2024-plant:v1> .
+<urn:ghgag:moenv-demo-2024-new-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "new-generator-source" .
+<urn:ghgag:moenv-demo-2024-new-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-new-generator-source" .
+<urn:ghgag:moenv-demo-2024-new-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-new-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/scope> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-new-generator-source:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-organization:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<urn:ghgag:moenv-demo-2024-organization:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/Organization> .
+<urn:ghgag:moenv-demo-2024-organization:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "organization" .
+<urn:ghgag:moenv-demo-2024-organization:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-organization" .
+<urn:ghgag:moenv-demo-2024-organization:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-organization:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-period:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-period:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/ReportingPeriod> .
+<urn:ghgag:moenv-demo-2024-period:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/end> "2024-12-31" .
+<urn:ghgag:moenv-demo-2024-period:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "period" .
+<urn:ghgag:moenv-demo-2024-period:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-period" .
+<urn:ghgag:moenv-demo-2024-period:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-period:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/start> "2024-01-01" .
+<urn:ghgag:moenv-demo-2024-period:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-plant:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<urn:ghgag:moenv-demo-2024-plant:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/Facility> .
+<urn:ghgag:moenv-demo-2024-plant:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/geography> "TW" .
+<urn:ghgag:moenv-demo-2024-plant:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "plant" .
+<urn:ghgag:moenv-demo-2024-plant:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-plant" .
+<urn:ghgag:moenv-demo-2024-plant:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/organization> <urn:ghgag:moenv-demo-2024-organization:v1> .
+<urn:ghgag:moenv-demo-2024-plant:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-plant:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:ghgag:moenv-demo-2024-simulated-review-role:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<urn:ghgag:moenv-demo-2024-simulated-review-role:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/Organization> .
+<urn:ghgag:moenv-demo-2024-simulated-review-role:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/label> "simulated-review-role" .
+<urn:ghgag:moenv-demo-2024-simulated-review-role:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/logical_id> "urn:ghgag:moenv-demo-2024-simulated-review-role" .
+<urn:ghgag:moenv-demo-2024-simulated-review-role:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/schemaVersion> "0.1.0" .
+<urn:ghgag:moenv-demo-2024-simulated-review-role:v1> <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/version> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:0495a033c4c92a42ae660b84824d42a1e3737f7d94bfe3ee261727c26828171d <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/unit> "meter ** 3" .
+_:0495a033c4c92a42ae660b84824d42a1e3737f7d94bfe3ee261727c26828171d <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "11580.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:0bf26e7b0f60f1c7836c0fef98d58ac771b62dd7a96c3013d95a7ee23544f0bd <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/unit> "kg_CO2e" .
+_:0bf26e7b0f60f1c7836c0fef98d58ac771b62dd7a96c3013d95a7ee23544f0bd <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "66265.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:10ac085576ed99a8232840f6d7e82dda3243f71720d80b89603dafdfffc46b1f <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/unit> "kWh" .
+_:10ac085576ed99a8232840f6d7e82dda3243f71720d80b89603dafdfffc46b1f <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "139800.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:3b8016fe47cbdfe99183b7d463dc798cd3bb754cca19ff03afc17557972a2091 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/unit> "kg_CO2e" .
+_:3b8016fe47cbdfe99183b7d463dc798cd3bb754cca19ff03afc17557972a2091 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "2600.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:59d2f000e60243aa4c225fe0cb6a34c8101720fbb80d0ad07bf60a3f386c25c8 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/unit> "liter" .
+_:59d2f000e60243aa4c225fe0cb6a34c8101720fbb80d0ad07bf60a3f386c25c8 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "498.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:7b61d5defd1b944a6a2d4377130d81e639c24b0d4c1a4182e7a30414605ef711 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/unit> "kg" .
+_:7b61d5defd1b944a6a2d4377130d81e639c24b0d4c1a4182e7a30414605ef711 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:c2a7185ac0406993c3e7c1a2f6433006546a300f0466d0f001eede3aaf3e3ca1 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/unit> "kg_CO2e" .
+_:c2a7185ac0406993c3e7c1a2f6433006546a300f0466d0f001eede3aaf3e3ca1 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "24710.22618"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:c5d1ba575baefde1f97a03257965fa62932a8cd7e6eb11b46c3ad0a0db420646 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/unit> "kg_CO2e" .
+_:c5d1ba575baefde1f97a03257965fa62932a8cd7e6eb11b46c3ad0a0db420646 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "1332.821304"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:c7700c66fa69d1b2b5747d1e862e9681218b10837e5a6e03bcd86e0feb268b40 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/unit> "liter" .
+_:c7700c66fa69d1b2b5747d1e862e9681218b10837e5a6e03bcd86e0feb268b40 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "120.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:c9e21cc17e2682d52a42b8fd9c0258058b3d53ac12977aa3428b53dde9bba858 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/unit> "kg_CO2e" .
+_:c9e21cc17e2682d52a42b8fd9c0258058b3d53ac12977aa3428b53dde9bba858 <https://simon5530.github.io/ghg-assurance-graph/ns/0.1/value> "321.16176"^^<http://www.w3.org/2001/XMLSchema#double> .

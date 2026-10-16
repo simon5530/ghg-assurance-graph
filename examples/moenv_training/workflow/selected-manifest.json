@@ -1,0 +1,30 @@
+{
+  "scope": "Selected actual workflow receipts; manifest.json describes the full reproducible run, not only this subset.",
+  "sha256": {
+    "REPORT.md": "5fa7c2a599405eb9940fb0d23ff255f6a7249a902ce03bfcf4d379c92dab3b17",
+    "commands.json": "263ecdd03554d1cfc67e777ef1794f564998046bbf3be482af19616fe10d73e1",
+    "comparison.json": "6d22cc87e5fa90fe517dfc80b956cdb626e5a40671b0fa26c959b03ef3c69051",
+    "manifest.json": "9567f95d04d6a233f78670fda0ce6db33fe91bf9ad8335d420f413d09ffae69a",
+    "negative/missing-month-check.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "negative/missing-month-check.json.stderr.txt": "d203633f12c37512d34000b6a312fffe9f50561cc40ca25c5518e16b84fbef28",
+    "negative/tampered-crate-check.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "negative/tampered-crate-check.json.stderr.txt": "ca8d19cfa94e3f3a96001e4a8a0bcbb518ebadb480cea45f2b66039841aec1df",
+    "negative/unsupported-carbondiff.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "negative/unsupported-carbondiff.json.stderr.txt": "ca8d19cfa94e3f3a96001e4a8a0bcbb518ebadb480cea45f2b66039841aec1df",
+    "stages/2023/collection-check.json": "dc21a3eef7479e2b99a1f6a795b517e5a7f982d636617f85c48f94b2964996dd",
+    "stages/2023/evidence-use.json": "d02e318e25ed6ffe82787dd798e16a57e10a1a6c23e5387d77ded79d1b1e3819",
+    "stages/2023/explain/electricity.json": "adfdc690c4e36cbc5006f1ddca09c535452f5b0956bb827fc09979999bc5d3fd",
+    "stages/2023/factor-use.json": "47a25636d3bad36fd183bebf401da1dd07ef17167d0484cfe095f1f56c427f58",
+    "stages/2023/package-verify.json": "37149af837b3205140067c0028f3817e08e569f147ee7ce96ddaf2d57fd78812",
+    "stages/2023/unreviewed.json": "36ad8049b591a02467aac3413e41a3556c256bdff3e5550923fe4fc026790745",
+    "stages/2023/validation.json": "016f05e11e938e286dbf386721f3eae1b31db58ed4541c0dff0a67078819de8f",
+    "stages/2024/collection-check.json": "00b986fd1734ae883e976b6f6081de3f74808deec9f587a00e88d3ba1702404b",
+    "stages/2024/evidence-use.json": "ebbf664a62c38b63b402b212a5ec65d51406c148ab30af384b1801c23d246dfb",
+    "stages/2024/explain/electricity.json": "12ec8fa9bc81d217e1447d66a26c062277f525c75afc10cd860cfd094ca02e09",
+    "stages/2024/factor-use.json": "8353042e87cfe5a17f9670a84966f6557631d1172d75ab3f4824aa503b518344",
+    "stages/2024/package-verify.json": "2c6332351775c26adf6f87645414eb3f6720d8a5de80fdf8e572e8baba2f3c91",
+    "stages/2024/unreviewed.json": "b560f4c6fba0f7a28ef06c0aad120cd41b5c4371a0d7c28645d276dc27774ab9",
+    "stages/2024/validation.json": "016f05e11e938e286dbf386721f3eae1b31db58ed4541c0dff0a67078819de8f",
+    "summary.json": "4b3b9149af57167ac2c4ffddf9f18e755f591e30f9a5535eb3d64ecf4a3ec3c5"
+  }
+}

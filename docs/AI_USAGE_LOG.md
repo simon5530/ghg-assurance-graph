@@ -90,3 +90,12 @@ collection design, two-year fictional records, workbook formulas, graph projecti
 and deterministic tests. No human approval, practitioner assurance or full legal
 conformity is asserted. No private company data or source PDF/ODF is redistributed.
 The superseded company-comparison execution harness is removed from the current tree.
+
+## 2026-10-16 — primary operating guide and SoftwareX reconciliation
+
+OpenClaw/openai/gpt-6.1-sol assisted discovery of stale primary-example consumers,
+CLI workflow receipts,Chinese instructions,14-page PDF/HTML guide,primary Matplotlib
+figure and manuscript/source-ledger reconciliation. Tests use literal/Fraction
+checks and independent hash-seed replay; no human scientific approval is asserted.
+The primary case remains MOENV-inspired synthetic internal evidence. Legacy
+regression results are not transferred as new-case findings.

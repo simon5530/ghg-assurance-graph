@@ -1,0 +1,96 @@
+{
+  "commands": 33,
+  "comparison": {
+    "causality": "UNKNOWN",
+    "delta_kg_co2e": "-568.0643200",
+    "not_carbon_diff": true,
+    "profile": "moenv-arithmetic-comparison/1",
+    "sources": [
+      {
+        "after": "1235511309/50000",
+        "before": "1363543569/50000",
+        "causality": "UNKNOWN",
+        "delta": "-6401613/2500",
+        "source": "boiler"
+      },
+      {
+        "after": "2600",
+        "before": "3900",
+        "causality": "UNKNOWN",
+        "delta": "-1300",
+        "source": "cooling"
+      },
+      {
+        "after": "331326/5",
+        "before": "315666/5",
+        "causality": "UNKNOWN",
+        "delta": "3132",
+        "source": "electricity"
+      },
+      {
+        "after": "166602663/125000",
+        "before": "186675273/125000",
+        "causality": "UNKNOWN",
+        "delta": "-2007261/12500",
+        "source": "generator"
+      },
+      {
+        "after": "2007261/6250",
+        "before": "0",
+        "causality": "UNKNOWN",
+        "delta": "2007261/6250",
+        "source": "new-generator"
+      }
+    ]
+  },
+  "created_at": "2026-10-16T00:00:00Z",
+  "negative_controls": {
+    "missing_month": 2,
+    "tampered_crate": 2,
+    "unsupported_carbon_diff": 2
+  },
+  "network": "Python socket guard; not an OS sandbox",
+  "profile": "moenv-workflow/1",
+  "python": "3.12.14",
+  "scope": "Fictional MOENV-inspired internal evidence; not statutory filing or assurance",
+  "software": "0.4.0a1",
+  "years": {
+    "2023": {
+      "activity_rows": 60,
+      "canonical_records": 50,
+      "evidence_documents": 61,
+      "lineage_explanations": 4,
+      "monthly_documents": 60,
+      "package_valid": true,
+      "results": 4,
+      "source_amounts_kg_co2e": {
+        "boiler": "27270.87138",
+        "cooling": "3900.0",
+        "electricity": "63133.2",
+        "generator": "1493.402184"
+      },
+      "total_kg_co2e": "95797.4735640",
+      "unreviewed_results": 4,
+      "vault_notes": 127
+    },
+    "2024": {
+      "activity_rows": 60,
+      "canonical_records": 61,
+      "evidence_documents": 61,
+      "lineage_explanations": 5,
+      "monthly_documents": 60,
+      "package_valid": true,
+      "results": 5,
+      "source_amounts_kg_co2e": {
+        "boiler": "24710.22618",
+        "cooling": "2600.0",
+        "electricity": "66265.2",
+        "generator": "1332.821304",
+        "new-generator": "321.16176"
+      },
+      "total_kg_co2e": "95229.4092440",
+      "unreviewed_results": 5,
+      "vault_notes": 140
+    }
+  }
+}

@@ -1,0 +1,2 @@
+# Generated reading artifacts are binary; never normalize PDF object offsets.
+*.pdf binary

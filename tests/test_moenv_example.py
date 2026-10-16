@@ -96,8 +96,8 @@ def test_fail_closed_activity_contract(mutation):
 def test_replay_committed_tree_and_no_overwrite(tmp_path):
     out = tmp_path / "case"
     build(out)
-    # Turtle blank-node serialization is not a byte-identity contract. Compare
-    # graph isomorphism separately; structured input/output files are byte stable.
+    # Check graph semantics independently here; the complete primary workflow
+    # additionally compares all bytes under different Python hash seeds.
     from rdflib import Graph
     from rdflib.compare import isomorphic
 

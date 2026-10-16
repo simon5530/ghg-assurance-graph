@@ -1,0 +1,84 @@
+{
+  "manifest": {
+    "command": [
+      "ghgag",
+      "package",
+      "create"
+    ],
+    "created_at": "2026-10-16T00:00:00Z",
+    "data_version": "moenv-training-1-2024",
+    "files": {
+      "graph.jsonld": {
+        "bytes": 93771,
+        "sha256": "3ab45ae59354c42a0aff12e54afd09a163e92a118b39cf7491a2e8a52a1c276f"
+      },
+      "graph.ttl": {
+        "bytes": 118375,
+        "sha256": "030e67a6e999b623be70c003900a44e602b2c9b0ef9c7e589af8eef1d7f36b28"
+      },
+      "ontology.json": {
+        "bytes": 191,
+        "sha256": "de246e835b458d404181518bdf622b897b295037e06a975f2a0c54d46e515a89"
+      },
+      "package.json": {
+        "bytes": 40527,
+        "sha256": "aae194086db2929e8b5af3aaf5d65bcf2d3c07e019bf05c05d8b2d02660a8ec1"
+      },
+      "ro-crate-metadata.json": {
+        "bytes": 1358,
+        "sha256": "40b2c1dd12eec857c58a2ddc0cee8dbc32ef838cb8d4e1b7277125aa916e27ff"
+      },
+      "schema.json": {
+        "bytes": 20614,
+        "sha256": "8fe0365b341a5feb896e43005acf6b24ecac5065cc979f7ee18cbc749b368aab"
+      }
+    },
+    "format": "ghgag-evidence-1",
+    "identities": {
+      "CalculationMethod": [
+        "urn:ghgag:moenv-demo-2024-boiler-method:v1",
+        "urn:ghgag:moenv-demo-2024-cooling-method:v1",
+        "urn:ghgag:moenv-demo-2024-electricity-method:v1",
+        "urn:ghgag:moenv-demo-2024-generator-method:v1",
+        "urn:ghgag:moenv-demo-2024-new-generator-method:v1"
+      ],
+      "EmissionFactor": [
+        "urn:ghgag:moenv-demo-2024-boiler-factor:v1",
+        "urn:ghgag:moenv-demo-2024-cooling-factor:v1",
+        "urn:ghgag:moenv-demo-2024-electricity-factor:v1",
+        "urn:ghgag:moenv-demo-2024-generator-factor:v1",
+        "urn:ghgag:moenv-demo-2024-new-generator-factor:v1"
+      ],
+      "EvidenceArtifact": [
+        "urn:ghgag:moenv-demo-2024-boiler-activity-evidence:v1",
+        "urn:ghgag:moenv-demo-2024-boiler-factor-evidence:v1",
+        "urn:ghgag:moenv-demo-2024-cooling-activity-evidence:v1",
+        "urn:ghgag:moenv-demo-2024-cooling-factor-evidence:v1",
+        "urn:ghgag:moenv-demo-2024-electricity-activity-evidence:v1",
+        "urn:ghgag:moenv-demo-2024-electricity-factor-evidence:v1",
+        "urn:ghgag:moenv-demo-2024-generator-activity-evidence:v1",
+        "urn:ghgag:moenv-demo-2024-generator-factor-evidence:v1",
+        "urn:ghgag:moenv-demo-2024-new-generator-activity-evidence:v1",
+        "urn:ghgag:moenv-demo-2024-new-generator-factor-evidence:v1"
+      ],
+      "GWPSet": [
+        "urn:ghgag:moenv-demo-2024-boiler-gwp:v1",
+        "urn:ghgag:moenv-demo-2024-cooling-gwp:v1",
+        "urn:ghgag:moenv-demo-2024-electricity-gwp:v1",
+        "urn:ghgag:moenv-demo-2024-generator-gwp:v1",
+        "urn:ghgag:moenv-demo-2024-new-generator-gwp:v1"
+      ]
+    },
+    "ontology": "https://simon5530.github.io/ghg-assurance-graph/ns/0.1/",
+    "schema_version": "0.1.0",
+    "software": {
+      "ghg-assurance-graph": "0.4.0a1",
+      "pydantic": "2.13.5",
+      "rdflib": "7.6.0",
+      "rocrate": "0.15.1"
+    }
+  },
+  "manifest_sha256": "eca10cc24fe194fc8523cfe5457f485551c21b9e1afee998d7b0a3bda303323f",
+  "record_count": 61,
+  "valid": true
+}

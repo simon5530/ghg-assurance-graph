@@ -10,7 +10,7 @@ production factor database, complete inventory calculator or compliance service.
 ## Implemented and bounded
 
 - 17 canonical record types, explicit units/versions and five safe graph queries.
-- [ExampleCo-GHG-001 benchmark](benchmark/README.md): three snapshots, independent numeric truth
+- Separate regression only: [ExampleCo-GHG-001 benchmark](benchmark/README.md): three snapshots, independent numeric truth
   and ten defective fixtures; all factors are invented and nonproduction.
 - [SHACL and domain validation](docs/VALIDATION.md): packaged pySHACL shapes plus
   independent raw-row rules; ten true positives, zero false positives/negatives on
@@ -28,7 +28,7 @@ assurance claim. [Exact original-phase matrix](docs/ROADMAP_ACCEPTANCE.md).
 The previous v0.3.0a1 release has [historical fresh-host reproduction](docs/FRESH_RELEASE_REPRODUCTION.md)
 and [source preservation](docs/ARCHIVE_STATUS.md). Those records do not certify this revision.
 This remains a qualified alpha, not a stable v1.0 or journal submission.
-[Full initial SoftwareX manuscript](paper/softwarex/MANUSCRIPT.md) is available for
+[Reconciled SoftwareX manuscript](paper/softwarex/MANUSCRIPT.md) is available for
 human review. Authorship/declarations and official submission formatting remain
 owner decisions. PACT/openLCA/Brightway integrations and Jev remain optional;
 [adapter assessment](docs/ADAPTER_FEASIBILITY.md) and [AI decision](docs/OPTIONAL_AI_DECISION.md).
@@ -63,7 +63,7 @@ companion tables do not add a gas schema to the core.
 
 ## Earlier synthetic software-regression example
 
-Start with the [illustrated PDF workbook](docs/user-guide/GUIDE.pdf) ([HTML](docs/user-guide/GUIDE.html)), then the [ExampleCo-GHG-001 step-by-step guide](examples/worked_example/README.md)
+Use the [ExampleCo-GHG-001 regression guide](examples/worked_example/README.md) only for that separate software test population
 and [complete sample report](examples/worked_example/sample/REPORT.md).
 One command executes the selected-source inventory through calculation evidence,
 graphs, validation, explanation, unassisted/annotation-assisted differences,
@@ -79,26 +79,36 @@ feature; it is not the project evaluation dataset.
 
 ## Reproduce locally
 
-Python 3.12.14 and uv; no API key or cloud model.
+Python 3.12.14 and uv; no API key or cloud model. Use the primary MOENV case:
 
 ```sh
 uv sync --locked
-uv run python scripts/run_example.py --out artifacts/exampleco-ghg-001-worked
-uv run ghgag benchmark run
-uv run ghgag graph build benchmark/generated/2026-v1
-uv run ghgag validate benchmark/generated/2026-v1
-uv run ghgag diff benchmark/generated/2025-v2 benchmark/generated/2026-v1
-uv run ghgag package create benchmark/generated/2026-v1 --out artifacts/exampleco-ghg-001-crate --created-at 2026-09-28T00:00:00Z --data-version exampleco-ghg-001-0.1-2026-v1
-uv run ghgag package verify artifacts/exampleco-ghg-001-crate
-uv run ghgag export obsidian artifacts/exampleco-ghg-001-vault --input benchmark/generated/2026-v1
+uv run python scripts/run_moenv_example.py --out artifacts/moenv-worked
+uv run python -m ghg_assurance_graph.moenv_example --check artifacts/moenv-worked/generated/2024
+uv run ghgag graph explain urn:ghgag:moenv-demo-2024-electricity-result:v1 --input artifacts/moenv-worked/generated/2024/package.json
+uv run ghgag graph query unreviewed_results --input artifacts/moenv-worked/generated/2024/package.json
+uv run ghgag package verify artifacts/moenv-worked/packages/2024
 uv run pytest -q
 ```
 
-Output directories must be new. The example timestamp is a declared reproducibility
-input, not a claim about when a user runs it. Default diff leaves unsupported
-semantic changes UNKNOWN: +210 kgCO2e delta, +300 signed residual, 500 absolute
-unknown exposure for 2025-v2→2026-v1. Location/market-based totals are never added.
-Validation exit codes: 0 clean selected checks, 1 findings, 2 invalid request.
+Open `artifacts/moenv-worked/REPORT.md` first. This executed 33-command workflow
+checks both collections and canonical packages, traces all nine results, preserves
+unreviewed statuses, verifies two crates and exports two Markdown vaults. The
+[Chinese operating guide](docs/USAGE.zh-TW.md), [PDF](docs/user-guide/GUIDE.pdf),
+[editable HTML](docs/user-guide/GUIDE.html) and [reference receipts](examples/moenv_training/workflow/REPORT.md)
+use the same 2023/2024 baseline as the [revised SoftwareX draft](paper/softwarex/MANUSCRIPT.md).
+
+Output directories must be new. The timestamp is an explicit replay input, not a
+review date. `comparison.json` reports -568.064320 kgCO2e with causal explanations
+UNKNOWN; **legacy `ghgag diff` does not accept these MOENV folders**. Its independent
+ExampleCo regression is not evidence of primary-case change attribution.
+The canonical crate alone excludes external monthly documents: preserve the whole
+output directory and manifest. Collection checking and canonical checking are
+separate. Workbook edits do not automatically update CSV, evidence or graphs.
+
+The optional old regression commands remain documented only in
+[the regression guide](examples/worked_example/README.md). Validation exits:
+0 selected checks clean, 1 findings, 2 invalid/unsupported request.
 
 ## Documentation and publication
 
@@ -109,7 +119,7 @@ Validation exit codes: 0 clean selected checks, 1 findings, 2 invalid request.
 - [Related work](docs/RELATED_WORK.md), [research decision](docs/GATE_A.md),
   [publication strategy](docs/PUBLICATION_STRATEGY.md), [roadmap](.github/roadmap.json)
 - [SoftwareX highlights](paper/softwarex/HIGHLIGHTS.md),
-  [SoftwareX full initial manuscript](paper/softwarex/MANUSCRIPT.md),
+  [SoftwareX reconciled content draft](paper/softwarex/MANUSCRIPT.md),
   [results ledger](paper/softwarex/RESULTS_LEDGER.md),
   [distinct methods research](paper/methods/FUTURE_PAPER.md)
 - [AI disclosure](docs/AI_USAGE_LOG.md), [contributing](CONTRIBUTING.md),

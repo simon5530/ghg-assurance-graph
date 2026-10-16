@@ -1,6 +1,7 @@
 # Results ledger
 
-Current scope is synthetic-only ExampleCo-GHG-001 validation (0.4.0a1). Earlier entries below
+Current primary scope is the synthetic MOENV 2023/2024 workflow (0.4.0a1 working source);
+ExampleCo is a separate regression population. Earlier entries below
 are explicitly historical engineering records, not current-release validation. Documentation checks are not scientific
 performance measurements.
 
@@ -153,7 +154,7 @@ abstract, example, bibliography, metadata, ledgers and regenerated reading artif
 alongside the prose; old release reproduction must not become current evidence.
 The table and scope regression tests guard this contract.
 
-## 2026-10-15 current-source extension (not part of the September draft evaluation)
+## 2026-10-15 dataset checkpoint (superseded as draft baseline on October16)
 
 Primary practical example now uses [MOENV-inspired internal collection](../../examples/moenv_training/README.md),
 not public-company comparison. Two years, 120 monthly activity rows, 122 synthetic
@@ -164,3 +165,27 @@ These are encoded engineering contracts, not blind validation, practitioner revi
 or a conformity claim. Current official-source metadata, synthetic LHV assumptions
 and historical electricity-factor policy are linked from the example. The original
 SoftwareX draft remains dated; no submission or refreshed paper result is implied.
+
+## 2026-10-16 — primary usage and manuscript reconciliation
+
+- Research question: do operational instructions, reading artifacts and manuscript
+  actually execute and describe the same MOENV 2023/2024 primary case?
+- Runner: `python scripts/run_moenv_example.py --out NEW_DIRECTORY`.
+- Source evidence: [summary](../../examples/moenv_training/workflow/summary.json),
+  [33 command receipts](../../examples/moenv_training/workflow/commands.json),
+  [selected-file hashes](../../examples/moenv_training/workflow/selected-manifest.json).
+- Observed:120 monthly rows,122 synthetic documents,nine lineages,all unreviewed;
+  50/61 canonical records;two valid crates;127/140 linked Markdown notes.
+- Totals:95797.473564/95229.409244kgCO2e; arithmetic delta−568.064320kgCO2e,
+  causal explanations UNKNOWN. Legacy CarbonDiff rejects these folders.
+- Two independent PYTHONHASHSEED runs have identical full relative byte maps;
+  destinations are preserved on overwrite refusal. Three deliberate negative
+  requests all exit2. No failure fixture is treated as an accepted source.
+- Primary PDF guide now14pages; updated manuscript uses the same sources, table,
+  two figures and 33-command example. Core schema remains gas-unresolved; companion
+  gas calculations and precharacterized projection are explicit.
+- Old45lineages,ten seeded defects and nine assisted components remain separately
+  labelled regression evidence, not MOENV observations or blind performance.
+- Pending:actual named-author review,full standards conformity,source truth,
+  statutory factor applicability,quantified uncertainty,measured deployment impact
+  and journal submission. Current hosted run IDs are reported with publication.
