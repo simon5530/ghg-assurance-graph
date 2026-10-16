@@ -141,3 +141,9 @@ regenerate consumers from its receipts, retain unsupported feature boundaries an
 add independent literal/table/byte-replay tests. Completion requires matching
 numbers and source IDs across executable output, guide, figures and manuscript;
 a link update alone is not proof.
+
+Generated-artifact publication check: PDF object/xref whitespace is format data,
+not text to trim; declare PDFs binary in Git. Normalize SVG line whitespace in its
+renderer. Run staged diff checks after adding new artifacts as unstaged checks do
+not include untracked files, and require a failing check to stop publication.
+Compare rendered pages after serialization-only changes before updating hashes.

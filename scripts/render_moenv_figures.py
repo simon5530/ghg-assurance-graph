@@ -49,6 +49,8 @@ def main():
     fig.subplots_adjust(top=0.83, bottom=0.27, wspace=0.65)
     target = ROOT / "paper/softwarex/figures/moenv-evaluation.svg"
     fig.savefig(target, format="svg", metadata={"Date": None, "Creator": "GHG Assurance Graph original Matplotlib authoring script"})
+    # Normalize generated XML whitespace, never PDF object offsets.
+    target.write_text("\n".join(line.rstrip() for line in target.read_text().splitlines()) + "\n")
     plt.close(fig)
     target.with_suffix(".json").write_text(json.dumps({"summary_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
                             "years": summary["years"], "count_labels": labels, "counts": counts,

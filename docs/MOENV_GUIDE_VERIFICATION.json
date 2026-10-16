@@ -22,11 +22,11 @@
     "docs/user-guide/GUIDE.html": "e5ad6a2c578c555e66dcdabba51985bffd10f5777066426a94ba32cf95a28438",
     "docs/user-guide/GUIDE.pdf": "ddab6069670cf86c3d6b4b7b966cda843682714e960b6cd69f4f0029025b9b03",
     "docs/user-guide/figure-data.json": "d4fdbccce843f25ba5218f3f7f8440c34c599ec508763815d0903507935d87f3",
-    "paper/softwarex/MANUSCRIPT.html": "df3dea0da5badc654c7a4051d621ec54b306280fbcd10ff1ede7f0786ac49ab8",
+    "paper/softwarex/MANUSCRIPT.html": "8704b41a16fad59d10d342c2e0a97fba7408ab3550b2511c3d675114ee1f7375",
     "paper/softwarex/MANUSCRIPT.md": "be5f36230f5f10adb6c5aefc1157de54ca821ac1fcaef4ce48c80b51837c7c1e",
-    "paper/softwarex/MANUSCRIPT.pdf": "d8cfbdc8a4dade6b504d62a1de5b8e2602e96326f0106af0200aa0285a20e3d3",
+    "paper/softwarex/MANUSCRIPT.pdf": "db3137253b15759afa9b57bced2f560c996ba82adc3c6bcaf28c7e50de2ed53c",
     "paper/softwarex/MANUSCRIPT_METRICS.json": "d3d5073cda288c20fa79a02ce4e8191ab7fbb656c974758ee7b65cbf56f31cbd",
-    "paper/softwarex/figures/moenv-evaluation.svg": "0413a37316d4590151080021c90bbf5c59cb75f087ed352a75dcf350e58ee307"
+    "paper/softwarex/figures/moenv-evaluation.svg": "238e3511792d8b0bb67db0c95742667d3149b30a4376c701d650aaf665884826"
   },
   "source": "examples/moenv_training/workflow/summary.json",
   "tests_passed": 477
